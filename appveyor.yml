@@ -1,0 +1,7 @@
+version: {build}
+image: Visual Studio 2017
+init:
+  - choco install docfx -y
+build_script:
+  - docfx Documentation/docfx.json
+test: off
