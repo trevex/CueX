@@ -4,9 +4,17 @@ init:
   - choco install docfx -y
 build_script:
   - docfx Documentation/docfx.json
-after_build:
-  - 7z a site.zip Documentation
+on_success:
+  - git clone https://github.com/trevex/CueX.git gh-pages
+  - cd gh-pages
+  - git checkout gh-pages
+  - rm -rf api/ articles/ fonts/ styles/ .gitignore favicon.ico index.html index.json logo.svg manifest.json search-stopwords.json toc.html xrefmap.yml
+  - cp -rT ../Documentation/_site .
+  - git config --global credential.helper store
+  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - git config --global user.email "niklas.voss@gmail.com"
+  - git config --global user.name "Niklas Voss"
+  - git add .
+  - git commit -m "Documentation update by appveyor"
+  - git push origin gh-pages
 test: off
-artifacts:
-  - path: site.zip
-    name: docs
