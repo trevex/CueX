@@ -1,34 +1,4 @@
 {
-  "api/CueX.GridSPS.Class1.html": {
-    "href": "api/CueX.GridSPS.Class1.html",
-    "title": "Class Class1 | CueX Documentation",
-    "keywords": "Class Class1 Inheritance System.Object Class1 Namespace : CueX.GridSPS Assembly : CueX.GridSPS.dll Syntax public class Class1 : object"
-  },
-  "api/CueX.Test.Helper.SiloCollection.html": {
-    "href": "api/CueX.Test.Helper.SiloCollection.html",
-    "title": "Class SiloCollection | CueX Documentation",
-    "keywords": "Class SiloCollection Inheritance System.Object SiloCollection Namespace : CueX.Test.Helper Assembly : CueX.Test.dll Syntax public class SiloCollection : ICollectionFixture<SiloFixture> Fields | Improve this Doc View Source Name Declaration public const string Name = null Field Value Type Description System.String"
-  },
-  "api/CueX.Test.Helper.html": {
-    "href": "api/CueX.Test.Helper.html",
-    "title": "Namespace CueX.Test.Helper | CueX Documentation",
-    "keywords": "Namespace CueX.Test.Helper Classes SiloCollection SiloFixture"
-  },
-  "api/CueX.API.ISpatialGrain-1.html": {
-    "href": "api/CueX.API.ISpatialGrain-1.html",
-    "title": "Interface ISpatialGrain<T> | CueX Documentation",
-    "keywords": "Interface ISpatialGrain<T> Namespace : CueX.API Assembly : CueX.API.dll Syntax public interface ISpatialGrain<T> : IGrainWithIntegerKey where T : struct Type Parameters Name Description T Methods | Improve this Doc View Source GetPosition() Declaration Vector<T> GetPosition() Returns Type Description Vector <T>"
-  },
-  "api/CueX.Core.Setup.html": {
-    "href": "api/CueX.Core.Setup.html",
-    "title": "Class Setup | CueX Documentation",
-    "keywords": "Class Setup Inheritance System.Object Setup Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public static class Setup : object Methods | Improve this Doc View Source InitializeCommon() Declaration public static void InitializeCommon()"
-  },
-  "api/CueX.Core.SpatialGrainState-1.html": {
-    "href": "api/CueX.Core.SpatialGrainState-1.html",
-    "title": "Class SpatialGrainState<TPrecision> | CueX Documentation",
-    "keywords": "Class SpatialGrainState<TPrecision> Inheritance System.Object SpatialGrainState<TPrecision> Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public class SpatialGrainState<TPrecision> : object where TPrecision : struct Type Parameters Name Description TPrecision Fields | Improve this Doc View Source Position Declaration public Vector<TPrecision> Position Field Value Type Description Vector <TPrecision>"
-  },
   "api/CueX.GridSPS.html": {
     "href": "api/CueX.GridSPS.html",
     "title": "Namespace CueX.GridSPS | CueX Documentation",
@@ -44,10 +14,25 @@
     "title": "Class UnitTest1 | CueX Documentation",
     "keywords": "Class UnitTest1 Inheritance System.Object UnitTest1 Namespace : CueX.Test Assembly : CueX.Test.dll Syntax public class UnitTest1 : object Methods | Improve this Doc View Source Test1() Declaration public void Test1()"
   },
-  "api/CueX.Test.html": {
-    "href": "api/CueX.Test.html",
-    "title": "Namespace CueX.Test | CueX Documentation",
-    "keywords": "Namespace CueX.Test Classes UnitTest1"
+  "api/CueX.API.ISpatialGrain-1.html": {
+    "href": "api/CueX.API.ISpatialGrain-1.html",
+    "title": "Interface ISpatialGrain<T> | CueX Documentation",
+    "keywords": "Interface ISpatialGrain<T> Namespace : CueX.API Assembly : CueX.API.dll Syntax public interface ISpatialGrain<T> : IGrainWithIntegerKey where T : struct Type Parameters Name Description T Methods | Improve this Doc View Source GetPosition() Declaration Vector<T> GetPosition() Returns Type Description Vector <T>"
+  },
+  "api/CueX.Core.SpatialGrain-2.html": {
+    "href": "api/CueX.Core.SpatialGrain-2.html",
+    "title": "Class SpatialGrain<TState, TPrecision> | CueX Documentation",
+    "keywords": "Class SpatialGrain<TState, TPrecision> This is a class talking about CAT . NOTE This is a CAT class Refer to @CueX.Core.ISpatialGrain to see other animals. Inheritance System.Object SpatialGrain<TState, TPrecision> Implements ISpatialGrain <TPrecision> IGrainWithIntegerKey Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public class SpatialGrain<TState, TPrecision> : Grain<TState>, ISpatialGrain<TPrecision>, IGrainWithIntegerKey where TState : SpatialGrainState<TPrecision>, new ()where TPrecision : struct Type Parameters Name Description TState TPrecision Remarks THIS is remarks overridden in MARKDWON file Methods | Improve this Doc View Source GetPosition() Declaration public Vector<TPrecision> GetPosition() Returns Type Description Vector <TPrecision> Implements ISpatialGrain<T> IGrainWithIntegerKey"
+  },
+  "api/CueX.Core.html": {
+    "href": "api/CueX.Core.html",
+    "title": "Namespace CueX.Core | CueX Documentation",
+    "keywords": "Namespace CueX.Core Classes Setup SpatialGrain<TState, TPrecision> SpatialGrainState<TPrecision>"
+  },
+  "api/CueX.GridSPS.Class1.html": {
+    "href": "api/CueX.GridSPS.Class1.html",
+    "title": "Class Class1 | CueX Documentation",
+    "keywords": "Class Class1 Inheritance System.Object Class1 Namespace : CueX.GridSPS Assembly : CueX.GridSPS.dll Syntax public class Class1 : object"
   },
   "index.html": {
     "href": "index.html",
@@ -74,14 +59,29 @@
     "title": "Namespace CueX.API | CueX Documentation",
     "keywords": "Namespace CueX.API Interfaces ISpatialGrain<T>"
   },
-  "api/CueX.Core.SpatialGrain-2.html": {
-    "href": "api/CueX.Core.SpatialGrain-2.html",
-    "title": "Class SpatialGrain<TState, TPrecision> | CueX Documentation",
-    "keywords": "Class SpatialGrain<TState, TPrecision> This is a class talking about CAT . NOTE This is a CAT class Refer to @CueX.Core.ISpatialGrain to see other animals. Inheritance System.Object SpatialGrain<TState, TPrecision> Implements ISpatialGrain <TPrecision> IGrainWithIntegerKey Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public class SpatialGrain<TState, TPrecision> : Grain<TState>, ISpatialGrain<TPrecision>, IGrainWithIntegerKey where TState : SpatialGrainState<TPrecision>, new ()where TPrecision : struct Type Parameters Name Description TState TPrecision Remarks THIS is remarks overridden in MARKDWON file Methods | Improve this Doc View Source GetPosition() Declaration public Vector<TPrecision> GetPosition() Returns Type Description Vector <TPrecision> Implements ISpatialGrain<T> IGrainWithIntegerKey"
+  "api/CueX.Core.Setup.html": {
+    "href": "api/CueX.Core.Setup.html",
+    "title": "Class Setup | CueX Documentation",
+    "keywords": "Class Setup Inheritance System.Object Setup Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public static class Setup : object Methods | Improve this Doc View Source InitializeCommon() Declaration public static void InitializeCommon()"
   },
-  "api/CueX.Core.html": {
-    "href": "api/CueX.Core.html",
-    "title": "Namespace CueX.Core | CueX Documentation",
-    "keywords": "Namespace CueX.Core Classes Setup SpatialGrain<TState, TPrecision> SpatialGrainState<TPrecision>"
+  "api/CueX.Core.SpatialGrainState-1.html": {
+    "href": "api/CueX.Core.SpatialGrainState-1.html",
+    "title": "Class SpatialGrainState<TPrecision> | CueX Documentation",
+    "keywords": "Class SpatialGrainState<TPrecision> Inheritance System.Object SpatialGrainState<TPrecision> Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public class SpatialGrainState<TPrecision> : object where TPrecision : struct Type Parameters Name Description TPrecision Fields | Improve this Doc View Source Position Declaration public Vector<TPrecision> Position Field Value Type Description Vector <TPrecision>"
+  },
+  "api/CueX.Test.Helper.SiloCollection.html": {
+    "href": "api/CueX.Test.Helper.SiloCollection.html",
+    "title": "Class SiloCollection | CueX Documentation",
+    "keywords": "Class SiloCollection Inheritance System.Object SiloCollection Namespace : CueX.Test.Helper Assembly : CueX.Test.dll Syntax public class SiloCollection : ICollectionFixture<SiloFixture> Fields | Improve this Doc View Source Name Declaration public const string Name = null Field Value Type Description System.String"
+  },
+  "api/CueX.Test.Helper.html": {
+    "href": "api/CueX.Test.Helper.html",
+    "title": "Namespace CueX.Test.Helper | CueX Documentation",
+    "keywords": "Namespace CueX.Test.Helper Classes SiloCollection SiloFixture"
+  },
+  "api/CueX.Test.html": {
+    "href": "api/CueX.Test.html",
+    "title": "Namespace CueX.Test | CueX Documentation",
+    "keywords": "Namespace CueX.Test Classes UnitTest1"
   }
 }
