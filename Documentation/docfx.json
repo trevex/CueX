@@ -3,8 +3,8 @@
     {
       "src": [
         {
-          "files": [ "../*.sln", "../**/*.csproj" ],
-          "exclude": [ "../**/bin/**", "../**/obj/**" ],
+          "files": [ "**/*.csproj" ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
           "src": "../"
         }
       ],
