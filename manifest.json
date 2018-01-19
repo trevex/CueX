@@ -1,0 +1,310 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/projects/cuex/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/csharp_coding_standards.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/csharp_coding_standards.html",
+          "hash": "jcmnJAMCOI+iZNi97Za9hQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/docfx_getting_started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/docfx_getting_started.html",
+          "hash": "lLUzP9m4VAkeGF84X8D6gw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/engineering_guidelines.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/engineering_guidelines.html",
+          "hash": "yC/tIjqdq5BcuEQNbO7lpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/images/seed.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "articles/images/seed.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "qVXHK/CCTI6ZU4wdEwvp1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "RgHiojxeRrqt17VN9vjiSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.API.ISpatialGrain-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.API.ISpatialGrain-1.html",
+          "hash": "qpFaKLEYabGgqJc11j8c3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.API.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.API.html",
+          "hash": "rubWp68z7vy9LAH76lltLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Setup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Setup.html",
+          "hash": "m2fK2AAOARqjHCf00iDRdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.SpatialGrain-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.SpatialGrain-2.html",
+          "hash": "KP8UBXN7mmDXZrrkHkvmTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.SpatialGrainState-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.SpatialGrainState-1.html",
+          "hash": "4kyQvjaQp8FYu2ey4yEQgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.html",
+          "hash": "MrEqk+470PXfaCbK8ETcbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.GridSPS.Class1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.GridSPS.Class1.html",
+          "hash": "/jRp23u7L4xuk35C5k77cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.GridSPS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.GridSPS.html",
+          "hash": "UM+kFsmDaQWwHzcLpRpzZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Test.Helper.SiloCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Test.Helper.SiloCollection.html",
+          "hash": "Ez/5zwI9TZcaEfbhQzFVYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Test.Helper.SiloFixture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Test.Helper.SiloFixture.html",
+          "hash": "IUQJi+xDlFV/3U4dvPqKkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Test.Helper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Test.Helper.html",
+          "hash": "SXHbDjZKqqQK23oMaSvkyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Test.UnitTest1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Test.UnitTest1.html",
+          "hash": "EceOND10vQd9l0Ey/vR6Ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Test.html",
+          "hash": "lUW+FWEh5kmKmrBm8md0Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "JahjcSLzzaAyRi1kwX+1+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "EzMKNL9Plmfkcq7Umn5lmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
