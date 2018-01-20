@@ -7,31 +7,24 @@ references:
   commentId: N:CueX.API
   fullName: CueX.API
   nameWithType: CueX.API
-- uid: CueX.API.ISpatialGrain`1
-  name: ISpatialGrain<T>
-  href: api/CueX.API.ISpatialGrain-1.html
-  commentId: T:CueX.API.ISpatialGrain`1
-  name.vb: ISpatialGrain(Of T)
-  fullName: CueX.API.ISpatialGrain<T>
-  fullName.vb: CueX.API.ISpatialGrain(Of T)
-  nameWithType: ISpatialGrain<T>
-  nameWithType.vb: ISpatialGrain(Of T)
-- uid: CueX.API.ISpatialGrain`1.GetPosition
+- uid: CueX.API.ISpatialGrain
+  name: ISpatialGrain
+  href: api/CueX.API.ISpatialGrain.html
+  commentId: T:CueX.API.ISpatialGrain
+  fullName: CueX.API.ISpatialGrain
+  nameWithType: ISpatialGrain
+- uid: CueX.API.ISpatialGrain.GetPosition
   name: GetPosition()
-  href: api/CueX.API.ISpatialGrain-1.html#CueX_API_ISpatialGrain_1_GetPosition
-  commentId: M:CueX.API.ISpatialGrain`1.GetPosition
-  fullName: CueX.API.ISpatialGrain<T>.GetPosition()
-  fullName.vb: CueX.API.ISpatialGrain(Of T).GetPosition()
-  nameWithType: ISpatialGrain<T>.GetPosition()
-  nameWithType.vb: ISpatialGrain(Of T).GetPosition()
-- uid: CueX.API.ISpatialGrain`1.GetPosition*
+  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_GetPosition
+  commentId: M:CueX.API.ISpatialGrain.GetPosition
+  fullName: CueX.API.ISpatialGrain.GetPosition()
+  nameWithType: ISpatialGrain.GetPosition()
+- uid: CueX.API.ISpatialGrain.GetPosition*
   name: GetPosition
-  href: api/CueX.API.ISpatialGrain-1.html#CueX_API_ISpatialGrain_1_GetPosition_
-  commentId: Overload:CueX.API.ISpatialGrain`1.GetPosition
-  fullName: CueX.API.ISpatialGrain<T>.GetPosition
-  fullName.vb: CueX.API.ISpatialGrain(Of T).GetPosition
-  nameWithType: ISpatialGrain<T>.GetPosition
-  nameWithType.vb: ISpatialGrain(Of T).GetPosition
+  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_GetPosition_
+  commentId: Overload:CueX.API.ISpatialGrain.GetPosition
+  fullName: CueX.API.ISpatialGrain.GetPosition
+  nameWithType: ISpatialGrain.GetPosition
 - uid: CueX.Core
   name: CueX.Core
   href: api/CueX.Core.html
@@ -56,48 +49,43 @@ references:
   commentId: Overload:CueX.Core.Setup.InitializeCommon
   fullName: CueX.Core.Setup.InitializeCommon
   nameWithType: Setup.InitializeCommon
-- uid: CueX.Core.SpatialGrain`2
-  name: SpatialGrain<TState, TPrecision>
-  href: api/CueX.Core.SpatialGrain-2.html
-  commentId: T:CueX.Core.SpatialGrain`2
-  name.vb: SpatialGrain(Of TState, TPrecision)
-  fullName: CueX.Core.SpatialGrain<TState, TPrecision>
-  fullName.vb: CueX.Core.SpatialGrain(Of TState, TPrecision)
-  nameWithType: SpatialGrain<TState, TPrecision>
-  nameWithType.vb: SpatialGrain(Of TState, TPrecision)
-- uid: CueX.Core.SpatialGrain`2.GetPosition
+- uid: CueX.Core.SpatialGrain`1
+  name: SpatialGrain<TState>
+  href: api/CueX.Core.SpatialGrain-1.html
+  commentId: T:CueX.Core.SpatialGrain`1
+  name.vb: SpatialGrain(Of TState)
+  fullName: CueX.Core.SpatialGrain<TState>
+  fullName.vb: CueX.Core.SpatialGrain(Of TState)
+  nameWithType: SpatialGrain<TState>
+  nameWithType.vb: SpatialGrain(Of TState)
+- uid: CueX.Core.SpatialGrain`1.GetPosition
   name: GetPosition()
-  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_GetPosition
-  commentId: M:CueX.Core.SpatialGrain`2.GetPosition
-  fullName: CueX.Core.SpatialGrain<TState, TPrecision>.GetPosition()
-  fullName.vb: CueX.Core.SpatialGrain(Of TState, TPrecision).GetPosition()
-  nameWithType: SpatialGrain<TState, TPrecision>.GetPosition()
-  nameWithType.vb: SpatialGrain(Of TState, TPrecision).GetPosition()
-- uid: CueX.Core.SpatialGrain`2.GetPosition*
+  href: api/CueX.Core.SpatialGrain-1.html#CueX_Core_SpatialGrain_1_GetPosition
+  commentId: M:CueX.Core.SpatialGrain`1.GetPosition
+  fullName: CueX.Core.SpatialGrain<TState>.GetPosition()
+  fullName.vb: CueX.Core.SpatialGrain(Of TState).GetPosition()
+  nameWithType: SpatialGrain<TState>.GetPosition()
+  nameWithType.vb: SpatialGrain(Of TState).GetPosition()
+- uid: CueX.Core.SpatialGrain`1.GetPosition*
   name: GetPosition
-  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_GetPosition_
-  commentId: Overload:CueX.Core.SpatialGrain`2.GetPosition
-  fullName: CueX.Core.SpatialGrain<TState, TPrecision>.GetPosition
-  fullName.vb: CueX.Core.SpatialGrain(Of TState, TPrecision).GetPosition
-  nameWithType: SpatialGrain<TState, TPrecision>.GetPosition
-  nameWithType.vb: SpatialGrain(Of TState, TPrecision).GetPosition
-- uid: CueX.Core.SpatialGrainState`1
-  name: SpatialGrainState<TPrecision>
-  href: api/CueX.Core.SpatialGrainState-1.html
-  commentId: T:CueX.Core.SpatialGrainState`1
-  name.vb: SpatialGrainState(Of TPrecision)
-  fullName: CueX.Core.SpatialGrainState<TPrecision>
-  fullName.vb: CueX.Core.SpatialGrainState(Of TPrecision)
-  nameWithType: SpatialGrainState<TPrecision>
-  nameWithType.vb: SpatialGrainState(Of TPrecision)
-- uid: CueX.Core.SpatialGrainState`1.Position
+  href: api/CueX.Core.SpatialGrain-1.html#CueX_Core_SpatialGrain_1_GetPosition_
+  commentId: Overload:CueX.Core.SpatialGrain`1.GetPosition
+  fullName: CueX.Core.SpatialGrain<TState>.GetPosition
+  fullName.vb: CueX.Core.SpatialGrain(Of TState).GetPosition
+  nameWithType: SpatialGrain<TState>.GetPosition
+  nameWithType.vb: SpatialGrain(Of TState).GetPosition
+- uid: CueX.Core.SpatialGrainState
+  name: SpatialGrainState
+  href: api/CueX.Core.SpatialGrainState.html
+  commentId: T:CueX.Core.SpatialGrainState
+  fullName: CueX.Core.SpatialGrainState
+  nameWithType: SpatialGrainState
+- uid: CueX.Core.SpatialGrainState.Position
   name: Position
-  href: api/CueX.Core.SpatialGrainState-1.html#CueX_Core_SpatialGrainState_1_Position
-  commentId: F:CueX.Core.SpatialGrainState`1.Position
-  fullName: CueX.Core.SpatialGrainState<TPrecision>.Position
-  fullName.vb: CueX.Core.SpatialGrainState(Of TPrecision).Position
-  nameWithType: SpatialGrainState<TPrecision>.Position
-  nameWithType.vb: SpatialGrainState(Of TPrecision).Position
+  href: api/CueX.Core.SpatialGrainState.html#CueX_Core_SpatialGrainState_Position
+  commentId: F:CueX.Core.SpatialGrainState.Position
+  fullName: CueX.Core.SpatialGrainState.Position
+  nameWithType: SpatialGrainState.Position
 - uid: CueX.GridSPS
   name: CueX.GridSPS
   href: api/CueX.GridSPS.html
@@ -110,12 +98,186 @@ references:
   commentId: T:CueX.GridSPS.Class1
   fullName: CueX.GridSPS.Class1
   nameWithType: Class1
+- uid: CueX.MathExt
+  name: CueX.MathExt
+  href: api/CueX.MathExt.html
+  commentId: N:CueX.MathExt
+  fullName: CueX.MathExt
+  nameWithType: CueX.MathExt
+- uid: CueX.MathExt.Helper
+  name: Helper
+  href: api/CueX.MathExt.Helper.html
+  commentId: T:CueX.MathExt.Helper
+  fullName: CueX.MathExt.Helper
+  nameWithType: Helper
+- uid: CueX.MathExt.Helper.NearlyEqual(System.Double,System.Double,System.Double)
+  name: NearlyEqual(Double, Double, Double)
+  href: api/CueX.MathExt.Helper.html#CueX_MathExt_Helper_NearlyEqual_System_Double_System_Double_System_Double_
+  commentId: M:CueX.MathExt.Helper.NearlyEqual(System.Double,System.Double,System.Double)
+  fullName: CueX.MathExt.Helper.NearlyEqual(System.Double, System.Double, System.Double)
+  nameWithType: Helper.NearlyEqual(Double, Double, Double)
+- uid: CueX.MathExt.Helper.NearlyEqual*
+  name: NearlyEqual
+  href: api/CueX.MathExt.Helper.html#CueX_MathExt_Helper_NearlyEqual_
+  commentId: Overload:CueX.MathExt.Helper.NearlyEqual
+  fullName: CueX.MathExt.Helper.NearlyEqual
+  nameWithType: Helper.NearlyEqual
+- uid: CueX.MathExt.LinearAlgebra
+  name: CueX.MathExt.LinearAlgebra
+  href: api/CueX.MathExt.LinearAlgebra.html
+  commentId: N:CueX.MathExt.LinearAlgebra
+  fullName: CueX.MathExt.LinearAlgebra
+  nameWithType: CueX.MathExt.LinearAlgebra
+- uid: CueX.MathExt.LinearAlgebra.Vector3d
+  name: Vector3d
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html
+  commentId: T:CueX.MathExt.LinearAlgebra.Vector3d
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d
+  nameWithType: Vector3d
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.#ctor
+  name: Vector3d()
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d__ctor
+  commentId: M:CueX.MathExt.LinearAlgebra.Vector3d.#ctor
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.Vector3d()
+  nameWithType: Vector3d.Vector3d()
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.#ctor(System.Double,System.Double,System.Double)
+  name: Vector3d(Double, Double, Double)
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d__ctor_System_Double_System_Double_System_Double_
+  commentId: M:CueX.MathExt.LinearAlgebra.Vector3d.#ctor(System.Double,System.Double,System.Double)
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.Vector3d(System.Double, System.Double, System.Double)
+  nameWithType: Vector3d.Vector3d(Double, Double, Double)
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.#ctor*
+  name: Vector3d
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d__ctor_
+  commentId: Overload:CueX.MathExt.LinearAlgebra.Vector3d.#ctor
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.Vector3d
+  nameWithType: Vector3d.Vector3d
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.Data
+  name: Data
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d_Data
+  commentId: F:CueX.MathExt.LinearAlgebra.Vector3d.Data
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.Data
+  nameWithType: Vector3d.Data
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d_Equals_System_Object_
+  commentId: M:CueX.MathExt.LinearAlgebra.Vector3d.Equals(System.Object)
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.Equals(System.Object)
+  nameWithType: Vector3d.Equals(Object)
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.Equals*
+  name: Equals
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d_Equals_
+  commentId: Overload:CueX.MathExt.LinearAlgebra.Vector3d.Equals
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.Equals
+  nameWithType: Vector3d.Equals
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.One
+  name: One()
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d_One
+  commentId: M:CueX.MathExt.LinearAlgebra.Vector3d.One
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.One()
+  nameWithType: Vector3d.One()
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.One*
+  name: One
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d_One_
+  commentId: Overload:CueX.MathExt.LinearAlgebra.Vector3d.One
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.One
+  nameWithType: Vector3d.One
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.Zero
+  name: Zero()
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d_Zero
+  commentId: M:CueX.MathExt.LinearAlgebra.Vector3d.Zero
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.Zero()
+  nameWithType: Vector3d.Zero()
+- uid: CueX.MathExt.LinearAlgebra.Vector3d.Zero*
+  name: Zero
+  href: api/CueX.MathExt.LinearAlgebra.Vector3d.html#CueX_MathExt_LinearAlgebra_Vector3d_Zero_
+  commentId: Overload:CueX.MathExt.LinearAlgebra.Vector3d.Zero
+  fullName: CueX.MathExt.LinearAlgebra.Vector3d.Zero
+  nameWithType: Vector3d.Zero
 - uid: CueX.Test
   name: CueX.Test
   href: api/CueX.Test.html
   commentId: N:CueX.Test
   fullName: CueX.Test
   nameWithType: CueX.Test
+- uid: CueX.Test.BasicSpatialGrainTest
+  name: BasicSpatialGrainTest
+  href: api/CueX.Test.BasicSpatialGrainTest.html
+  commentId: T:CueX.Test.BasicSpatialGrainTest
+  fullName: CueX.Test.BasicSpatialGrainTest
+  nameWithType: BasicSpatialGrainTest
+- uid: CueX.Test.BasicSpatialGrainTest.#ctor(CueX.Test.Helper.SiloFixture)
+  name: BasicSpatialGrainTest(SiloFixture)
+  href: api/CueX.Test.BasicSpatialGrainTest.html#CueX_Test_BasicSpatialGrainTest__ctor_CueX_Test_Helper_SiloFixture_
+  commentId: M:CueX.Test.BasicSpatialGrainTest.#ctor(CueX.Test.Helper.SiloFixture)
+  fullName: CueX.Test.BasicSpatialGrainTest.BasicSpatialGrainTest(CueX.Test.Helper.SiloFixture)
+  nameWithType: BasicSpatialGrainTest.BasicSpatialGrainTest(SiloFixture)
+- uid: CueX.Test.BasicSpatialGrainTest.#ctor*
+  name: BasicSpatialGrainTest
+  href: api/CueX.Test.BasicSpatialGrainTest.html#CueX_Test_BasicSpatialGrainTest__ctor_
+  commentId: Overload:CueX.Test.BasicSpatialGrainTest.#ctor
+  fullName: CueX.Test.BasicSpatialGrainTest.BasicSpatialGrainTest
+  nameWithType: BasicSpatialGrainTest.BasicSpatialGrainTest
+- uid: CueX.Test.BasicSpatialGrainTest.TestPositionAssignment
+  name: TestPositionAssignment()
+  href: api/CueX.Test.BasicSpatialGrainTest.html#CueX_Test_BasicSpatialGrainTest_TestPositionAssignment
+  commentId: M:CueX.Test.BasicSpatialGrainTest.TestPositionAssignment
+  fullName: CueX.Test.BasicSpatialGrainTest.TestPositionAssignment()
+  nameWithType: BasicSpatialGrainTest.TestPositionAssignment()
+- uid: CueX.Test.BasicSpatialGrainTest.TestPositionAssignment*
+  name: TestPositionAssignment
+  href: api/CueX.Test.BasicSpatialGrainTest.html#CueX_Test_BasicSpatialGrainTest_TestPositionAssignment_
+  commentId: Overload:CueX.Test.BasicSpatialGrainTest.TestPositionAssignment
+  fullName: CueX.Test.BasicSpatialGrainTest.TestPositionAssignment
+  nameWithType: BasicSpatialGrainTest.TestPositionAssignment
+- uid: CueX.Test.Grains
+  name: CueX.Test.Grains
+  href: api/CueX.Test.Grains.html
+  commentId: N:CueX.Test.Grains
+  fullName: CueX.Test.Grains
+  nameWithType: CueX.Test.Grains
+- uid: CueX.Test.Grains.BasicSpatialGrain
+  name: BasicSpatialGrain
+  href: api/CueX.Test.Grains.BasicSpatialGrain.html
+  commentId: T:CueX.Test.Grains.BasicSpatialGrain
+  fullName: CueX.Test.Grains.BasicSpatialGrain
+  nameWithType: BasicSpatialGrain
+- uid: CueX.Test.Grains.BasicSpatialGrain.SetPosition(CueX.MathExt.LinearAlgebra.Vector3d)
+  name: SetPosition(Vector3d)
+  href: api/CueX.Test.Grains.BasicSpatialGrain.html#CueX_Test_Grains_BasicSpatialGrain_SetPosition_CueX_MathExt_LinearAlgebra_Vector3d_
+  commentId: M:CueX.Test.Grains.BasicSpatialGrain.SetPosition(CueX.MathExt.LinearAlgebra.Vector3d)
+  fullName: CueX.Test.Grains.BasicSpatialGrain.SetPosition(CueX.MathExt.LinearAlgebra.Vector3d)
+  nameWithType: BasicSpatialGrain.SetPosition(Vector3d)
+- uid: CueX.Test.Grains.BasicSpatialGrain.SetPosition*
+  name: SetPosition
+  href: api/CueX.Test.Grains.BasicSpatialGrain.html#CueX_Test_Grains_BasicSpatialGrain_SetPosition_
+  commentId: Overload:CueX.Test.Grains.BasicSpatialGrain.SetPosition
+  fullName: CueX.Test.Grains.BasicSpatialGrain.SetPosition
+  nameWithType: BasicSpatialGrain.SetPosition
+- uid: CueX.Test.Grains.BasicSpatialGrainState
+  name: BasicSpatialGrainState
+  href: api/CueX.Test.Grains.BasicSpatialGrainState.html
+  commentId: T:CueX.Test.Grains.BasicSpatialGrainState
+  fullName: CueX.Test.Grains.BasicSpatialGrainState
+  nameWithType: BasicSpatialGrainState
+- uid: CueX.Test.Grains.IBasicSpatialGrain
+  name: IBasicSpatialGrain
+  href: api/CueX.Test.Grains.IBasicSpatialGrain.html
+  commentId: T:CueX.Test.Grains.IBasicSpatialGrain
+  fullName: CueX.Test.Grains.IBasicSpatialGrain
+  nameWithType: IBasicSpatialGrain
+- uid: CueX.Test.Grains.IBasicSpatialGrain.SetPosition(CueX.MathExt.LinearAlgebra.Vector3d)
+  name: SetPosition(Vector3d)
+  href: api/CueX.Test.Grains.IBasicSpatialGrain.html#CueX_Test_Grains_IBasicSpatialGrain_SetPosition_CueX_MathExt_LinearAlgebra_Vector3d_
+  commentId: M:CueX.Test.Grains.IBasicSpatialGrain.SetPosition(CueX.MathExt.LinearAlgebra.Vector3d)
+  fullName: CueX.Test.Grains.IBasicSpatialGrain.SetPosition(CueX.MathExt.LinearAlgebra.Vector3d)
+  nameWithType: IBasicSpatialGrain.SetPosition(Vector3d)
+- uid: CueX.Test.Grains.IBasicSpatialGrain.SetPosition*
+  name: SetPosition
+  href: api/CueX.Test.Grains.IBasicSpatialGrain.html#CueX_Test_Grains_IBasicSpatialGrain_SetPosition_
+  commentId: Overload:CueX.Test.Grains.IBasicSpatialGrain.SetPosition
+  fullName: CueX.Test.Grains.IBasicSpatialGrain.SetPosition
+  nameWithType: IBasicSpatialGrain.SetPosition
 - uid: CueX.Test.Helper
   name: CueX.Test.Helper
   href: api/CueX.Test.Helper.html
@@ -176,21 +338,15 @@ references:
   commentId: Overload:CueX.Test.Helper.SiloFixture.Silo
   fullName: CueX.Test.Helper.SiloFixture.Silo
   nameWithType: SiloFixture.Silo
-- uid: CueX.Test.UnitTest1
-  name: UnitTest1
-  href: api/CueX.Test.UnitTest1.html
-  commentId: T:CueX.Test.UnitTest1
-  fullName: CueX.Test.UnitTest1
-  nameWithType: UnitTest1
-- uid: CueX.Test.UnitTest1.Test1
-  name: Test1()
-  href: api/CueX.Test.UnitTest1.html#CueX_Test_UnitTest1_Test1
-  commentId: M:CueX.Test.UnitTest1.Test1
-  fullName: CueX.Test.UnitTest1.Test1()
-  nameWithType: UnitTest1.Test1()
-- uid: CueX.Test.UnitTest1.Test1*
-  name: Test1
-  href: api/CueX.Test.UnitTest1.html#CueX_Test_UnitTest1_Test1_
-  commentId: Overload:CueX.Test.UnitTest1.Test1
-  fullName: CueX.Test.UnitTest1.Test1
-  nameWithType: UnitTest1.Test1
+- uid: SimpleExample.Grains
+  name: SimpleExample.Grains
+  href: api/SimpleExample.Grains.html
+  commentId: N:SimpleExample.Grains
+  fullName: SimpleExample.Grains
+  nameWithType: SimpleExample.Grains
+- uid: SimpleExample.Grains.Class1
+  name: Class1
+  href: api/SimpleExample.Grains.Class1.html
+  commentId: T:SimpleExample.Grains.Class1
+  fullName: SimpleExample.Grains.Class1
+  nameWithType: Class1
