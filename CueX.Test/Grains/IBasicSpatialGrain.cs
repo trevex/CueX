@@ -1,11 +1,14 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
+using System.Threading.Tasks;
+using CueX.API;
+using CueX.MathExt;
 using CueX.MathExt.LinearAlgebra;
 
-namespace CueX.Core
+namespace CueX.Test.Grains
 {
-    public abstract class SpatialGrainState
+    public interface IBasicSpatialGrain : ISpatialGrain
     {
-        public Vector3d Position;
+        Task SetPosition(Vector3d newPosition);
     }
 }

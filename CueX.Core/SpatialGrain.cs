@@ -1,19 +1,19 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
-using System.Numerics;
+using System.Threading.Tasks;
 using CueX.API;
+using CueX.MathExt.LinearAlgebra;
 using Orleans;
 
 namespace CueX.Core
 {
-    public class SpatialGrain<TState, TPrecision> : Grain<TState>, ISpatialGrain<TPrecision>
-        where TPrecision : struct
-        where TState : SpatialGrainState<TPrecision>, new()
+    public abstract class SpatialGrain<TState> : Grain<TState>, ISpatialGrain
+        where TState : SpatialGrainState, new()
     {
 
-        public Vector<TPrecision> GetPosition()
+        public Task<Vector3d> GetPosition()
         {
-            return State.Position;
+            return Task.FromResult(State.Position);
         }
     }
 }
