@@ -12,7 +12,8 @@
     - choco install docfx -y
   build_script:
     - dotnet restore
-    - dotnet pack -c %CONFIGURATION% -o .\artifacts
+    - dotnet pack -c %CONFIGURATION% -o .\artifacts /p:Version=%APPVEYOR_BUILD_VERSION%
+    - rm *Example*.nupkg
   test_script:
     - dotnet test -c %CONFIGURATION% CueX.Test
   on_success: # Update documentation
@@ -32,7 +33,7 @@
     - git push origin gh-pages
     - cd ..
   artifacts:  
-  - path: .\artifacts\**\*.nupkg
+  - path: .\artifacts\*.nupkg
     name: NuGet
   deploy:
   - provider: NuGet
@@ -41,4 +42,3 @@
       secure: X4OOQZJAr3ok+q4DAIgQxiCBm6c/mtDwsnukFccXvOneCw8EmkyUyt2eSkcgxATm
     on:
       branch: master
-      appveyor_repo_tag: true
