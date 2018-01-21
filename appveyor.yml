@@ -2,15 +2,19 @@
   branches:
     only:
       - master
+  version: '0.0.{build}'
   configuration: Release
   image: Visual Studio 2017
+  clone_depth: 1  
+  nuget:  
+    disable_publish_on_pr: true
   init:
     - choco install docfx -y
   build_script:
     - dotnet restore
-    - dotnet pack -c %CONFIGURATION%
+    - dotnet pack -c %CONFIGURATION% -o .\artifacts
   test_script:
-    - dotnet test CueX.Test
+    - dotnet test -c %CONFIGURATION% CueX.Test
   on_success: # Update documentation
     - docfx Documentation/docfx.json
     - git clone https://github.com/trevex/CueX.git gh-pages
@@ -26,3 +30,15 @@
     - git add .
     - git commit -m "Documentation update by appveyor"
     - git push origin gh-pages
+    - cd ..
+  artifacts:  
+  - path: .\artifacts\**\*.nupkg
+    name: NuGet
+  deploy:
+  - provider: NuGet
+    name: production
+    api_key:
+      secure: X4OOQZJAr3ok+q4DAIgQxiCBm6c/mtDwsnukFccXvOneCw8EmkyUyt2eSkcgxATm
+    on:
+      branch: master
+      appveyor_repo_tag: true
