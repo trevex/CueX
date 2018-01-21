@@ -8,6 +8,9 @@
   clone_depth: 1  
   nuget:  
     disable_publish_on_pr: true
+  environment:
+    access_token:
+      secure: AeFPdSByU86DLgi7ETVyWZwPuD/WWnSAviHxD3Pxdnpk/fLLmlgaVm1VgJ0r4WGU
   init:
     - choco install docfx -y
   build_script:
