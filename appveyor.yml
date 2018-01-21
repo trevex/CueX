@@ -13,7 +13,7 @@
   build_script:
     - dotnet restore
     - dotnet pack -c %CONFIGURATION% -o .\artifacts /p:Version=%APPVEYOR_BUILD_VERSION%
-    - rm .\Samples\**\artifacts\*.nupkg
+    - rm ./Samples/**/artifacts/*.nupkg
   test_script:
     - dotnet test -c %CONFIGURATION% CueX.Test
   on_success: # Update documentation
