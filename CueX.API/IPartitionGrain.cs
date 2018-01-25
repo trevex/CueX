@@ -1,14 +1,13 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
-using System.Threading.Tasks;
-using CueX.API;
-using CueX.Numerics;
-using Orleans;
 
-namespace CueX.Test.Grains
+using System.Threading.Tasks;
+
+namespace CueX.API
 {
-    public interface IBasicSpatialGrain : ISpatialGrain, IGrainWithIntegerKey
+    public interface IPartitionGrain
     {
-        Task SetPosition(Vector3d newPosition);
+        Task Add<T>(T spatialGrain) where T : ISpatialGrain;
+        Task Remove<T>(T spatialGrain) where T : ISpatialGrain;
     }
 }

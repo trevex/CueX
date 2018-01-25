@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CueX.MathExt.LinearAlgebra
+namespace CueX.Numerics
 {
     public class Vector3d
     {

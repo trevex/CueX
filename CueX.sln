@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleExample.Client", "Sam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleExample.Grains", "Samples\SimpleExample.Grains\SimpleExample.Grains.csproj", "{D94638C4-324E-4C1A-8843-EF6F8C799ED2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CueX.MathExt", "CueX.MathExt\CueX.MathExt.csproj", "{DBC88B50-2E1D-490F-92DE-BDA4C90AE8F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CueX.Numerics", "CueX.Numerics\CueX.Numerics.csproj", "{22F73926-01B4-482F-968B-2962AE84E2F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,10 +46,10 @@ Global
 		{D94638C4-324E-4C1A-8843-EF6F8C799ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D94638C4-324E-4C1A-8843-EF6F8C799ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D94638C4-324E-4C1A-8843-EF6F8C799ED2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBC88B50-2E1D-490F-92DE-BDA4C90AE8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBC88B50-2E1D-490F-92DE-BDA4C90AE8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBC88B50-2E1D-490F-92DE-BDA4C90AE8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBC88B50-2E1D-490F-92DE-BDA4C90AE8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F73926-01B4-482F-968B-2962AE84E2F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F73926-01B4-482F-968B-2962AE84E2F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F73926-01B4-482F-968B-2962AE84E2F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F73926-01B4-482F-968B-2962AE84E2F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AEDE272C-74AB-432D-BE72-D8C5D0791D18} = {E4175597-5BBB-43A9-8CE8-5DFEA4A86056}

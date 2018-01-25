@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CueX.MathExt
+namespace CueX.Numerics
 {
     public static class Helper
     {

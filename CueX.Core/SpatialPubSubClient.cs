@@ -3,10 +3,10 @@
 using System.Numerics;
 
 namespace CueX.Core
-{ // TODO: refactor into SPS base class?
-    public static class Setup
+{
+    public abstract class SpatialPubSubClient
     {
-        public static void InitializeCommon()
+        public void InitializeCommon()
         {
             if (!Vector.IsHardwareAccelerated)
             {

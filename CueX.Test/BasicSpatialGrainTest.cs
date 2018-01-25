@@ -2,9 +2,7 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System;
-using System.Numerics;
-using CueX.API;
-using CueX.MathExt.LinearAlgebra;
+using CueX.Numerics;
 using CueX.Test.Grains;
 using CueX.Test.Helper;
 using Orleans.TestKit;
