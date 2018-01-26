@@ -1,23 +1,13 @@
 {
-  "api/CueX.Test.Helper.SiloCollection.html": {
-    "href": "api/CueX.Test.Helper.SiloCollection.html",
-    "title": "Class SiloCollection | CueX Documentation",
-    "keywords": "Class SiloCollection Inheritance System.Object SiloCollection Implements Xunit.ICollectionFixture < SiloFixture > Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Test.Helper Assembly : CueX.Test.dll Syntax [CollectionDefinition(\"SiloCollection\")] public class SiloCollection : ICollectionFixture<SiloFixture> Fields | Improve this Doc View Source Name Declaration public const string Name = \"SiloCollection\" Field Value Type Description System.String Implements Xunit.ICollectionFixture<TFixture>"
+  "api/SimpleExample.Grains.SimpleGrainState.html": {
+    "href": "api/SimpleExample.Grains.SimpleGrainState.html",
+    "title": "Class SimpleGrainState | CueX Documentation",
+    "keywords": "Class SimpleGrainState Inheritance System.Object SpatialGrainState SimpleGrainState Inherited Members SpatialGrainState.Position SpatialGrainState.Parent System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : SimpleExample.Grains Assembly : SimpleExample.Grains.dll Syntax public class SimpleGrainState : SpatialGrainState"
   },
-  "api/CueX.Test.html": {
-    "href": "api/CueX.Test.html",
-    "title": "Namespace CueX.Test | CueX Documentation",
-    "keywords": "Namespace CueX.Test Classes BasicSpatialGrainTest"
-  },
-  "api/SimpleExample.Grains.Class1.html": {
-    "href": "api/SimpleExample.Grains.Class1.html",
-    "title": "Class Class1 | CueX Documentation",
-    "keywords": "Class Class1 Inheritance System.Object Class1 Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : SimpleExample.Grains Assembly : SimpleExample.Grains.dll Syntax public class Class1"
-  },
-  "api/CueX.API.IPartitionGrain.html": {
-    "href": "api/CueX.API.IPartitionGrain.html",
-    "title": "Interface IPartitionGrain | CueX Documentation",
-    "keywords": "Interface IPartitionGrain Namespace : CueX.API Assembly : CueX.API.dll Syntax public interface IPartitionGrain Methods | Improve this Doc View Source Add<T>(T) Declaration Task Add<T>(T spatialGrain)where T : ISpatialGrain Parameters Type Name Description T spatialGrain Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T | Improve this Doc View Source Remove<T>(T) Declaration Task Remove<T>(T spatialGrain)where T : ISpatialGrain Parameters Type Name Description T spatialGrain Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T"
+  "api/CueX.API.ISpatialGrain.html": {
+    "href": "api/CueX.API.ISpatialGrain.html",
+    "title": "Interface ISpatialGrain | CueX Documentation",
+    "keywords": "Interface ISpatialGrain Interace that needs to be fulfilled by any spatial objects, that should be inserted into the PubSub-System. Namespace : CueX.API Assembly : CueX.API.dll Syntax public interface ISpatialGrain Methods | Improve this Doc View Source GetPosition() Declaration Task<Vector3d> GetPosition() Returns Type Description System.Threading.Tasks.Task < Vector3d > | Improve this Doc View Source SetParent<T>(T) Declaration Task SetParent<T>(T parent)where T : IPartitionGrain Parameters Type Name Description T parent Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T"
   },
   "api/CueX.API.html": {
     "href": "api/CueX.API.html",
@@ -27,22 +17,17 @@
   "api/CueX.Core.SpatialGrainState.html": {
     "href": "api/CueX.Core.SpatialGrainState.html",
     "title": "Class SpatialGrainState | CueX Documentation",
-    "keywords": "Class SpatialGrainState Inheritance System.Object SpatialGrainState BasicSpatialGrainState Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public abstract class SpatialGrainState Fields | Improve this Doc View Source Parent Declaration public IPartitionGrain Parent Field Value Type Description IPartitionGrain | Improve this Doc View Source Position Declaration public Vector3d Position Field Value Type Description Vector3d"
+    "keywords": "Class SpatialGrainState Inheritance System.Object SpatialGrainState BasicSpatialGrainState SimpleGrainState Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public abstract class SpatialGrainState Fields | Improve this Doc View Source Parent Declaration public IPartitionGrain Parent Field Value Type Description IPartitionGrain | Improve this Doc View Source Position Declaration public Vector3d Position Field Value Type Description Vector3d"
   },
-  "api/CueX.Core.html": {
-    "href": "api/CueX.Core.html",
-    "title": "Namespace CueX.Core | CueX Documentation",
-    "keywords": "Namespace CueX.Core Classes SpatialGrain<TState> Abstract class providing the basic functionality necessary for sub-classes to be insertable into the PubSub-System. SpatialGrainState SpatialPubSubClient"
+  "api/CueX.GridSPS.GridPartitionGrain.html": {
+    "href": "api/CueX.GridSPS.GridPartitionGrain.html",
+    "title": "Class GridPartitionGrain | CueX Documentation",
+    "keywords": "Class GridPartitionGrain Inheritance System.Object GridPartitionGrain Implements IPartitionGrain Orleans.IGrainWithIntegerKey Orleans.IGrain Orleans.Runtime.IAddressable Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.GridSPS Assembly : CueX.GridSPS.dll Syntax public class GridPartitionGrain : IPartitionGrain, IGrainWithIntegerKey, IGrain, IAddressable Methods | Improve this Doc View Source Add<T>(T) Declaration public Task Add<T>(T spatialGrain)where T : ISpatialGrain Parameters Type Name Description T spatialGrain Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T | Improve this Doc View Source Remove<T>(T) Declaration public Task Remove<T>(T spatialGrain)where T : ISpatialGrain Parameters Type Name Description T spatialGrain Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T Implements IPartitionGrain Orleans.IGrainWithIntegerKey Orleans.IGrain Orleans.Runtime.IAddressable"
   },
-  "api/CueX.GridSPS.html": {
-    "href": "api/CueX.GridSPS.html",
-    "title": "Namespace CueX.GridSPS | CueX Documentation",
-    "keywords": "Namespace CueX.GridSPS Classes GridPartitionGrain"
-  },
-  "api/CueX.Numerics.Vector3d.html": {
-    "href": "api/CueX.Numerics.Vector3d.html",
-    "title": "Class Vector3d | CueX Documentation",
-    "keywords": "Class Vector3d Inheritance System.Object Vector3d Inherited Members System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Numerics Assembly : CueX.Numerics.dll Syntax public class Vector3d Constructors | Improve this Doc View Source Vector3d() Declaration public Vector3d() | Improve this Doc View Source Vector3d(Double, Double, Double) Declaration public Vector3d(double x, double y, double z) Parameters Type Name Description System.Double x System.Double y System.Double z Fields | Improve this Doc View Source Data Declaration public double[] Data Field Value Type Description System.Double [] Methods | Improve this Doc View Source Equals(Object) Declaration public override bool Equals(object obj) Parameters Type Name Description System.Object obj Returns Type Description System.Boolean Overrides System.Object.Equals(System.Object) | Improve this Doc View Source One() Declaration public static Vector3d One() Returns Type Description Vector3d | Improve this Doc View Source Zero() Declaration public static Vector3d Zero() Returns Type Description Vector3d"
+  "api/CueX.Numerics.Helper.html": {
+    "href": "api/CueX.Numerics.Helper.html",
+    "title": "Class Helper | CueX Documentation",
+    "keywords": "Class Helper Inheritance System.Object Helper Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Numerics Assembly : CueX.Numerics.dll Syntax public static class Helper Methods | Improve this Doc View Source NearlyEqual(Double, Double, Double) Declaration public static bool NearlyEqual(double a, double b, double epsilon) Parameters Type Name Description System.Double a System.Double b System.Double epsilon Returns Type Description System.Boolean"
   },
   "api/CueX.Numerics.html": {
     "href": "api/CueX.Numerics.html",
@@ -59,11 +44,6 @@
     "title": "Interface IBasicSpatialGrain | CueX Documentation",
     "keywords": "Interface IBasicSpatialGrain Inherited Members ISpatialGrain.GetPosition() ISpatialGrain.SetParent<T>(T) Namespace : CueX.Test.Grains Assembly : CueX.Test.dll Syntax public interface IBasicSpatialGrain : ISpatialGrain, IGrainWithIntegerKey, IGrain, IAddressable Methods | Improve this Doc View Source SetPosition(Vector3d) Declaration Task SetPosition(Vector3d newPosition) Parameters Type Name Description Vector3d newPosition Returns Type Description System.Threading.Tasks.Task"
   },
-  "api/CueX.Test.Grains.html": {
-    "href": "api/CueX.Test.Grains.html",
-    "title": "Namespace CueX.Test.Grains | CueX Documentation",
-    "keywords": "Namespace CueX.Test.Grains Classes BasicSpatialGrain BasicSpatialGrainState Interfaces IBasicSpatialGrain"
-  },
   "api/CueX.Test.Helper.SiloFixture.html": {
     "href": "api/CueX.Test.Helper.SiloFixture.html",
     "title": "Class SiloFixture | CueX Documentation",
@@ -73,6 +53,26 @@
     "href": "api/CueX.Test.Helper.html",
     "title": "Namespace CueX.Test.Helper | CueX Documentation",
     "keywords": "Namespace CueX.Test.Helper Classes SiloCollection SiloFixture"
+  },
+  "api/LocalhostSilo.html": {
+    "href": "api/LocalhostSilo.html",
+    "title": "Namespace LocalhostSilo | CueX Documentation",
+    "keywords": "Namespace LocalhostSilo Classes Program"
+  },
+  "api/SimpleExample.Grains.ISimpleGrain.html": {
+    "href": "api/SimpleExample.Grains.ISimpleGrain.html",
+    "title": "Interface ISimpleGrain | CueX Documentation",
+    "keywords": "Interface ISimpleGrain Inherited Members ISpatialGrain.GetPosition() ISpatialGrain.SetParent<T>(T) Namespace : SimpleExample.Grains Assembly : SimpleExample.Grains.dll Syntax public interface ISimpleGrain : ISpatialGrain, IGrainWithIntegerKey, IGrain, IAddressable Methods | Improve this Doc View Source SetPosition(Vector3d) Declaration Task SetPosition(Vector3d newPosition) Parameters Type Name Description Vector3d newPosition Returns Type Description System.Threading.Tasks.Task"
+  },
+  "api/SimpleExample.Grains.html": {
+    "href": "api/SimpleExample.Grains.html",
+    "title": "Namespace SimpleExample.Grains | CueX Documentation",
+    "keywords": "Namespace SimpleExample.Grains Classes SimpleGrain SimpleGrainState Interfaces ISimpleGrain"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "docfx-seed | CueX Documentation",
+    "keywords": "docfx-seed Description This is a sample docfx documentation project. It contains .NET source code and markdown files. docfx.json is the configuration file for running docfx . docfx will generate a static website as similar to http://docascode.github.io/docfx-seed . How to run Under Windows Download and unzip docfx.zip to run docfx.exe directly! Run docfx under current repo! Website will be generated under _site folder. Run any web hosting tool to host _site folder, e.g. docfx serve _site . Cross platform and use dnx As a prerequisite, you will need to install DNVM and DNX . Quick Start dnvm upgrade to get the latest dnvm. Add feed https://www.myget.org/F/aspnetrelease/api/v2/ to Nuget.config For Windows, the nuget config file is %AppData%\\NuGet\\NuGet.config . For Linux/OSX, the nuget config file is ~/.config/NuGet/NuGet.config . ``` dnu commands install docfx to install docfx as a command Run docfx under current repo! Website will be generated under _site folder. Run any web hosting tool to host _site folder, e.g. docfx serve _site . Further information about docfx docfx is a tool to generate documentation towards .NET source code and markdown files. Please refer to docfx to get start. The docfx website itself is generated by docfx !"
   },
   "articles/csharp_coding_standards.html": {
     "href": "articles/csharp_coding_standards.html",
@@ -89,35 +89,35 @@
     "title": "Engineering Guidelines | CueX Documentation",
     "keywords": "Engineering Guidelines Basics Copyright header and license notice All source code files require the following exact header according to its language (please do not make any changes to it). extension: .cs // Copyright (c) Microsoft. All rights reserved. // Licensed under the MIT license. See LICENSE file in the project root for full license information. extension: .js // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information. extension: .css /* Copyright (c) Microsoft Corporation. All Rights Reserved. Licensed under the MIT License. See License.txt in the project root for license information. */ extension: .tmpl , .tmpl.partial {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}} External dependencies This refers to dependencies on projects (i.e. NuGet packages) outside of the docfx repo, and especially outside of Microsoft. Adding new dependencies require additional approval. Current approved dependencies are: Newtonsoft.Json Jint HtmlAgilityPack Nustache YamlDotNet Code reviews and checkins To help ensure that only the highest quality code makes its way into the project, please submit all your code changes to GitHub as PRs. This includes runtime code changes, unit test updates, and deployment scripts. For example, sending a PR for just an update to a unit test might seem like a waste of time but the unit tests are just as important as the product code and as such, reviewing changes to them is also just as important. The advantages are numerous: improving code quality, more visibility on changes and their potential impact, avoiding duplication of effort, and creating general awareness of progress being made in various areas. In general a PR should be signed off(using the 👍 emoticon) by the Owner of that code. To commit the PR to the repo do not use the Big Green Button . Instead, do a typical push that you would use with Git (e.g. local pull, rebase, merge, push). Source Code Management Branch strategy In general: master has the code for the latest release on NuGet.org. (e.g. 1.0.0 , 1.1.0 ) dev has the code that is being worked on but not yet released. This is the branch into which devs normally submit pull requests and merge changes into. We run daily CI towards dev branch and generate pre-release nuget package, e.g. 1.0.1-alpha-9-abcdefsd . hotfix has the code for fixing master bug after it is released. hotfix changes will be merged back to master and dev once it is verified. Solution and project folder structure and naming Solution files go in the repo root. The default entry point is All.sln . Every project also needs a project.json and a matching .xproj file. This project.json is the source of truth for a project's dependencies and configuration options. Solution need to contain solution folders that match the physical folder ( src , test , tools , etc.). Assembly naming pattern The general naming pattern is Microsoft.DocAsCode.<area>.<subarea> . Unit tests We use xUnit.net for all unit testing. Coding Standards Please refer to C# Coding standards for detailed guideline for C# coding standards. TODO Template Coding standards TODO Template Preprocess JS Coding standards"
   },
-  "index.html": {
-    "href": "index.html",
-    "title": "docfx-seed | CueX Documentation",
-    "keywords": "docfx-seed Description This is a sample docfx documentation project. It contains .NET source code and markdown files. docfx.json is the configuration file for running docfx . docfx will generate a static website as similar to http://docascode.github.io/docfx-seed . How to run Under Windows Download and unzip docfx.zip to run docfx.exe directly! Run docfx under current repo! Website will be generated under _site folder. Run any web hosting tool to host _site folder, e.g. docfx serve _site . Cross platform and use dnx As a prerequisite, you will need to install DNVM and DNX . Quick Start dnvm upgrade to get the latest dnvm. Add feed https://www.myget.org/F/aspnetrelease/api/v2/ to Nuget.config For Windows, the nuget config file is %AppData%\\NuGet\\NuGet.config . For Linux/OSX, the nuget config file is ~/.config/NuGet/NuGet.config . ``` dnu commands install docfx to install docfx as a command Run docfx under current repo! Website will be generated under _site folder. Run any web hosting tool to host _site folder, e.g. docfx serve _site . Further information about docfx docfx is a tool to generate documentation towards .NET source code and markdown files. Please refer to docfx to get start. The docfx website itself is generated by docfx !"
-  },
-  "api/CueX.API.ISpatialGrain.html": {
-    "href": "api/CueX.API.ISpatialGrain.html",
-    "title": "Interface ISpatialGrain | CueX Documentation",
-    "keywords": "Interface ISpatialGrain Interace that needs to be fulfilled by any spatial objects, that should be inserted into the PubSub-System. Namespace : CueX.API Assembly : CueX.API.dll Syntax public interface ISpatialGrain Methods | Improve this Doc View Source GetPosition() Declaration Task<Vector3d> GetPosition() Returns Type Description System.Threading.Tasks.Task < Vector3d > | Improve this Doc View Source SetParent<T>(T) Declaration Task SetParent<T>(T parent)where T : IPartitionGrain Parameters Type Name Description T parent Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T"
+  "api/CueX.API.IPartitionGrain.html": {
+    "href": "api/CueX.API.IPartitionGrain.html",
+    "title": "Interface IPartitionGrain | CueX Documentation",
+    "keywords": "Interface IPartitionGrain Namespace : CueX.API Assembly : CueX.API.dll Syntax public interface IPartitionGrain Methods | Improve this Doc View Source Add<T>(T) Declaration Task Add<T>(T spatialGrain)where T : ISpatialGrain Parameters Type Name Description T spatialGrain Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T | Improve this Doc View Source Remove<T>(T) Declaration Task Remove<T>(T spatialGrain)where T : ISpatialGrain Parameters Type Name Description T spatialGrain Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T"
   },
   "api/CueX.Core.SpatialGrain-1.html": {
     "href": "api/CueX.Core.SpatialGrain-1.html",
     "title": "Class SpatialGrain<TState> | CueX Documentation",
-    "keywords": "Class SpatialGrain<TState> Abstract class providing the basic functionality necessary for sub-classes to be insertable into the PubSub-System. Inheritance System.Object Orleans.Grain Orleans.Grain <TState> SpatialGrain<TState> BasicSpatialGrain Implements Orleans.Runtime.IAddressable Orleans.ILifecycleParticipant < Orleans.Runtime.IGrainLifecycle > ISpatialGrain Inherited Members Orleans.Grain<TState>.ClearStateAsync() Orleans.Grain<TState>.WriteStateAsync() Orleans.Grain<TState>.ReadStateAsync() Orleans.Grain<TState>.Participate(Orleans.Runtime.IGrainLifecycle) Orleans.Grain<TState>.State Orleans.Grain.RegisterTimer(System.Func<System.Object, System.Threading.Tasks.Task>, System.Object, System.TimeSpan, System.TimeSpan) Orleans.Grain.RegisterOrUpdateReminder(System.String, System.TimeSpan, System.TimeSpan) Orleans.Grain.UnregisterReminder(Orleans.Runtime.IGrainReminder) Orleans.Grain.GetReminder(System.String) Orleans.Grain.GetReminders() Orleans.Grain.GetStreamProvider(System.String) Orleans.Grain.DeactivateOnIdle() Orleans.Grain.DelayDeactivation(System.TimeSpan) Orleans.Grain.OnActivateAsync() Orleans.Grain.OnDeactivateAsync() Orleans.Grain.GetLogger(System.String) Orleans.Grain.GetLogger() Orleans.Grain.GrainReference Orleans.Grain.GrainFactory Orleans.Grain.ServiceProvider Orleans.Grain.IdentityString Orleans.Grain.RuntimeIdentity System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public abstract class SpatialGrain<TState> : Grain<TState>, IAddressable, ILifecycleParticipant<IGrainLifecycle>, ISpatialGrain where TState : SpatialGrainState, new () Type Parameters Name Description TState Application-specific state data type, that also holds SpatialGrainState . Methods | Improve this Doc View Source GetPosition() Declaration public Task<Vector3d> GetPosition() Returns Type Description System.Threading.Tasks.Task < Vector3d > | Improve this Doc View Source SetParent<T>(T) Declaration public Task SetParent<T>(T parent)where T : IPartitionGrain Parameters Type Name Description T parent Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T Implements Orleans.Runtime.IAddressable Orleans.ILifecycleParticipant<TLifecycleObservable> ISpatialGrain"
+    "keywords": "Class SpatialGrain<TState> Abstract class providing the basic functionality necessary for sub-classes to be insertable into the PubSub-System. Inheritance System.Object Orleans.Grain Orleans.Grain <TState> SpatialGrain<TState> BasicSpatialGrain SimpleGrain Implements Orleans.Runtime.IAddressable Orleans.ILifecycleParticipant < Orleans.Runtime.IGrainLifecycle > ISpatialGrain Inherited Members Orleans.Grain<TState>.ClearStateAsync() Orleans.Grain<TState>.WriteStateAsync() Orleans.Grain<TState>.ReadStateAsync() Orleans.Grain<TState>.Participate(Orleans.Runtime.IGrainLifecycle) Orleans.Grain<TState>.State Orleans.Grain.RegisterTimer(System.Func<System.Object, System.Threading.Tasks.Task>, System.Object, System.TimeSpan, System.TimeSpan) Orleans.Grain.RegisterOrUpdateReminder(System.String, System.TimeSpan, System.TimeSpan) Orleans.Grain.UnregisterReminder(Orleans.Runtime.IGrainReminder) Orleans.Grain.GetReminder(System.String) Orleans.Grain.GetReminders() Orleans.Grain.GetStreamProvider(System.String) Orleans.Grain.DeactivateOnIdle() Orleans.Grain.DelayDeactivation(System.TimeSpan) Orleans.Grain.OnActivateAsync() Orleans.Grain.OnDeactivateAsync() Orleans.Grain.GetLogger(System.String) Orleans.Grain.GetLogger() Orleans.Grain.GrainReference Orleans.Grain.GrainFactory Orleans.Grain.ServiceProvider Orleans.Grain.IdentityString Orleans.Grain.RuntimeIdentity System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public abstract class SpatialGrain<TState> : Grain<TState>, IAddressable, ILifecycleParticipant<IGrainLifecycle>, ISpatialGrain where TState : SpatialGrainState, new () Type Parameters Name Description TState Application-specific state data type, that also holds SpatialGrainState . Methods | Improve this Doc View Source GetPosition() Declaration public Task<Vector3d> GetPosition() Returns Type Description System.Threading.Tasks.Task < Vector3d > | Improve this Doc View Source SetParent<T>(T) Declaration public Task SetParent<T>(T parent)where T : IPartitionGrain Parameters Type Name Description T parent Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T Implements Orleans.Runtime.IAddressable Orleans.ILifecycleParticipant<TLifecycleObservable> ISpatialGrain"
   },
   "api/CueX.Core.SpatialPubSubClient.html": {
     "href": "api/CueX.Core.SpatialPubSubClient.html",
     "title": "Class SpatialPubSubClient | CueX Documentation",
     "keywords": "Class SpatialPubSubClient Inheritance System.Object SpatialPubSubClient Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Core Assembly : CueX.Core.dll Syntax public abstract class SpatialPubSubClient Methods | Improve this Doc View Source InitializeCommon() Declaration public void InitializeCommon()"
   },
-  "api/CueX.GridSPS.GridPartitionGrain.html": {
-    "href": "api/CueX.GridSPS.GridPartitionGrain.html",
-    "title": "Class GridPartitionGrain | CueX Documentation",
-    "keywords": "Class GridPartitionGrain Inheritance System.Object GridPartitionGrain Implements IPartitionGrain Orleans.IGrainWithIntegerKey Orleans.IGrain Orleans.Runtime.IAddressable Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.GridSPS Assembly : CueX.GridSPS.dll Syntax public class GridPartitionGrain : IPartitionGrain, IGrainWithIntegerKey, IGrain, IAddressable Methods | Improve this Doc View Source Add<T>(T) Declaration public Task Add<T>(T spatialGrain)where T : ISpatialGrain Parameters Type Name Description T spatialGrain Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T | Improve this Doc View Source Remove<T>(T) Declaration public Task Remove<T>(T spatialGrain)where T : ISpatialGrain Parameters Type Name Description T spatialGrain Returns Type Description System.Threading.Tasks.Task Type Parameters Name Description T Implements IPartitionGrain Orleans.IGrainWithIntegerKey Orleans.IGrain Orleans.Runtime.IAddressable"
+  "api/CueX.Core.html": {
+    "href": "api/CueX.Core.html",
+    "title": "Namespace CueX.Core | CueX Documentation",
+    "keywords": "Namespace CueX.Core Classes SpatialGrain<TState> Abstract class providing the basic functionality necessary for sub-classes to be insertable into the PubSub-System. SpatialGrainState SpatialPubSubClient"
   },
-  "api/CueX.Numerics.Helper.html": {
-    "href": "api/CueX.Numerics.Helper.html",
-    "title": "Class Helper | CueX Documentation",
-    "keywords": "Class Helper Inheritance System.Object Helper Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Numerics Assembly : CueX.Numerics.dll Syntax public static class Helper Methods | Improve this Doc View Source NearlyEqual(Double, Double, Double) Declaration public static bool NearlyEqual(double a, double b, double epsilon) Parameters Type Name Description System.Double a System.Double b System.Double epsilon Returns Type Description System.Boolean"
+  "api/CueX.GridSPS.html": {
+    "href": "api/CueX.GridSPS.html",
+    "title": "Namespace CueX.GridSPS | CueX Documentation",
+    "keywords": "Namespace CueX.GridSPS Classes GridPartitionGrain"
+  },
+  "api/CueX.Numerics.Vector3d.html": {
+    "href": "api/CueX.Numerics.Vector3d.html",
+    "title": "Class Vector3d | CueX Documentation",
+    "keywords": "Class Vector3d Inheritance System.Object Vector3d Inherited Members System.Object.Equals(System.Object, System.Object) System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) Namespace : CueX.Numerics Assembly : CueX.Numerics.dll Syntax public class Vector3d Constructors | Improve this Doc View Source Vector3d() Declaration public Vector3d() | Improve this Doc View Source Vector3d(Double, Double, Double) Declaration public Vector3d(double x, double y, double z) Parameters Type Name Description System.Double x System.Double y System.Double z Fields | Improve this Doc View Source Data Declaration public double[] Data Field Value Type Description System.Double [] Methods | Improve this Doc View Source Equals(Vector3d) Declaration protected bool Equals(Vector3d other) Parameters Type Name Description Vector3d other Returns Type Description System.Boolean | Improve this Doc View Source Equals(Object) Declaration public override bool Equals(object obj) Parameters Type Name Description System.Object obj Returns Type Description System.Boolean Overrides System.Object.Equals(System.Object) | Improve this Doc View Source GetHashCode() Declaration public override int GetHashCode() Returns Type Description System.Int32 Overrides System.Object.GetHashCode() | Improve this Doc View Source One() Declaration public static Vector3d One() Returns Type Description Vector3d | Improve this Doc View Source ToString() Declaration public override string ToString() Returns Type Description System.String Overrides System.Object.ToString() | Improve this Doc View Source Zero() Declaration public static Vector3d Zero() Returns Type Description Vector3d"
   },
   "api/CueX.Test.BasicSpatialGrainTest.html": {
     "href": "api/CueX.Test.BasicSpatialGrainTest.html",
@@ -129,9 +129,29 @@
     "title": "Class BasicSpatialGrainState | CueX Documentation",
     "keywords": "Class BasicSpatialGrainState Inheritance System.Object SpatialGrainState BasicSpatialGrainState Inherited Members SpatialGrainState.Position SpatialGrainState.Parent System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Test.Grains Assembly : CueX.Test.dll Syntax public class BasicSpatialGrainState : SpatialGrainState"
   },
-  "api/SimpleExample.Grains.html": {
-    "href": "api/SimpleExample.Grains.html",
-    "title": "Namespace SimpleExample.Grains | CueX Documentation",
-    "keywords": "Namespace SimpleExample.Grains Classes Class1"
+  "api/CueX.Test.Grains.html": {
+    "href": "api/CueX.Test.Grains.html",
+    "title": "Namespace CueX.Test.Grains | CueX Documentation",
+    "keywords": "Namespace CueX.Test.Grains Classes BasicSpatialGrain BasicSpatialGrainState Interfaces IBasicSpatialGrain"
+  },
+  "api/CueX.Test.Helper.SiloCollection.html": {
+    "href": "api/CueX.Test.Helper.SiloCollection.html",
+    "title": "Class SiloCollection | CueX Documentation",
+    "keywords": "Class SiloCollection Inheritance System.Object SiloCollection Implements Xunit.ICollectionFixture < SiloFixture > Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CueX.Test.Helper Assembly : CueX.Test.dll Syntax [CollectionDefinition(\"SiloCollection\")] public class SiloCollection : ICollectionFixture<SiloFixture> Fields | Improve this Doc View Source Name Declaration public const string Name = \"SiloCollection\" Field Value Type Description System.String Implements Xunit.ICollectionFixture<TFixture>"
+  },
+  "api/CueX.Test.html": {
+    "href": "api/CueX.Test.html",
+    "title": "Namespace CueX.Test | CueX Documentation",
+    "keywords": "Namespace CueX.Test Classes BasicSpatialGrainTest"
+  },
+  "api/LocalhostSilo.Program.html": {
+    "href": "api/LocalhostSilo.Program.html",
+    "title": "Class Program | CueX Documentation",
+    "keywords": "Class Program Inheritance System.Object Program Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : LocalhostSilo Assembly : LocalhostSilo.dll Syntax public class Program Methods | Improve this Doc View Source Main(String[]) Declaration public static Task<int> Main(string[] args) Parameters Type Name Description System.String [] args Returns Type Description System.Threading.Tasks.Task < System.Int32 >"
+  },
+  "api/SimpleExample.Grains.SimpleGrain.html": {
+    "href": "api/SimpleExample.Grains.SimpleGrain.html",
+    "title": "Class SimpleGrain | CueX Documentation",
+    "keywords": "Class SimpleGrain Inheritance System.Object Orleans.Grain Orleans.Grain < SimpleGrainState > SpatialGrain < SimpleGrainState > SimpleGrain Implements Orleans.ILifecycleParticipant < Orleans.Runtime.IGrainLifecycle > ISimpleGrain ISpatialGrain Orleans.IGrainWithIntegerKey Orleans.IGrain Orleans.Runtime.IAddressable Inherited Members SpatialGrain<SimpleGrainState>.GetPosition() SpatialGrain<SimpleGrainState>.SetParent<T>(T) Orleans.Grain<SimpleExample.Grains.SimpleGrainState>.ClearStateAsync() Orleans.Grain<SimpleExample.Grains.SimpleGrainState>.WriteStateAsync() Orleans.Grain<SimpleExample.Grains.SimpleGrainState>.ReadStateAsync() Orleans.Grain<SimpleExample.Grains.SimpleGrainState>.Participate(Orleans.Runtime.IGrainLifecycle) Orleans.Grain<SimpleExample.Grains.SimpleGrainState>.State Orleans.Grain.RegisterTimer(System.Func<System.Object, System.Threading.Tasks.Task>, System.Object, System.TimeSpan, System.TimeSpan) Orleans.Grain.RegisterOrUpdateReminder(System.String, System.TimeSpan, System.TimeSpan) Orleans.Grain.UnregisterReminder(Orleans.Runtime.IGrainReminder) Orleans.Grain.GetReminder(System.String) Orleans.Grain.GetReminders() Orleans.Grain.GetStreamProvider(System.String) Orleans.Grain.DeactivateOnIdle() Orleans.Grain.DelayDeactivation(System.TimeSpan) Orleans.Grain.OnActivateAsync() Orleans.Grain.OnDeactivateAsync() Orleans.Grain.GetLogger(System.String) Orleans.Grain.GetLogger() Orleans.Grain.GrainReference Orleans.Grain.GrainFactory Orleans.Grain.ServiceProvider Orleans.Grain.IdentityString Orleans.Grain.RuntimeIdentity System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : SimpleExample.Grains Assembly : SimpleExample.Grains.dll Syntax public class SimpleGrain : SpatialGrain<SimpleGrainState>, ILifecycleParticipant<IGrainLifecycle>, ISimpleGrain, ISpatialGrain, IGrainWithIntegerKey, IGrain, IAddressable Methods | Improve this Doc View Source SetPosition(Vector3d) Declaration public Task SetPosition(Vector3d newPosition) Parameters Type Name Description Vector3d newPosition Returns Type Description System.Threading.Tasks.Task Implements Orleans.ILifecycleParticipant<TLifecycleObservable> ISimpleGrain ISpatialGrain Orleans.IGrainWithIntegerKey Orleans.IGrain Orleans.Runtime.IAddressable"
   }
 }

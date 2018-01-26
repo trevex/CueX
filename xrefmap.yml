@@ -256,6 +256,12 @@ references:
   commentId: F:CueX.Numerics.Vector3d.Data
   fullName: CueX.Numerics.Vector3d.Data
   nameWithType: Vector3d.Data
+- uid: CueX.Numerics.Vector3d.Equals(CueX.Numerics.Vector3d)
+  name: Equals(Vector3d)
+  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Equals_CueX_Numerics_Vector3d_
+  commentId: M:CueX.Numerics.Vector3d.Equals(CueX.Numerics.Vector3d)
+  fullName: CueX.Numerics.Vector3d.Equals(CueX.Numerics.Vector3d)
+  nameWithType: Vector3d.Equals(Vector3d)
 - uid: CueX.Numerics.Vector3d.Equals(System.Object)
   name: Equals(Object)
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Equals_System_Object_
@@ -268,6 +274,18 @@ references:
   commentId: Overload:CueX.Numerics.Vector3d.Equals
   fullName: CueX.Numerics.Vector3d.Equals
   nameWithType: Vector3d.Equals
+- uid: CueX.Numerics.Vector3d.GetHashCode
+  name: GetHashCode()
+  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_GetHashCode
+  commentId: M:CueX.Numerics.Vector3d.GetHashCode
+  fullName: CueX.Numerics.Vector3d.GetHashCode()
+  nameWithType: Vector3d.GetHashCode()
+- uid: CueX.Numerics.Vector3d.GetHashCode*
+  name: GetHashCode
+  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_GetHashCode_
+  commentId: Overload:CueX.Numerics.Vector3d.GetHashCode
+  fullName: CueX.Numerics.Vector3d.GetHashCode
+  nameWithType: Vector3d.GetHashCode
 - uid: CueX.Numerics.Vector3d.One
   name: One()
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_One
@@ -280,6 +298,18 @@ references:
   commentId: Overload:CueX.Numerics.Vector3d.One
   fullName: CueX.Numerics.Vector3d.One
   nameWithType: Vector3d.One
+- uid: CueX.Numerics.Vector3d.ToString
+  name: ToString()
+  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_ToString
+  commentId: M:CueX.Numerics.Vector3d.ToString
+  fullName: CueX.Numerics.Vector3d.ToString()
+  nameWithType: Vector3d.ToString()
+- uid: CueX.Numerics.Vector3d.ToString*
+  name: ToString
+  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_ToString_
+  commentId: Overload:CueX.Numerics.Vector3d.ToString
+  fullName: CueX.Numerics.Vector3d.ToString
+  nameWithType: Vector3d.ToString
 - uid: CueX.Numerics.Vector3d.Zero
   name: Zero()
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Zero
@@ -436,15 +466,78 @@ references:
   commentId: Overload:CueX.Test.Helper.SiloFixture.Silo
   fullName: CueX.Test.Helper.SiloFixture.Silo
   nameWithType: SiloFixture.Silo
+- uid: LocalhostSilo
+  name: LocalhostSilo
+  href: api/LocalhostSilo.html
+  commentId: N:LocalhostSilo
+  fullName: LocalhostSilo
+  nameWithType: LocalhostSilo
+- uid: LocalhostSilo.Program
+  name: Program
+  href: api/LocalhostSilo.Program.html
+  commentId: T:LocalhostSilo.Program
+  fullName: LocalhostSilo.Program
+  nameWithType: Program
+- uid: LocalhostSilo.Program.Main(System.String[])
+  name: Main(String[])
+  href: api/LocalhostSilo.Program.html#LocalhostSilo_Program_Main_System_String___
+  commentId: M:LocalhostSilo.Program.Main(System.String[])
+  name.vb: Main(String())
+  fullName: LocalhostSilo.Program.Main(System.String[])
+  fullName.vb: LocalhostSilo.Program.Main(System.String())
+  nameWithType: Program.Main(String[])
+  nameWithType.vb: Program.Main(String())
+- uid: LocalhostSilo.Program.Main*
+  name: Main
+  href: api/LocalhostSilo.Program.html#LocalhostSilo_Program_Main_
+  commentId: Overload:LocalhostSilo.Program.Main
+  fullName: LocalhostSilo.Program.Main
+  nameWithType: Program.Main
 - uid: SimpleExample.Grains
   name: SimpleExample.Grains
   href: api/SimpleExample.Grains.html
   commentId: N:SimpleExample.Grains
   fullName: SimpleExample.Grains
   nameWithType: SimpleExample.Grains
-- uid: SimpleExample.Grains.Class1
-  name: Class1
-  href: api/SimpleExample.Grains.Class1.html
-  commentId: T:SimpleExample.Grains.Class1
-  fullName: SimpleExample.Grains.Class1
-  nameWithType: Class1
+- uid: SimpleExample.Grains.ISimpleGrain
+  name: ISimpleGrain
+  href: api/SimpleExample.Grains.ISimpleGrain.html
+  commentId: T:SimpleExample.Grains.ISimpleGrain
+  fullName: SimpleExample.Grains.ISimpleGrain
+  nameWithType: ISimpleGrain
+- uid: SimpleExample.Grains.ISimpleGrain.SetPosition(CueX.Numerics.Vector3d)
+  name: SetPosition(Vector3d)
+  href: api/SimpleExample.Grains.ISimpleGrain.html#SimpleExample_Grains_ISimpleGrain_SetPosition_CueX_Numerics_Vector3d_
+  commentId: M:SimpleExample.Grains.ISimpleGrain.SetPosition(CueX.Numerics.Vector3d)
+  fullName: SimpleExample.Grains.ISimpleGrain.SetPosition(CueX.Numerics.Vector3d)
+  nameWithType: ISimpleGrain.SetPosition(Vector3d)
+- uid: SimpleExample.Grains.ISimpleGrain.SetPosition*
+  name: SetPosition
+  href: api/SimpleExample.Grains.ISimpleGrain.html#SimpleExample_Grains_ISimpleGrain_SetPosition_
+  commentId: Overload:SimpleExample.Grains.ISimpleGrain.SetPosition
+  fullName: SimpleExample.Grains.ISimpleGrain.SetPosition
+  nameWithType: ISimpleGrain.SetPosition
+- uid: SimpleExample.Grains.SimpleGrain
+  name: SimpleGrain
+  href: api/SimpleExample.Grains.SimpleGrain.html
+  commentId: T:SimpleExample.Grains.SimpleGrain
+  fullName: SimpleExample.Grains.SimpleGrain
+  nameWithType: SimpleGrain
+- uid: SimpleExample.Grains.SimpleGrain.SetPosition(CueX.Numerics.Vector3d)
+  name: SetPosition(Vector3d)
+  href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain_SetPosition_CueX_Numerics_Vector3d_
+  commentId: M:SimpleExample.Grains.SimpleGrain.SetPosition(CueX.Numerics.Vector3d)
+  fullName: SimpleExample.Grains.SimpleGrain.SetPosition(CueX.Numerics.Vector3d)
+  nameWithType: SimpleGrain.SetPosition(Vector3d)
+- uid: SimpleExample.Grains.SimpleGrain.SetPosition*
+  name: SetPosition
+  href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain_SetPosition_
+  commentId: Overload:SimpleExample.Grains.SimpleGrain.SetPosition
+  fullName: SimpleExample.Grains.SimpleGrain.SetPosition
+  nameWithType: SimpleGrain.SetPosition
+- uid: SimpleExample.Grains.SimpleGrainState
+  name: SimpleGrainState
+  href: api/SimpleExample.Grains.SimpleGrainState.html
+  commentId: T:SimpleExample.Grains.SimpleGrainState
+  fullName: SimpleExample.Grains.SimpleGrainState
+  nameWithType: SimpleGrainState
