@@ -25,6 +25,11 @@ namespace CueX.Numerics
             return new Vector3d();
         }
 
+        public override int GetHashCode()
+        {
+            return (Data != null ? Data.GetHashCode() : 0);
+        }
+
         public override bool Equals(Object obj)
         {
             if (obj == null || GetType() != obj.GetType())
@@ -34,6 +39,16 @@ namespace CueX.Numerics
             return Helper.NearlyEqual(Data[0], other.Data[0], Double.Epsilon)
                    && Helper.NearlyEqual(Data[1], other.Data[1], Double.Epsilon)
                    && Helper.NearlyEqual(Data[2], other.Data[2], Double.Epsilon);
+        }
+
+        protected bool Equals(Vector3d other)
+        {
+            return Equals(Data, other.Data);
+        }
+
+        public override string ToString()
+        {
+            return "Vector3d { "+Data[0]+", "+Data[1]+", "+Data[2]+" }";
         }
     }
 }
