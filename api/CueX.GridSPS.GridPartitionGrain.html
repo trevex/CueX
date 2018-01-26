@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BasicSpatialGrain
+    <title>Class GridPartitionGrain
    | CueX Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BasicSpatialGrain
+    <meta name="title" content="Class GridPartitionGrain
    | CueX Documentation ">
     <meta name="generator" content="docfx 2.29.1.0">
     
@@ -76,104 +76,27 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CueX.Test.Grains.BasicSpatialGrain">
+            <article class="content wrap" id="_content" data-uid="CueX.GridSPS.GridPartitionGrain">
   
   
-  <h1 id="CueX_Test_Grains_BasicSpatialGrain" data-uid="CueX.Test.Grains.BasicSpatialGrain" class="text-break">Class BasicSpatialGrain
+  <h1 id="CueX_GridSPS_GridPartitionGrain" data-uid="CueX.GridSPS.GridPartitionGrain" class="text-break">Class GridPartitionGrain
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Orleans.Grain</span></div>
-    <div class="level2"><span class="xref">Orleans.Grain</span>&lt;<a class="xref" href="CueX.Test.Grains.BasicSpatialGrainState.html">BasicSpatialGrainState</a>&gt;</div>
-    <div class="level3"><a class="xref" href="CueX.Core.SpatialGrain-1.html">SpatialGrain</a>&lt;<a class="xref" href="CueX.Test.Grains.BasicSpatialGrainState.html">BasicSpatialGrainState</a>&gt;</div>
-    <div class="level4"><span class="xref">BasicSpatialGrain</span></div>
+    <div class="level1"><span class="xref">GridPartitionGrain</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">Orleans.ILifecycleParticipant</span>&lt;<span class="xref">Orleans.Runtime.IGrainLifecycle</span>&gt;</div>
-    <div><a class="xref" href="CueX.Test.Grains.IBasicSpatialGrain.html">IBasicSpatialGrain</a></div>
-    <div><a class="xref" href="CueX.API.ISpatialGrain.html">ISpatialGrain</a></div>
+    <div><a class="xref" href="CueX.API.IPartitionGrain.html">IPartitionGrain</a></div>
     <div><span class="xref">Orleans.IGrainWithIntegerKey</span></div>
     <div><span class="xref">Orleans.IGrain</span></div>
     <div><span class="xref">Orleans.Runtime.IAddressable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-1.html#CueX_Core_SpatialGrain_1_GetPosition">SpatialGrain&lt;BasicSpatialGrainState&gt;.GetPosition()</a>
-    </div>
-    <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-1.html#CueX_Core_SpatialGrain_1_SetParent__1___0_">SpatialGrain&lt;BasicSpatialGrainState&gt;.SetParent&lt;T&gt;(T)</a>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.Test.Grains.BasicSpatialGrainState&gt;.ClearStateAsync()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.Test.Grains.BasicSpatialGrainState&gt;.WriteStateAsync()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.Test.Grains.BasicSpatialGrainState&gt;.ReadStateAsync()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.Test.Grains.BasicSpatialGrainState&gt;.Participate(Orleans.Runtime.IGrainLifecycle)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.Test.Grains.BasicSpatialGrainState&gt;.State</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.RegisterTimer(System.Func&lt;System.Object, System.Threading.Tasks.Task&gt;, System.Object, System.TimeSpan, System.TimeSpan)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.RegisterOrUpdateReminder(System.String, System.TimeSpan, System.TimeSpan)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.UnregisterReminder(Orleans.Runtime.IGrainReminder)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.GetReminder(System.String)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.GetReminders()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.GetStreamProvider(System.String)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.DeactivateOnIdle()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.DelayDeactivation(System.TimeSpan)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.OnActivateAsync()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.OnDeactivateAsync()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.GetLogger(System.String)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.GetLogger()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.GrainReference</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.GrainFactory</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.ServiceProvider</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.IdentityString</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.RuntimeIdentity</span>
-    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -196,28 +119,28 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.Test.Grains.html">CueX.Test.Grains</a></h6>
-  <h6><strong>Assembly</strong>: CueX.Test.dll</h6>
-  <h5 id="CueX_Test_Grains_BasicSpatialGrain_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.GridSPS.html">CueX.GridSPS</a></h6>
+  <h6><strong>Assembly</strong>: CueX.GridSPS.dll</h6>
+  <h5 id="CueX_GridSPS_GridPartitionGrain_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BasicSpatialGrain : SpatialGrain&lt;BasicSpatialGrainState&gt;, ILifecycleParticipant&lt;IGrainLifecycle&gt;, IBasicSpatialGrain, ISpatialGrain, IGrainWithIntegerKey, IGrain, IAddressable</code></pre>
+    <pre><code class="lang-csharp hljs">public class GridPartitionGrain : IPartitionGrain, IGrainWithIntegerKey, IGrain, IAddressable</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_BasicSpatialGrain_SetPosition_CueX_Numerics_Vector3d_.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.BasicSpatialGrain.SetPosition(CueX.Numerics.Vector3d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain_Add__1___0_.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain.Add%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/BasicSpatialGrain.cs/#L15">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L11">View Source</a>
   </span>
-  <a id="CueX_Test_Grains_BasicSpatialGrain_SetPosition_" data-uid="CueX.Test.Grains.BasicSpatialGrain.SetPosition*"></a>
-  <h4 id="CueX_Test_Grains_BasicSpatialGrain_SetPosition_CueX_Numerics_Vector3d_" data-uid="CueX.Test.Grains.BasicSpatialGrain.SetPosition(CueX.Numerics.Vector3d)">SetPosition(Vector3d)</h4>
+  <a id="CueX_GridSPS_GridPartitionGrain_Add_" data-uid="CueX.GridSPS.GridPartitionGrain.Add*"></a>
+  <h4 id="CueX_GridSPS_GridPartitionGrain_Add__1___0_" data-uid="CueX.GridSPS.GridPartitionGrain.Add``1(``0)">Add&lt;T&gt;(T)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task SetPosition(Vector3d newPosition)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task Add&lt;T&gt;(T spatialGrain)where T : ISpatialGrain</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -230,8 +153,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CueX.Numerics.Vector3d.html">Vector3d</a></td>
-        <td><span class="parametername">newPosition</span></td>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">spatialGrain</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -251,15 +174,86 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain_Remove__1___0_.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain.Remove%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L16">View Source</a>
+  </span>
+  <a id="CueX_GridSPS_GridPartitionGrain_Remove_" data-uid="CueX.GridSPS.GridPartitionGrain.Remove*"></a>
+  <h4 id="CueX_GridSPS_GridPartitionGrain_Remove__1___0_" data-uid="CueX.GridSPS.GridPartitionGrain.Remove``1(``0)">Remove&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Remove&lt;T&gt;(T spatialGrain)where T : ISpatialGrain</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">spatialGrain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">Orleans.ILifecycleParticipant&lt;TLifecycleObservable&gt;</span>
-  </div>
-  <div>
-      <a class="xref" href="CueX.Test.Grains.IBasicSpatialGrain.html">IBasicSpatialGrain</a>
-  </div>
-  <div>
-      <a class="xref" href="CueX.API.ISpatialGrain.html">ISpatialGrain</a>
+      <a class="xref" href="CueX.API.IPartitionGrain.html">IPartitionGrain</a>
   </div>
   <div>
       <span class="xref">Orleans.IGrainWithIntegerKey</span>
@@ -278,10 +272,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_BasicSpatialGrain.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.BasicSpatialGrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/BasicSpatialGrain.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
