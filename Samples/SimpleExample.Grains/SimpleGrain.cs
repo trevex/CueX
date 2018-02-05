@@ -1,8 +1,12 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
+
+using System;
 using System.Threading.Tasks;
 using CueX.Core;
 using CueX.Numerics;
+using Microsoft.Extensions.Logging;
+using Orleans.Runtime;
 
 namespace SimpleExample.Grains
 {
@@ -12,8 +16,16 @@ namespace SimpleExample.Grains
 
     public class SimpleGrain : SpatialGrain<SimpleGrainState>, ISimpleGrain
     {
+        private readonly ILogger _logger;
+        
+        public SimpleGrain(ILogger<SimpleGrain> logger)
+        {
+            _logger = logger;
+        }
+
         public async Task SetPosition(Vector3d newPosition)
         {
+            _logger.Info("Hello, world!");
             State.Position = newPosition;
             await WriteStateAsync();
         }
