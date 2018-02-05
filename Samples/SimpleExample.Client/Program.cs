@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
+using CueX.GridSPS;
 using CueX.Numerics;
 using Microsoft.Extensions.Logging;
 using Orleans;
+using Orleans.ApplicationParts;
 using Orleans.Runtime.Configuration;
 using SimpleExample.Grains;
 
@@ -24,11 +26,20 @@ namespace SimpleExample.Client
             var builder = new ClientBuilder()
                 .UseConfiguration(config)
                 // Add grain assemblies
-                .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(ISimpleGrain).Assembly))
+                .ConfigureApplicationParts(parts =>
+                {
+                    GridConfigurationHelper.AddGridClientApplicationParts(parts);
+                    AddExampleApplicationParts(parts);
+                })
                 .ConfigureLogging(logging => logging.AddConsole());
             var client = builder.Build();
             await client.Connect();
             return client;
+        }
+
+        private static void AddExampleApplicationParts(IApplicationPartManager parts)
+        {
+            parts.AddApplicationPart(typeof(ISimpleGrain).Assembly);
         }
     }
 }

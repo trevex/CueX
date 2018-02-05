@@ -10,6 +10,7 @@
     <PackageReference Include="Microsoft.Orleans.Client" Version="2.0.0-beta3" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CueX.GridSPS\CueX.GridSPS.csproj" />
     <ProjectReference Include="..\SimpleExample.Grains\SimpleExample.Grains.csproj" />
   </ItemGroup>
 </Project>

@@ -5,6 +5,7 @@
     <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CueX.GridSPS\CueX.GridSPS.csproj" />
     <ProjectReference Include="..\SimpleExample.Grains\SimpleExample.Grains.csproj" />
   </ItemGroup>
   <ItemGroup>

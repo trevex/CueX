@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
+using CueX.Core;
+using CueX.GridSPS;
 using Microsoft.Extensions.Logging;
 using Orleans;
+using Orleans.ApplicationParts;
 using Orleans.Hosting;
 using Orleans.Runtime.Configuration;
 using SimpleExample.Grains;
@@ -29,6 +32,8 @@ namespace LocalhostSilo
 
         private static async Task<ISiloHost> StartSilo()
         {
+            // run some hardware checks (vector instruction support)
+            SpatialPubSubConfigurationHelper.CheckHardwareSupport();
             // define the cluster configuration (temporarily required in the beta version,
             // will not be required by the final release)
             var config = ClusterConfiguration.LocalhostPrimarySilo();
@@ -38,14 +43,22 @@ namespace LocalhostSilo
                 .UseConfiguration(config)
                 // Add grain assemblies
                 .ConfigureApplicationParts(parts =>
-                    parts.AddApplicationPart(typeof(SimpleGrain).Assembly)
-                        .WithReferences())
+                {
+                    GridConfigurationHelper.AddGridHostApplicationParts(parts);
+                    AddExampleHostApplicationParts(parts);
+                })
                 // Logging setup
                 .ConfigureLogging(logging => logging.AddConsole());
 
             var host = builder.Build();
             await host.StartAsync();
             return host;
+        }
+
+        private static void AddExampleHostApplicationParts(IApplicationPartManager parts)
+        {
+            parts.AddApplicationPart(typeof(SimpleGrain).Assembly)
+                .WithReferences();
         }
     }
 }
