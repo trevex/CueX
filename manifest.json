@@ -437,7 +437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrain.html",
-          "hash": "zRAd/IeqJDaYjNf+DbF3Ng=="
+          "hash": "xp9F7ZCZv/2j6nkkSxAXLQ=="
         }
       },
       "is_incremental": false,
@@ -449,7 +449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrainState.html",
-          "hash": "N5lYujOJWGDzIc3VFwdSIQ=="
+          "hash": "RcGg0G7UJGU2CJvtGJ+imw=="
         }
       },
       "is_incremental": false,
@@ -500,15 +500,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -516,6 +507,15 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

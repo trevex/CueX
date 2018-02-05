@@ -614,6 +614,21 @@ references:
   commentId: T:SimpleExample.Grains.SimpleGrain
   fullName: SimpleExample.Grains.SimpleGrain
   nameWithType: SimpleGrain
+- uid: SimpleExample.Grains.SimpleGrain.#ctor(Microsoft.Extensions.Logging.ILogger{SimpleExample.Grains.SimpleGrain})
+  name: SimpleGrain(ILogger<SimpleGrain>)
+  href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain__ctor_Microsoft_Extensions_Logging_ILogger_SimpleExample_Grains_SimpleGrain__
+  commentId: M:SimpleExample.Grains.SimpleGrain.#ctor(Microsoft.Extensions.Logging.ILogger{SimpleExample.Grains.SimpleGrain})
+  name.vb: SimpleGrain(ILogger(Of SimpleGrain))
+  fullName: SimpleExample.Grains.SimpleGrain.SimpleGrain(Microsoft.Extensions.Logging.ILogger<SimpleExample.Grains.SimpleGrain>)
+  fullName.vb: SimpleExample.Grains.SimpleGrain.SimpleGrain(Microsoft.Extensions.Logging.ILogger(Of SimpleExample.Grains.SimpleGrain))
+  nameWithType: SimpleGrain.SimpleGrain(ILogger<SimpleGrain>)
+  nameWithType.vb: SimpleGrain.SimpleGrain(ILogger(Of SimpleGrain))
+- uid: SimpleExample.Grains.SimpleGrain.#ctor*
+  name: SimpleGrain
+  href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain__ctor_
+  commentId: Overload:SimpleExample.Grains.SimpleGrain.#ctor
+  fullName: SimpleExample.Grains.SimpleGrain.SimpleGrain
+  nameWithType: SimpleGrain.SimpleGrain
 - uid: SimpleExample.Grains.SimpleGrain.SetPosition(CueX.Numerics.Vector3d)
   name: SetPosition(Vector3d)
   href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain_SetPosition_CueX_Numerics_Vector3d_
