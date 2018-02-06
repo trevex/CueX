@@ -131,6 +131,12 @@ references:
   commentId: T:CueX.Core.PartitionGrainState
   fullName: CueX.Core.PartitionGrainState
   nameWithType: PartitionGrainState
+- uid: CueX.Core.PartitionGrainState.Children
+  name: Children
+  href: api/CueX.Core.PartitionGrainState.html#CueX_Core_PartitionGrainState_Children
+  commentId: F:CueX.Core.PartitionGrainState.Children
+  fullName: CueX.Core.PartitionGrainState.Children
+  nameWithType: PartitionGrainState.Children
 - uid: CueX.Core.SpatialGrain`1
   name: SpatialGrain<TState>
   href: api/CueX.Core.SpatialGrain-1.html
@@ -251,6 +257,21 @@ references:
   commentId: T:CueX.GridSPS.GridPartitionGrain
   fullName: CueX.GridSPS.GridPartitionGrain
   nameWithType: GridPartitionGrain
+- uid: CueX.GridSPS.GridPartitionGrain.#ctor(Microsoft.Extensions.Logging.ILogger{CueX.GridSPS.GridPartitionGrain})
+  name: GridPartitionGrain(ILogger<GridPartitionGrain>)
+  href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain__ctor_Microsoft_Extensions_Logging_ILogger_CueX_GridSPS_GridPartitionGrain__
+  commentId: M:CueX.GridSPS.GridPartitionGrain.#ctor(Microsoft.Extensions.Logging.ILogger{CueX.GridSPS.GridPartitionGrain})
+  name.vb: GridPartitionGrain(ILogger(Of GridPartitionGrain))
+  fullName: CueX.GridSPS.GridPartitionGrain.GridPartitionGrain(Microsoft.Extensions.Logging.ILogger<CueX.GridSPS.GridPartitionGrain>)
+  fullName.vb: CueX.GridSPS.GridPartitionGrain.GridPartitionGrain(Microsoft.Extensions.Logging.ILogger(Of CueX.GridSPS.GridPartitionGrain))
+  nameWithType: GridPartitionGrain.GridPartitionGrain(ILogger<GridPartitionGrain>)
+  nameWithType.vb: GridPartitionGrain.GridPartitionGrain(ILogger(Of GridPartitionGrain))
+- uid: CueX.GridSPS.GridPartitionGrain.#ctor*
+  name: GridPartitionGrain
+  href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain__ctor_
+  commentId: Overload:CueX.GridSPS.GridPartitionGrain.#ctor
+  fullName: CueX.GridSPS.GridPartitionGrain.GridPartitionGrain
+  nameWithType: GridPartitionGrain.GridPartitionGrain
 - uid: CueX.GridSPS.GridPartitionGrain.Add*
   name: Add
   href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_Add_
