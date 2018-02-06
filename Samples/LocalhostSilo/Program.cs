@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using CueX.Core;
 using CueX.GridSPS;
@@ -48,7 +49,11 @@ namespace LocalhostSilo
                     AddExampleHostApplicationParts(parts);
                 })
                 // Logging setup
-                .ConfigureLogging(logging => logging.AddConsole());
+                .ConfigureLogging(logging =>
+                {
+                    logging.AddConsole();
+                    // logging.SetMinimumLevel(LogLevel.Debug);
+                });
 
             var host = builder.Build();
             await host.StartAsync();

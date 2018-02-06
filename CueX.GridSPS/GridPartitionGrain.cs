@@ -2,22 +2,33 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System.Threading.Tasks;
-using CueX.API;
+using Microsoft.Extensions.Logging;
 using CueX.Core;
-using Orleans;
+
 
 namespace CueX.GridSPS
 {
     public class GridPartitionGrain : PartitionGrain<GridPartitionGrainState>, IGridPartitionGrain
     {
-        public override Task Add<T>(T spatialGrain)
+        private readonly ILogger _logger;
+        
+        public GridPartitionGrain(ILogger<GridPartitionGrain> logger)
         {
-            return Task.CompletedTask;
+            _logger = logger;
         }
 
-        public override Task Remove<T>(T spatialGrain)
+        
+        public override Task Add<T>(T spatialGrain)
         {
-            return Task.CompletedTask;
+            State.Children.Add(spatialGrain);
+            return WriteStateAsync();
+        }
+
+        public override async Task<bool> Remove<T>(T spatialGrain)
+        {
+            var found = State.Children.Remove(spatialGrain);
+            await WriteStateAsync();
+            return found;
         }
     }
 }

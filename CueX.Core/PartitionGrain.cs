@@ -17,6 +17,7 @@ namespace CueX.Core
     {
         public abstract  Task Add<T>(T spatialGrain) where T : ISpatialGrain;
 
-        public abstract Task Remove<T>(T spatialGrain) where T : ISpatialGrain;
+        public abstract Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain;
+        
     }
 }

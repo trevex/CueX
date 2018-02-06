@@ -8,6 +8,6 @@ namespace CueX.GridSPS
 {
     public interface IGridPartitionGrain : IPartitionGrain, IGrainWithIntegerKey
     {
-        
+           
     }
 }

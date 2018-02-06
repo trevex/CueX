@@ -15,9 +15,12 @@ namespace SimpleExample.Client
         public static async Task Main(string[] args)
         {
             var client = await ConnectToLocalhostSilo();
-            var someGrain = client.GetGrain<ISimpleGrain>(0);
-            await someGrain.SetPosition(Vector3d.One());
-            Console.WriteLine(await someGrain.GetPosition());
+            var simpleGrain = client.GetGrain<ISimpleGrain>(0);
+            await simpleGrain.SetPosition(Vector3d.One());
+            Console.WriteLine(await simpleGrain.GetPosition());
+            var gridPartitionGrain = client.GetGrain<IGridPartitionGrain>(0);
+            await gridPartitionGrain.Add(simpleGrain);
+            Console.WriteLine(await gridPartitionGrain.Remove(simpleGrain));
         }
 
         private static async Task<IClusterClient> ConnectToLocalhostSilo()

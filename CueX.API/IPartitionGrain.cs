@@ -8,6 +8,6 @@ namespace CueX.API
     public interface IPartitionGrain
     {
         Task Add<T>(T spatialGrain) where T : ISpatialGrain;
-        Task Remove<T>(T spatialGrain) where T : ISpatialGrain;
+        Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain;
     }
 }
