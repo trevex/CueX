@@ -38,7 +38,7 @@ namespace SimpleExample.Client
                     client = new ClientBuilder()
                         .ConfigureCluster(options => options.ClusterId = "helloworldcluster")
                         .UseStaticClustering(options => options.Gateways.Add((new IPEndPoint(siloAddress, gatewayPort)).ToGatewayUri()))
-                        .ConfigureApplicationParts(parts => parts.AddFromAppDomain().AddFromApplicationBaseDirectory())
+                        .ConfigureApplicationParts(AddClientApplicationParts)
                         .ConfigureLogging(logging => logging.AddConsole())
                         .Build();
 
@@ -59,6 +59,12 @@ namespace SimpleExample.Client
             }
 
             return client;
+        }
+        
+        private static void AddClientApplicationParts(IApplicationPartManager parts)
+        {
+            GridConfigurationHelper.AddGridClientApplicationParts(parts);
+            parts.AddApplicationPart(typeof(ISimpleGrain).Assembly);
         }
 
     }

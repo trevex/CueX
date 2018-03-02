@@ -13,5 +13,6 @@
     <PackageReference Include="Microsoft.NETCore.App" Version="2.0.5" />
     <PackageReference Include="Microsoft.Orleans.OrleansProviders" Version="2.0.0-rc1" />
     <PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="2.0.0-rc1" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="2.0.0-rc1" />
   </ItemGroup>
 </Project>

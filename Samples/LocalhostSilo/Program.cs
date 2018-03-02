@@ -48,10 +48,7 @@ namespace LocalhostSilo
                 .UseDevelopmentClustering(options => options.PrimarySiloEndpoint = new IPEndPoint(siloAddress, siloPort))
                 .ConfigureEndpoints(siloAddress, siloPort, gatewayPort)
                 // Add grain assemblies
-                .ConfigureApplicationParts(parts =>
-                {
-                    parts.AddFromAppDomain().AddFromApplicationBaseDirectory();
-                })
+                .ConfigureApplicationParts(AddHostApplicationParts)
                 // Logging setup
                 .ConfigureLogging(logging =>
                 {
@@ -62,6 +59,12 @@ namespace LocalhostSilo
             var host = builder.Build();
             await host.StartAsync();
             return host;
+        }
+        
+        private static void AddHostApplicationParts(IApplicationPartManager parts)
+        {
+            GridConfigurationHelper.AddGridHostApplicationParts(parts);
+            parts.AddApplicationPart(typeof(SimpleGrain).Assembly).WithReferences();
         }
 
     }
