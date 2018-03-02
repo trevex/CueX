@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using CueX.Core;
@@ -6,6 +7,7 @@ using CueX.GridSPS;
 using Microsoft.Extensions.Logging;
 using Orleans;
 using Orleans.ApplicationParts;
+using Orleans.Configuration;
 using Orleans.Hosting;
 using Orleans.Runtime.Configuration;
 using SimpleExample.Grains;
@@ -35,35 +37,32 @@ namespace LocalhostSilo
         {
             // run some hardware checks (vector instruction support)
             SpatialPubSubConfigurationHelper.CheckHardwareSupport();
-            // define the cluster configuration (temporarily required in the beta version,
-            // will not be required by the final release)
-            var config = ClusterConfiguration.LocalhostPrimarySilo();
-            // add providers to the legacy configuration object.
-            config.AddMemoryStorageProvider();
+            // Default values
+            int siloPort = 11111;
+            int gatewayPort = 30000;
+            var siloAddress = IPAddress.Loopback;
+            // Configure silo
             var builder = new SiloHostBuilder()
-                .UseConfiguration(config)
+                .Configure(options => { options.ClusterId = "LocalCueXCluster"; })
+                // Setup silo on localhost and use development cluster 
+                .UseDevelopmentClustering(options => options.PrimarySiloEndpoint = new IPEndPoint(siloAddress, siloPort))
+                .ConfigureEndpoints(siloAddress, siloPort, gatewayPort)
                 // Add grain assemblies
                 .ConfigureApplicationParts(parts =>
                 {
-                    GridConfigurationHelper.AddGridHostApplicationParts(parts);
-                    AddExampleHostApplicationParts(parts);
+                    parts.AddFromAppDomain().AddFromApplicationBaseDirectory();
                 })
                 // Logging setup
                 .ConfigureLogging(logging =>
                 {
                     logging.AddConsole();
                     // logging.SetMinimumLevel(LogLevel.Debug);
-                });
-
+                })
+                .AddMemoryGrainStorageAsDefault();
             var host = builder.Build();
             await host.StartAsync();
             return host;
         }
 
-        private static void AddExampleHostApplicationParts(IApplicationPartManager parts)
-        {
-            parts.AddApplicationPart(typeof(SimpleGrain).Assembly)
-                .WithReferences();
-        }
     }
 }
