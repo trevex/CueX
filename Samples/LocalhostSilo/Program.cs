@@ -63,6 +63,7 @@ namespace LocalhostSilo
         
         private static void AddHostApplicationParts(IApplicationPartManager parts)
         {
+            parts.AddFromAppDomain();
             GridConfigurationHelper.AddGridHostApplicationParts(parts);
             parts.AddApplicationPart(typeof(SimpleGrain).Assembly).WithReferences();
         }

@@ -6,6 +6,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.App" Version="2.0.5" />
     <PackageReference Include="Microsoft.Orleans.Core" Version="2.0.0-rc1" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="2.0.0-rc1" />
+    <PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator.Build" Version="2.0.0-rc1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CueX.Numerics\CueX.Numerics.csproj">
