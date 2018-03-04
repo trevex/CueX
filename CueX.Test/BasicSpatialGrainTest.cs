@@ -5,27 +5,26 @@ using System;
 using CueX.Numerics;
 using CueX.Test.Grains;
 using CueX.Test.Helper;
-using Orleans.TestKit;
+using Orleans;
 using Xunit;
 
 namespace CueX.Test
 {
-    [Collection(SiloCollection.Name)]
+    [Collection(ClusterCollection.Name)]
     public class BasicSpatialGrainTest
     {
-        private readonly TestKitSilo _silo;
+        private readonly IClusterClient _client;
 
-        public BasicSpatialGrainTest(SiloFixture fixture)
+        public BasicSpatialGrainTest(ClusterFixture fixture)
         {
-            _silo = fixture.Silo;
+            _client = fixture.Cluster.Client;
         }
 
         [Fact]
         public async void TestPositionAssignment()
         {
             long id = new Random().Next();
-            IBasicSpatialGrain spatialGrain = _silo.CreateGrain<BasicSpatialGrain>(0);
-
+            var spatialGrain = _client.GetGrain<IBasicSpatialGrain>(0);
             var pos = new Vector3d(1.0, 2.0, 3.0);
             await spatialGrain.SetPosition(pos);
             var assignedPos = await spatialGrain.GetPosition();

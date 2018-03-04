@@ -63,7 +63,7 @@ namespace LocalhostSilo
         
         private static void AddHostApplicationParts(IApplicationPartManager parts)
         {
-            parts.AddFromAppDomain();
+            parts.AddFromAppDomain(); // Loads Orleans-specific assemblies 
             GridConfigurationHelper.AddGridHostApplicationParts(parts);
             parts.AddApplicationPart(typeof(SimpleGrain).Assembly).WithReferences();
         }

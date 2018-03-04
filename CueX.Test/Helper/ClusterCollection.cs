@@ -4,9 +4,9 @@ using Xunit;
 
 namespace CueX.Test.Helper
 {
-    [CollectionDefinition(SiloCollection.Name)]
-    public class SiloCollection : ICollectionFixture<SiloFixture>
+    [CollectionDefinition(ClusterCollection.Name)]
+    public class ClusterCollection : ICollectionFixture<ClusterFixture>
     {
-        public const string Name = "SiloCollection";
+        public const string Name = "ClusterCollection";
     }
 }
