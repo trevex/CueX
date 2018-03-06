@@ -101,7 +101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.API.ISpatialGrain.html",
-          "hash": "hFfUOM7hPoluCBR/dR4vLg=="
+          "hash": "SuPjJMYHsJ6faMQRlaF3FQ=="
         }
       },
       "is_incremental": false,
@@ -161,7 +161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrain-1.html",
-          "hash": "H9G52n4bb3t0InHQaxLagw=="
+          "hash": "JF6T5ht0eTXYslpPBvhbsw=="
         }
       },
       "is_incremental": false,
@@ -173,7 +173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrainState.html",
-          "hash": "gB/uKOFm+NJpylPe4txUPA=="
+          "hash": "ZCvoTQCuhViD+EGGQG4IQQ=="
         }
       },
       "is_incremental": false,
@@ -185,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialPubSubBuilder.html",
-          "hash": "ciM2lMo0aEYCwIxHHJgwrw=="
+          "hash": "9AaTmpevkin6nw8W3a4AHg=="
         }
       },
       "is_incremental": false,
@@ -281,7 +281,19 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Numerics.LatLng.html",
-          "hash": "M3sKq5rRq0dXffc7PN9ynA=="
+          "hash": "A/TMuQOtHEt1H5WQaiyaTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Numerics.Projection.AzimuthalEquidistant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Numerics.Projection.AzimuthalEquidistant.html",
+          "hash": "R0BpIm3EYulFba6SGp/GBA=="
         }
       },
       "is_incremental": false,
@@ -293,7 +305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Numerics.Projection.GreatCircleNavigation.html",
-          "hash": "SiDY7dB6v3S8FW6nhbldiQ=="
+          "hash": "pUA3mSn4pLQWKpeBhh8ogw=="
         }
       },
       "is_incremental": false,
@@ -301,11 +313,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.Projection.ICoordinateProjection.yml",
+      "source_relative_path": "obj/api/CueX.Numerics.Projection.IProjection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CueX.Numerics.Projection.ICoordinateProjection.html",
-          "hash": "qbVs1Vsp+vcOlz4t2J3Hwg=="
+          "relative_path": "api/CueX.Numerics.Projection.IProjection.html",
+          "hash": "peQR/nJhnERV5MletfrsPQ=="
         }
       },
       "is_incremental": false,
@@ -317,7 +329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Numerics.Projection.WebMercator.html",
-          "hash": "wTgQLMiJ+4wQm5aVxNbrOw=="
+          "hash": "Gu0D0flrts922kQ/12w2Pw=="
         }
       },
       "is_incremental": false,
@@ -329,7 +341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Numerics.Projection.html",
-          "hash": "fNnj7bbzyPIbsXIWEOdbUQ=="
+          "hash": "uTBOHt66ogqRZOVyeWFoyQ=="
         }
       },
       "is_incremental": false,
@@ -353,7 +365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Numerics.html",
-          "hash": "CxBQ83a8UUezrlo76T1wMQ=="
+          "hash": "cnY79cvoGjjgskHaCtprKw=="
         }
       },
       "is_incremental": false,
@@ -377,7 +389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.BasicSpatialGrain.html",
-          "hash": "oKcMAkmDazlk977eOXN/HQ=="
+          "hash": "B4FuwLZ/4y3D+ZJyFwTiVQ=="
         }
       },
       "is_incremental": false,
@@ -389,7 +401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.BasicSpatialGrainState.html",
-          "hash": "Sf88LqX/PkU6EcVUniYdjQ=="
+          "hash": "jSA7uFUp6cly9kB0IDCcww=="
         }
       },
       "is_incremental": false,
@@ -401,7 +413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.IBasicSpatialGrain.html",
-          "hash": "Yv1lMxoSrun6qh29GH+j9w=="
+          "hash": "cr12KzKCnrg1l6i/pUohNw=="
         }
       },
       "is_incremental": false,
@@ -509,7 +521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.ISimpleGrain.html",
-          "hash": "fieogHuQpt12mBiaGkpKsw=="
+          "hash": "v4IerYKdXM3yvyywV6Ty+w=="
         }
       },
       "is_incremental": false,
@@ -521,7 +533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrain.html",
-          "hash": "ptPW7m56vodkpcGOgRfaUA=="
+          "hash": "6WHD2vhsnXBEfH5T9L6Y4w=="
         }
       },
       "is_incremental": false,
@@ -533,7 +545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrainState.html",
-          "hash": "yAspMYtWWw9EewuT4ctsLg=="
+          "hash": "zWT+ZIsW5pc13s5Ftur0HQ=="
         }
       },
       "is_incremental": false,
@@ -557,7 +569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "A/afcwOzn23XAhk0NkIkMw=="
+          "hash": "Ltksx3G93wInhCQAWrbx6g=="
         }
       },
       "is_incremental": false,
@@ -589,17 +601,17 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

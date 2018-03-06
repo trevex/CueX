@@ -61,12 +61,12 @@ references:
   commentId: Overload:CueX.API.ISpatialGrain.GetPosition
   fullName: CueX.API.ISpatialGrain.GetPosition
   nameWithType: ISpatialGrain.GetPosition
-- uid: CueX.API.ISpatialGrain.SetCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  name: SetCoordinateProjection(ICoordinateProjection)
-  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_SetCoordinateProjection_CueX_Numerics_Projection_ICoordinateProjection_
-  commentId: M:CueX.API.ISpatialGrain.SetCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  fullName: CueX.API.ISpatialGrain.SetCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  nameWithType: ISpatialGrain.SetCoordinateProjection(ICoordinateProjection)
+- uid: CueX.API.ISpatialGrain.SetCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  name: SetCoordinateProjection(IProjection)
+  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_SetCoordinateProjection_CueX_Numerics_Projection_IProjection_
+  commentId: M:CueX.API.ISpatialGrain.SetCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  fullName: CueX.API.ISpatialGrain.SetCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  nameWithType: ISpatialGrain.SetCoordinateProjection(IProjection)
 - uid: CueX.API.ISpatialGrain.SetCoordinateProjection*
   name: SetCoordinateProjection
   href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_SetCoordinateProjection_
@@ -180,14 +180,14 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TState).GetPosition
   nameWithType: SpatialGrain<TState>.GetPosition
   nameWithType.vb: SpatialGrain(Of TState).GetPosition
-- uid: CueX.Core.SpatialGrain`1.SetCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  name: SetCoordinateProjection(ICoordinateProjection)
-  href: api/CueX.Core.SpatialGrain-1.html#CueX_Core_SpatialGrain_1_SetCoordinateProjection_CueX_Numerics_Projection_ICoordinateProjection_
-  commentId: M:CueX.Core.SpatialGrain`1.SetCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  fullName: CueX.Core.SpatialGrain<TState>.SetCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  fullName.vb: CueX.Core.SpatialGrain(Of TState).SetCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  nameWithType: SpatialGrain<TState>.SetCoordinateProjection(ICoordinateProjection)
-  nameWithType.vb: SpatialGrain(Of TState).SetCoordinateProjection(ICoordinateProjection)
+- uid: CueX.Core.SpatialGrain`1.SetCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  name: SetCoordinateProjection(IProjection)
+  href: api/CueX.Core.SpatialGrain-1.html#CueX_Core_SpatialGrain_1_SetCoordinateProjection_CueX_Numerics_Projection_IProjection_
+  commentId: M:CueX.Core.SpatialGrain`1.SetCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  fullName: CueX.Core.SpatialGrain<TState>.SetCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  fullName.vb: CueX.Core.SpatialGrain(Of TState).SetCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  nameWithType: SpatialGrain<TState>.SetCoordinateProjection(IProjection)
+  nameWithType.vb: SpatialGrain(Of TState).SetCoordinateProjection(IProjection)
 - uid: CueX.Core.SpatialGrain`1.SetCoordinateProjection*
   name: SetCoordinateProjection
   href: api/CueX.Core.SpatialGrain-1.html#CueX_Core_SpatialGrain_1_SetCoordinateProjection_
@@ -219,12 +219,6 @@ references:
   commentId: T:CueX.Core.SpatialGrainState
   fullName: CueX.Core.SpatialGrainState
   nameWithType: SpatialGrainState
-- uid: CueX.Core.SpatialGrainState.CoordinateProjection
-  name: CoordinateProjection
-  href: api/CueX.Core.SpatialGrainState.html#CueX_Core_SpatialGrainState_CoordinateProjection
-  commentId: F:CueX.Core.SpatialGrainState.CoordinateProjection
-  fullName: CueX.Core.SpatialGrainState.CoordinateProjection
-  nameWithType: SpatialGrainState.CoordinateProjection
 - uid: CueX.Core.SpatialGrainState.Parent
   name: Parent
   href: api/CueX.Core.SpatialGrainState.html#CueX_Core_SpatialGrainState_Parent
@@ -237,6 +231,12 @@ references:
   commentId: F:CueX.Core.SpatialGrainState.Position
   fullName: CueX.Core.SpatialGrainState.Position
   nameWithType: SpatialGrainState.Position
+- uid: CueX.Core.SpatialGrainState.Projection
+  name: Projection
+  href: api/CueX.Core.SpatialGrainState.html#CueX_Core_SpatialGrainState_Projection
+  commentId: F:CueX.Core.SpatialGrainState.Projection
+  fullName: CueX.Core.SpatialGrainState.Projection
+  nameWithType: SpatialGrainState.Projection
 - uid: CueX.Core.SpatialPubSubBuilder
   name: SpatialPubSubBuilder
   href: api/CueX.Core.SpatialPubSubBuilder.html
@@ -267,12 +267,12 @@ references:
   commentId: Overload:CueX.Core.SpatialPubSubBuilder.CheckHardwareSupport
   fullName: CueX.Core.SpatialPubSubBuilder.CheckHardwareSupport
   nameWithType: SpatialPubSubBuilder.CheckHardwareSupport
-- uid: CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  name: UseCoordinateProjection(ICoordinateProjection)
-  href: api/CueX.Core.SpatialPubSubBuilder.html#CueX_Core_SpatialPubSubBuilder_UseCoordinateProjection_CueX_Numerics_Projection_ICoordinateProjection_
-  commentId: M:CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  fullName: CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)
-  nameWithType: SpatialPubSubBuilder.UseCoordinateProjection(ICoordinateProjection)
+- uid: CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  name: UseCoordinateProjection(IProjection)
+  href: api/CueX.Core.SpatialPubSubBuilder.html#CueX_Core_SpatialPubSubBuilder_UseCoordinateProjection_CueX_Numerics_Projection_IProjection_
+  commentId: M:CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  fullName: CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection(CueX.Numerics.Projection.IProjection)
+  nameWithType: SpatialPubSubBuilder.UseCoordinateProjection(IProjection)
 - uid: CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection*
   name: UseCoordinateProjection
   href: api/CueX.Core.SpatialPubSubBuilder.html#CueX_Core_SpatialPubSubBuilder_UseCoordinateProjection_
@@ -426,18 +426,24 @@ references:
   commentId: N:CueX.Numerics.Projection
   fullName: CueX.Numerics.Projection
   nameWithType: CueX.Numerics.Projection
+- uid: CueX.Numerics.Projection.AzimuthalEquidistant
+  name: AzimuthalEquidistant
+  href: api/CueX.Numerics.Projection.AzimuthalEquidistant.html
+  commentId: T:CueX.Numerics.Projection.AzimuthalEquidistant
+  fullName: CueX.Numerics.Projection.AzimuthalEquidistant
+  nameWithType: AzimuthalEquidistant
 - uid: CueX.Numerics.Projection.GreatCircleNavigation
   name: GreatCircleNavigation
   href: api/CueX.Numerics.Projection.GreatCircleNavigation.html
   commentId: T:CueX.Numerics.Projection.GreatCircleNavigation
   fullName: CueX.Numerics.Projection.GreatCircleNavigation
   nameWithType: GreatCircleNavigation
-- uid: CueX.Numerics.Projection.ICoordinateProjection
-  name: ICoordinateProjection
-  href: api/CueX.Numerics.Projection.ICoordinateProjection.html
-  commentId: T:CueX.Numerics.Projection.ICoordinateProjection
-  fullName: CueX.Numerics.Projection.ICoordinateProjection
-  nameWithType: ICoordinateProjection
+- uid: CueX.Numerics.Projection.IProjection
+  name: IProjection
+  href: api/CueX.Numerics.Projection.IProjection.html
+  commentId: T:CueX.Numerics.Projection.IProjection
+  fullName: CueX.Numerics.Projection.IProjection
+  nameWithType: IProjection
 - uid: CueX.Numerics.Projection.WebMercator
   name: WebMercator
   href: api/CueX.Numerics.Projection.WebMercator.html
