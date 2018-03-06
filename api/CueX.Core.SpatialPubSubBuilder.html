@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class SpatialGrainState
+    <title>Class SpatialPubSubBuilder
    | CueX Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class SpatialGrainState
+    <meta name="title" content="Class SpatialPubSubBuilder
    | CueX Documentation ">
     <meta name="generator" content="docfx 2.32.1.0">
     
@@ -76,19 +76,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CueX.Core.SpatialGrainState">
+            <article class="content wrap" id="_content" data-uid="CueX.Core.SpatialPubSubBuilder">
   
   
-  <h1 id="CueX_Core_SpatialGrainState" data-uid="CueX.Core.SpatialGrainState" class="text-break">Class SpatialGrainState
+  <h1 id="CueX_Core_SpatialPubSubBuilder" data-uid="CueX.Core.SpatialPubSubBuilder" class="text-break">Class SpatialPubSubBuilder
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">SpatialGrainState</span></div>
-      <div class="level2"><a class="xref" href="CueX.Test.Grains.BasicSpatialGrainState.html">BasicSpatialGrainState</a></div>
-      <div class="level2"><a class="xref" href="SimpleExample.Grains.SimpleGrainState.html">SimpleGrainState</a></div>
+    <div class="level1"><span class="xref">SpatialPubSubBuilder</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -116,56 +114,105 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CueX.Core.html">CueX.Core</a></h6>
   <h6><strong>Assembly</strong>: CueX.Core.dll</h6>
-  <h5 id="CueX_Core_SpatialGrainState_syntax">Syntax</h5>
+  <h5 id="CueX_Core_SpatialPubSubBuilder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SpatialGrainState</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SpatialPubSubBuilder</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrainState_CoordinateProjection.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrainState.CoordinateProjection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialPubSubBuilder_Build.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialPubSubBuilder.Build%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrainState.cs/#L11">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialPubSubBuilder.cs/#L32">View Source</a>
   </span>
-  <h4 id="CueX_Core_SpatialGrainState_CoordinateProjection" data-uid="CueX.Core.SpatialGrainState.CoordinateProjection">CoordinateProjection</h4>
+  <a id="CueX_Core_SpatialPubSubBuilder_Build_" data-uid="CueX.Core.SpatialPubSubBuilder.Build*"></a>
+  <h4 id="CueX_Core_SpatialPubSubBuilder_Build" data-uid="CueX.Core.SpatialPubSubBuilder.Build">Build()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ICoordinateProjection CoordinateProjection</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract ISpatialPubSub Build()</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CueX.API.ISpatialPubSub.html">ISpatialPubSub</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialPubSubBuilder_CheckHardwareSupport.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialPubSubBuilder.CheckHardwareSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialPubSubBuilder.cs/#L14">View Source</a>
+  </span>
+  <a id="CueX_Core_SpatialPubSubBuilder_CheckHardwareSupport_" data-uid="CueX.Core.SpatialPubSubBuilder.CheckHardwareSupport*"></a>
+  <h4 id="CueX_Core_SpatialPubSubBuilder_CheckHardwareSupport" data-uid="CueX.Core.SpatialPubSubBuilder.CheckHardwareSupport">CheckHardwareSupport()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool CheckHardwareSupport()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialPubSubBuilder_UseCoordinateProjection_CueX_Numerics_Projection_ICoordinateProjection_.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialPubSubBuilder.cs/#L26">View Source</a>
+  </span>
+  <a id="CueX_Core_SpatialPubSubBuilder_UseCoordinateProjection_" data-uid="CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection*"></a>
+  <h4 id="CueX_Core_SpatialPubSubBuilder_UseCoordinateProjection_CueX_Numerics_Projection_ICoordinateProjection_" data-uid="CueX.Core.SpatialPubSubBuilder.UseCoordinateProjection(CueX.Numerics.Projection.ICoordinateProjection)">UseCoordinateProjection(ICoordinateProjection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpatialPubSubBuilder UseCoordinateProjection(ICoordinateProjection coordinateProjection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><a class="xref" href="CueX.Numerics.Projection.ICoordinateProjection.html">ICoordinateProjection</a></td>
+        <td><span class="parametername">coordinateProjection</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrainState_Parent.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrainState.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrainState.cs/#L13">View Source</a>
-  </span>
-  <h4 id="CueX_Core_SpatialGrainState_Parent" data-uid="CueX.Core.SpatialGrainState.Parent">Parent</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IPartitionGrain Parent</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -175,36 +222,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CueX.API.IPartitionGrain.html">IPartitionGrain</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrainState_Position.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrainState.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrainState.cs/#L12">View Source</a>
-  </span>
-  <h4 id="CueX_Core_SpatialGrainState_Position" data-uid="CueX.Core.SpatialGrainState.Position">Position</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3d Position</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CueX.Numerics.Vector3d.html">Vector3d</a></td>
+        <td><a class="xref" href="CueX.Core.SpatialPubSubBuilder.html">SpatialPubSubBuilder</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -217,10 +235,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrainState.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrainState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialPubSubBuilder.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialPubSubBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrainState.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialPubSubBuilder.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
