@@ -1,10 +1,13 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
-
 using System.Threading.Tasks;
 using CueX.API;
 using CueX.Numerics;
+using CueX.Numerics.Projection;
 using Orleans;
+
+// NOTE: SpatialGrain's position is in the Format that the ICoordinateProjection specifies,
+//       therefore all helper, e.g. metric tooling, need to use the conversion functions provided by the projection
 
 namespace CueX.Core
 {
@@ -17,6 +20,12 @@ namespace CueX.Core
         where TState : SpatialGrainState, new()
     {
 
+        public Task SetCoordinateProjection(ICoordinateProjection coordinateProjection)
+        {
+            State.CoordinateProjection = coordinateProjection;
+            return WriteStateAsync();
+        }
+        
         public Task<Vector3d> GetPosition()
         {
             return Task.FromResult(State.Position);

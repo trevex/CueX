@@ -3,6 +3,7 @@
 
 using System.Threading.Tasks;
 using CueX.API;
+using CueX.Numerics.Projection;
 using Orleans;
 
 namespace CueX.Core
@@ -15,7 +16,8 @@ namespace CueX.Core
     public abstract class PartitionGrain<TState> : Grain<TState>, IPartitionGrain
         where TState : PartitionGrainState, new()
     {
-        public abstract  Task Add<T>(T spatialGrain) where T : ISpatialGrain;
+        
+        public abstract Task Add<T>(T spatialGrain) where T : ISpatialGrain;
 
         public abstract Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain;
         

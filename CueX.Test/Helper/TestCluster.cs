@@ -1,7 +1,8 @@
-﻿using System;
+﻿// Copyright (c) Niklas Voss. All rights reserved.
+// Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
+using System;
 using System.Net;
 using System.Threading.Tasks;
-using CueX.Core;
 using CueX.GridSPS;
 using CueX.Test.Grains;
 using Microsoft.Extensions.Logging;
@@ -35,8 +36,6 @@ namespace CueX.Test.Helper
         
         private static async Task<ISiloHost> StartSilo()
         {
-            // run some hardware checks (vector instruction support)
-            SpatialPubSubConfigurationHelper.CheckHardwareSupport();
             // Default values
             var siloAddress = IPAddress.Loopback;
             // Configure localhost silo

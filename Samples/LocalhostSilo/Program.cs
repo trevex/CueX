@@ -35,8 +35,6 @@ namespace LocalhostSilo
 
         private static async Task<ISiloHost> StartSilo()
         {
-            // run some hardware checks (vector instruction support)
-            SpatialPubSubConfigurationHelper.CheckHardwareSupport();
             // Default values
             int siloPort = 11111;
             int gatewayPort = 30000;
