@@ -8,7 +8,7 @@ namespace CueX.Core
 {
     public abstract class SpatialGrainState
     {
-        public ICoordinateProjection CoordinateProjection;
+        public IProjection Projection;
         public Vector3d Position;
         public IPartitionGrain Parent;
     }

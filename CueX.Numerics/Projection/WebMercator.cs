@@ -5,7 +5,7 @@ using System;
 
 namespace CueX.Numerics.Projection
 {
-    public class WebMercator : ICoordinateProjection
+    public class WebMercator : IProjection
     {
         private const int EarthRadius = 6378137;
         private const double OriginShift = 2 * Math.PI * EarthRadius / 2;

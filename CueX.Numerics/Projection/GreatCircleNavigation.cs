@@ -2,7 +2,7 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 namespace CueX.Numerics.Projection
 {
-    public class GreatCircleNavigation : ICoordinateProjection
+    public class GreatCircleNavigation : IProjection
     {
         
     }

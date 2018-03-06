@@ -20,9 +20,9 @@ namespace CueX.Core
         where TState : SpatialGrainState, new()
     {
 
-        public Task SetCoordinateProjection(ICoordinateProjection coordinateProjection)
+        public Task SetCoordinateProjection(IProjection projection)
         {
-            State.CoordinateProjection = coordinateProjection;
+            State.Projection = projection;
             return WriteStateAsync();
         }
         

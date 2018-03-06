@@ -12,7 +12,7 @@ namespace CueX.API
     /// </summary>
     public interface ISpatialGrain
     {
-        Task SetCoordinateProjection(ICoordinateProjection coordinateProjection);
+        Task SetCoordinateProjection(IProjection projection);
         Task<Vector3d> GetPosition();
         Task SetParent<T>(T parent) where T : IPartitionGrain;
     }

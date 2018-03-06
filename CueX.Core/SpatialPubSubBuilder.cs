@@ -9,7 +9,7 @@ namespace CueX.Core
 {
     public abstract class SpatialPubSubBuilder
     {
-        private ICoordinateProjection _coordinateProjection;
+        private IProjection _projection;
         
         protected bool CheckHardwareSupport()
         {
@@ -23,9 +23,9 @@ namespace CueX.Core
             return true;
         }
 
-        public SpatialPubSubBuilder UseCoordinateProjection(ICoordinateProjection coordinateProjection)
+        public SpatialPubSubBuilder UseCoordinateProjection(IProjection projection)
         {
-            _coordinateProjection = coordinateProjection;
+            _projection = projection;
             return this;
         }
 
