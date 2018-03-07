@@ -10,6 +10,7 @@
     <PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator.Build" Version="2.0.0-rc1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CueX.GIS\CueX.GIS.csproj" />
     <ProjectReference Include="..\CueX.Numerics\CueX.Numerics.csproj">
       <Project>{22F73926-01B4-482F-968B-2962AE84E2F8}</Project>
       <Name>CueX.Numerics</Name>
