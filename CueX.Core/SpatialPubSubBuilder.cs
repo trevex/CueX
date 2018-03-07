@@ -3,13 +3,11 @@
 using System;
 using System.Numerics;
 using CueX.API;
-using CueX.Numerics.Projection;
 
 namespace CueX.Core
 {
     public abstract class SpatialPubSubBuilder
     {
-        private IProjection _projection;
         
         protected bool CheckHardwareSupport()
         {
@@ -21,12 +19,6 @@ namespace CueX.Core
             }
 
             return true;
-        }
-
-        public SpatialPubSubBuilder UseCoordinateProjection(IProjection projection)
-        {
-            _projection = projection;
-            return this;
         }
 
         public abstract ISpatialPubSub Build();

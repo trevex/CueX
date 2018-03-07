@@ -3,7 +3,6 @@
 using System.Threading.Tasks;
 using CueX.API;
 using CueX.Numerics;
-using CueX.Numerics.Projection;
 using Orleans;
 
 // NOTE: SpatialGrain's position is in the Format that the ICoordinateProjection specifies,
@@ -19,12 +18,6 @@ namespace CueX.Core
     public abstract class SpatialGrain<TState> : Grain<TState>, ISpatialGrain
         where TState : SpatialGrainState, new()
     {
-
-        public Task SetCoordinateProjection(IProjection projection)
-        {
-            State.Projection = projection;
-            return WriteStateAsync();
-        }
         
         public Task<Vector3d> GetPosition()
         {

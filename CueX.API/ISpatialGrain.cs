@@ -2,7 +2,6 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 using System.Threading.Tasks;
 using CueX.Numerics;
-using CueX.Numerics.Projection;
 
 
 namespace CueX.API
@@ -12,7 +11,6 @@ namespace CueX.API
     /// </summary>
     public interface ISpatialGrain
     {
-        Task SetCoordinateProjection(IProjection projection);
         Task<Vector3d> GetPosition();
         Task SetParent<T>(T parent) where T : IPartitionGrain;
     }
