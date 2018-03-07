@@ -89,7 +89,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.API.IPartitionGrain.html",
-          "hash": "dqrMn2Lza3sh7VrTOvJwnw=="
+          "hash": "UI/VzLy391P6kfEyl0Tp6g=="
         }
       },
       "is_incremental": false,
@@ -101,7 +101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.API.ISpatialGrain.html",
-          "hash": "SuPjJMYHsJ6faMQRlaF3FQ=="
+          "hash": "Fr00J4BMNTAtm7VlY21beg=="
         }
       },
       "is_incremental": false,
@@ -137,7 +137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.PartitionGrain-1.html",
-          "hash": "RPi4cxO4ZT31Z8xQbdNTvQ=="
+          "hash": "RTac85LsJnwDSZwl89WLpQ=="
         }
       },
       "is_incremental": false,
@@ -149,7 +149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.PartitionGrainState.html",
-          "hash": "St0MDWXVKLKQV/X0F1H0UA=="
+          "hash": "jRyMNTQBXpNiBx1IGpu3pA=="
         }
       },
       "is_incremental": false,
@@ -161,7 +161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrain-1.html",
-          "hash": "JF6T5ht0eTXYslpPBvhbsw=="
+          "hash": "JJrQ3twA0jCvRkRc9yDrmw=="
         }
       },
       "is_incremental": false,
@@ -173,7 +173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrainState.html",
-          "hash": "ZCvoTQCuhViD+EGGQG4IQQ=="
+          "hash": "f50j+ONW2L8HtFgRcInrhA=="
         }
       },
       "is_incremental": false,
@@ -185,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialPubSubBuilder.html",
-          "hash": "9AaTmpevkin6nw8W3a4AHg=="
+          "hash": "dy85crDRqdROol5QBeiNZg=="
         }
       },
       "is_incremental": false,
@@ -277,78 +277,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.LatLng.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Numerics.LatLng.html",
-          "hash": "A/TMuQOtHEt1H5WQaiyaTQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.Projection.AzimuthalEquidistant.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Numerics.Projection.AzimuthalEquidistant.html",
-          "hash": "R0BpIm3EYulFba6SGp/GBA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.Projection.GreatCircleNavigation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Numerics.Projection.GreatCircleNavigation.html",
-          "hash": "pUA3mSn4pLQWKpeBhh8ogw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.Projection.IProjection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Numerics.Projection.IProjection.html",
-          "hash": "peQR/nJhnERV5MletfrsPQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.Projection.WebMercator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Numerics.Projection.WebMercator.html",
-          "hash": "Gu0D0flrts922kQ/12w2Pw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.Projection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Numerics.Projection.html",
-          "hash": "uTBOHt66ogqRZOVyeWFoyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/CueX.Numerics.Vector3d.yml",
       "output": {
         ".html": {
@@ -365,7 +293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Numerics.html",
-          "hash": "cnY79cvoGjjgskHaCtprKw=="
+          "hash": "lsrgNY/+VxSL/adoDdaFkg=="
         }
       },
       "is_incremental": false,
@@ -389,7 +317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.BasicSpatialGrain.html",
-          "hash": "B4FuwLZ/4y3D+ZJyFwTiVQ=="
+          "hash": "rOAStvif9y9WKMzDPLSCjQ=="
         }
       },
       "is_incremental": false,
@@ -401,7 +329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.BasicSpatialGrainState.html",
-          "hash": "jSA7uFUp6cly9kB0IDCcww=="
+          "hash": "mzGusTQ5YV8ocyrjMMqycQ=="
         }
       },
       "is_incremental": false,
@@ -413,7 +341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.IBasicSpatialGrain.html",
-          "hash": "cr12KzKCnrg1l6i/pUohNw=="
+          "hash": "PPZguPEDygKr6rIbUZwhyQ=="
         }
       },
       "is_incremental": false,
@@ -521,7 +449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.ISimpleGrain.html",
-          "hash": "v4IerYKdXM3yvyywV6Ty+w=="
+          "hash": "FzuOuCLI7M8pQycETMn1pQ=="
         }
       },
       "is_incremental": false,
@@ -533,7 +461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrain.html",
-          "hash": "6WHD2vhsnXBEfH5T9L6Y4w=="
+          "hash": "uilHtNXWq++/8VttALDUPA=="
         }
       },
       "is_incremental": false,
@@ -545,7 +473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrainState.html",
-          "hash": "zWT+ZIsW5pc13s5Ftur0HQ=="
+          "hash": "A0Ash3Dve6HD5BZoXkJDDA=="
         }
       },
       "is_incremental": false,
@@ -569,7 +497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Ltksx3G93wInhCQAWrbx6g=="
+          "hash": "Redyf3HXZwJd9P0l5F+64g=="
         }
       },
       "is_incremental": false,
@@ -601,17 +529,17 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
