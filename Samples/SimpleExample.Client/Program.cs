@@ -2,12 +2,12 @@
 using System.Net;
 using System.Threading.Tasks;
 using CueX.GridSPS;
+using CueX.GridSPS.Config;
 using CueX.Numerics;
 using Microsoft.Extensions.Logging;
 using Orleans;
 using Orleans.ApplicationParts;
 using Orleans.Runtime;
-using Orleans.Runtime.Configuration;
 using SimpleExample.Grains;
 
 namespace SimpleExample.Client
@@ -63,7 +63,7 @@ namespace SimpleExample.Client
         
         private static void AddClientApplicationParts(IApplicationPartManager parts)
         {
-            GridConfigurationHelper.AddGridClientApplicationParts(parts);
+            ClientHelper.AddApplicationParts(parts);
             parts.AddApplicationPart(typeof(ISimpleGrain).Assembly);
         }
 

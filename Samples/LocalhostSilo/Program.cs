@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Net;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using CueX.Core;
-using CueX.GridSPS;
+using CueX.GridSPS.Config;
 using Microsoft.Extensions.Logging;
 using Orleans;
 using Orleans.ApplicationParts;
 using Orleans.Configuration;
 using Orleans.Hosting;
-using Orleans.Runtime.Configuration;
 using SimpleExample.Grains;
 
 namespace LocalhostSilo
@@ -62,7 +59,7 @@ namespace LocalhostSilo
         private static void AddHostApplicationParts(IApplicationPartManager parts)
         {
             parts.AddFromAppDomain(); // Loads Orleans-specific assemblies 
-            GridConfigurationHelper.AddGridHostApplicationParts(parts);
+            HostHelper.AddApplicationParts(parts);
             parts.AddApplicationPart(typeof(SimpleGrain).Assembly).WithReferences();
         }
 

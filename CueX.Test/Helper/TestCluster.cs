@@ -3,7 +3,7 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using CueX.GridSPS;
+using CueX.GridSPS.Config;
 using CueX.Test.Grains;
 using Microsoft.Extensions.Logging;
 using Orleans;
@@ -71,13 +71,13 @@ namespace CueX.Test.Helper
         
         private static void AddHostApplicationParts(IApplicationPartManager parts)
         {
-            GridConfigurationHelper.AddGridHostApplicationParts(parts);
+            HostHelper.AddApplicationParts(parts);
             parts.AddApplicationPart(typeof(BasicSpatialGrain).Assembly).WithReferences();
         }
         
         private static void AddClientApplicationParts(IApplicationPartManager parts)
         {
-            GridConfigurationHelper.AddGridClientApplicationParts(parts);
+            ClientHelper.AddApplicationParts(parts);
             parts.AddApplicationPart(typeof(IBasicSpatialGrain).Assembly);
         }
 

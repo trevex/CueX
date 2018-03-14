@@ -3,6 +3,7 @@
 using System;
 using System.Numerics;
 using CueX.API;
+using Orleans;
 
 namespace CueX.Core
 {
@@ -21,6 +22,6 @@ namespace CueX.Core
             return true;
         }
 
-        public abstract ISpatialPubSub Build();
+        public abstract ISpatialPubSub Build(IClusterClient client);
     }
 }
