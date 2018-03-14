@@ -7,6 +7,12 @@ references:
   commentId: N:CueX.API
   fullName: CueX.API
   nameWithType: CueX.API
+- uid: CueX.API.IManagementGrain
+  name: IManagementGrain
+  href: api/CueX.API.IManagementGrain.html
+  commentId: T:CueX.API.IManagementGrain
+  fullName: CueX.API.IManagementGrain
+  nameWithType: IManagementGrain
 - uid: CueX.API.IPartitionGrain
   name: IPartitionGrain
   href: api/CueX.API.IPartitionGrain.html
@@ -82,12 +88,97 @@ references:
   commentId: T:CueX.API.ISpatialPubSub
   fullName: CueX.API.ISpatialPubSub
   nameWithType: ISpatialPubSub
+- uid: CueX.API.ISpatialPubSub.Insert*
+  name: Insert
+  href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Insert_
+  commentId: Overload:CueX.API.ISpatialPubSub.Insert
+  fullName: CueX.API.ISpatialPubSub.Insert
+  nameWithType: ISpatialPubSub.Insert
+- uid: CueX.API.ISpatialPubSub.Insert``1(``0)
+  name: Insert<T>(T)
+  href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Insert__1___0_
+  commentId: M:CueX.API.ISpatialPubSub.Insert``1(``0)
+  name.vb: Insert(Of T)(T)
+  fullName: CueX.API.ISpatialPubSub.Insert<T>(T)
+  fullName.vb: CueX.API.ISpatialPubSub.Insert(Of T)(T)
+  nameWithType: ISpatialPubSub.Insert<T>(T)
+  nameWithType.vb: ISpatialPubSub.Insert(Of T)(T)
+- uid: CueX.API.ISpatialPubSub.Remove*
+  name: Remove
+  href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Remove_
+  commentId: Overload:CueX.API.ISpatialPubSub.Remove
+  fullName: CueX.API.ISpatialPubSub.Remove
+  nameWithType: ISpatialPubSub.Remove
+- uid: CueX.API.ISpatialPubSub.Remove``1(``0)
+  name: Remove<T>(T)
+  href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Remove__1___0_
+  commentId: M:CueX.API.ISpatialPubSub.Remove``1(``0)
+  name.vb: Remove(Of T)(T)
+  fullName: CueX.API.ISpatialPubSub.Remove<T>(T)
+  fullName.vb: CueX.API.ISpatialPubSub.Remove(Of T)(T)
+  nameWithType: ISpatialPubSub.Remove<T>(T)
+  nameWithType.vb: ISpatialPubSub.Remove(Of T)(T)
 - uid: CueX.Core
   name: CueX.Core
   href: api/CueX.Core.html
   commentId: N:CueX.Core
   fullName: CueX.Core
   nameWithType: CueX.Core
+- uid: CueX.Core.Configuration
+  name: Configuration
+  href: api/CueX.Core.Configuration.html
+  commentId: T:CueX.Core.Configuration
+  fullName: CueX.Core.Configuration
+  nameWithType: Configuration
+- uid: CueX.Core.ManagementGrain`1
+  name: ManagementGrain<TState>
+  href: api/CueX.Core.ManagementGrain-1.html
+  commentId: T:CueX.Core.ManagementGrain`1
+  name.vb: ManagementGrain(Of TState)
+  fullName: CueX.Core.ManagementGrain<TState>
+  fullName.vb: CueX.Core.ManagementGrain(Of TState)
+  nameWithType: ManagementGrain<TState>
+  nameWithType.vb: ManagementGrain(Of TState)
+- uid: CueX.Core.ManagementGrain`1.Insert*
+  name: Insert
+  href: api/CueX.Core.ManagementGrain-1.html#CueX_Core_ManagementGrain_1_Insert_
+  commentId: Overload:CueX.Core.ManagementGrain`1.Insert
+  fullName: CueX.Core.ManagementGrain<TState>.Insert
+  fullName.vb: CueX.Core.ManagementGrain(Of TState).Insert
+  nameWithType: ManagementGrain<TState>.Insert
+  nameWithType.vb: ManagementGrain(Of TState).Insert
+- uid: CueX.Core.ManagementGrain`1.Insert``1(``0)
+  name: Insert<T>(T)
+  href: api/CueX.Core.ManagementGrain-1.html#CueX_Core_ManagementGrain_1_Insert__1___0_
+  commentId: M:CueX.Core.ManagementGrain`1.Insert``1(``0)
+  name.vb: Insert(Of T)(T)
+  fullName: CueX.Core.ManagementGrain<TState>.Insert<T>(T)
+  fullName.vb: CueX.Core.ManagementGrain(Of TState).Insert(Of T)(T)
+  nameWithType: ManagementGrain<TState>.Insert<T>(T)
+  nameWithType.vb: ManagementGrain(Of TState).Insert(Of T)(T)
+- uid: CueX.Core.ManagementGrain`1.Remove*
+  name: Remove
+  href: api/CueX.Core.ManagementGrain-1.html#CueX_Core_ManagementGrain_1_Remove_
+  commentId: Overload:CueX.Core.ManagementGrain`1.Remove
+  fullName: CueX.Core.ManagementGrain<TState>.Remove
+  fullName.vb: CueX.Core.ManagementGrain(Of TState).Remove
+  nameWithType: ManagementGrain<TState>.Remove
+  nameWithType.vb: ManagementGrain(Of TState).Remove
+- uid: CueX.Core.ManagementGrain`1.Remove``1(``0)
+  name: Remove<T>(T)
+  href: api/CueX.Core.ManagementGrain-1.html#CueX_Core_ManagementGrain_1_Remove__1___0_
+  commentId: M:CueX.Core.ManagementGrain`1.Remove``1(``0)
+  name.vb: Remove(Of T)(T)
+  fullName: CueX.Core.ManagementGrain<TState>.Remove<T>(T)
+  fullName.vb: CueX.Core.ManagementGrain(Of TState).Remove(Of T)(T)
+  nameWithType: ManagementGrain<TState>.Remove<T>(T)
+  nameWithType.vb: ManagementGrain(Of TState).Remove(Of T)(T)
+- uid: CueX.Core.ManagementGrainState
+  name: ManagementGrainState
+  href: api/CueX.Core.ManagementGrainState.html
+  commentId: T:CueX.Core.ManagementGrainState
+  fullName: CueX.Core.ManagementGrainState
+  nameWithType: ManagementGrainState
 - uid: CueX.Core.PartitionGrain`1
   name: PartitionGrain<TState>
   href: api/CueX.Core.PartitionGrain-1.html
@@ -209,12 +300,12 @@ references:
   commentId: T:CueX.Core.SpatialPubSubBuilder
   fullName: CueX.Core.SpatialPubSubBuilder
   nameWithType: SpatialPubSubBuilder
-- uid: CueX.Core.SpatialPubSubBuilder.Build
-  name: Build()
-  href: api/CueX.Core.SpatialPubSubBuilder.html#CueX_Core_SpatialPubSubBuilder_Build
-  commentId: M:CueX.Core.SpatialPubSubBuilder.Build
-  fullName: CueX.Core.SpatialPubSubBuilder.Build()
-  nameWithType: SpatialPubSubBuilder.Build()
+- uid: CueX.Core.SpatialPubSubBuilder.Build(Orleans.IClusterClient)
+  name: Build(IClusterClient)
+  href: api/CueX.Core.SpatialPubSubBuilder.html#CueX_Core_SpatialPubSubBuilder_Build_Orleans_IClusterClient_
+  commentId: M:CueX.Core.SpatialPubSubBuilder.Build(Orleans.IClusterClient)
+  fullName: CueX.Core.SpatialPubSubBuilder.Build(Orleans.IClusterClient)
+  nameWithType: SpatialPubSubBuilder.Build(IClusterClient)
 - uid: CueX.Core.SpatialPubSubBuilder.Build*
   name: Build
   href: api/CueX.Core.SpatialPubSubBuilder.html#CueX_Core_SpatialPubSubBuilder_Build_
@@ -239,36 +330,72 @@ references:
   commentId: N:CueX.GridSPS
   fullName: CueX.GridSPS
   nameWithType: CueX.GridSPS
-- uid: CueX.GridSPS.GridConfigurationHelper
-  name: GridConfigurationHelper
-  href: api/CueX.GridSPS.GridConfigurationHelper.html
-  commentId: T:CueX.GridSPS.GridConfigurationHelper
-  fullName: CueX.GridSPS.GridConfigurationHelper
-  nameWithType: GridConfigurationHelper
-- uid: CueX.GridSPS.GridConfigurationHelper.AddGridClientApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
-  name: AddGridClientApplicationParts(IApplicationPartManager)
-  href: api/CueX.GridSPS.GridConfigurationHelper.html#CueX_GridSPS_GridConfigurationHelper_AddGridClientApplicationParts_Orleans_ApplicationParts_IApplicationPartManager_
-  commentId: M:CueX.GridSPS.GridConfigurationHelper.AddGridClientApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
-  fullName: CueX.GridSPS.GridConfigurationHelper.AddGridClientApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
-  nameWithType: GridConfigurationHelper.AddGridClientApplicationParts(IApplicationPartManager)
-- uid: CueX.GridSPS.GridConfigurationHelper.AddGridClientApplicationParts*
-  name: AddGridClientApplicationParts
-  href: api/CueX.GridSPS.GridConfigurationHelper.html#CueX_GridSPS_GridConfigurationHelper_AddGridClientApplicationParts_
-  commentId: Overload:CueX.GridSPS.GridConfigurationHelper.AddGridClientApplicationParts
-  fullName: CueX.GridSPS.GridConfigurationHelper.AddGridClientApplicationParts
-  nameWithType: GridConfigurationHelper.AddGridClientApplicationParts
-- uid: CueX.GridSPS.GridConfigurationHelper.AddGridHostApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
-  name: AddGridHostApplicationParts(IApplicationPartManager)
-  href: api/CueX.GridSPS.GridConfigurationHelper.html#CueX_GridSPS_GridConfigurationHelper_AddGridHostApplicationParts_Orleans_ApplicationParts_IApplicationPartManager_
-  commentId: M:CueX.GridSPS.GridConfigurationHelper.AddGridHostApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
-  fullName: CueX.GridSPS.GridConfigurationHelper.AddGridHostApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
-  nameWithType: GridConfigurationHelper.AddGridHostApplicationParts(IApplicationPartManager)
-- uid: CueX.GridSPS.GridConfigurationHelper.AddGridHostApplicationParts*
-  name: AddGridHostApplicationParts
-  href: api/CueX.GridSPS.GridConfigurationHelper.html#CueX_GridSPS_GridConfigurationHelper_AddGridHostApplicationParts_
-  commentId: Overload:CueX.GridSPS.GridConfigurationHelper.AddGridHostApplicationParts
-  fullName: CueX.GridSPS.GridConfigurationHelper.AddGridHostApplicationParts
-  nameWithType: GridConfigurationHelper.AddGridHostApplicationParts
+- uid: CueX.GridSPS.Config
+  name: CueX.GridSPS.Config
+  href: api/CueX.GridSPS.Config.html
+  commentId: N:CueX.GridSPS.Config
+  fullName: CueX.GridSPS.Config
+  nameWithType: CueX.GridSPS.Config
+- uid: CueX.GridSPS.Config.ClientHelper
+  name: ClientHelper
+  href: api/CueX.GridSPS.Config.ClientHelper.html
+  commentId: T:CueX.GridSPS.Config.ClientHelper
+  fullName: CueX.GridSPS.Config.ClientHelper
+  nameWithType: ClientHelper
+- uid: CueX.GridSPS.Config.ClientHelper.AddApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
+  name: AddApplicationParts(IApplicationPartManager)
+  href: api/CueX.GridSPS.Config.ClientHelper.html#CueX_GridSPS_Config_ClientHelper_AddApplicationParts_Orleans_ApplicationParts_IApplicationPartManager_
+  commentId: M:CueX.GridSPS.Config.ClientHelper.AddApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
+  fullName: CueX.GridSPS.Config.ClientHelper.AddApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
+  nameWithType: ClientHelper.AddApplicationParts(IApplicationPartManager)
+- uid: CueX.GridSPS.Config.ClientHelper.AddApplicationParts*
+  name: AddApplicationParts
+  href: api/CueX.GridSPS.Config.ClientHelper.html#CueX_GridSPS_Config_ClientHelper_AddApplicationParts_
+  commentId: Overload:CueX.GridSPS.Config.ClientHelper.AddApplicationParts
+  fullName: CueX.GridSPS.Config.ClientHelper.AddApplicationParts
+  nameWithType: ClientHelper.AddApplicationParts
+- uid: CueX.GridSPS.Config.GridConfiguration
+  name: GridConfiguration
+  href: api/CueX.GridSPS.Config.GridConfiguration.html
+  commentId: T:CueX.GridSPS.Config.GridConfiguration
+  fullName: CueX.GridSPS.Config.GridConfiguration
+  nameWithType: GridConfiguration
+- uid: CueX.GridSPS.Config.GridConfiguration.Default
+  name: Default()
+  href: api/CueX.GridSPS.Config.GridConfiguration.html#CueX_GridSPS_Config_GridConfiguration_Default
+  commentId: M:CueX.GridSPS.Config.GridConfiguration.Default
+  fullName: CueX.GridSPS.Config.GridConfiguration.Default()
+  nameWithType: GridConfiguration.Default()
+- uid: CueX.GridSPS.Config.GridConfiguration.Default*
+  name: Default
+  href: api/CueX.GridSPS.Config.GridConfiguration.html#CueX_GridSPS_Config_GridConfiguration_Default_
+  commentId: Overload:CueX.GridSPS.Config.GridConfiguration.Default
+  fullName: CueX.GridSPS.Config.GridConfiguration.Default
+  nameWithType: GridConfiguration.Default
+- uid: CueX.GridSPS.Config.HostHelper
+  name: HostHelper
+  href: api/CueX.GridSPS.Config.HostHelper.html
+  commentId: T:CueX.GridSPS.Config.HostHelper
+  fullName: CueX.GridSPS.Config.HostHelper
+  nameWithType: HostHelper
+- uid: CueX.GridSPS.Config.HostHelper.AddApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
+  name: AddApplicationParts(IApplicationPartManager)
+  href: api/CueX.GridSPS.Config.HostHelper.html#CueX_GridSPS_Config_HostHelper_AddApplicationParts_Orleans_ApplicationParts_IApplicationPartManager_
+  commentId: M:CueX.GridSPS.Config.HostHelper.AddApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
+  fullName: CueX.GridSPS.Config.HostHelper.AddApplicationParts(Orleans.ApplicationParts.IApplicationPartManager)
+  nameWithType: HostHelper.AddApplicationParts(IApplicationPartManager)
+- uid: CueX.GridSPS.Config.HostHelper.AddApplicationParts*
+  name: AddApplicationParts
+  href: api/CueX.GridSPS.Config.HostHelper.html#CueX_GridSPS_Config_HostHelper_AddApplicationParts_
+  commentId: Overload:CueX.GridSPS.Config.HostHelper.AddApplicationParts
+  fullName: CueX.GridSPS.Config.HostHelper.AddApplicationParts
+  nameWithType: HostHelper.AddApplicationParts
+- uid: CueX.GridSPS.GridManagementGrain
+  name: GridManagementGrain
+  href: api/CueX.GridSPS.GridManagementGrain.html
+  commentId: T:CueX.GridSPS.GridManagementGrain
+  fullName: CueX.GridSPS.GridManagementGrain
+  nameWithType: GridManagementGrain
 - uid: CueX.GridSPS.GridPartitionGrain
   name: GridPartitionGrain
   href: api/CueX.GridSPS.GridPartitionGrain.html
@@ -326,6 +453,45 @@ references:
   commentId: T:CueX.GridSPS.GridPartitionGrainState
   fullName: CueX.GridSPS.GridPartitionGrainState
   nameWithType: GridPartitionGrainState
+- uid: CueX.GridSPS.GridSpatialPubSubBuilder
+  name: GridSpatialPubSubBuilder
+  href: api/CueX.GridSPS.GridSpatialPubSubBuilder.html
+  commentId: T:CueX.GridSPS.GridSpatialPubSubBuilder
+  fullName: CueX.GridSPS.GridSpatialPubSubBuilder
+  nameWithType: GridSpatialPubSubBuilder
+- uid: CueX.GridSPS.GridSpatialPubSubBuilder.Build(Orleans.IClusterClient)
+  name: Build(IClusterClient)
+  href: api/CueX.GridSPS.GridSpatialPubSubBuilder.html#CueX_GridSPS_GridSpatialPubSubBuilder_Build_Orleans_IClusterClient_
+  commentId: M:CueX.GridSPS.GridSpatialPubSubBuilder.Build(Orleans.IClusterClient)
+  fullName: CueX.GridSPS.GridSpatialPubSubBuilder.Build(Orleans.IClusterClient)
+  nameWithType: GridSpatialPubSubBuilder.Build(IClusterClient)
+- uid: CueX.GridSPS.GridSpatialPubSubBuilder.Build*
+  name: Build
+  href: api/CueX.GridSPS.GridSpatialPubSubBuilder.html#CueX_GridSPS_GridSpatialPubSubBuilder_Build_
+  commentId: Overload:CueX.GridSPS.GridSpatialPubSubBuilder.Build
+  fullName: CueX.GridSPS.GridSpatialPubSubBuilder.Build
+  nameWithType: GridSpatialPubSubBuilder.Build
+- uid: CueX.GridSPS.GridSpatialPubSubBuilder.Configure(System.Action{CueX.GridSPS.Config.GridConfiguration})
+  name: Configure(Action<GridConfiguration>)
+  href: api/CueX.GridSPS.GridSpatialPubSubBuilder.html#CueX_GridSPS_GridSpatialPubSubBuilder_Configure_System_Action_CueX_GridSPS_Config_GridConfiguration__
+  commentId: M:CueX.GridSPS.GridSpatialPubSubBuilder.Configure(System.Action{CueX.GridSPS.Config.GridConfiguration})
+  name.vb: Configure(Action(Of GridConfiguration))
+  fullName: CueX.GridSPS.GridSpatialPubSubBuilder.Configure(System.Action<CueX.GridSPS.Config.GridConfiguration>)
+  fullName.vb: CueX.GridSPS.GridSpatialPubSubBuilder.Configure(System.Action(Of CueX.GridSPS.Config.GridConfiguration))
+  nameWithType: GridSpatialPubSubBuilder.Configure(Action<GridConfiguration>)
+  nameWithType.vb: GridSpatialPubSubBuilder.Configure(Action(Of GridConfiguration))
+- uid: CueX.GridSPS.GridSpatialPubSubBuilder.Configure*
+  name: Configure
+  href: api/CueX.GridSPS.GridSpatialPubSubBuilder.html#CueX_GridSPS_GridSpatialPubSubBuilder_Configure_
+  commentId: Overload:CueX.GridSPS.GridSpatialPubSubBuilder.Configure
+  fullName: CueX.GridSPS.GridSpatialPubSubBuilder.Configure
+  nameWithType: GridSpatialPubSubBuilder.Configure
+- uid: CueX.GridSPS.IGridManagementGrain
+  name: IGridManagementGrain
+  href: api/CueX.GridSPS.IGridManagementGrain.html
+  commentId: T:CueX.GridSPS.IGridManagementGrain
+  fullName: CueX.GridSPS.IGridManagementGrain
+  nameWithType: IGridManagementGrain
 - uid: CueX.GridSPS.IGridPartitionGrain
   name: IGridPartitionGrain
   href: api/CueX.GridSPS.IGridPartitionGrain.html
