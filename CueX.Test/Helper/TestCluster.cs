@@ -40,9 +40,8 @@ namespace CueX.Test.Helper
             var siloAddress = IPAddress.Loopback;
             // Configure localhost silo
             var builder = new SiloHostBuilder()
-                .Configure(options => { options.ClusterId = "LocalCueXCluster"; })
-                .UseDevelopmentClustering(options => options.PrimarySiloEndpoint = new IPEndPoint(siloAddress, SiloPort))
-                .ConfigureEndpoints(siloAddress, SiloPort, GatewayPort)
+                .UseLocalhostClustering()
+                .Configure<EndpointOptions>(options => options.AdvertisedIPAddress = IPAddress.Loopback)
                 .ConfigureApplicationParts(AddHostApplicationParts)
                 .ConfigureLogging(logging =>
                 {
@@ -59,8 +58,7 @@ namespace CueX.Test.Helper
         {
             var siloAddress = IPAddress.Loopback;
             IClusterClient client = new ClientBuilder()
-                .ConfigureCluster(options => options.ClusterId = "helloworldcluster")
-                .UseStaticClustering(options => options.Gateways.Add((new IPEndPoint(siloAddress, GatewayPort)).ToGatewayUri()))
+                .UseLocalhostClustering()
                 .ConfigureApplicationParts(AddClientApplicationParts)
                 .ConfigureLogging(logging => logging.AddConsole())
                 .Build();

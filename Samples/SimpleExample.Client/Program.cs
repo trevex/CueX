@@ -36,8 +36,7 @@ namespace SimpleExample.Client
                     var siloAddress = IPAddress.Loopback;
                     var gatewayPort = 30000;
                     client = new ClientBuilder()
-                        .ConfigureCluster(options => options.ClusterId = "helloworldcluster")
-                        .UseStaticClustering(options => options.Gateways.Add((new IPEndPoint(siloAddress, gatewayPort)).ToGatewayUri()))
+                        .UseLocalhostClustering()
                         .ConfigureApplicationParts(AddClientApplicationParts)
                         .ConfigureLogging(logging => logging.AddConsole())
                         .Build();

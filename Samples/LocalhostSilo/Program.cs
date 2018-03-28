@@ -32,16 +32,10 @@ namespace LocalhostSilo
 
         private static async Task<ISiloHost> StartSilo()
         {
-            // Default values
-            int siloPort = 11111;
-            int gatewayPort = 30000;
-            var siloAddress = IPAddress.Loopback;
             // Configure silo
             var builder = new SiloHostBuilder()
-                .Configure(options => { options.ClusterId = "LocalCueXCluster"; })
-                // Setup silo on localhost and use development cluster 
-                .UseDevelopmentClustering(options => options.PrimarySiloEndpoint = new IPEndPoint(siloAddress, siloPort))
-                .ConfigureEndpoints(siloAddress, siloPort, gatewayPort)
+                .UseLocalhostClustering()
+                .Configure<EndpointOptions>(options => options.AdvertisedIPAddress = IPAddress.Loopback)
                 // Add grain assemblies
                 .ConfigureApplicationParts(AddHostApplicationParts)
                 // Logging setup
