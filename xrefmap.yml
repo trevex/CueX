@@ -23,6 +23,7 @@ references:
   name: Add
   href: api/CueX.API.IPartitionGrain.html#CueX_API_IPartitionGrain_Add_
   commentId: Overload:CueX.API.IPartitionGrain.Add
+  isSpec: "True"
   fullName: CueX.API.IPartitionGrain.Add
   nameWithType: IPartitionGrain.Add
 - uid: CueX.API.IPartitionGrain.Add``1(``0)
@@ -38,6 +39,7 @@ references:
   name: Remove
   href: api/CueX.API.IPartitionGrain.html#CueX_API_IPartitionGrain_Remove_
   commentId: Overload:CueX.API.IPartitionGrain.Remove
+  isSpec: "True"
   fullName: CueX.API.IPartitionGrain.Remove
   nameWithType: IPartitionGrain.Remove
 - uid: CueX.API.IPartitionGrain.Remove``1(``0)
@@ -65,12 +67,14 @@ references:
   name: GetPosition
   href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_GetPosition_
   commentId: Overload:CueX.API.ISpatialGrain.GetPosition
+  isSpec: "True"
   fullName: CueX.API.ISpatialGrain.GetPosition
   nameWithType: ISpatialGrain.GetPosition
 - uid: CueX.API.ISpatialGrain.SetParent*
   name: SetParent
   href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_SetParent_
   commentId: Overload:CueX.API.ISpatialGrain.SetParent
+  isSpec: "True"
   fullName: CueX.API.ISpatialGrain.SetParent
   nameWithType: ISpatialGrain.SetParent
 - uid: CueX.API.ISpatialGrain.SetParent``1(``0)
@@ -92,6 +96,7 @@ references:
   name: Insert
   href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Insert_
   commentId: Overload:CueX.API.ISpatialPubSub.Insert
+  isSpec: "True"
   fullName: CueX.API.ISpatialPubSub.Insert
   nameWithType: ISpatialPubSub.Insert
 - uid: CueX.API.ISpatialPubSub.Insert``1(``0)
@@ -107,6 +112,7 @@ references:
   name: Remove
   href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Remove_
   commentId: Overload:CueX.API.ISpatialPubSub.Remove
+  isSpec: "True"
   fullName: CueX.API.ISpatialPubSub.Remove
   nameWithType: ISpatialPubSub.Remove
 - uid: CueX.API.ISpatialPubSub.Remove``1(``0)
@@ -143,6 +149,7 @@ references:
   name: Insert
   href: api/CueX.Core.ManagementGrain-1.html#CueX_Core_ManagementGrain_1_Insert_
   commentId: Overload:CueX.Core.ManagementGrain`1.Insert
+  isSpec: "True"
   fullName: CueX.Core.ManagementGrain<TState>.Insert
   fullName.vb: CueX.Core.ManagementGrain(Of TState).Insert
   nameWithType: ManagementGrain<TState>.Insert
@@ -160,6 +167,7 @@ references:
   name: Remove
   href: api/CueX.Core.ManagementGrain-1.html#CueX_Core_ManagementGrain_1_Remove_
   commentId: Overload:CueX.Core.ManagementGrain`1.Remove
+  isSpec: "True"
   fullName: CueX.Core.ManagementGrain<TState>.Remove
   fullName.vb: CueX.Core.ManagementGrain(Of TState).Remove
   nameWithType: ManagementGrain<TState>.Remove
@@ -192,6 +200,7 @@ references:
   name: Add
   href: api/CueX.Core.PartitionGrain-1.html#CueX_Core_PartitionGrain_1_Add_
   commentId: Overload:CueX.Core.PartitionGrain`1.Add
+  isSpec: "True"
   fullName: CueX.Core.PartitionGrain<TState>.Add
   fullName.vb: CueX.Core.PartitionGrain(Of TState).Add
   nameWithType: PartitionGrain<TState>.Add
@@ -209,6 +218,7 @@ references:
   name: Remove
   href: api/CueX.Core.PartitionGrain-1.html#CueX_Core_PartitionGrain_1_Remove_
   commentId: Overload:CueX.Core.PartitionGrain`1.Remove
+  isSpec: "True"
   fullName: CueX.Core.PartitionGrain<TState>.Remove
   fullName.vb: CueX.Core.PartitionGrain(Of TState).Remove
   nameWithType: PartitionGrain<TState>.Remove
@@ -255,6 +265,7 @@ references:
   name: GetPosition
   href: api/CueX.Core.SpatialGrain-1.html#CueX_Core_SpatialGrain_1_GetPosition_
   commentId: Overload:CueX.Core.SpatialGrain`1.GetPosition
+  isSpec: "True"
   fullName: CueX.Core.SpatialGrain<TState>.GetPosition
   fullName.vb: CueX.Core.SpatialGrain(Of TState).GetPosition
   nameWithType: SpatialGrain<TState>.GetPosition
@@ -263,6 +274,7 @@ references:
   name: SetParent
   href: api/CueX.Core.SpatialGrain-1.html#CueX_Core_SpatialGrain_1_SetParent_
   commentId: Overload:CueX.Core.SpatialGrain`1.SetParent
+  isSpec: "True"
   fullName: CueX.Core.SpatialGrain<TState>.SetParent
   fullName.vb: CueX.Core.SpatialGrain(Of TState).SetParent
   nameWithType: SpatialGrain<TState>.SetParent
@@ -310,6 +322,7 @@ references:
   name: Build
   href: api/CueX.Core.SpatialPubSubBuilder.html#CueX_Core_SpatialPubSubBuilder_Build_
   commentId: Overload:CueX.Core.SpatialPubSubBuilder.Build
+  isSpec: "True"
   fullName: CueX.Core.SpatialPubSubBuilder.Build
   nameWithType: SpatialPubSubBuilder.Build
 - uid: CueX.Core.SpatialPubSubBuilder.CheckHardwareSupport
@@ -322,6 +335,7 @@ references:
   name: CheckHardwareSupport
   href: api/CueX.Core.SpatialPubSubBuilder.html#CueX_Core_SpatialPubSubBuilder_CheckHardwareSupport_
   commentId: Overload:CueX.Core.SpatialPubSubBuilder.CheckHardwareSupport
+  isSpec: "True"
   fullName: CueX.Core.SpatialPubSubBuilder.CheckHardwareSupport
   nameWithType: SpatialPubSubBuilder.CheckHardwareSupport
 - uid: CueX.GridSPS
@@ -352,6 +366,7 @@ references:
   name: AddApplicationParts
   href: api/CueX.GridSPS.Config.ClientHelper.html#CueX_GridSPS_Config_ClientHelper_AddApplicationParts_
   commentId: Overload:CueX.GridSPS.Config.ClientHelper.AddApplicationParts
+  isSpec: "True"
   fullName: CueX.GridSPS.Config.ClientHelper.AddApplicationParts
   nameWithType: ClientHelper.AddApplicationParts
 - uid: CueX.GridSPS.Config.GridConfiguration
@@ -370,6 +385,7 @@ references:
   name: Default
   href: api/CueX.GridSPS.Config.GridConfiguration.html#CueX_GridSPS_Config_GridConfiguration_Default_
   commentId: Overload:CueX.GridSPS.Config.GridConfiguration.Default
+  isSpec: "True"
   fullName: CueX.GridSPS.Config.GridConfiguration.Default
   nameWithType: GridConfiguration.Default
 - uid: CueX.GridSPS.Config.HostHelper
@@ -388,6 +404,7 @@ references:
   name: AddApplicationParts
   href: api/CueX.GridSPS.Config.HostHelper.html#CueX_GridSPS_Config_HostHelper_AddApplicationParts_
   commentId: Overload:CueX.GridSPS.Config.HostHelper.AddApplicationParts
+  isSpec: "True"
   fullName: CueX.GridSPS.Config.HostHelper.AddApplicationParts
   nameWithType: HostHelper.AddApplicationParts
 - uid: CueX.GridSPS.GridManagementGrain
@@ -415,12 +432,14 @@ references:
   name: GridPartitionGrain
   href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain__ctor_
   commentId: Overload:CueX.GridSPS.GridPartitionGrain.#ctor
+  isSpec: "True"
   fullName: CueX.GridSPS.GridPartitionGrain.GridPartitionGrain
   nameWithType: GridPartitionGrain.GridPartitionGrain
 - uid: CueX.GridSPS.GridPartitionGrain.Add*
   name: Add
   href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_Add_
   commentId: Overload:CueX.GridSPS.GridPartitionGrain.Add
+  isSpec: "True"
   fullName: CueX.GridSPS.GridPartitionGrain.Add
   nameWithType: GridPartitionGrain.Add
 - uid: CueX.GridSPS.GridPartitionGrain.Add``1(``0)
@@ -436,6 +455,7 @@ references:
   name: Remove
   href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_Remove_
   commentId: Overload:CueX.GridSPS.GridPartitionGrain.Remove
+  isSpec: "True"
   fullName: CueX.GridSPS.GridPartitionGrain.Remove
   nameWithType: GridPartitionGrain.Remove
 - uid: CueX.GridSPS.GridPartitionGrain.Remove``1(``0)
@@ -469,6 +489,7 @@ references:
   name: Build
   href: api/CueX.GridSPS.GridSpatialPubSubBuilder.html#CueX_GridSPS_GridSpatialPubSubBuilder_Build_
   commentId: Overload:CueX.GridSPS.GridSpatialPubSubBuilder.Build
+  isSpec: "True"
   fullName: CueX.GridSPS.GridSpatialPubSubBuilder.Build
   nameWithType: GridSpatialPubSubBuilder.Build
 - uid: CueX.GridSPS.GridSpatialPubSubBuilder.Configure(System.Action{CueX.GridSPS.Config.GridConfiguration})
@@ -484,6 +505,7 @@ references:
   name: Configure
   href: api/CueX.GridSPS.GridSpatialPubSubBuilder.html#CueX_GridSPS_GridSpatialPubSubBuilder_Configure_
   commentId: Overload:CueX.GridSPS.GridSpatialPubSubBuilder.Configure
+  isSpec: "True"
   fullName: CueX.GridSPS.GridSpatialPubSubBuilder.Configure
   nameWithType: GridSpatialPubSubBuilder.Configure
 - uid: CueX.GridSPS.IGridManagementGrain
@@ -520,6 +542,7 @@ references:
   name: NearlyEqual
   href: api/CueX.Numerics.Helper.html#CueX_Numerics_Helper_NearlyEqual_
   commentId: Overload:CueX.Numerics.Helper.NearlyEqual
+  isSpec: "True"
   fullName: CueX.Numerics.Helper.NearlyEqual
   nameWithType: Helper.NearlyEqual
 - uid: CueX.Numerics.Vector3d
@@ -544,6 +567,7 @@ references:
   name: Vector3d
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d__ctor_
   commentId: Overload:CueX.Numerics.Vector3d.#ctor
+  isSpec: "True"
   fullName: CueX.Numerics.Vector3d.Vector3d
   nameWithType: Vector3d.Vector3d
 - uid: CueX.Numerics.Vector3d.Data
@@ -568,6 +592,7 @@ references:
   name: Equals
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Equals_
   commentId: Overload:CueX.Numerics.Vector3d.Equals
+  isSpec: "True"
   fullName: CueX.Numerics.Vector3d.Equals
   nameWithType: Vector3d.Equals
 - uid: CueX.Numerics.Vector3d.GetHashCode
@@ -580,6 +605,7 @@ references:
   name: GetHashCode
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_GetHashCode_
   commentId: Overload:CueX.Numerics.Vector3d.GetHashCode
+  isSpec: "True"
   fullName: CueX.Numerics.Vector3d.GetHashCode
   nameWithType: Vector3d.GetHashCode
 - uid: CueX.Numerics.Vector3d.One
@@ -592,6 +618,7 @@ references:
   name: One
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_One_
   commentId: Overload:CueX.Numerics.Vector3d.One
+  isSpec: "True"
   fullName: CueX.Numerics.Vector3d.One
   nameWithType: Vector3d.One
 - uid: CueX.Numerics.Vector3d.ToString
@@ -604,6 +631,7 @@ references:
   name: ToString
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_ToString_
   commentId: Overload:CueX.Numerics.Vector3d.ToString
+  isSpec: "True"
   fullName: CueX.Numerics.Vector3d.ToString
   nameWithType: Vector3d.ToString
 - uid: CueX.Numerics.Vector3d.X
@@ -616,6 +644,7 @@ references:
   name: X
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_X_
   commentId: Overload:CueX.Numerics.Vector3d.X
+  isSpec: "True"
   fullName: CueX.Numerics.Vector3d.X
   nameWithType: Vector3d.X
 - uid: CueX.Numerics.Vector3d.Y
@@ -628,6 +657,7 @@ references:
   name: Y
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Y_
   commentId: Overload:CueX.Numerics.Vector3d.Y
+  isSpec: "True"
   fullName: CueX.Numerics.Vector3d.Y
   nameWithType: Vector3d.Y
 - uid: CueX.Numerics.Vector3d.Z
@@ -640,6 +670,7 @@ references:
   name: Z
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Z_
   commentId: Overload:CueX.Numerics.Vector3d.Z
+  isSpec: "True"
   fullName: CueX.Numerics.Vector3d.Z
   nameWithType: Vector3d.Z
 - uid: CueX.Numerics.Vector3d.Zero
@@ -652,6 +683,7 @@ references:
   name: Zero
   href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Zero_
   commentId: Overload:CueX.Numerics.Vector3d.Zero
+  isSpec: "True"
   fullName: CueX.Numerics.Vector3d.Zero
   nameWithType: Vector3d.Zero
 - uid: CueX.Test
@@ -676,6 +708,7 @@ references:
   name: BasicSpatialGrainTest
   href: api/CueX.Test.BasicSpatialGrainTest.html#CueX_Test_BasicSpatialGrainTest__ctor_
   commentId: Overload:CueX.Test.BasicSpatialGrainTest.#ctor
+  isSpec: "True"
   fullName: CueX.Test.BasicSpatialGrainTest.BasicSpatialGrainTest
   nameWithType: BasicSpatialGrainTest.BasicSpatialGrainTest
 - uid: CueX.Test.BasicSpatialGrainTest.TestPositionAssignment
@@ -688,6 +721,7 @@ references:
   name: TestPositionAssignment
   href: api/CueX.Test.BasicSpatialGrainTest.html#CueX_Test_BasicSpatialGrainTest_TestPositionAssignment_
   commentId: Overload:CueX.Test.BasicSpatialGrainTest.TestPositionAssignment
+  isSpec: "True"
   fullName: CueX.Test.BasicSpatialGrainTest.TestPositionAssignment
   nameWithType: BasicSpatialGrainTest.TestPositionAssignment
 - uid: CueX.Test.Grains
@@ -712,6 +746,7 @@ references:
   name: SetPosition
   href: api/CueX.Test.Grains.BasicSpatialGrain.html#CueX_Test_Grains_BasicSpatialGrain_SetPosition_
   commentId: Overload:CueX.Test.Grains.BasicSpatialGrain.SetPosition
+  isSpec: "True"
   fullName: CueX.Test.Grains.BasicSpatialGrain.SetPosition
   nameWithType: BasicSpatialGrain.SetPosition
 - uid: CueX.Test.Grains.BasicSpatialGrainState
@@ -736,6 +771,7 @@ references:
   name: SetPosition
   href: api/CueX.Test.Grains.IBasicSpatialGrain.html#CueX_Test_Grains_IBasicSpatialGrain_SetPosition_
   commentId: Overload:CueX.Test.Grains.IBasicSpatialGrain.SetPosition
+  isSpec: "True"
   fullName: CueX.Test.Grains.IBasicSpatialGrain.SetPosition
   nameWithType: IBasicSpatialGrain.SetPosition
 - uid: CueX.Test.Helper
@@ -772,6 +808,7 @@ references:
   name: ClusterFixture
   href: api/CueX.Test.Helper.ClusterFixture.html#CueX_Test_Helper_ClusterFixture__ctor_
   commentId: Overload:CueX.Test.Helper.ClusterFixture.#ctor
+  isSpec: "True"
   fullName: CueX.Test.Helper.ClusterFixture.ClusterFixture
   nameWithType: ClusterFixture.ClusterFixture
 - uid: CueX.Test.Helper.ClusterFixture.Cluster
@@ -784,6 +821,7 @@ references:
   name: Cluster
   href: api/CueX.Test.Helper.ClusterFixture.html#CueX_Test_Helper_ClusterFixture_Cluster_
   commentId: Overload:CueX.Test.Helper.ClusterFixture.Cluster
+  isSpec: "True"
   fullName: CueX.Test.Helper.ClusterFixture.Cluster
   nameWithType: ClusterFixture.Cluster
 - uid: CueX.Test.Helper.ClusterFixture.Dispose
@@ -796,6 +834,7 @@ references:
   name: Dispose
   href: api/CueX.Test.Helper.ClusterFixture.html#CueX_Test_Helper_ClusterFixture_Dispose_
   commentId: Overload:CueX.Test.Helper.ClusterFixture.Dispose
+  isSpec: "True"
   fullName: CueX.Test.Helper.ClusterFixture.Dispose
   nameWithType: ClusterFixture.Dispose
 - uid: CueX.Test.Helper.TestCluster
@@ -814,6 +853,7 @@ references:
   name: TestCluster
   href: api/CueX.Test.Helper.TestCluster.html#CueX_Test_Helper_TestCluster__ctor_
   commentId: Overload:CueX.Test.Helper.TestCluster.#ctor
+  isSpec: "True"
   fullName: CueX.Test.Helper.TestCluster.TestCluster
   nameWithType: TestCluster.TestCluster
 - uid: CueX.Test.Helper.TestCluster.Client
@@ -832,6 +872,7 @@ references:
   name: Dispose
   href: api/CueX.Test.Helper.TestCluster.html#CueX_Test_Helper_TestCluster_Dispose_
   commentId: Overload:CueX.Test.Helper.TestCluster.Dispose
+  isSpec: "True"
   fullName: CueX.Test.Helper.TestCluster.Dispose
   nameWithType: TestCluster.Dispose
 - uid: CueX.Test.Helper.TestCluster.Silo
@@ -865,6 +906,7 @@ references:
   name: Main
   href: api/LocalhostSilo.Program.html#LocalhostSilo_Program_Main_
   commentId: Overload:LocalhostSilo.Program.Main
+  isSpec: "True"
   fullName: LocalhostSilo.Program.Main
   nameWithType: Program.Main
 - uid: SimpleExample.Grains
@@ -889,6 +931,7 @@ references:
   name: SetPosition
   href: api/SimpleExample.Grains.ISimpleGrain.html#SimpleExample_Grains_ISimpleGrain_SetPosition_
   commentId: Overload:SimpleExample.Grains.ISimpleGrain.SetPosition
+  isSpec: "True"
   fullName: SimpleExample.Grains.ISimpleGrain.SetPosition
   nameWithType: ISimpleGrain.SetPosition
 - uid: SimpleExample.Grains.SimpleGrain
@@ -910,6 +953,7 @@ references:
   name: SimpleGrain
   href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain__ctor_
   commentId: Overload:SimpleExample.Grains.SimpleGrain.#ctor
+  isSpec: "True"
   fullName: SimpleExample.Grains.SimpleGrain.SimpleGrain
   nameWithType: SimpleGrain.SimpleGrain
 - uid: SimpleExample.Grains.SimpleGrain.SetPosition(CueX.Numerics.Vector3d)
@@ -922,6 +966,7 @@ references:
   name: SetPosition
   href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain_SetPosition_
   commentId: Overload:SimpleExample.Grains.SimpleGrain.SetPosition
+  isSpec: "True"
   fullName: SimpleExample.Grains.SimpleGrain.SetPosition
   nameWithType: SimpleGrain.SetPosition
 - uid: SimpleExample.Grains.SimpleGrainState
