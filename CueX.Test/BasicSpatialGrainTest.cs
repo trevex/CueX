@@ -16,7 +16,7 @@ namespace CueX.Test
 
         public BasicSpatialGrainTest(ClusterFixture fixture)
         {
-            _client = fixture.Cluster.Client;
+            _client = fixture.Client;
         }
 
         [Fact]
