@@ -811,6 +811,19 @@ references:
   isSpec: "True"
   fullName: CueX.Test.Helper.ClusterFixture.ClusterFixture
   nameWithType: ClusterFixture.ClusterFixture
+- uid: CueX.Test.Helper.ClusterFixture.Client
+  name: Client
+  href: api/CueX.Test.Helper.ClusterFixture.html#CueX_Test_Helper_ClusterFixture_Client
+  commentId: P:CueX.Test.Helper.ClusterFixture.Client
+  fullName: CueX.Test.Helper.ClusterFixture.Client
+  nameWithType: ClusterFixture.Client
+- uid: CueX.Test.Helper.ClusterFixture.Client*
+  name: Client
+  href: api/CueX.Test.Helper.ClusterFixture.html#CueX_Test_Helper_ClusterFixture_Client_
+  commentId: Overload:CueX.Test.Helper.ClusterFixture.Client
+  isSpec: "True"
+  fullName: CueX.Test.Helper.ClusterFixture.Client
+  nameWithType: ClusterFixture.Client
 - uid: CueX.Test.Helper.ClusterFixture.Cluster
   name: Cluster
   href: api/CueX.Test.Helper.ClusterFixture.html#CueX_Test_Helper_ClusterFixture_Cluster
@@ -837,50 +850,6 @@ references:
   isSpec: "True"
   fullName: CueX.Test.Helper.ClusterFixture.Dispose
   nameWithType: ClusterFixture.Dispose
-- uid: CueX.Test.Helper.TestCluster
-  name: TestCluster
-  href: api/CueX.Test.Helper.TestCluster.html
-  commentId: T:CueX.Test.Helper.TestCluster
-  fullName: CueX.Test.Helper.TestCluster
-  nameWithType: TestCluster
-- uid: CueX.Test.Helper.TestCluster.#ctor
-  name: TestCluster()
-  href: api/CueX.Test.Helper.TestCluster.html#CueX_Test_Helper_TestCluster__ctor
-  commentId: M:CueX.Test.Helper.TestCluster.#ctor
-  fullName: CueX.Test.Helper.TestCluster.TestCluster()
-  nameWithType: TestCluster.TestCluster()
-- uid: CueX.Test.Helper.TestCluster.#ctor*
-  name: TestCluster
-  href: api/CueX.Test.Helper.TestCluster.html#CueX_Test_Helper_TestCluster__ctor_
-  commentId: Overload:CueX.Test.Helper.TestCluster.#ctor
-  isSpec: "True"
-  fullName: CueX.Test.Helper.TestCluster.TestCluster
-  nameWithType: TestCluster.TestCluster
-- uid: CueX.Test.Helper.TestCluster.Client
-  name: Client
-  href: api/CueX.Test.Helper.TestCluster.html#CueX_Test_Helper_TestCluster_Client
-  commentId: F:CueX.Test.Helper.TestCluster.Client
-  fullName: CueX.Test.Helper.TestCluster.Client
-  nameWithType: TestCluster.Client
-- uid: CueX.Test.Helper.TestCluster.Dispose
-  name: Dispose()
-  href: api/CueX.Test.Helper.TestCluster.html#CueX_Test_Helper_TestCluster_Dispose
-  commentId: M:CueX.Test.Helper.TestCluster.Dispose
-  fullName: CueX.Test.Helper.TestCluster.Dispose()
-  nameWithType: TestCluster.Dispose()
-- uid: CueX.Test.Helper.TestCluster.Dispose*
-  name: Dispose
-  href: api/CueX.Test.Helper.TestCluster.html#CueX_Test_Helper_TestCluster_Dispose_
-  commentId: Overload:CueX.Test.Helper.TestCluster.Dispose
-  isSpec: "True"
-  fullName: CueX.Test.Helper.TestCluster.Dispose
-  nameWithType: TestCluster.Dispose
-- uid: CueX.Test.Helper.TestCluster.Silo
-  name: Silo
-  href: api/CueX.Test.Helper.TestCluster.html#CueX_Test_Helper_TestCluster_Silo
-  commentId: F:CueX.Test.Helper.TestCluster.Silo
-  fullName: CueX.Test.Helper.TestCluster.Silo
-  nameWithType: TestCluster.Silo
 - uid: LocalhostSilo
   name: LocalhostSilo
   href: api/LocalhostSilo.html
