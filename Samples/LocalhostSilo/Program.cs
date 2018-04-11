@@ -44,6 +44,7 @@ namespace LocalhostSilo
                     logging.AddConsole();
                     // logging.SetMinimumLevel(LogLevel.Debug);
                 })
+                .ConfigureServices(GridConfigurationHelper.AddServices)
                 .AddMemoryGrainStorageAsDefault();
             var host = builder.Build();
             await host.StartAsync();
@@ -51,9 +52,8 @@ namespace LocalhostSilo
         }
         
         private static void AddHostApplicationParts(IApplicationPartManager parts)
-        {
-            parts.AddFromAppDomain(); // Loads Orleans-specific assemblies 
-            HostHelper.AddApplicationParts(parts);
+        { 
+            GridConfigurationHelper.AddSiloApplicationParts(parts);
             parts.AddApplicationPart(typeof(SimpleGrain).Assembly).WithReferences();
         }
 

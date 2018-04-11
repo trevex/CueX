@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 using System;
+using System.Threading.Tasks;
 using CueX.API;
 using CueX.Core;
 using CueX.GridSPS.Config;
@@ -8,6 +9,9 @@ using Orleans;
 
 namespace CueX.GridSPS
 {
+    /// <summary>
+    /// Builder class to help configure and bootstrap a ISpatialPubSub using the grid-based implementation.
+    /// </summary>
     public class GridSpatialPubSubBuilder : SpatialPubSubBuilder
     {
         private GridConfiguration _config =  GridConfiguration.Default();
@@ -17,10 +21,18 @@ namespace CueX.GridSPS
             configure(_config);
             return this;
         }
-        
-        public override ISpatialPubSub Build(IClusterClient client)
+
+        public GridSpatialPubSubBuilder UsePartitionSize(double size)
         {
-            throw new System.NotImplementedException();
+            _config.PartitionSize = size;
+            return this;
+        }
+        
+        public override async Task<ISpatialPubSub> Build(IClusterClient client)
+        {
+            var pubSub = new GridSpatialPubSub(client, _config);
+            await pubSub.Initialize();
+            return pubSub;
         }
     }
 }

@@ -4,6 +4,7 @@ using System;
 using CueX.GridSPS.Config;
 using CueX.Test.Grains;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Orleans;
 using Orleans.TestingHost;
 using Orleans.Hosting;
@@ -38,7 +39,7 @@ namespace CueX.Test.Helper
             {
                 clientBuilder.ConfigureApplicationParts(parts =>
                 {
-                    ClientHelper.AddApplicationParts(parts);
+                    GridConfigurationHelper.AddClientApplicationParts(parts);
                     parts.AddApplicationPart(typeof(IBasicSpatialGrain).Assembly);
                 });
             }
@@ -47,10 +48,11 @@ namespace CueX.Test.Helper
             {
                 hostBuilder.ConfigureApplicationParts(parts =>
                 {
-                    HostHelper.AddApplicationParts(parts);
+                    GridConfigurationHelper.AddSiloApplicationParts(parts);
                     parts.AddApplicationPart(typeof(BasicSpatialGrain).Assembly).WithReferences();
                 });
                 hostBuilder.AddMemoryGrainStorageAsDefault();
+                hostBuilder.ConfigureServices(GridConfigurationHelper.AddServices);
             }
         }
     }

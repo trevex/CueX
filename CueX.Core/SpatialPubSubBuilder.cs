@@ -2,6 +2,7 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 using System;
 using System.Numerics;
+using System.Threading.Tasks;
 using CueX.API;
 using Orleans;
 
@@ -22,6 +23,6 @@ namespace CueX.Core
             return true;
         }
 
-        public abstract ISpatialPubSub Build(IClusterClient client);
+        public abstract Task<ISpatialPubSub> Build(IClusterClient client);
     }
 }

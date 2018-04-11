@@ -30,5 +30,15 @@ namespace CueX.GridSPS
             await WriteStateAsync();
             return found;
         }
+
+        public override Task OnActivateAsync()
+        {
+            // Check if this partition was already initialized, if not prepare this partition for usage 
+            if (!State.IsInitialized)
+            {
+                // TODO: needs to do some prep stuff?
+            }
+            return base.OnActivateAsync();
+        }
     }
 }

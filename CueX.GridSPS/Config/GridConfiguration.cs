@@ -6,6 +6,8 @@ namespace CueX.GridSPS.Config
 {
     public class GridConfiguration : Configuration
     {
+        public double PartitionSize;
+        
         public static GridConfiguration Default()
         {
             return new GridConfiguration();

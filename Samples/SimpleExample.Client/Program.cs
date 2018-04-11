@@ -20,7 +20,7 @@ namespace SimpleExample.Client
             var simpleGrain = client.GetGrain<ISimpleGrain>(0);
             await simpleGrain.SetPosition(Vector3d.One());
             Console.WriteLine(await simpleGrain.GetPosition());
-            var gridPartitionGrain = client.GetGrain<IGridPartitionGrain>(0);
+            var gridPartitionGrain = client.GetGrain<IGridPartitionGrain>("1");
             await gridPartitionGrain.Add(simpleGrain);
             Console.WriteLine(await gridPartitionGrain.Remove(simpleGrain));
         }
@@ -39,6 +39,7 @@ namespace SimpleExample.Client
                         .UseLocalhostClustering()
                         .ConfigureApplicationParts(AddClientApplicationParts)
                         .ConfigureLogging(logging => logging.AddConsole())
+                        .ConfigureServices(GridConfigurationHelper.AddServices)
                         .Build();
 
                     await client.Connect();
@@ -62,7 +63,7 @@ namespace SimpleExample.Client
         
         private static void AddClientApplicationParts(IApplicationPartManager parts)
         {
-            ClientHelper.AddApplicationParts(parts);
+            GridConfigurationHelper.AddClientApplicationParts(parts);
             parts.AddApplicationPart(typeof(ISimpleGrain).Assembly);
         }
 

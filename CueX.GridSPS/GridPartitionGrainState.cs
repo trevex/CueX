@@ -7,6 +7,6 @@ namespace CueX.GridSPS
 {
     public class GridPartitionGrainState : PartitionGrainState
     {
-        
+        public bool IsInitialized = false;
     }
 }

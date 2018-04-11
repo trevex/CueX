@@ -6,7 +6,7 @@ using Orleans;
 
 namespace CueX.GridSPS
 {
-    public interface IGridPartitionGrain : IPartitionGrain, IGrainWithIntegerKey
+    public interface IGridPartitionGrain : IPartitionGrain, IGrainWithStringKey
     {
            
     }
