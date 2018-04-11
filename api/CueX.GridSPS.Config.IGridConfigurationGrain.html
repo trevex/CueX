@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GridConfiguration
+    <title>Interface IGridConfigurationGrain
    | CueX Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GridConfiguration
+    <meta name="title" content="Interface IGridConfigurationGrain
    | CueX Documentation ">
     <meta name="generator" content="docfx 2.34.0.0">
     
@@ -76,96 +76,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CueX.GridSPS.Config.GridConfiguration">
+            <article class="content wrap" id="_content" data-uid="CueX.GridSPS.Config.IGridConfigurationGrain">
   
   
-  <h1 id="CueX_GridSPS_Config_GridConfiguration" data-uid="CueX.GridSPS.Config.GridConfiguration" class="text-break">Class GridConfiguration
+  <h1 id="CueX_GridSPS_Config_IGridConfigurationGrain" data-uid="CueX.GridSPS.Config.IGridConfigurationGrain" class="text-break">Interface IGridConfigurationGrain
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Just a proxy to access the IGridConfigurationService from the client</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="CueX.Core.Configuration.html">Configuration</a></div>
-    <div class="level2"><span class="xref">GridConfiguration</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CueX.GridSPS.Config.html">CueX.GridSPS.Config</a></h6>
   <h6><strong>Assembly</strong>: CueX.GridSPS.dll</h6>
-  <h5 id="CueX_GridSPS_Config_GridConfiguration_syntax">Syntax</h5>
+  <h5 id="CueX_GridSPS_Config_IGridConfigurationGrain_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GridConfiguration : Configuration</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IGridConfigurationGrain : IGrainWithStringKey, IGrain, IAddressable</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_GridConfiguration_PartitionSize.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.GridConfiguration.PartitionSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/GridConfiguration.cs/#L9">View Source</a>
-  </span>
-  <h4 id="CueX_GridSPS_Config_GridConfiguration_PartitionSize" data-uid="CueX.GridSPS.Config.GridConfiguration.PartitionSize">PartitionSize</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double PartitionSize</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_GridConfiguration_Default.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.GridConfiguration.Default%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_IGridConfigurationGrain_GetConfiguration.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.IGridConfigurationGrain.GetConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/GridConfiguration.cs/#L11">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/IGridConfigurationGrain.cs/#L13">View Source</a>
   </span>
-  <a id="CueX_GridSPS_Config_GridConfiguration_Default_" data-uid="CueX.GridSPS.Config.GridConfiguration.Default*"></a>
-  <h4 id="CueX_GridSPS_Config_GridConfiguration_Default" data-uid="CueX.GridSPS.Config.GridConfiguration.Default">Default()</h4>
+  <a id="CueX_GridSPS_Config_IGridConfigurationGrain_GetConfiguration_" data-uid="CueX.GridSPS.Config.IGridConfigurationGrain.GetConfiguration*"></a>
+  <h4 id="CueX_GridSPS_Config_IGridConfigurationGrain_GetConfiguration" data-uid="CueX.GridSPS.Config.IGridConfigurationGrain.GetConfiguration">GetConfiguration()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GridConfiguration Default()</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;GridConfiguration&gt; GetConfiguration()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,7 +117,54 @@
     </thead>
     <tbody>
       <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="CueX.GridSPS.Config.GridConfiguration.html">GridConfiguration</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_IGridConfigurationGrain_SetConfiguration_CueX_GridSPS_Config_GridConfiguration_.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.IGridConfigurationGrain.SetConfiguration(CueX.GridSPS.Config.GridConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/IGridConfigurationGrain.cs/#L14">View Source</a>
+  </span>
+  <a id="CueX_GridSPS_Config_IGridConfigurationGrain_SetConfiguration_" data-uid="CueX.GridSPS.Config.IGridConfigurationGrain.SetConfiguration*"></a>
+  <h4 id="CueX_GridSPS_Config_IGridConfigurationGrain_SetConfiguration_CueX_GridSPS_Config_GridConfiguration_" data-uid="CueX.GridSPS.Config.IGridConfigurationGrain.SetConfiguration(CueX.GridSPS.Config.GridConfiguration)">SetConfiguration(GridConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetConfiguration(GridConfiguration config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
         <td><a class="xref" href="CueX.GridSPS.Config.GridConfiguration.html">GridConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -190,10 +177,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_GridConfiguration.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.GridConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_IGridConfigurationGrain.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.IGridConfigurationGrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/GridConfiguration.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/IGridConfigurationGrain.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

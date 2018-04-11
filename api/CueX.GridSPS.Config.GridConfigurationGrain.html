@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GridPartitionGrain
+    <title>Class GridConfigurationGrain
    | CueX Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GridPartitionGrain
+    <meta name="title" content="Class GridConfigurationGrain
    | CueX Documentation ">
     <meta name="generator" content="docfx 2.34.0.0">
     
@@ -76,10 +76,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CueX.GridSPS.GridPartitionGrain">
+            <article class="content wrap" id="_content" data-uid="CueX.GridSPS.Config.GridConfigurationGrain">
   
   
-  <h1 id="CueX_GridSPS_GridPartitionGrain" data-uid="CueX.GridSPS.GridPartitionGrain" class="text-break">Class GridPartitionGrain
+  <h1 id="CueX_GridSPS_Config_GridConfigurationGrain" data-uid="CueX.GridSPS.Config.GridConfigurationGrain" class="text-break">Class GridConfigurationGrain
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -87,36 +87,18 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Orleans.Grain</span></div>
-    <div class="level2"><span class="xref">Orleans.Grain</span>&lt;<a class="xref" href="CueX.GridSPS.GridPartitionGrainState.html">GridPartitionGrainState</a>&gt;</div>
-    <div class="level3"><a class="xref" href="CueX.Core.PartitionGrain-1.html">PartitionGrain</a>&lt;<a class="xref" href="CueX.GridSPS.GridPartitionGrainState.html">GridPartitionGrainState</a>&gt;</div>
-    <div class="level4"><span class="xref">GridPartitionGrain</span></div>
+    <div class="level2"><span class="xref">GridConfigurationGrain</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><span class="xref">Orleans.ILifecycleParticipant</span>&lt;<span class="xref">Orleans.Runtime.IGrainLifecycle</span>&gt;</div>
-    <div><a class="xref" href="CueX.GridSPS.IGridPartitionGrain.html">IGridPartitionGrain</a></div>
-    <div><a class="xref" href="CueX.API.IPartitionGrain.html">IPartitionGrain</a></div>
+    <div><a class="xref" href="CueX.GridSPS.Config.IGridConfigurationGrain.html">IGridConfigurationGrain</a></div>
     <div><span class="xref">Orleans.IGrainWithStringKey</span></div>
     <div><span class="xref">Orleans.IGrain</span></div>
     <div><span class="xref">Orleans.Runtime.IAddressable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.GridSPS.GridPartitionGrainState&gt;.ClearStateAsync()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.GridSPS.GridPartitionGrainState&gt;.WriteStateAsync()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.GridSPS.GridPartitionGrainState&gt;.ReadStateAsync()</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.GridSPS.GridPartitionGrainState&gt;.Participate(Orleans.Runtime.IGrainLifecycle)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain&lt;CueX.GridSPS.GridPartitionGrainState&gt;.State</span>
-    </div>
     <div>
       <span class="xref">Orleans.Grain.RegisterTimer(System.Func&lt;System.Object, System.Threading.Tasks.Task&gt;, System.Object, System.TimeSpan, System.TimeSpan)</span>
     </div>
@@ -142,7 +124,13 @@
       <span class="xref">Orleans.Grain.DelayDeactivation(System.TimeSpan)</span>
     </div>
     <div>
+      <span class="xref">Orleans.Grain.OnActivateAsync()</span>
+    </div>
+    <div>
       <span class="xref">Orleans.Grain.OnDeactivateAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Orleans.Grain.Participate(Orleans.Runtime.IGrainLifecycle)</span>
     </div>
     <div>
       <span class="xref">Orleans.Grain.GrainReference</span>
@@ -181,28 +169,28 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.GridSPS.html">CueX.GridSPS</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.GridSPS.Config.html">CueX.GridSPS.Config</a></h6>
   <h6><strong>Assembly</strong>: CueX.GridSPS.dll</h6>
-  <h5 id="CueX_GridSPS_GridPartitionGrain_syntax">Syntax</h5>
+  <h5 id="CueX_GridSPS_Config_GridConfigurationGrain_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GridPartitionGrain : PartitionGrain&lt;GridPartitionGrainState&gt;, ILifecycleParticipant&lt;IGrainLifecycle&gt;, IGridPartitionGrain, IPartitionGrain, IGrainWithStringKey, IGrain, IAddressable</code></pre>
+    <pre><code class="lang-csharp hljs">public class GridConfigurationGrain : Grain, ILifecycleParticipant&lt;IGrainLifecycle&gt;, IGridConfigurationGrain, IGrainWithStringKey, IGrain, IAddressable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain__ctor_Microsoft_Extensions_Logging_ILogger_CueX_GridSPS_GridPartitionGrain__.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain.%23ctor(Microsoft.Extensions.Logging.ILogger%7BCueX.GridSPS.GridPartitionGrain%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_GridConfigurationGrain__ctor_CueX_GridSPS_Config_IGridConfigurationService_.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.GridConfigurationGrain.%23ctor(CueX.GridSPS.Config.IGridConfigurationService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L15">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/GridConfigurationGrain.cs/#L14">View Source</a>
   </span>
-  <a id="CueX_GridSPS_GridPartitionGrain__ctor_" data-uid="CueX.GridSPS.GridPartitionGrain.#ctor*"></a>
-  <h4 id="CueX_GridSPS_GridPartitionGrain__ctor_Microsoft_Extensions_Logging_ILogger_CueX_GridSPS_GridPartitionGrain__" data-uid="CueX.GridSPS.GridPartitionGrain.#ctor(Microsoft.Extensions.Logging.ILogger{CueX.GridSPS.GridPartitionGrain})">GridPartitionGrain(ILogger&lt;GridPartitionGrain&gt;)</h4>
+  <a id="CueX_GridSPS_Config_GridConfigurationGrain__ctor_" data-uid="CueX.GridSPS.Config.GridConfigurationGrain.#ctor*"></a>
+  <h4 id="CueX_GridSPS_Config_GridConfigurationGrain__ctor_CueX_GridSPS_Config_IGridConfigurationService_" data-uid="CueX.GridSPS.Config.GridConfigurationGrain.#ctor(CueX.GridSPS.Config.IGridConfigurationService)">GridConfigurationGrain(IGridConfigurationService)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GridPartitionGrain(ILogger&lt;GridPartitionGrain&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public GridConfigurationGrain(IGridConfigurationService configService)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -215,8 +203,39 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<a class="xref" href="CueX.GridSPS.GridPartitionGrain.html">GridPartitionGrain</a>&gt;</td>
-        <td><span class="parametername">logger</span></td>
+        <td><a class="xref" href="CueX.GridSPS.Config.IGridConfigurationService.html">IGridConfigurationService</a></td>
+        <td><span class="parametername">configService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_GridConfigurationGrain_DefaultKey.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.GridConfigurationGrain.DefaultKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/GridConfigurationGrain.cs/#L12">View Source</a>
+  </span>
+  <h4 id="CueX_GridSPS_Config_GridConfigurationGrain_DefaultKey" data-uid="CueX.GridSPS.Config.GridConfigurationGrain.DefaultKey">DefaultKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string DefaultKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -225,19 +244,48 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain_Add__1___0_.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain.Add%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_GridConfigurationGrain_GetConfiguration.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.GridConfigurationGrain.GetConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L21">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/GridConfigurationGrain.cs/#L19">View Source</a>
   </span>
-  <a id="CueX_GridSPS_GridPartitionGrain_Add_" data-uid="CueX.GridSPS.GridPartitionGrain.Add*"></a>
-  <h4 id="CueX_GridSPS_GridPartitionGrain_Add__1___0_" data-uid="CueX.GridSPS.GridPartitionGrain.Add``1(``0)">Add&lt;T&gt;(T)</h4>
+  <a id="CueX_GridSPS_Config_GridConfigurationGrain_GetConfiguration_" data-uid="CueX.GridSPS.Config.GridConfigurationGrain.GetConfiguration*"></a>
+  <h4 id="CueX_GridSPS_Config_GridConfigurationGrain_GetConfiguration" data-uid="CueX.GridSPS.Config.GridConfigurationGrain.GetConfiguration">GetConfiguration()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task Add&lt;T&gt;(T spatialGrain)
-    where T : ISpatialGrain</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;GridConfiguration&gt; GetConfiguration()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="CueX.GridSPS.Config.GridConfiguration.html">GridConfiguration</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_GridConfigurationGrain_SetConfiguration_CueX_GridSPS_Config_GridConfiguration_.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.GridConfigurationGrain.SetConfiguration(CueX.GridSPS.Config.GridConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/GridConfigurationGrain.cs/#L24">View Source</a>
+  </span>
+  <a id="CueX_GridSPS_Config_GridConfigurationGrain_SetConfiguration_" data-uid="CueX.GridSPS.Config.GridConfigurationGrain.SetConfiguration*"></a>
+  <h4 id="CueX_GridSPS_Config_GridConfigurationGrain_SetConfiguration_CueX_GridSPS_Config_GridConfiguration_" data-uid="CueX.GridSPS.Config.GridConfigurationGrain.SetConfiguration(CueX.GridSPS.Config.GridConfiguration)">SetConfiguration(GridConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetConfiguration(GridConfiguration config)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -250,8 +298,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">spatialGrain</span></td>
+        <td><a class="xref" href="CueX.GridSPS.Config.GridConfiguration.html">GridConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -271,129 +319,12 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">CueX.Core.PartitionGrain&lt;CueX.GridSPS.GridPartitionGrainState&gt;.Add&lt;T&gt;(T)</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain_OnActivateAsync.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain.OnActivateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L34">View Source</a>
-  </span>
-  <a id="CueX_GridSPS_GridPartitionGrain_OnActivateAsync_" data-uid="CueX.GridSPS.GridPartitionGrain.OnActivateAsync*"></a>
-  <h4 id="CueX_GridSPS_GridPartitionGrain_OnActivateAsync" data-uid="CueX.GridSPS.GridPartitionGrain.OnActivateAsync">OnActivateAsync()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task OnActivateAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Orleans.Grain.OnActivateAsync()</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain_Remove__1___0_.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain.Remove%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L27">View Source</a>
-  </span>
-  <a id="CueX_GridSPS_GridPartitionGrain_Remove_" data-uid="CueX.GridSPS.GridPartitionGrain.Remove*"></a>
-  <h4 id="CueX_GridSPS_GridPartitionGrain_Remove__1___0_" data-uid="CueX.GridSPS.GridPartitionGrain.Remove``1(``0)">Remove&lt;T&gt;(T)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; Remove&lt;T&gt;(T spatialGrain)
-    where T : ISpatialGrain</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">spatialGrain</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">CueX.Core.PartitionGrain&lt;CueX.GridSPS.GridPartitionGrainState&gt;.Remove&lt;T&gt;(T)</span></div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">Orleans.ILifecycleParticipant&lt;TLifecycleObservable&gt;</span>
   </div>
   <div>
-      <a class="xref" href="CueX.GridSPS.IGridPartitionGrain.html">IGridPartitionGrain</a>
-  </div>
-  <div>
-      <a class="xref" href="CueX.API.IPartitionGrain.html">IPartitionGrain</a>
+      <a class="xref" href="CueX.GridSPS.Config.IGridConfigurationGrain.html">IGridConfigurationGrain</a>
   </div>
   <div>
       <span class="xref">Orleans.IGrainWithStringKey</span>
@@ -412,10 +343,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_Config_GridConfigurationGrain.md&amp;value=---%0Auid%3A%20CueX.GridSPS.Config.GridConfigurationGrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/Config/GridConfigurationGrain.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
