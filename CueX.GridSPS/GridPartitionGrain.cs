@@ -1,44 +1,34 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
-
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using CueX.Core;
+using CueX.GridSPS.Config;
 
 
 namespace CueX.GridSPS
 {
-    public class GridPartitionGrain : PartitionGrain<GridPartitionGrainState>, IGridPartitionGrain
+    public class GridPartitionGrain : PartitionGrain<IGridPartitionGrain, GridPartitionGrainState>, IGridPartitionGrain
     {
         private readonly ILogger _logger;
+        private readonly IGridConfigurationService _configService;
         
-        public GridPartitionGrain(ILogger<GridPartitionGrain> logger)
+        public GridPartitionGrain(ILogger<GridPartitionGrain> logger, IGridConfigurationService configService)
         {
             _logger = logger;
+            _configService = configService;
         }
 
-        
-        public override Task Add<T>(T spatialGrain)
-        {
-            State.Children.Add(spatialGrain);
-            return WriteStateAsync();
-        }
-
-        public override async Task<bool> Remove<T>(T spatialGrain)
-        {
-            var found = State.Children.Remove(spatialGrain);
-            await WriteStateAsync();
-            return found;
-        }
-
-        public override Task OnActivateAsync()
+        public override async Task OnActivateAsync()
         {
             // Check if this partition was already initialized, if not prepare this partition for usage 
             if (!State.IsInitialized)
             {
-                // TODO: needs to do some prep stuff?
+                // Acquire configuration from config service
+                State.Config = await _configService.GetConfiguration();
+                await WriteStateAsync();
             }
-            return base.OnActivateAsync();
+            await base.OnActivateAsync();
         }
     }
 }

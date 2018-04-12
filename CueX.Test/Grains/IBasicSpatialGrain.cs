@@ -9,6 +9,6 @@ namespace CueX.Test.Grains
 {
     public interface IBasicSpatialGrain : ISpatialGrain, IGrainWithIntegerKey
     {
-        Task SetPosition(Vector3d newPosition);
+        Task<bool> HasParent();
     }
 }

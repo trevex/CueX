@@ -1,13 +1,15 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
+
 using System.Threading.Tasks;
 using CueX.API;
 using CueX.GridSPS.Config;
+using CueX.Numerics;
 using Orleans;
 
-namespace CueX.GridSPS
+namespace CueX.GridSPS.Internal
 {
-    public class GridSpatialPubSub : ISpatialPubSub
+    internal class GridSpatialPubSub : ISpatialPubSub
     {
         private readonly IClusterClient _client;
         private readonly GridConfiguration _config;
@@ -24,14 +26,21 @@ namespace CueX.GridSPS
             return configGrain.SetConfiguration(_config);
         }
 
-        public Task Insert<T>(T spatialGrain) where T : ISpatialGrain
+        public async Task Insert<T>(T spatialGrain) where T : ISpatialGrain
         {
-            throw new System.NotImplementedException();
+            await InsertAt(spatialGrain, await spatialGrain.GetPosition());
         }
 
-        public Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain
+        private async Task InsertAt<T>(T spatialGrain, Vector3d position) where T : ISpatialGrain
         {
-            throw new System.NotImplementedException();
+            var paritionKey = IndexHelper.GetPartitionKeyForPosition(position, _config.PartitionSize);
+            var partition = _client.GetGrain<IGridPartitionGrain>(paritionKey);
+            await partition.Add(spatialGrain);
+        }
+
+        public async Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain
+        {
+            return await spatialGrain.RemoveSelfFromParent();
         }
     }
 }

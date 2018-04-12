@@ -7,6 +7,5 @@ namespace SimpleExample.Grains
 {
     public interface ISimpleGrain : ISpatialGrain, IGrainWithIntegerKey
     {
-        Task SetPosition(Vector3d newPosition);
     }
 }

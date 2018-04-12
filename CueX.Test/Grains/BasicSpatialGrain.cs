@@ -10,12 +10,11 @@ namespace CueX.Test.Grains
     {
     }
 
-    public class BasicSpatialGrain : SpatialGrain<BasicSpatialGrainState>, IBasicSpatialGrain
+    public class BasicSpatialGrain : SpatialGrain<IBasicSpatialGrain, BasicSpatialGrainState>, IBasicSpatialGrain
     {
-        public async Task SetPosition(Vector3d newPosition)
+        public Task<bool> HasParent()
         {
-            State.Position = newPosition;
-            await WriteStateAsync();
+            return Task.FromResult(State.Parent != null);
         }
     }
 }

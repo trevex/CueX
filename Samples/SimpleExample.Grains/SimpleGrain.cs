@@ -14,7 +14,7 @@ namespace SimpleExample.Grains
     {
     }
 
-    public class SimpleGrain : SpatialGrain<SimpleGrainState>, ISimpleGrain
+    public class SimpleGrain : SpatialGrain<ISimpleGrain, SimpleGrainState>, ISimpleGrain
     {
         private readonly ILogger _logger;
         
@@ -23,11 +23,5 @@ namespace SimpleExample.Grains
             _logger = logger;
         }
 
-        public async Task SetPosition(Vector3d newPosition)
-        {
-            _logger.Info("Hello, world!");
-            State.Position = newPosition;
-            await WriteStateAsync();
-        }
     }
 }
