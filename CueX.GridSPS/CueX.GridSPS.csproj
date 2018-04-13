@@ -4,7 +4,6 @@
     <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CueX.API\CueX.API.csproj" />
     <ProjectReference Include="..\CueX.Core\CueX.Core.csproj" />
   </ItemGroup>
   <ItemGroup>

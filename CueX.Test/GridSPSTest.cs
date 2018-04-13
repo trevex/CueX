@@ -2,10 +2,9 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System.Linq;
-using CueX.API;
+using CueX.Core;
 using CueX.GridSPS;
 using CueX.GridSPS.Config;
-using CueX.GridSPS.Internal;
 using CueX.Numerics;
 using CueX.Test.Grains;
 using CueX.Test.Helper;

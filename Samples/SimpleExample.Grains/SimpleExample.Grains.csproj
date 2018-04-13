@@ -8,7 +8,6 @@
     <PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator.Build" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CueX.API\CueX.API.csproj" />
     <ProjectReference Include="..\..\CueX.Core\CueX.Core.csproj" />
   </ItemGroup>
 </Project>

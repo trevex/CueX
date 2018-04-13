@@ -1,13 +1,13 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
-using System.Threading.Tasks;
-using CueX.Core;
-using Orleans;
 
-namespace CueX.Test.Grains
+using System.Threading.Tasks;
+
+namespace CueX.Core
 {
-    public interface IBasicSpatialGrain : ISpatialGrain, IGrainWithIntegerKey
+    public interface ISpatialPubSub
     {
-        Task<bool> HasParent();
+        Task Insert<T>(T spatialGrain) where T : Core.ISpatialGrain;
+        Task<bool> Remove<T>(T spatialGrain) where T : Core.ISpatialGrain;
     }
 }

@@ -1,13 +1,16 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
-using System.Threading.Tasks;
-using CueX.Numerics;
 
-namespace CueX.API
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Orleans;
+
+namespace CueX.Core
 {
-    public interface ISpatialPubSub
+    public interface IPartitionGrain : IGrain
     {
-        Task Insert<T>(T spatialGrain) where T : ISpatialGrain;
+        Task Add<T>(T spatialGrain) where T : ISpatialGrain;
         Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain;
+        Task<IEnumerable<ISpatialGrain>> GetChildren();
     }
 }

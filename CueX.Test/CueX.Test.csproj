@@ -18,7 +18,6 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CueX.API\CueX.API.csproj" />
     <ProjectReference Include="..\CueX.Core\CueX.Core.csproj" />
     <ProjectReference Include="..\CueX.GridSPS\CueX.GridSPS.csproj" />
   </ItemGroup>
