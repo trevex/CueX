@@ -1,162 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: CueX.API
-  name: CueX.API
-  href: api/CueX.API.html
-  commentId: N:CueX.API
-  fullName: CueX.API
-  nameWithType: CueX.API
-- uid: CueX.API.IPartitionGrain
-  name: IPartitionGrain
-  href: api/CueX.API.IPartitionGrain.html
-  commentId: T:CueX.API.IPartitionGrain
-  fullName: CueX.API.IPartitionGrain
-  nameWithType: IPartitionGrain
-- uid: CueX.API.IPartitionGrain.Add*
-  name: Add
-  href: api/CueX.API.IPartitionGrain.html#CueX_API_IPartitionGrain_Add_
-  commentId: Overload:CueX.API.IPartitionGrain.Add
-  isSpec: "True"
-  fullName: CueX.API.IPartitionGrain.Add
-  nameWithType: IPartitionGrain.Add
-- uid: CueX.API.IPartitionGrain.Add``1(``0)
-  name: Add<T>(T)
-  href: api/CueX.API.IPartitionGrain.html#CueX_API_IPartitionGrain_Add__1___0_
-  commentId: M:CueX.API.IPartitionGrain.Add``1(``0)
-  name.vb: Add(Of T)(T)
-  fullName: CueX.API.IPartitionGrain.Add<T>(T)
-  fullName.vb: CueX.API.IPartitionGrain.Add(Of T)(T)
-  nameWithType: IPartitionGrain.Add<T>(T)
-  nameWithType.vb: IPartitionGrain.Add(Of T)(T)
-- uid: CueX.API.IPartitionGrain.GetChildren
-  name: GetChildren()
-  href: api/CueX.API.IPartitionGrain.html#CueX_API_IPartitionGrain_GetChildren
-  commentId: M:CueX.API.IPartitionGrain.GetChildren
-  fullName: CueX.API.IPartitionGrain.GetChildren()
-  nameWithType: IPartitionGrain.GetChildren()
-- uid: CueX.API.IPartitionGrain.GetChildren*
-  name: GetChildren
-  href: api/CueX.API.IPartitionGrain.html#CueX_API_IPartitionGrain_GetChildren_
-  commentId: Overload:CueX.API.IPartitionGrain.GetChildren
-  isSpec: "True"
-  fullName: CueX.API.IPartitionGrain.GetChildren
-  nameWithType: IPartitionGrain.GetChildren
-- uid: CueX.API.IPartitionGrain.Remove*
-  name: Remove
-  href: api/CueX.API.IPartitionGrain.html#CueX_API_IPartitionGrain_Remove_
-  commentId: Overload:CueX.API.IPartitionGrain.Remove
-  isSpec: "True"
-  fullName: CueX.API.IPartitionGrain.Remove
-  nameWithType: IPartitionGrain.Remove
-- uid: CueX.API.IPartitionGrain.Remove``1(``0)
-  name: Remove<T>(T)
-  href: api/CueX.API.IPartitionGrain.html#CueX_API_IPartitionGrain_Remove__1___0_
-  commentId: M:CueX.API.IPartitionGrain.Remove``1(``0)
-  name.vb: Remove(Of T)(T)
-  fullName: CueX.API.IPartitionGrain.Remove<T>(T)
-  fullName.vb: CueX.API.IPartitionGrain.Remove(Of T)(T)
-  nameWithType: IPartitionGrain.Remove<T>(T)
-  nameWithType.vb: IPartitionGrain.Remove(Of T)(T)
-- uid: CueX.API.ISpatialGrain
-  name: ISpatialGrain
-  href: api/CueX.API.ISpatialGrain.html
-  commentId: T:CueX.API.ISpatialGrain
-  fullName: CueX.API.ISpatialGrain
-  nameWithType: ISpatialGrain
-- uid: CueX.API.ISpatialGrain.GetPosition
-  name: GetPosition()
-  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_GetPosition
-  commentId: M:CueX.API.ISpatialGrain.GetPosition
-  fullName: CueX.API.ISpatialGrain.GetPosition()
-  nameWithType: ISpatialGrain.GetPosition()
-- uid: CueX.API.ISpatialGrain.GetPosition*
-  name: GetPosition
-  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_GetPosition_
-  commentId: Overload:CueX.API.ISpatialGrain.GetPosition
-  isSpec: "True"
-  fullName: CueX.API.ISpatialGrain.GetPosition
-  nameWithType: ISpatialGrain.GetPosition
-- uid: CueX.API.ISpatialGrain.RemoveSelfFromParent
-  name: RemoveSelfFromParent()
-  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_RemoveSelfFromParent
-  commentId: M:CueX.API.ISpatialGrain.RemoveSelfFromParent
-  fullName: CueX.API.ISpatialGrain.RemoveSelfFromParent()
-  nameWithType: ISpatialGrain.RemoveSelfFromParent()
-- uid: CueX.API.ISpatialGrain.RemoveSelfFromParent*
-  name: RemoveSelfFromParent
-  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_RemoveSelfFromParent_
-  commentId: Overload:CueX.API.ISpatialGrain.RemoveSelfFromParent
-  isSpec: "True"
-  fullName: CueX.API.ISpatialGrain.RemoveSelfFromParent
-  nameWithType: ISpatialGrain.RemoveSelfFromParent
-- uid: CueX.API.ISpatialGrain.SetParent*
-  name: SetParent
-  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_SetParent_
-  commentId: Overload:CueX.API.ISpatialGrain.SetParent
-  isSpec: "True"
-  fullName: CueX.API.ISpatialGrain.SetParent
-  nameWithType: ISpatialGrain.SetParent
-- uid: CueX.API.ISpatialGrain.SetParent``1(``0)
-  name: SetParent<T>(T)
-  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_SetParent__1___0_
-  commentId: M:CueX.API.ISpatialGrain.SetParent``1(``0)
-  name.vb: SetParent(Of T)(T)
-  fullName: CueX.API.ISpatialGrain.SetParent<T>(T)
-  fullName.vb: CueX.API.ISpatialGrain.SetParent(Of T)(T)
-  nameWithType: ISpatialGrain.SetParent<T>(T)
-  nameWithType.vb: ISpatialGrain.SetParent(Of T)(T)
-- uid: CueX.API.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)
-  name: SetPosition(Vector3d)
-  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_SetPosition_CueX_Numerics_Vector3d_
-  commentId: M:CueX.API.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)
-  fullName: CueX.API.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)
-  nameWithType: ISpatialGrain.SetPosition(Vector3d)
-- uid: CueX.API.ISpatialGrain.SetPosition*
-  name: SetPosition
-  href: api/CueX.API.ISpatialGrain.html#CueX_API_ISpatialGrain_SetPosition_
-  commentId: Overload:CueX.API.ISpatialGrain.SetPosition
-  isSpec: "True"
-  fullName: CueX.API.ISpatialGrain.SetPosition
-  nameWithType: ISpatialGrain.SetPosition
-- uid: CueX.API.ISpatialPubSub
-  name: ISpatialPubSub
-  href: api/CueX.API.ISpatialPubSub.html
-  commentId: T:CueX.API.ISpatialPubSub
-  fullName: CueX.API.ISpatialPubSub
-  nameWithType: ISpatialPubSub
-- uid: CueX.API.ISpatialPubSub.Insert*
-  name: Insert
-  href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Insert_
-  commentId: Overload:CueX.API.ISpatialPubSub.Insert
-  isSpec: "True"
-  fullName: CueX.API.ISpatialPubSub.Insert
-  nameWithType: ISpatialPubSub.Insert
-- uid: CueX.API.ISpatialPubSub.Insert``1(``0)
-  name: Insert<T>(T)
-  href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Insert__1___0_
-  commentId: M:CueX.API.ISpatialPubSub.Insert``1(``0)
-  name.vb: Insert(Of T)(T)
-  fullName: CueX.API.ISpatialPubSub.Insert<T>(T)
-  fullName.vb: CueX.API.ISpatialPubSub.Insert(Of T)(T)
-  nameWithType: ISpatialPubSub.Insert<T>(T)
-  nameWithType.vb: ISpatialPubSub.Insert(Of T)(T)
-- uid: CueX.API.ISpatialPubSub.Remove*
-  name: Remove
-  href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Remove_
-  commentId: Overload:CueX.API.ISpatialPubSub.Remove
-  isSpec: "True"
-  fullName: CueX.API.ISpatialPubSub.Remove
-  nameWithType: ISpatialPubSub.Remove
-- uid: CueX.API.ISpatialPubSub.Remove``1(``0)
-  name: Remove<T>(T)
-  href: api/CueX.API.ISpatialPubSub.html#CueX_API_ISpatialPubSub_Remove__1___0_
-  commentId: M:CueX.API.ISpatialPubSub.Remove``1(``0)
-  name.vb: Remove(Of T)(T)
-  fullName: CueX.API.ISpatialPubSub.Remove<T>(T)
-  fullName.vb: CueX.API.ISpatialPubSub.Remove(Of T)(T)
-  nameWithType: ISpatialPubSub.Remove<T>(T)
-  nameWithType.vb: ISpatialPubSub.Remove(Of T)(T)
 - uid: CueX.Core
   name: CueX.Core
   href: api/CueX.Core.html
@@ -169,6 +13,156 @@ references:
   commentId: T:CueX.Core.Configuration
   fullName: CueX.Core.Configuration
   nameWithType: Configuration
+- uid: CueX.Core.IPartitionGrain
+  name: IPartitionGrain
+  href: api/CueX.Core.IPartitionGrain.html
+  commentId: T:CueX.Core.IPartitionGrain
+  fullName: CueX.Core.IPartitionGrain
+  nameWithType: IPartitionGrain
+- uid: CueX.Core.IPartitionGrain.Add*
+  name: Add
+  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_Add_
+  commentId: Overload:CueX.Core.IPartitionGrain.Add
+  isSpec: "True"
+  fullName: CueX.Core.IPartitionGrain.Add
+  nameWithType: IPartitionGrain.Add
+- uid: CueX.Core.IPartitionGrain.Add``1(``0)
+  name: Add<T>(T)
+  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_Add__1___0_
+  commentId: M:CueX.Core.IPartitionGrain.Add``1(``0)
+  name.vb: Add(Of T)(T)
+  fullName: CueX.Core.IPartitionGrain.Add<T>(T)
+  fullName.vb: CueX.Core.IPartitionGrain.Add(Of T)(T)
+  nameWithType: IPartitionGrain.Add<T>(T)
+  nameWithType.vb: IPartitionGrain.Add(Of T)(T)
+- uid: CueX.Core.IPartitionGrain.GetChildren
+  name: GetChildren()
+  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_GetChildren
+  commentId: M:CueX.Core.IPartitionGrain.GetChildren
+  fullName: CueX.Core.IPartitionGrain.GetChildren()
+  nameWithType: IPartitionGrain.GetChildren()
+- uid: CueX.Core.IPartitionGrain.GetChildren*
+  name: GetChildren
+  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_GetChildren_
+  commentId: Overload:CueX.Core.IPartitionGrain.GetChildren
+  isSpec: "True"
+  fullName: CueX.Core.IPartitionGrain.GetChildren
+  nameWithType: IPartitionGrain.GetChildren
+- uid: CueX.Core.IPartitionGrain.Remove*
+  name: Remove
+  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_Remove_
+  commentId: Overload:CueX.Core.IPartitionGrain.Remove
+  isSpec: "True"
+  fullName: CueX.Core.IPartitionGrain.Remove
+  nameWithType: IPartitionGrain.Remove
+- uid: CueX.Core.IPartitionGrain.Remove``1(``0)
+  name: Remove<T>(T)
+  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_Remove__1___0_
+  commentId: M:CueX.Core.IPartitionGrain.Remove``1(``0)
+  name.vb: Remove(Of T)(T)
+  fullName: CueX.Core.IPartitionGrain.Remove<T>(T)
+  fullName.vb: CueX.Core.IPartitionGrain.Remove(Of T)(T)
+  nameWithType: IPartitionGrain.Remove<T>(T)
+  nameWithType.vb: IPartitionGrain.Remove(Of T)(T)
+- uid: CueX.Core.ISpatialGrain
+  name: ISpatialGrain
+  href: api/CueX.Core.ISpatialGrain.html
+  commentId: T:CueX.Core.ISpatialGrain
+  fullName: CueX.Core.ISpatialGrain
+  nameWithType: ISpatialGrain
+- uid: CueX.Core.ISpatialGrain.GetPosition
+  name: GetPosition()
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_GetPosition
+  commentId: M:CueX.Core.ISpatialGrain.GetPosition
+  fullName: CueX.Core.ISpatialGrain.GetPosition()
+  nameWithType: ISpatialGrain.GetPosition()
+- uid: CueX.Core.ISpatialGrain.GetPosition*
+  name: GetPosition
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_GetPosition_
+  commentId: Overload:CueX.Core.ISpatialGrain.GetPosition
+  isSpec: "True"
+  fullName: CueX.Core.ISpatialGrain.GetPosition
+  nameWithType: ISpatialGrain.GetPosition
+- uid: CueX.Core.ISpatialGrain.RemoveSelfFromParent
+  name: RemoveSelfFromParent()
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_RemoveSelfFromParent
+  commentId: M:CueX.Core.ISpatialGrain.RemoveSelfFromParent
+  fullName: CueX.Core.ISpatialGrain.RemoveSelfFromParent()
+  nameWithType: ISpatialGrain.RemoveSelfFromParent()
+- uid: CueX.Core.ISpatialGrain.RemoveSelfFromParent*
+  name: RemoveSelfFromParent
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_RemoveSelfFromParent_
+  commentId: Overload:CueX.Core.ISpatialGrain.RemoveSelfFromParent
+  isSpec: "True"
+  fullName: CueX.Core.ISpatialGrain.RemoveSelfFromParent
+  nameWithType: ISpatialGrain.RemoveSelfFromParent
+- uid: CueX.Core.ISpatialGrain.SetParent*
+  name: SetParent
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_SetParent_
+  commentId: Overload:CueX.Core.ISpatialGrain.SetParent
+  isSpec: "True"
+  fullName: CueX.Core.ISpatialGrain.SetParent
+  nameWithType: ISpatialGrain.SetParent
+- uid: CueX.Core.ISpatialGrain.SetParent``1(``0)
+  name: SetParent<T>(T)
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_SetParent__1___0_
+  commentId: M:CueX.Core.ISpatialGrain.SetParent``1(``0)
+  name.vb: SetParent(Of T)(T)
+  fullName: CueX.Core.ISpatialGrain.SetParent<T>(T)
+  fullName.vb: CueX.Core.ISpatialGrain.SetParent(Of T)(T)
+  nameWithType: ISpatialGrain.SetParent<T>(T)
+  nameWithType.vb: ISpatialGrain.SetParent(Of T)(T)
+- uid: CueX.Core.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)
+  name: SetPosition(Vector3d)
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_SetPosition_CueX_Numerics_Vector3d_
+  commentId: M:CueX.Core.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)
+  fullName: CueX.Core.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)
+  nameWithType: ISpatialGrain.SetPosition(Vector3d)
+- uid: CueX.Core.ISpatialGrain.SetPosition*
+  name: SetPosition
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_SetPosition_
+  commentId: Overload:CueX.Core.ISpatialGrain.SetPosition
+  isSpec: "True"
+  fullName: CueX.Core.ISpatialGrain.SetPosition
+  nameWithType: ISpatialGrain.SetPosition
+- uid: CueX.Core.ISpatialPubSub
+  name: ISpatialPubSub
+  href: api/CueX.Core.ISpatialPubSub.html
+  commentId: T:CueX.Core.ISpatialPubSub
+  fullName: CueX.Core.ISpatialPubSub
+  nameWithType: ISpatialPubSub
+- uid: CueX.Core.ISpatialPubSub.Insert*
+  name: Insert
+  href: api/CueX.Core.ISpatialPubSub.html#CueX_Core_ISpatialPubSub_Insert_
+  commentId: Overload:CueX.Core.ISpatialPubSub.Insert
+  isSpec: "True"
+  fullName: CueX.Core.ISpatialPubSub.Insert
+  nameWithType: ISpatialPubSub.Insert
+- uid: CueX.Core.ISpatialPubSub.Insert``1(``0)
+  name: Insert<T>(T)
+  href: api/CueX.Core.ISpatialPubSub.html#CueX_Core_ISpatialPubSub_Insert__1___0_
+  commentId: M:CueX.Core.ISpatialPubSub.Insert``1(``0)
+  name.vb: Insert(Of T)(T)
+  fullName: CueX.Core.ISpatialPubSub.Insert<T>(T)
+  fullName.vb: CueX.Core.ISpatialPubSub.Insert(Of T)(T)
+  nameWithType: ISpatialPubSub.Insert<T>(T)
+  nameWithType.vb: ISpatialPubSub.Insert(Of T)(T)
+- uid: CueX.Core.ISpatialPubSub.Remove*
+  name: Remove
+  href: api/CueX.Core.ISpatialPubSub.html#CueX_Core_ISpatialPubSub_Remove_
+  commentId: Overload:CueX.Core.ISpatialPubSub.Remove
+  isSpec: "True"
+  fullName: CueX.Core.ISpatialPubSub.Remove
+  nameWithType: ISpatialPubSub.Remove
+- uid: CueX.Core.ISpatialPubSub.Remove``1(``0)
+  name: Remove<T>(T)
+  href: api/CueX.Core.ISpatialPubSub.html#CueX_Core_ISpatialPubSub_Remove__1___0_
+  commentId: M:CueX.Core.ISpatialPubSub.Remove``1(``0)
+  name.vb: Remove(Of T)(T)
+  fullName: CueX.Core.ISpatialPubSub.Remove<T>(T)
+  fullName.vb: CueX.Core.ISpatialPubSub.Remove(Of T)(T)
+  nameWithType: ISpatialPubSub.Remove<T>(T)
+  nameWithType.vb: ISpatialPubSub.Remove(Of T)(T)
 - uid: CueX.Core.PartitionGrain`2
   name: PartitionGrain<TGrainInterface, TState>
   href: api/CueX.Core.PartitionGrain-2.html

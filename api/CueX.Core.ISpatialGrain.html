@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ISpatialPubSub
+    <title>Interface ISpatialGrain
    | CueX Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ISpatialPubSub
+    <meta name="title" content="Interface ISpatialGrain
    | CueX Documentation ">
     <meta name="generator" content="docfx 2.34.0.0">
     
@@ -76,36 +76,97 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CueX.API.ISpatialPubSub">
+            <article class="content wrap" id="_content" data-uid="CueX.Core.ISpatialGrain">
   
   
-  <h1 id="CueX_API_ISpatialPubSub" data-uid="CueX.API.ISpatialPubSub" class="text-break">Interface ISpatialPubSub
+  <h1 id="CueX_Core_ISpatialGrain" data-uid="CueX.Core.ISpatialGrain" class="text-break">Interface ISpatialGrain
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Interace that needs to be fulfilled by any spatial objects, that should be inserted into the PubSub-System.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.API.html">CueX.API</a></h6>
-  <h6><strong>Assembly</strong>: CueX.API.dll</h6>
-  <h5 id="CueX_API_ISpatialPubSub_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.Core.html">CueX.Core</a></h6>
+  <h6><strong>Assembly</strong>: CueX.Core.dll</h6>
+  <h5 id="CueX_Core_ISpatialGrain_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ISpatialPubSub</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ISpatialGrain : IGrain, IAddressable</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_API_ISpatialPubSub_Insert__1___0_.md&amp;value=---%0Auid%3A%20CueX.API.ISpatialPubSub.Insert%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_ISpatialGrain_GetPosition.md&amp;value=---%0Auid%3A%20CueX.Core.ISpatialGrain.GetPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.API/ISpatialPubSub.cs/#L10">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/ISpatialGrain.cs/#L16">View Source</a>
   </span>
-  <a id="CueX_API_ISpatialPubSub_Insert_" data-uid="CueX.API.ISpatialPubSub.Insert*"></a>
-  <h4 id="CueX_API_ISpatialPubSub_Insert__1___0_" data-uid="CueX.API.ISpatialPubSub.Insert``1(``0)">Insert&lt;T&gt;(T)</h4>
+  <a id="CueX_Core_ISpatialGrain_GetPosition_" data-uid="CueX.Core.ISpatialGrain.GetPosition*"></a>
+  <h4 id="CueX_Core_ISpatialGrain_GetPosition" data-uid="CueX.Core.ISpatialGrain.GetPosition">GetPosition()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task Insert&lt;T&gt;(T spatialGrain)
-    where T : ISpatialGrain</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;Vector3d&gt; GetPosition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="CueX.Numerics.Vector3d.html">Vector3d</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_ISpatialGrain_RemoveSelfFromParent.md&amp;value=---%0Auid%3A%20CueX.Core.ISpatialGrain.RemoveSelfFromParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/ISpatialGrain.cs/#L18">View Source</a>
+  </span>
+  <a id="CueX_Core_ISpatialGrain_RemoveSelfFromParent_" data-uid="CueX.Core.ISpatialGrain.RemoveSelfFromParent*"></a>
+  <h4 id="CueX_Core_ISpatialGrain_RemoveSelfFromParent" data-uid="CueX.Core.ISpatialGrain.RemoveSelfFromParent">RemoveSelfFromParent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; RemoveSelfFromParent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_ISpatialGrain_SetParent__1___0_.md&amp;value=---%0Auid%3A%20CueX.Core.ISpatialGrain.SetParent%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/ISpatialGrain.cs/#L17">View Source</a>
+  </span>
+  <a id="CueX_Core_ISpatialGrain_SetParent_" data-uid="CueX.Core.ISpatialGrain.SetParent*"></a>
+  <h4 id="CueX_Core_ISpatialGrain_SetParent__1___0_" data-uid="CueX.Core.ISpatialGrain.SetParent``1(``0)">SetParent&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetParent&lt;T&gt;(T parent)
+    where T : IPartitionGrain</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -119,7 +180,7 @@
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><span class="parametername">spatialGrain</span></td>
+        <td><span class="parametername">parent</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -156,19 +217,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_API_ISpatialPubSub_Remove__1___0_.md&amp;value=---%0Auid%3A%20CueX.API.ISpatialPubSub.Remove%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_ISpatialGrain_SetPosition_CueX_Numerics_Vector3d_.md&amp;value=---%0Auid%3A%20CueX.Core.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.API/ISpatialPubSub.cs/#L11">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/ISpatialGrain.cs/#L15">View Source</a>
   </span>
-  <a id="CueX_API_ISpatialPubSub_Remove_" data-uid="CueX.API.ISpatialPubSub.Remove*"></a>
-  <h4 id="CueX_API_ISpatialPubSub_Remove__1___0_" data-uid="CueX.API.ISpatialPubSub.Remove``1(``0)">Remove&lt;T&gt;(T)</h4>
+  <a id="CueX_Core_ISpatialGrain_SetPosition_" data-uid="CueX.Core.ISpatialGrain.SetPosition*"></a>
+  <h4 id="CueX_Core_ISpatialGrain_SetPosition_CueX_Numerics_Vector3d_" data-uid="CueX.Core.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)">SetPosition(Vector3d)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; Remove&lt;T&gt;(T spatialGrain)
-    where T : ISpatialGrain</code></pre>
+    <pre><code class="lang-csharp hljs">Task SetPosition(Vector3d newPosition)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,8 +241,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">spatialGrain</span></td>
+        <td><a class="xref" href="CueX.Numerics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">newPosition</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -197,22 +257,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -225,10 +270,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_API_ISpatialPubSub.md&amp;value=---%0Auid%3A%20CueX.API.ISpatialPubSub%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_ISpatialGrain.md&amp;value=---%0Auid%3A%20CueX.Core.ISpatialGrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/CueX.API/ISpatialPubSub.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/ISpatialGrain.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
