@@ -315,6 +315,42 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SetPosition
   nameWithType: SpatialGrain<TGrainInterface, TState>.SetPosition
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SetPosition
+- uid: CueX.Core.SpatialGrain`2.Subscribe(CueX.Core.Subscription.SubscriptionDetails,System.Action{CueX.Core.Subscription.IEvent})
+  name: Subscribe(SubscriptionDetails, Action<IEvent>)
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Subscribe_CueX_Core_Subscription_SubscriptionDetails_System_Action_CueX_Core_Subscription_IEvent__
+  commentId: M:CueX.Core.SpatialGrain`2.Subscribe(CueX.Core.Subscription.SubscriptionDetails,System.Action{CueX.Core.Subscription.IEvent})
+  name.vb: Subscribe(SubscriptionDetails, Action(Of IEvent))
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.Subscribe(CueX.Core.Subscription.SubscriptionDetails, System.Action<CueX.Core.Subscription.IEvent>)
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).Subscribe(CueX.Core.Subscription.SubscriptionDetails, System.Action(Of CueX.Core.Subscription.IEvent))
+  nameWithType: SpatialGrain<TGrainInterface, TState>.Subscribe(SubscriptionDetails, Action<IEvent>)
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).Subscribe(SubscriptionDetails, Action(Of IEvent))
+- uid: CueX.Core.SpatialGrain`2.Subscribe*
+  name: Subscribe
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Subscribe_
+  commentId: Overload:CueX.Core.SpatialGrain`2.Subscribe
+  isSpec: "True"
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.Subscribe
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).Subscribe
+  nameWithType: SpatialGrain<TGrainInterface, TState>.Subscribe
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).Subscribe
+- uid: CueX.Core.SpatialGrain`2.SubscribeTo*
+  name: SubscribeTo
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo_
+  commentId: Overload:CueX.Core.SpatialGrain`2.SubscribeTo
+  isSpec: "True"
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SubscribeTo
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SubscribeTo
+  nameWithType: SpatialGrain<TGrainInterface, TState>.SubscribeTo
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SubscribeTo
+- uid: CueX.Core.SpatialGrain`2.SubscribeTo``1
+  name: SubscribeTo<T>()
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo__1
+  commentId: M:CueX.Core.SpatialGrain`2.SubscribeTo``1
+  name.vb: SubscribeTo(Of T)()
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SubscribeTo<T>()
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SubscribeTo(Of T)()
+  nameWithType: SpatialGrain<TGrainInterface, TState>.SubscribeTo<T>()
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SubscribeTo(Of T)()
 - uid: CueX.Core.SpatialGrainState
   name: SpatialGrainState
   href: api/CueX.Core.SpatialGrainState.html
@@ -365,6 +401,130 @@ references:
   isSpec: "True"
   fullName: CueX.Core.SpatialPubSubBuilder.CheckHardwareSupport
   nameWithType: SpatialPubSubBuilder.CheckHardwareSupport
+- uid: CueX.Core.Subscription
+  name: CueX.Core.Subscription
+  href: api/CueX.Core.Subscription.html
+  commentId: N:CueX.Core.Subscription
+  fullName: CueX.Core.Subscription
+  nameWithType: CueX.Core.Subscription
+- uid: CueX.Core.Subscription.IArea
+  name: IArea
+  href: api/CueX.Core.Subscription.IArea.html
+  commentId: T:CueX.Core.Subscription.IArea
+  fullName: CueX.Core.Subscription.IArea
+  nameWithType: IArea
+- uid: CueX.Core.Subscription.IEvent
+  name: IEvent
+  href: api/CueX.Core.Subscription.IEvent.html
+  commentId: T:CueX.Core.Subscription.IEvent
+  fullName: CueX.Core.Subscription.IEvent
+  nameWithType: IEvent
+- uid: CueX.Core.Subscription.ISubscriptionBuilder`1
+  name: ISubscriptionBuilder<T>
+  href: api/CueX.Core.Subscription.ISubscriptionBuilder-1.html
+  commentId: T:CueX.Core.Subscription.ISubscriptionBuilder`1
+  name.vb: ISubscriptionBuilder(Of T)
+  fullName: CueX.Core.Subscription.ISubscriptionBuilder<T>
+  fullName.vb: CueX.Core.Subscription.ISubscriptionBuilder(Of T)
+  nameWithType: ISubscriptionBuilder<T>
+  nameWithType.vb: ISubscriptionBuilder(Of T)
+- uid: CueX.Core.Subscription.ISubscriptionBuilder`1.ForEach(System.Action{`0})
+  name: ForEach(Action<T>)
+  href: api/CueX.Core.Subscription.ISubscriptionBuilder-1.html#CueX_Core_Subscription_ISubscriptionBuilder_1_ForEach_System_Action__0__
+  commentId: M:CueX.Core.Subscription.ISubscriptionBuilder`1.ForEach(System.Action{`0})
+  name.vb: ForEach(Action(Of T))
+  fullName: CueX.Core.Subscription.ISubscriptionBuilder<T>.ForEach(System.Action<T>)
+  fullName.vb: CueX.Core.Subscription.ISubscriptionBuilder(Of T).ForEach(System.Action(Of T))
+  nameWithType: ISubscriptionBuilder<T>.ForEach(Action<T>)
+  nameWithType.vb: ISubscriptionBuilder(Of T).ForEach(Action(Of T))
+- uid: CueX.Core.Subscription.ISubscriptionBuilder`1.ForEach*
+  name: ForEach
+  href: api/CueX.Core.Subscription.ISubscriptionBuilder-1.html#CueX_Core_Subscription_ISubscriptionBuilder_1_ForEach_
+  commentId: Overload:CueX.Core.Subscription.ISubscriptionBuilder`1.ForEach
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.ISubscriptionBuilder<T>.ForEach
+  fullName.vb: CueX.Core.Subscription.ISubscriptionBuilder(Of T).ForEach
+  nameWithType: ISubscriptionBuilder<T>.ForEach
+  nameWithType.vb: ISubscriptionBuilder(Of T).ForEach
+- uid: CueX.Core.Subscription.ITypeFilter
+  name: ITypeFilter
+  href: api/CueX.Core.Subscription.ITypeFilter.html
+  commentId: T:CueX.Core.Subscription.ITypeFilter
+  fullName: CueX.Core.Subscription.ITypeFilter
+  nameWithType: ITypeFilter
+- uid: CueX.Core.Subscription.ITypeFilter.IsType*
+  name: IsType
+  href: api/CueX.Core.Subscription.ITypeFilter.html#CueX_Core_Subscription_ITypeFilter_IsType_
+  commentId: Overload:CueX.Core.Subscription.ITypeFilter.IsType
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.ITypeFilter.IsType
+  nameWithType: ITypeFilter.IsType
+- uid: CueX.Core.Subscription.ITypeFilter.IsType``1
+  name: IsType<T>()
+  href: api/CueX.Core.Subscription.ITypeFilter.html#CueX_Core_Subscription_ITypeFilter_IsType__1
+  commentId: M:CueX.Core.Subscription.ITypeFilter.IsType``1
+  name.vb: IsType(Of T)()
+  fullName: CueX.Core.Subscription.ITypeFilter.IsType<T>()
+  fullName.vb: CueX.Core.Subscription.ITypeFilter.IsType(Of T)()
+  nameWithType: ITypeFilter.IsType<T>()
+  nameWithType.vb: ITypeFilter.IsType(Of T)()
+- uid: CueX.Core.Subscription.SubscriptionDetails
+  name: SubscriptionDetails
+  href: api/CueX.Core.Subscription.SubscriptionDetails.html
+  commentId: T:CueX.Core.Subscription.SubscriptionDetails
+  fullName: CueX.Core.Subscription.SubscriptionDetails
+  nameWithType: SubscriptionDetails
+- uid: CueX.Core.Subscription.SubscriptionDetails.Area
+  name: Area
+  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_Area
+  commentId: F:CueX.Core.Subscription.SubscriptionDetails.Area
+  fullName: CueX.Core.Subscription.SubscriptionDetails.Area
+  nameWithType: SubscriptionDetails.Area
+- uid: CueX.Core.Subscription.SubscriptionDetails.EventFilter
+  name: EventFilter
+  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_EventFilter
+  commentId: F:CueX.Core.Subscription.SubscriptionDetails.EventFilter
+  fullName: CueX.Core.Subscription.SubscriptionDetails.EventFilter
+  nameWithType: SubscriptionDetails.EventFilter
+- uid: CueX.Core.Subscription.SubscriptionDetails.OriginFilter
+  name: OriginFilter
+  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_OriginFilter
+  commentId: F:CueX.Core.Subscription.SubscriptionDetails.OriginFilter
+  fullName: CueX.Core.Subscription.SubscriptionDetails.OriginFilter
+  nameWithType: SubscriptionDetails.OriginFilter
+- uid: CueX.Core.Subscription.SubscriptionDetails.Subscriber
+  name: Subscriber
+  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_Subscriber
+  commentId: F:CueX.Core.Subscription.SubscriptionDetails.Subscriber
+  fullName: CueX.Core.Subscription.SubscriptionDetails.Subscriber
+  nameWithType: SubscriptionDetails.Subscriber
+- uid: CueX.Core.Subscription.TypeFilter`1
+  name: TypeFilter<TSelf>
+  href: api/CueX.Core.Subscription.TypeFilter-1.html
+  commentId: T:CueX.Core.Subscription.TypeFilter`1
+  name.vb: TypeFilter(Of TSelf)
+  fullName: CueX.Core.Subscription.TypeFilter<TSelf>
+  fullName.vb: CueX.Core.Subscription.TypeFilter(Of TSelf)
+  nameWithType: TypeFilter<TSelf>
+  nameWithType.vb: TypeFilter(Of TSelf)
+- uid: CueX.Core.Subscription.TypeFilter`1.IsType*
+  name: IsType
+  href: api/CueX.Core.Subscription.TypeFilter-1.html#CueX_Core_Subscription_TypeFilter_1_IsType_
+  commentId: Overload:CueX.Core.Subscription.TypeFilter`1.IsType
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.TypeFilter<TSelf>.IsType
+  fullName.vb: CueX.Core.Subscription.TypeFilter(Of TSelf).IsType
+  nameWithType: TypeFilter<TSelf>.IsType
+  nameWithType.vb: TypeFilter(Of TSelf).IsType
+- uid: CueX.Core.Subscription.TypeFilter`1.IsType``1
+  name: IsType<TOther>()
+  href: api/CueX.Core.Subscription.TypeFilter-1.html#CueX_Core_Subscription_TypeFilter_1_IsType__1
+  commentId: M:CueX.Core.Subscription.TypeFilter`1.IsType``1
+  name.vb: IsType(Of TOther)()
+  fullName: CueX.Core.Subscription.TypeFilter<TSelf>.IsType<TOther>()
+  fullName.vb: CueX.Core.Subscription.TypeFilter(Of TSelf).IsType(Of TOther)()
+  nameWithType: TypeFilter<TSelf>.IsType<TOther>()
+  nameWithType.vb: TypeFilter(Of TSelf).IsType(Of TOther)()
 - uid: CueX.GridSPS
   name: CueX.GridSPS
   href: api/CueX.GridSPS.html
@@ -905,6 +1065,18 @@ references:
   isSpec: "True"
   fullName: CueX.Test.BasicSpatialGrainTest.TestPositionAssignment
   nameWithType: BasicSpatialGrainTest.TestPositionAssignment
+- uid: CueX.Test.Events
+  name: CueX.Test.Events
+  href: api/CueX.Test.Events.html
+  commentId: N:CueX.Test.Events
+  fullName: CueX.Test.Events
+  nameWithType: CueX.Test.Events
+- uid: CueX.Test.Events.TestEvent
+  name: TestEvent
+  href: api/CueX.Test.Events.TestEvent.html
+  commentId: T:CueX.Test.Events.TestEvent
+  fullName: CueX.Test.Events.TestEvent
+  nameWithType: TestEvent
 - uid: CueX.Test.Grains
   name: CueX.Test.Grains
   href: api/CueX.Test.Grains.html

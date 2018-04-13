@@ -161,7 +161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrain-2.html",
-          "hash": "Q0srz2q5KAdEDJmcRhhzgg=="
+          "hash": "hTbY/ML32MBZrgSNapgIVg=="
         }
       },
       "is_incremental": false,
@@ -186,6 +186,90 @@
         ".html": {
           "relative_path": "api/CueX.Core.SpatialPubSubBuilder.html",
           "hash": "iu88EiihQlOvPAVlwpMQiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.IArea.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.IArea.html",
+          "hash": "oTlxwUB3l7fJSOnyCwnWMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.IEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.IEvent.html",
+          "hash": "wIUbiEu5vEIAuduWYE35wA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.ISubscriptionBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.ISubscriptionBuilder-1.html",
+          "hash": "9xYMDVYSg4HlyFyB1lTqxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.ITypeFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.ITypeFilter.html",
+          "hash": "/H8ODXpft6QIhlsrn3z2kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.SubscriptionDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.SubscriptionDetails.html",
+          "hash": "yWSQEZ5ys1gXiQOhUko+cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.TypeFilter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.TypeFilter-1.html",
+          "hash": "FdVbS9ycwZ1Q4cKyFJOXfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.html",
+          "hash": "Sh32c7MrFaoyWzc88terhw=="
         }
       },
       "is_incremental": false,
@@ -397,11 +481,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Test.Events.TestEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Test.Events.TestEvent.html",
+          "hash": "270swq9q081L0Cw//bTr5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Test.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Test.Events.html",
+          "hash": "0pp5IMofTSkVVj93hDXSUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/CueX.Test.Grains.BasicSpatialGrain.yml",
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.BasicSpatialGrain.html",
-          "hash": "XrB7JC20TwGmwZvxi/69Tw=="
+          "hash": "By0WeauANTmM61TTnj/SMw=="
         }
       },
       "is_incremental": false,
@@ -569,7 +677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrain.html",
-          "hash": "dVHdpbaKD4vKrk0zf1OgZQ=="
+          "hash": "ohgXbKxSMBLGetg+3MYHyA=="
         }
       },
       "is_incremental": false,
@@ -605,7 +713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "4o3VioBArO2yyqKdTRzD3g=="
+          "hash": "wMpnj72/DPhr3Lt8xdNmBA=="
         }
       },
       "is_incremental": false,
