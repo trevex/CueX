@@ -1,6 +1,9 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
+
+using System;
 using System.Threading.Tasks;
+using CueX.Core.Subscription;
 using CueX.Numerics;
 using Orleans;
 
@@ -14,6 +17,7 @@ namespace CueX.Core
     /// to be insertable into the PubSub-System.
     /// </summary>
     /// <typeparam name="TState">Application-specific state data type, that also holds <see cref="SpatialGrainState"/>.</typeparam>
+    /// <typeparam name="TGrainInterface"></typeparam>
     public abstract class SpatialGrain<TGrainInterface, TState> : Grain<TState>, ISpatialGrain
         where TState : SpatialGrainState, new() where TGrainInterface : ISpatialGrain
     {
@@ -37,6 +41,17 @@ namespace CueX.Core
         public Task<bool> RemoveSelfFromParent()
         {
             return State.Parent.Remove(this.AsReference<TGrainInterface>());
+        }
+
+        public bool Subscribe(SubscriptionDetails subscription, Action<IEvent> callback)
+        {
+            // TODO: implement
+            return true;
+        } 
+        
+        public ISubscriptionBuilder<T> SubscribeTo<T>() where T : IEvent
+        {
+            return new SubscriptionBuilder<T>(this.AsReference<TGrainInterface>(), new TypeFilter<T>());
         }
     }
 }
