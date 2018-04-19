@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ClusterFixture
+    <title>Class AlreadySubscribedException
    | CueX Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ClusterFixture
+    <meta name="title" content="Class AlreadySubscribedException
    | CueX Documentation ">
     <meta name="generator" content="docfx 2.34.0.0">
     
@@ -76,24 +76,64 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CueX.Test.Helper.ClusterFixture">
+            <article class="content wrap" id="_content" data-uid="CueX.Core.Exception.AlreadySubscribedException">
   
   
-  <h1 id="CueX_Test_Helper_ClusterFixture" data-uid="CueX.Test.Helper.ClusterFixture" class="text-break">Class ClusterFixture
+  <h1 id="CueX_Core_Exception_AlreadySubscribedException" data-uid="CueX.Core.Exception.AlreadySubscribedException" class="text-break">Class AlreadySubscribedException
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ClusterFixture</span></div>
+    <div class="level1"><span class="xref">System.Exception</span></div>
+    <div class="level2"><span class="xref">AlreadySubscribedException</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Exception.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.GetBaseException()</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.Data</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.HelpLink</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.HResult</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.InnerException</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.Message</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.Source</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.StackTrace</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.TargetSite</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.SerializeObjectState</span>
+    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -104,123 +144,107 @@
       <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
     <div>
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.Test.Helper.html">CueX.Test.Helper</a></h6>
-  <h6><strong>Assembly</strong>: CueX.Test.dll</h6>
-  <h5 id="CueX_Test_Helper_ClusterFixture_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.Core.Exception.html">CueX.Core.Exception</a></h6>
+  <h6><strong>Assembly</strong>: CueX.Core.dll</h6>
+  <h5 id="CueX_Core_Exception_AlreadySubscribedException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ClusterFixture : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class AlreadySubscribedException : Exception, ISerializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Helper_ClusterFixture__ctor.md&amp;value=---%0Auid%3A%20CueX.Test.Helper.ClusterFixture.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_Exception_AlreadySubscribedException__ctor.md&amp;value=---%0Auid%3A%20CueX.Core.Exception.AlreadySubscribedException.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Helper/ClusterFixture.cs/#L17">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/Exception/AlreadySubscribedException.cs/#L9">View Source</a>
   </span>
-  <a id="CueX_Test_Helper_ClusterFixture__ctor_" data-uid="CueX.Test.Helper.ClusterFixture.#ctor*"></a>
-  <h4 id="CueX_Test_Helper_ClusterFixture__ctor" data-uid="CueX.Test.Helper.ClusterFixture.#ctor">ClusterFixture()</h4>
+  <a id="CueX_Core_Exception_AlreadySubscribedException__ctor_" data-uid="CueX.Core.Exception.AlreadySubscribedException.#ctor*"></a>
+  <h4 id="CueX_Core_Exception_AlreadySubscribedException__ctor" data-uid="CueX.Core.Exception.AlreadySubscribedException.#ctor">AlreadySubscribedException()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClusterFixture()</code></pre>
+    <pre><code class="lang-csharp hljs">public AlreadySubscribedException()</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Helper_ClusterFixture_Client.md&amp;value=---%0Auid%3A%20CueX.Test.Helper.ClusterFixture.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_Exception_AlreadySubscribedException__ctor_System_String_.md&amp;value=---%0Auid%3A%20CueX.Core.Exception.AlreadySubscribedException.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Helper/ClusterFixture.cs/#L35">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/Exception/AlreadySubscribedException.cs/#L13">View Source</a>
   </span>
-  <a id="CueX_Test_Helper_ClusterFixture_Client_" data-uid="CueX.Test.Helper.ClusterFixture.Client*"></a>
-  <h4 id="CueX_Test_Helper_ClusterFixture_Client" data-uid="CueX.Test.Helper.ClusterFixture.Client">Client</h4>
+  <a id="CueX_Core_Exception_AlreadySubscribedException__ctor_" data-uid="CueX.Core.Exception.AlreadySubscribedException.#ctor*"></a>
+  <h4 id="CueX_Core_Exception_AlreadySubscribedException__ctor_System_String_" data-uid="CueX.Core.Exception.AlreadySubscribedException.#ctor(System.String)">AlreadySubscribedException(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IClusterClient Client { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public AlreadySubscribedException(string message)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Orleans.IClusterClient</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Helper_ClusterFixture_Cluster.md&amp;value=---%0Auid%3A%20CueX.Test.Helper.ClusterFixture.Cluster%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_Exception_AlreadySubscribedException__ctor_System_String_System_Exception_.md&amp;value=---%0Auid%3A%20CueX.Core.Exception.AlreadySubscribedException.%23ctor(System.String%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Helper/ClusterFixture.cs/#L34">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/Exception/AlreadySubscribedException.cs/#L18">View Source</a>
   </span>
-  <a id="CueX_Test_Helper_ClusterFixture_Cluster_" data-uid="CueX.Test.Helper.ClusterFixture.Cluster*"></a>
-  <h4 id="CueX_Test_Helper_ClusterFixture_Cluster" data-uid="CueX.Test.Helper.ClusterFixture.Cluster">Cluster</h4>
+  <a id="CueX_Core_Exception_AlreadySubscribedException__ctor_" data-uid="CueX.Core.Exception.AlreadySubscribedException.#ctor*"></a>
+  <h4 id="CueX_Core_Exception_AlreadySubscribedException__ctor_System_String_System_Exception_" data-uid="CueX.Core.Exception.AlreadySubscribedException.#ctor(System.String,System.Exception)">AlreadySubscribedException(String, Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TestCluster Cluster { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public AlreadySubscribedException(string message, Exception inner)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Orleans.TestingHost.TestCluster</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">inner</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Helper_ClusterFixture_Dispose.md&amp;value=---%0Auid%3A%20CueX.Test.Helper.ClusterFixture.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Helper/ClusterFixture.cs/#L28">View Source</a>
-  </span>
-  <a id="CueX_Test_Helper_ClusterFixture_Dispose_" data-uid="CueX.Test.Helper.ClusterFixture.Dispose*"></a>
-  <h4 id="CueX_Test_Helper_ClusterFixture_Dispose" data-uid="CueX.Test.Helper.ClusterFixture.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
-  </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
   </div>
 </article>
           </div>
@@ -230,10 +254,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Helper_ClusterFixture.md&amp;value=---%0Auid%3A%20CueX.Test.Helper.ClusterFixture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_Exception_AlreadySubscribedException.md&amp;value=---%0Auid%3A%20CueX.Core.Exception.AlreadySubscribedException%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Helper/ClusterFixture.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/Exception/AlreadySubscribedException.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -96,7 +96,7 @@ This is a CAT class</p>
     <div class="level1"><span class="xref">Orleans.Grain</span></div>
     <div class="level2"><span class="xref">Orleans.Grain</span>&lt;TState&gt;</div>
     <div class="level3"><span class="xref">SpatialGrain&lt;TGrainInterface, TState&gt;</span></div>
-      <div class="level4"><a class="xref" href="CueX.Test.Grains.BasicSpatialGrain.html">BasicSpatialGrain</a></div>
+      <div class="level4"><a class="xref" href="CueX.Test.Grains.TestSpatialGrain.html">TestSpatialGrain</a></div>
       <div class="level4"><a class="xref" href="SimpleExample.Grains.SimpleGrain.html">SimpleGrain</a></div>
   </div>
   <div classs="implements">
@@ -146,9 +146,6 @@ This is a CAT class</p>
     </div>
     <div>
       <span class="xref">Orleans.Grain.DelayDeactivation(System.TimeSpan)</span>
-    </div>
-    <div>
-      <span class="xref">Orleans.Grain.OnActivateAsync()</span>
     </div>
     <div>
       <span class="xref">Orleans.Grain.OnDeactivateAsync()</span>
@@ -223,10 +220,26 @@ This is a CAT class</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_ForceDiscardCallbacks.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.ForceDiscardCallbacks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L98">View Source</a>
+  </span>
+  <a id="CueX_Core_SpatialGrain_2_ForceDiscardCallbacks_" data-uid="CueX.Core.SpatialGrain`2.ForceDiscardCallbacks*"></a>
+  <h4 id="CueX_Core_SpatialGrain_2_ForceDiscardCallbacks" data-uid="CueX.Core.SpatialGrain`2.ForceDiscardCallbacks">ForceDiscardCallbacks()</h4>
+  <div class="markdown level1 summary"><p>This method forcefully removes the callbacks. Only used for testing internal recompilation of callbacks (potentially dangerous!)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ForceDiscardCallbacks()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_GetPosition.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.GetPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L30">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L58">View Source</a>
   </span>
   <a id="CueX_Core_SpatialGrain_2_GetPosition_" data-uid="CueX.Core.SpatialGrain`2.GetPosition*"></a>
   <h4 id="CueX_Core_SpatialGrain_2_GetPosition" data-uid="CueX.Core.SpatialGrain`2.GetPosition">GetPosition()</h4>
@@ -253,10 +266,110 @@ This is a CAT class</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_OnActivateAsync.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.OnActivateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L26">View Source</a>
+  </span>
+  <a id="CueX_Core_SpatialGrain_2_OnActivateAsync_" data-uid="CueX.Core.SpatialGrain`2.OnActivateAsync*"></a>
+  <h4 id="CueX_Core_SpatialGrain_2_OnActivateAsync" data-uid="CueX.Core.SpatialGrain`2.OnActivateAsync">OnActivateAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task OnActivateAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Orleans.Grain.OnActivateAsync()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_ReceiveEvent_System_String_CueX_Core_Subscription_IEvent_.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.ReceiveEvent(System.String%2CCueX.Core.Subscription.IEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L89">View Source</a>
+  </span>
+  <a id="CueX_Core_SpatialGrain_2_ReceiveEvent_" data-uid="CueX.Core.SpatialGrain`2.ReceiveEvent*"></a>
+  <h4 id="CueX_Core_SpatialGrain_2_ReceiveEvent_System_String_CueX_Core_Subscription_IEvent_" data-uid="CueX.Core.SpatialGrain`2.ReceiveEvent(System.String,CueX.Core.Subscription.IEvent)">ReceiveEvent(String, IEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ReceiveEvent(string eventTypeName, IEvent eventValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventTypeName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CueX.Core.Subscription.IEvent.html">IEvent</a></td>
+        <td><span class="parametername">eventValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_RecompileCallbacksIfNecessary.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.RecompileCallbacksIfNecessary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L35">View Source</a>
+  </span>
+  <a id="CueX_Core_SpatialGrain_2_RecompileCallbacksIfNecessary_" data-uid="CueX.Core.SpatialGrain`2.RecompileCallbacksIfNecessary*"></a>
+  <h4 id="CueX_Core_SpatialGrain_2_RecompileCallbacksIfNecessary" data-uid="CueX.Core.SpatialGrain`2.RecompileCallbacksIfNecessary">RecompileCallbacksIfNecessary()</h4>
+  <div class="markdown level1 summary"><p>This method recompiles callbacks if they are not in sync with the grain state (potentially dangerous!)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RecompileCallbacksIfNecessary()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_RemoveSelfFromParent.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.RemoveSelfFromParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L41">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L69">View Source</a>
   </span>
   <a id="CueX_Core_SpatialGrain_2_RemoveSelfFromParent_" data-uid="CueX.Core.SpatialGrain`2.RemoveSelfFromParent*"></a>
   <h4 id="CueX_Core_SpatialGrain_2_RemoveSelfFromParent" data-uid="CueX.Core.SpatialGrain`2.RemoveSelfFromParent">RemoveSelfFromParent()</h4>
@@ -286,7 +399,7 @@ This is a CAT class</p>
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_SetParent__1___0_.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.SetParent%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L35">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L63">View Source</a>
   </span>
   <a id="CueX_Core_SpatialGrain_2_SetParent_" data-uid="CueX.Core.SpatialGrain`2.SetParent*"></a>
   <h4 id="CueX_Core_SpatialGrain_2_SetParent__1___0_" data-uid="CueX.Core.SpatialGrain`2.SetParent``1(``0)">SetParent&lt;T&gt;(T)</h4>
@@ -349,7 +462,7 @@ This is a CAT class</p>
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_SetPosition_CueX_Numerics_Vector3d_.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.SetPosition(CueX.Numerics.Vector3d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L24">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L52">View Source</a>
   </span>
   <a id="CueX_Core_SpatialGrain_2_SetPosition_" data-uid="CueX.Core.SpatialGrain`2.SetPosition*"></a>
   <h4 id="CueX_Core_SpatialGrain_2_SetPosition_CueX_Numerics_Vector3d_" data-uid="CueX.Core.SpatialGrain`2.SetPosition(CueX.Numerics.Vector3d)">SetPosition(Vector3d)</h4>
@@ -393,18 +506,19 @@ This is a CAT class</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_Subscribe_CueX_Core_Subscription_SubscriptionDetails_System_Action_CueX_Core_Subscription_IEvent__.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.Subscribe(CueX.Core.Subscription.SubscriptionDetails%2CSystem.Action%7BCueX.Core.Subscription.IEvent%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_Subscribe__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.Subscribe%60%601(CueX.Core.Subscription.SubscriptionDetails%2CSystem.Func%7B%60%600%2CSystem.Threading.Tasks.Task%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L46">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L74">View Source</a>
   </span>
   <a id="CueX_Core_SpatialGrain_2_Subscribe_" data-uid="CueX.Core.SpatialGrain`2.Subscribe*"></a>
-  <h4 id="CueX_Core_SpatialGrain_2_Subscribe_CueX_Core_Subscription_SubscriptionDetails_System_Action_CueX_Core_Subscription_IEvent__" data-uid="CueX.Core.SpatialGrain`2.Subscribe(CueX.Core.Subscription.SubscriptionDetails,System.Action{CueX.Core.Subscription.IEvent})">Subscribe(SubscriptionDetails, Action&lt;IEvent&gt;)</h4>
+  <h4 id="CueX_Core_SpatialGrain_2_Subscribe__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__" data-uid="CueX.Core.SpatialGrain`2.Subscribe``1(CueX.Core.Subscription.SubscriptionDetails,System.Func{``0,System.Threading.Tasks.Task})">Subscribe&lt;T&gt;(SubscriptionDetails, Func&lt;T, Task&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Subscribe(SubscriptionDetails subscription, Action&lt;IEvent&gt; callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; Subscribe&lt;T&gt;(SubscriptionDetails details, Func&lt;T, Task&gt; callback)
+    where T : IEvent</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -418,11 +532,11 @@ This is a CAT class</p>
     <tbody>
       <tr>
         <td><a class="xref" href="CueX.Core.Subscription.SubscriptionDetails.html">SubscriptionDetails</a></td>
-        <td><span class="parametername">subscription</span></td>
+        <td><span class="parametername">details</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="CueX.Core.Subscription.IEvent.html">IEvent</a>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
         <td><span class="parametername">callback</span></td>
         <td></td>
       </tr>
@@ -438,38 +552,7 @@ This is a CAT class</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_SpatialGrain_2_SubscribeTo__1.md&amp;value=---%0Auid%3A%20CueX.Core.SpatialGrain%602.SubscribeTo%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/SpatialGrain.cs/#L52">View Source</a>
-  </span>
-  <a id="CueX_Core_SpatialGrain_2_SubscribeTo_" data-uid="CueX.Core.SpatialGrain`2.SubscribeTo*"></a>
-  <h4 id="CueX_Core_SpatialGrain_2_SubscribeTo__1" data-uid="CueX.Core.SpatialGrain`2.SubscribeTo``1">SubscribeTo&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISubscriptionBuilder&lt;T&gt; SubscribeTo&lt;T&gt;()
-    where T : IEvent</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CueX.Core.Subscription.ISubscriptionBuilder-1.html">ISubscriptionBuilder</a>&lt;T&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -13,6 +13,43 @@ references:
   commentId: T:CueX.Core.Configuration
   fullName: CueX.Core.Configuration
   nameWithType: Configuration
+- uid: CueX.Core.Exception
+  name: CueX.Core.Exception
+  href: api/CueX.Core.Exception.html
+  commentId: N:CueX.Core.Exception
+  fullName: CueX.Core.Exception
+  nameWithType: CueX.Core.Exception
+- uid: CueX.Core.Exception.AlreadySubscribedException
+  name: AlreadySubscribedException
+  href: api/CueX.Core.Exception.AlreadySubscribedException.html
+  commentId: T:CueX.Core.Exception.AlreadySubscribedException
+  fullName: CueX.Core.Exception.AlreadySubscribedException
+  nameWithType: AlreadySubscribedException
+- uid: CueX.Core.Exception.AlreadySubscribedException.#ctor
+  name: AlreadySubscribedException()
+  href: api/CueX.Core.Exception.AlreadySubscribedException.html#CueX_Core_Exception_AlreadySubscribedException__ctor
+  commentId: M:CueX.Core.Exception.AlreadySubscribedException.#ctor
+  fullName: CueX.Core.Exception.AlreadySubscribedException.AlreadySubscribedException()
+  nameWithType: AlreadySubscribedException.AlreadySubscribedException()
+- uid: CueX.Core.Exception.AlreadySubscribedException.#ctor(System.String)
+  name: AlreadySubscribedException(String)
+  href: api/CueX.Core.Exception.AlreadySubscribedException.html#CueX_Core_Exception_AlreadySubscribedException__ctor_System_String_
+  commentId: M:CueX.Core.Exception.AlreadySubscribedException.#ctor(System.String)
+  fullName: CueX.Core.Exception.AlreadySubscribedException.AlreadySubscribedException(System.String)
+  nameWithType: AlreadySubscribedException.AlreadySubscribedException(String)
+- uid: CueX.Core.Exception.AlreadySubscribedException.#ctor(System.String,System.Exception)
+  name: AlreadySubscribedException(String, Exception)
+  href: api/CueX.Core.Exception.AlreadySubscribedException.html#CueX_Core_Exception_AlreadySubscribedException__ctor_System_String_System_Exception_
+  commentId: M:CueX.Core.Exception.AlreadySubscribedException.#ctor(System.String,System.Exception)
+  fullName: CueX.Core.Exception.AlreadySubscribedException.AlreadySubscribedException(System.String, System.Exception)
+  nameWithType: AlreadySubscribedException.AlreadySubscribedException(String, Exception)
+- uid: CueX.Core.Exception.AlreadySubscribedException.#ctor*
+  name: AlreadySubscribedException
+  href: api/CueX.Core.Exception.AlreadySubscribedException.html#CueX_Core_Exception_AlreadySubscribedException__ctor_
+  commentId: Overload:CueX.Core.Exception.AlreadySubscribedException.#ctor
+  isSpec: "True"
+  fullName: CueX.Core.Exception.AlreadySubscribedException.AlreadySubscribedException
+  nameWithType: AlreadySubscribedException.AlreadySubscribedException
 - uid: CueX.Core.IPartitionGrain
   name: IPartitionGrain
   href: api/CueX.Core.IPartitionGrain.html
@@ -48,6 +85,22 @@ references:
   isSpec: "True"
   fullName: CueX.Core.IPartitionGrain.GetChildren
   nameWithType: IPartitionGrain.GetChildren
+- uid: CueX.Core.IPartitionGrain.HandleSubscription*
+  name: HandleSubscription
+  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_HandleSubscription_
+  commentId: Overload:CueX.Core.IPartitionGrain.HandleSubscription
+  isSpec: "True"
+  fullName: CueX.Core.IPartitionGrain.HandleSubscription
+  nameWithType: IPartitionGrain.HandleSubscription
+- uid: CueX.Core.IPartitionGrain.HandleSubscription``1(``0,CueX.Core.Subscription.SubscriptionDetails)
+  name: HandleSubscription<T>(T, SubscriptionDetails)
+  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_HandleSubscription__1___0_CueX_Core_Subscription_SubscriptionDetails_
+  commentId: M:CueX.Core.IPartitionGrain.HandleSubscription``1(``0,CueX.Core.Subscription.SubscriptionDetails)
+  name.vb: HandleSubscription(Of T)(T, SubscriptionDetails)
+  fullName: CueX.Core.IPartitionGrain.HandleSubscription<T>(T, CueX.Core.Subscription.SubscriptionDetails)
+  fullName.vb: CueX.Core.IPartitionGrain.HandleSubscription(Of T)(T, CueX.Core.Subscription.SubscriptionDetails)
+  nameWithType: IPartitionGrain.HandleSubscription<T>(T, SubscriptionDetails)
+  nameWithType.vb: IPartitionGrain.HandleSubscription(Of T)(T, SubscriptionDetails)
 - uid: CueX.Core.IPartitionGrain.Remove*
   name: Remove
   href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_Remove_
@@ -83,6 +136,19 @@ references:
   isSpec: "True"
   fullName: CueX.Core.ISpatialGrain.GetPosition
   nameWithType: ISpatialGrain.GetPosition
+- uid: CueX.Core.ISpatialGrain.ReceiveEvent(System.String,CueX.Core.Subscription.IEvent)
+  name: ReceiveEvent(String, IEvent)
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_ReceiveEvent_System_String_CueX_Core_Subscription_IEvent_
+  commentId: M:CueX.Core.ISpatialGrain.ReceiveEvent(System.String,CueX.Core.Subscription.IEvent)
+  fullName: CueX.Core.ISpatialGrain.ReceiveEvent(System.String, CueX.Core.Subscription.IEvent)
+  nameWithType: ISpatialGrain.ReceiveEvent(String, IEvent)
+- uid: CueX.Core.ISpatialGrain.ReceiveEvent*
+  name: ReceiveEvent
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_ReceiveEvent_
+  commentId: Overload:CueX.Core.ISpatialGrain.ReceiveEvent
+  isSpec: "True"
+  fullName: CueX.Core.ISpatialGrain.ReceiveEvent
+  nameWithType: ISpatialGrain.ReceiveEvent
 - uid: CueX.Core.ISpatialGrain.RemoveSelfFromParent
   name: RemoveSelfFromParent()
   href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_RemoveSelfFromParent
@@ -207,6 +273,24 @@ references:
   fullName.vb: CueX.Core.PartitionGrain(Of TGrainInterface, TState).GetChildren
   nameWithType: PartitionGrain<TGrainInterface, TState>.GetChildren
   nameWithType.vb: PartitionGrain(Of TGrainInterface, TState).GetChildren
+- uid: CueX.Core.PartitionGrain`2.HandleSubscription*
+  name: HandleSubscription
+  href: api/CueX.Core.PartitionGrain-2.html#CueX_Core_PartitionGrain_2_HandleSubscription_
+  commentId: Overload:CueX.Core.PartitionGrain`2.HandleSubscription
+  isSpec: "True"
+  fullName: CueX.Core.PartitionGrain<TGrainInterface, TState>.HandleSubscription
+  fullName.vb: CueX.Core.PartitionGrain(Of TGrainInterface, TState).HandleSubscription
+  nameWithType: PartitionGrain<TGrainInterface, TState>.HandleSubscription
+  nameWithType.vb: PartitionGrain(Of TGrainInterface, TState).HandleSubscription
+- uid: CueX.Core.PartitionGrain`2.HandleSubscription``1(``0,CueX.Core.Subscription.SubscriptionDetails)
+  name: HandleSubscription<T>(T, SubscriptionDetails)
+  href: api/CueX.Core.PartitionGrain-2.html#CueX_Core_PartitionGrain_2_HandleSubscription__1___0_CueX_Core_Subscription_SubscriptionDetails_
+  commentId: M:CueX.Core.PartitionGrain`2.HandleSubscription``1(``0,CueX.Core.Subscription.SubscriptionDetails)
+  name.vb: HandleSubscription(Of T)(T, SubscriptionDetails)
+  fullName: CueX.Core.PartitionGrain<TGrainInterface, TState>.HandleSubscription<T>(T, CueX.Core.Subscription.SubscriptionDetails)
+  fullName.vb: CueX.Core.PartitionGrain(Of TGrainInterface, TState).HandleSubscription(Of T)(T, CueX.Core.Subscription.SubscriptionDetails)
+  nameWithType: PartitionGrain<TGrainInterface, TState>.HandleSubscription<T>(T, SubscriptionDetails)
+  nameWithType.vb: PartitionGrain(Of TGrainInterface, TState).HandleSubscription(Of T)(T, SubscriptionDetails)
 - uid: CueX.Core.PartitionGrain`2.Remove*
   name: Remove
   href: api/CueX.Core.PartitionGrain-2.html#CueX_Core_PartitionGrain_2_Remove_
@@ -246,6 +330,23 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState)
   nameWithType: SpatialGrain<TGrainInterface, TState>
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState)
+- uid: CueX.Core.SpatialGrain`2.ForceDiscardCallbacks
+  name: ForceDiscardCallbacks()
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ForceDiscardCallbacks
+  commentId: M:CueX.Core.SpatialGrain`2.ForceDiscardCallbacks
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.ForceDiscardCallbacks()
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).ForceDiscardCallbacks()
+  nameWithType: SpatialGrain<TGrainInterface, TState>.ForceDiscardCallbacks()
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).ForceDiscardCallbacks()
+- uid: CueX.Core.SpatialGrain`2.ForceDiscardCallbacks*
+  name: ForceDiscardCallbacks
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ForceDiscardCallbacks_
+  commentId: Overload:CueX.Core.SpatialGrain`2.ForceDiscardCallbacks
+  isSpec: "True"
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.ForceDiscardCallbacks
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).ForceDiscardCallbacks
+  nameWithType: SpatialGrain<TGrainInterface, TState>.ForceDiscardCallbacks
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).ForceDiscardCallbacks
 - uid: CueX.Core.SpatialGrain`2.GetPosition
   name: GetPosition()
   href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_GetPosition
@@ -263,6 +364,57 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).GetPosition
   nameWithType: SpatialGrain<TGrainInterface, TState>.GetPosition
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).GetPosition
+- uid: CueX.Core.SpatialGrain`2.OnActivateAsync
+  name: OnActivateAsync()
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_OnActivateAsync
+  commentId: M:CueX.Core.SpatialGrain`2.OnActivateAsync
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.OnActivateAsync()
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).OnActivateAsync()
+  nameWithType: SpatialGrain<TGrainInterface, TState>.OnActivateAsync()
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).OnActivateAsync()
+- uid: CueX.Core.SpatialGrain`2.OnActivateAsync*
+  name: OnActivateAsync
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_OnActivateAsync_
+  commentId: Overload:CueX.Core.SpatialGrain`2.OnActivateAsync
+  isSpec: "True"
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.OnActivateAsync
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).OnActivateAsync
+  nameWithType: SpatialGrain<TGrainInterface, TState>.OnActivateAsync
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).OnActivateAsync
+- uid: CueX.Core.SpatialGrain`2.ReceiveEvent(System.String,CueX.Core.Subscription.IEvent)
+  name: ReceiveEvent(String, IEvent)
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveEvent_System_String_CueX_Core_Subscription_IEvent_
+  commentId: M:CueX.Core.SpatialGrain`2.ReceiveEvent(System.String,CueX.Core.Subscription.IEvent)
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.ReceiveEvent(System.String, CueX.Core.Subscription.IEvent)
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).ReceiveEvent(System.String, CueX.Core.Subscription.IEvent)
+  nameWithType: SpatialGrain<TGrainInterface, TState>.ReceiveEvent(String, IEvent)
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).ReceiveEvent(String, IEvent)
+- uid: CueX.Core.SpatialGrain`2.ReceiveEvent*
+  name: ReceiveEvent
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveEvent_
+  commentId: Overload:CueX.Core.SpatialGrain`2.ReceiveEvent
+  isSpec: "True"
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.ReceiveEvent
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).ReceiveEvent
+  nameWithType: SpatialGrain<TGrainInterface, TState>.ReceiveEvent
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).ReceiveEvent
+- uid: CueX.Core.SpatialGrain`2.RecompileCallbacksIfNecessary
+  name: RecompileCallbacksIfNecessary()
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RecompileCallbacksIfNecessary
+  commentId: M:CueX.Core.SpatialGrain`2.RecompileCallbacksIfNecessary
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.RecompileCallbacksIfNecessary()
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).RecompileCallbacksIfNecessary()
+  nameWithType: SpatialGrain<TGrainInterface, TState>.RecompileCallbacksIfNecessary()
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).RecompileCallbacksIfNecessary()
+- uid: CueX.Core.SpatialGrain`2.RecompileCallbacksIfNecessary*
+  name: RecompileCallbacksIfNecessary
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RecompileCallbacksIfNecessary_
+  commentId: Overload:CueX.Core.SpatialGrain`2.RecompileCallbacksIfNecessary
+  isSpec: "True"
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.RecompileCallbacksIfNecessary
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).RecompileCallbacksIfNecessary
+  nameWithType: SpatialGrain<TGrainInterface, TState>.RecompileCallbacksIfNecessary
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).RecompileCallbacksIfNecessary
 - uid: CueX.Core.SpatialGrain`2.RemoveSelfFromParent
   name: RemoveSelfFromParent()
   href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RemoveSelfFromParent
@@ -315,15 +467,6 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SetPosition
   nameWithType: SpatialGrain<TGrainInterface, TState>.SetPosition
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SetPosition
-- uid: CueX.Core.SpatialGrain`2.Subscribe(CueX.Core.Subscription.SubscriptionDetails,System.Action{CueX.Core.Subscription.IEvent})
-  name: Subscribe(SubscriptionDetails, Action<IEvent>)
-  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Subscribe_CueX_Core_Subscription_SubscriptionDetails_System_Action_CueX_Core_Subscription_IEvent__
-  commentId: M:CueX.Core.SpatialGrain`2.Subscribe(CueX.Core.Subscription.SubscriptionDetails,System.Action{CueX.Core.Subscription.IEvent})
-  name.vb: Subscribe(SubscriptionDetails, Action(Of IEvent))
-  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.Subscribe(CueX.Core.Subscription.SubscriptionDetails, System.Action<CueX.Core.Subscription.IEvent>)
-  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).Subscribe(CueX.Core.Subscription.SubscriptionDetails, System.Action(Of CueX.Core.Subscription.IEvent))
-  nameWithType: SpatialGrain<TGrainInterface, TState>.Subscribe(SubscriptionDetails, Action<IEvent>)
-  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).Subscribe(SubscriptionDetails, Action(Of IEvent))
 - uid: CueX.Core.SpatialGrain`2.Subscribe*
   name: Subscribe
   href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Subscribe_
@@ -333,30 +476,27 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).Subscribe
   nameWithType: SpatialGrain<TGrainInterface, TState>.Subscribe
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).Subscribe
-- uid: CueX.Core.SpatialGrain`2.SubscribeTo*
-  name: SubscribeTo
-  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo_
-  commentId: Overload:CueX.Core.SpatialGrain`2.SubscribeTo
-  isSpec: "True"
-  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SubscribeTo
-  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SubscribeTo
-  nameWithType: SpatialGrain<TGrainInterface, TState>.SubscribeTo
-  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SubscribeTo
-- uid: CueX.Core.SpatialGrain`2.SubscribeTo``1
-  name: SubscribeTo<T>()
-  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo__1
-  commentId: M:CueX.Core.SpatialGrain`2.SubscribeTo``1
-  name.vb: SubscribeTo(Of T)()
-  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SubscribeTo<T>()
-  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SubscribeTo(Of T)()
-  nameWithType: SpatialGrain<TGrainInterface, TState>.SubscribeTo<T>()
-  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SubscribeTo(Of T)()
+- uid: CueX.Core.SpatialGrain`2.Subscribe``1(CueX.Core.Subscription.SubscriptionDetails,System.Func{``0,System.Threading.Tasks.Task})
+  name: Subscribe<T>(SubscriptionDetails, Func<T, Task>)
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Subscribe__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__
+  commentId: M:CueX.Core.SpatialGrain`2.Subscribe``1(CueX.Core.Subscription.SubscriptionDetails,System.Func{``0,System.Threading.Tasks.Task})
+  name.vb: Subscribe(Of T)(SubscriptionDetails, Func(Of T, Task))
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.Subscribe<T>(CueX.Core.Subscription.SubscriptionDetails, System.Func<T, System.Threading.Tasks.Task>)
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).Subscribe(Of T)(CueX.Core.Subscription.SubscriptionDetails, System.Func(Of T, System.Threading.Tasks.Task))
+  nameWithType: SpatialGrain<TGrainInterface, TState>.Subscribe<T>(SubscriptionDetails, Func<T, Task>)
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).Subscribe(Of T)(SubscriptionDetails, Func(Of T, Task))
 - uid: CueX.Core.SpatialGrainState
   name: SpatialGrainState
   href: api/CueX.Core.SpatialGrainState.html
   commentId: T:CueX.Core.SpatialGrainState
   fullName: CueX.Core.SpatialGrainState
   nameWithType: SpatialGrainState
+- uid: CueX.Core.SpatialGrainState.CallbackMethodInfos
+  name: CallbackMethodInfos
+  href: api/CueX.Core.SpatialGrainState.html#CueX_Core_SpatialGrainState_CallbackMethodInfos
+  commentId: F:CueX.Core.SpatialGrainState.CallbackMethodInfos
+  fullName: CueX.Core.SpatialGrainState.CallbackMethodInfos
+  nameWithType: SpatialGrainState.CallbackMethodInfos
 - uid: CueX.Core.SpatialGrainState.Parent
   name: Parent
   href: api/CueX.Core.SpatialGrainState.html#CueX_Core_SpatialGrainState_Parent
@@ -407,6 +547,28 @@ references:
   commentId: N:CueX.Core.Subscription
   fullName: CueX.Core.Subscription
   nameWithType: CueX.Core.Subscription
+- uid: CueX.Core.Subscription.EventHelper
+  name: EventHelper
+  href: api/CueX.Core.Subscription.EventHelper.html
+  commentId: T:CueX.Core.Subscription.EventHelper
+  fullName: CueX.Core.Subscription.EventHelper
+  nameWithType: EventHelper
+- uid: CueX.Core.Subscription.EventHelper.GetEventName*
+  name: GetEventName
+  href: api/CueX.Core.Subscription.EventHelper.html#CueX_Core_Subscription_EventHelper_GetEventName_
+  commentId: Overload:CueX.Core.Subscription.EventHelper.GetEventName
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.EventHelper.GetEventName
+  nameWithType: EventHelper.GetEventName
+- uid: CueX.Core.Subscription.EventHelper.GetEventName``1
+  name: GetEventName<T>()
+  href: api/CueX.Core.Subscription.EventHelper.html#CueX_Core_Subscription_EventHelper_GetEventName__1
+  commentId: M:CueX.Core.Subscription.EventHelper.GetEventName``1
+  name.vb: GetEventName(Of T)()
+  fullName: CueX.Core.Subscription.EventHelper.GetEventName<T>()
+  fullName.vb: CueX.Core.Subscription.EventHelper.GetEventName(Of T)()
+  nameWithType: EventHelper.GetEventName<T>()
+  nameWithType.vb: EventHelper.GetEventName(Of T)()
 - uid: CueX.Core.Subscription.IArea
   name: IArea
   href: api/CueX.Core.Subscription.IArea.html
@@ -419,55 +581,6 @@ references:
   commentId: T:CueX.Core.Subscription.IEvent
   fullName: CueX.Core.Subscription.IEvent
   nameWithType: IEvent
-- uid: CueX.Core.Subscription.ISubscriptionBuilder`1
-  name: ISubscriptionBuilder<T>
-  href: api/CueX.Core.Subscription.ISubscriptionBuilder-1.html
-  commentId: T:CueX.Core.Subscription.ISubscriptionBuilder`1
-  name.vb: ISubscriptionBuilder(Of T)
-  fullName: CueX.Core.Subscription.ISubscriptionBuilder<T>
-  fullName.vb: CueX.Core.Subscription.ISubscriptionBuilder(Of T)
-  nameWithType: ISubscriptionBuilder<T>
-  nameWithType.vb: ISubscriptionBuilder(Of T)
-- uid: CueX.Core.Subscription.ISubscriptionBuilder`1.ForEach(System.Action{`0})
-  name: ForEach(Action<T>)
-  href: api/CueX.Core.Subscription.ISubscriptionBuilder-1.html#CueX_Core_Subscription_ISubscriptionBuilder_1_ForEach_System_Action__0__
-  commentId: M:CueX.Core.Subscription.ISubscriptionBuilder`1.ForEach(System.Action{`0})
-  name.vb: ForEach(Action(Of T))
-  fullName: CueX.Core.Subscription.ISubscriptionBuilder<T>.ForEach(System.Action<T>)
-  fullName.vb: CueX.Core.Subscription.ISubscriptionBuilder(Of T).ForEach(System.Action(Of T))
-  nameWithType: ISubscriptionBuilder<T>.ForEach(Action<T>)
-  nameWithType.vb: ISubscriptionBuilder(Of T).ForEach(Action(Of T))
-- uid: CueX.Core.Subscription.ISubscriptionBuilder`1.ForEach*
-  name: ForEach
-  href: api/CueX.Core.Subscription.ISubscriptionBuilder-1.html#CueX_Core_Subscription_ISubscriptionBuilder_1_ForEach_
-  commentId: Overload:CueX.Core.Subscription.ISubscriptionBuilder`1.ForEach
-  isSpec: "True"
-  fullName: CueX.Core.Subscription.ISubscriptionBuilder<T>.ForEach
-  fullName.vb: CueX.Core.Subscription.ISubscriptionBuilder(Of T).ForEach
-  nameWithType: ISubscriptionBuilder<T>.ForEach
-  nameWithType.vb: ISubscriptionBuilder(Of T).ForEach
-- uid: CueX.Core.Subscription.ITypeFilter
-  name: ITypeFilter
-  href: api/CueX.Core.Subscription.ITypeFilter.html
-  commentId: T:CueX.Core.Subscription.ITypeFilter
-  fullName: CueX.Core.Subscription.ITypeFilter
-  nameWithType: ITypeFilter
-- uid: CueX.Core.Subscription.ITypeFilter.IsType*
-  name: IsType
-  href: api/CueX.Core.Subscription.ITypeFilter.html#CueX_Core_Subscription_ITypeFilter_IsType_
-  commentId: Overload:CueX.Core.Subscription.ITypeFilter.IsType
-  isSpec: "True"
-  fullName: CueX.Core.Subscription.ITypeFilter.IsType
-  nameWithType: ITypeFilter.IsType
-- uid: CueX.Core.Subscription.ITypeFilter.IsType``1
-  name: IsType<T>()
-  href: api/CueX.Core.Subscription.ITypeFilter.html#CueX_Core_Subscription_ITypeFilter_IsType__1
-  commentId: M:CueX.Core.Subscription.ITypeFilter.IsType``1
-  name.vb: IsType(Of T)()
-  fullName: CueX.Core.Subscription.ITypeFilter.IsType<T>()
-  fullName.vb: CueX.Core.Subscription.ITypeFilter.IsType(Of T)()
-  nameWithType: ITypeFilter.IsType<T>()
-  nameWithType.vb: ITypeFilter.IsType(Of T)()
 - uid: CueX.Core.Subscription.SubscriptionDetails
   name: SubscriptionDetails
   href: api/CueX.Core.Subscription.SubscriptionDetails.html
@@ -480,51 +593,24 @@ references:
   commentId: F:CueX.Core.Subscription.SubscriptionDetails.Area
   fullName: CueX.Core.Subscription.SubscriptionDetails.Area
   nameWithType: SubscriptionDetails.Area
-- uid: CueX.Core.Subscription.SubscriptionDetails.EventFilter
-  name: EventFilter
-  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_EventFilter
-  commentId: F:CueX.Core.Subscription.SubscriptionDetails.EventFilter
-  fullName: CueX.Core.Subscription.SubscriptionDetails.EventFilter
-  nameWithType: SubscriptionDetails.EventFilter
-- uid: CueX.Core.Subscription.SubscriptionDetails.OriginFilter
-  name: OriginFilter
-  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_OriginFilter
-  commentId: F:CueX.Core.Subscription.SubscriptionDetails.OriginFilter
-  fullName: CueX.Core.Subscription.SubscriptionDetails.OriginFilter
-  nameWithType: SubscriptionDetails.OriginFilter
-- uid: CueX.Core.Subscription.SubscriptionDetails.Subscriber
-  name: Subscriber
-  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_Subscriber
-  commentId: F:CueX.Core.Subscription.SubscriptionDetails.Subscriber
-  fullName: CueX.Core.Subscription.SubscriptionDetails.Subscriber
-  nameWithType: SubscriptionDetails.Subscriber
-- uid: CueX.Core.Subscription.TypeFilter`1
-  name: TypeFilter<TSelf>
-  href: api/CueX.Core.Subscription.TypeFilter-1.html
-  commentId: T:CueX.Core.Subscription.TypeFilter`1
-  name.vb: TypeFilter(Of TSelf)
-  fullName: CueX.Core.Subscription.TypeFilter<TSelf>
-  fullName.vb: CueX.Core.Subscription.TypeFilter(Of TSelf)
-  nameWithType: TypeFilter<TSelf>
-  nameWithType.vb: TypeFilter(Of TSelf)
-- uid: CueX.Core.Subscription.TypeFilter`1.IsType*
-  name: IsType
-  href: api/CueX.Core.Subscription.TypeFilter-1.html#CueX_Core_Subscription_TypeFilter_1_IsType_
-  commentId: Overload:CueX.Core.Subscription.TypeFilter`1.IsType
-  isSpec: "True"
-  fullName: CueX.Core.Subscription.TypeFilter<TSelf>.IsType
-  fullName.vb: CueX.Core.Subscription.TypeFilter(Of TSelf).IsType
-  nameWithType: TypeFilter<TSelf>.IsType
-  nameWithType.vb: TypeFilter(Of TSelf).IsType
-- uid: CueX.Core.Subscription.TypeFilter`1.IsType``1
-  name: IsType<TOther>()
-  href: api/CueX.Core.Subscription.TypeFilter-1.html#CueX_Core_Subscription_TypeFilter_1_IsType__1
-  commentId: M:CueX.Core.Subscription.TypeFilter`1.IsType``1
-  name.vb: IsType(Of TOther)()
-  fullName: CueX.Core.Subscription.TypeFilter<TSelf>.IsType<TOther>()
-  fullName.vb: CueX.Core.Subscription.TypeFilter(Of TSelf).IsType(Of TOther)()
-  nameWithType: TypeFilter<TSelf>.IsType<TOther>()
-  nameWithType.vb: TypeFilter(Of TSelf).IsType(Of TOther)()
+- uid: CueX.Core.Subscription.SubscriptionDetails.EventTypeName
+  name: EventTypeName
+  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_EventTypeName
+  commentId: F:CueX.Core.Subscription.SubscriptionDetails.EventTypeName
+  fullName: CueX.Core.Subscription.SubscriptionDetails.EventTypeName
+  nameWithType: SubscriptionDetails.EventTypeName
+- uid: CueX.Core.Subscription.SubscriptionFilter
+  name: SubscriptionFilter
+  href: api/CueX.Core.Subscription.SubscriptionFilter.html
+  commentId: T:CueX.Core.Subscription.SubscriptionFilter
+  fullName: CueX.Core.Subscription.SubscriptionFilter
+  nameWithType: SubscriptionFilter
+- uid: CueX.Core.Subscription.SubscriptionFilter.Area
+  name: Area
+  href: api/CueX.Core.Subscription.SubscriptionFilter.html#CueX_Core_Subscription_SubscriptionFilter_Area
+  commentId: F:CueX.Core.Subscription.SubscriptionFilter.Area
+  fullName: CueX.Core.Subscription.SubscriptionFilter.Area
+  nameWithType: SubscriptionFilter.Area
 - uid: CueX.GridSPS
   name: CueX.GridSPS
   href: api/CueX.GridSPS.html
@@ -776,6 +862,35 @@ references:
   isSpec: "True"
   fullName: CueX.GridSPS.GridPartitionGrain.GridPartitionGrain
   nameWithType: GridPartitionGrain.GridPartitionGrain
+- uid: CueX.GridSPS.GridPartitionGrain.GetInterestCount
+  name: GetInterestCount()
+  href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_GetInterestCount
+  commentId: M:CueX.GridSPS.GridPartitionGrain.GetInterestCount
+  fullName: CueX.GridSPS.GridPartitionGrain.GetInterestCount()
+  nameWithType: GridPartitionGrain.GetInterestCount()
+- uid: CueX.GridSPS.GridPartitionGrain.GetInterestCount*
+  name: GetInterestCount
+  href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_GetInterestCount_
+  commentId: Overload:CueX.GridSPS.GridPartitionGrain.GetInterestCount
+  isSpec: "True"
+  fullName: CueX.GridSPS.GridPartitionGrain.GetInterestCount
+  nameWithType: GridPartitionGrain.GetInterestCount
+- uid: CueX.GridSPS.GridPartitionGrain.HandleSubscription*
+  name: HandleSubscription
+  href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_HandleSubscription_
+  commentId: Overload:CueX.GridSPS.GridPartitionGrain.HandleSubscription
+  isSpec: "True"
+  fullName: CueX.GridSPS.GridPartitionGrain.HandleSubscription
+  nameWithType: GridPartitionGrain.HandleSubscription
+- uid: CueX.GridSPS.GridPartitionGrain.HandleSubscription``1(``0,CueX.Core.Subscription.SubscriptionDetails)
+  name: HandleSubscription<T>(T, SubscriptionDetails)
+  href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_HandleSubscription__1___0_CueX_Core_Subscription_SubscriptionDetails_
+  commentId: M:CueX.GridSPS.GridPartitionGrain.HandleSubscription``1(``0,CueX.Core.Subscription.SubscriptionDetails)
+  name.vb: HandleSubscription(Of T)(T, SubscriptionDetails)
+  fullName: CueX.GridSPS.GridPartitionGrain.HandleSubscription<T>(T, CueX.Core.Subscription.SubscriptionDetails)
+  fullName.vb: CueX.GridSPS.GridPartitionGrain.HandleSubscription(Of T)(T, CueX.Core.Subscription.SubscriptionDetails)
+  nameWithType: GridPartitionGrain.HandleSubscription<T>(T, SubscriptionDetails)
+  nameWithType.vb: GridPartitionGrain.HandleSubscription(Of T)(T, SubscriptionDetails)
 - uid: CueX.GridSPS.GridPartitionGrain.OnActivateAsync
   name: OnActivateAsync()
   href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_OnActivateAsync
@@ -801,6 +916,24 @@ references:
   commentId: F:CueX.GridSPS.GridPartitionGrainState.Config
   fullName: CueX.GridSPS.GridPartitionGrainState.Config
   nameWithType: GridPartitionGrainState.Config
+- uid: CueX.GridSPS.GridPartitionGrainState.ForwardMap
+  name: ForwardMap
+  href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_ForwardMap
+  commentId: F:CueX.GridSPS.GridPartitionGrainState.ForwardMap
+  fullName: CueX.GridSPS.GridPartitionGrainState.ForwardMap
+  nameWithType: GridPartitionGrainState.ForwardMap
+- uid: CueX.GridSPS.GridPartitionGrainState.GrainInterestMap
+  name: GrainInterestMap
+  href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_GrainInterestMap
+  commentId: F:CueX.GridSPS.GridPartitionGrainState.GrainInterestMap
+  fullName: CueX.GridSPS.GridPartitionGrainState.GrainInterestMap
+  nameWithType: GridPartitionGrainState.GrainInterestMap
+- uid: CueX.GridSPS.GridPartitionGrainState.InterestFilterMap
+  name: InterestFilterMap
+  href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_InterestFilterMap
+  commentId: F:CueX.GridSPS.GridPartitionGrainState.InterestFilterMap
+  fullName: CueX.GridSPS.GridPartitionGrainState.InterestFilterMap
+  nameWithType: GridPartitionGrainState.InterestFilterMap
 - uid: CueX.GridSPS.GridPartitionGrainState.IsInitialized
   name: IsInitialized
   href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_IsInitialized
@@ -861,6 +994,19 @@ references:
   commentId: T:CueX.GridSPS.IGridPartitionGrain
   fullName: CueX.GridSPS.IGridPartitionGrain
   nameWithType: IGridPartitionGrain
+- uid: CueX.GridSPS.IGridPartitionGrain.GetInterestCount
+  name: GetInterestCount()
+  href: api/CueX.GridSPS.IGridPartitionGrain.html#CueX_GridSPS_IGridPartitionGrain_GetInterestCount
+  commentId: M:CueX.GridSPS.IGridPartitionGrain.GetInterestCount
+  fullName: CueX.GridSPS.IGridPartitionGrain.GetInterestCount()
+  nameWithType: IGridPartitionGrain.GetInterestCount()
+- uid: CueX.GridSPS.IGridPartitionGrain.GetInterestCount*
+  name: GetInterestCount
+  href: api/CueX.GridSPS.IGridPartitionGrain.html#CueX_GridSPS_IGridPartitionGrain_GetInterestCount_
+  commentId: Overload:CueX.GridSPS.IGridPartitionGrain.GetInterestCount
+  isSpec: "True"
+  fullName: CueX.GridSPS.IGridPartitionGrain.GetInterestCount
+  nameWithType: IGridPartitionGrain.GetInterestCount
 - uid: CueX.Numerics
   name: CueX.Numerics
   href: api/CueX.Numerics.html
@@ -1077,56 +1223,159 @@ references:
   commentId: T:CueX.Test.Events.TestEvent
   fullName: CueX.Test.Events.TestEvent
   nameWithType: TestEvent
+- uid: CueX.Test.Events.TestEvent.Value
+  name: Value
+  href: api/CueX.Test.Events.TestEvent.html#CueX_Test_Events_TestEvent_Value
+  commentId: F:CueX.Test.Events.TestEvent.Value
+  fullName: CueX.Test.Events.TestEvent.Value
+  nameWithType: TestEvent.Value
 - uid: CueX.Test.Grains
   name: CueX.Test.Grains
   href: api/CueX.Test.Grains.html
   commentId: N:CueX.Test.Grains
   fullName: CueX.Test.Grains
   nameWithType: CueX.Test.Grains
-- uid: CueX.Test.Grains.BasicSpatialGrain
-  name: BasicSpatialGrain
-  href: api/CueX.Test.Grains.BasicSpatialGrain.html
-  commentId: T:CueX.Test.Grains.BasicSpatialGrain
-  fullName: CueX.Test.Grains.BasicSpatialGrain
-  nameWithType: BasicSpatialGrain
-- uid: CueX.Test.Grains.BasicSpatialGrain.HasParent
-  name: HasParent()
-  href: api/CueX.Test.Grains.BasicSpatialGrain.html#CueX_Test_Grains_BasicSpatialGrain_HasParent
-  commentId: M:CueX.Test.Grains.BasicSpatialGrain.HasParent
-  fullName: CueX.Test.Grains.BasicSpatialGrain.HasParent()
-  nameWithType: BasicSpatialGrain.HasParent()
-- uid: CueX.Test.Grains.BasicSpatialGrain.HasParent*
-  name: HasParent
-  href: api/CueX.Test.Grains.BasicSpatialGrain.html#CueX_Test_Grains_BasicSpatialGrain_HasParent_
-  commentId: Overload:CueX.Test.Grains.BasicSpatialGrain.HasParent
+- uid: CueX.Test.Grains.ITestSpatialGrain
+  name: ITestSpatialGrain
+  href: api/CueX.Test.Grains.ITestSpatialGrain.html
+  commentId: T:CueX.Test.Grains.ITestSpatialGrain
+  fullName: CueX.Test.Grains.ITestSpatialGrain
+  nameWithType: ITestSpatialGrain
+- uid: CueX.Test.Grains.ITestSpatialGrain.ForcefullyRecompileCallback
+  name: ForcefullyRecompileCallback()
+  href: api/CueX.Test.Grains.ITestSpatialGrain.html#CueX_Test_Grains_ITestSpatialGrain_ForcefullyRecompileCallback
+  commentId: M:CueX.Test.Grains.ITestSpatialGrain.ForcefullyRecompileCallback
+  fullName: CueX.Test.Grains.ITestSpatialGrain.ForcefullyRecompileCallback()
+  nameWithType: ITestSpatialGrain.ForcefullyRecompileCallback()
+- uid: CueX.Test.Grains.ITestSpatialGrain.ForcefullyRecompileCallback*
+  name: ForcefullyRecompileCallback
+  href: api/CueX.Test.Grains.ITestSpatialGrain.html#CueX_Test_Grains_ITestSpatialGrain_ForcefullyRecompileCallback_
+  commentId: Overload:CueX.Test.Grains.ITestSpatialGrain.ForcefullyRecompileCallback
   isSpec: "True"
-  fullName: CueX.Test.Grains.BasicSpatialGrain.HasParent
-  nameWithType: BasicSpatialGrain.HasParent
-- uid: CueX.Test.Grains.BasicSpatialGrainState
-  name: BasicSpatialGrainState
-  href: api/CueX.Test.Grains.BasicSpatialGrainState.html
-  commentId: T:CueX.Test.Grains.BasicSpatialGrainState
-  fullName: CueX.Test.Grains.BasicSpatialGrainState
-  nameWithType: BasicSpatialGrainState
-- uid: CueX.Test.Grains.IBasicSpatialGrain
-  name: IBasicSpatialGrain
-  href: api/CueX.Test.Grains.IBasicSpatialGrain.html
-  commentId: T:CueX.Test.Grains.IBasicSpatialGrain
-  fullName: CueX.Test.Grains.IBasicSpatialGrain
-  nameWithType: IBasicSpatialGrain
-- uid: CueX.Test.Grains.IBasicSpatialGrain.HasParent
-  name: HasParent()
-  href: api/CueX.Test.Grains.IBasicSpatialGrain.html#CueX_Test_Grains_IBasicSpatialGrain_HasParent
-  commentId: M:CueX.Test.Grains.IBasicSpatialGrain.HasParent
-  fullName: CueX.Test.Grains.IBasicSpatialGrain.HasParent()
-  nameWithType: IBasicSpatialGrain.HasParent()
-- uid: CueX.Test.Grains.IBasicSpatialGrain.HasParent*
-  name: HasParent
-  href: api/CueX.Test.Grains.IBasicSpatialGrain.html#CueX_Test_Grains_IBasicSpatialGrain_HasParent_
-  commentId: Overload:CueX.Test.Grains.IBasicSpatialGrain.HasParent
+  fullName: CueX.Test.Grains.ITestSpatialGrain.ForcefullyRecompileCallback
+  nameWithType: ITestSpatialGrain.ForcefullyRecompileCallback
+- uid: CueX.Test.Grains.ITestSpatialGrain.GetLastTestEventValue
+  name: GetLastTestEventValue()
+  href: api/CueX.Test.Grains.ITestSpatialGrain.html#CueX_Test_Grains_ITestSpatialGrain_GetLastTestEventValue
+  commentId: M:CueX.Test.Grains.ITestSpatialGrain.GetLastTestEventValue
+  fullName: CueX.Test.Grains.ITestSpatialGrain.GetLastTestEventValue()
+  nameWithType: ITestSpatialGrain.GetLastTestEventValue()
+- uid: CueX.Test.Grains.ITestSpatialGrain.GetLastTestEventValue*
+  name: GetLastTestEventValue
+  href: api/CueX.Test.Grains.ITestSpatialGrain.html#CueX_Test_Grains_ITestSpatialGrain_GetLastTestEventValue_
+  commentId: Overload:CueX.Test.Grains.ITestSpatialGrain.GetLastTestEventValue
   isSpec: "True"
-  fullName: CueX.Test.Grains.IBasicSpatialGrain.HasParent
-  nameWithType: IBasicSpatialGrain.HasParent
+  fullName: CueX.Test.Grains.ITestSpatialGrain.GetLastTestEventValue
+  nameWithType: ITestSpatialGrain.GetLastTestEventValue
+- uid: CueX.Test.Grains.ITestSpatialGrain.HasParent
+  name: HasParent()
+  href: api/CueX.Test.Grains.ITestSpatialGrain.html#CueX_Test_Grains_ITestSpatialGrain_HasParent
+  commentId: M:CueX.Test.Grains.ITestSpatialGrain.HasParent
+  fullName: CueX.Test.Grains.ITestSpatialGrain.HasParent()
+  nameWithType: ITestSpatialGrain.HasParent()
+- uid: CueX.Test.Grains.ITestSpatialGrain.HasParent*
+  name: HasParent
+  href: api/CueX.Test.Grains.ITestSpatialGrain.html#CueX_Test_Grains_ITestSpatialGrain_HasParent_
+  commentId: Overload:CueX.Test.Grains.ITestSpatialGrain.HasParent
+  isSpec: "True"
+  fullName: CueX.Test.Grains.ITestSpatialGrain.HasParent
+  nameWithType: ITestSpatialGrain.HasParent
+- uid: CueX.Test.Grains.ITestSpatialGrain.SubscribeToTestEvent
+  name: SubscribeToTestEvent()
+  href: api/CueX.Test.Grains.ITestSpatialGrain.html#CueX_Test_Grains_ITestSpatialGrain_SubscribeToTestEvent
+  commentId: M:CueX.Test.Grains.ITestSpatialGrain.SubscribeToTestEvent
+  fullName: CueX.Test.Grains.ITestSpatialGrain.SubscribeToTestEvent()
+  nameWithType: ITestSpatialGrain.SubscribeToTestEvent()
+- uid: CueX.Test.Grains.ITestSpatialGrain.SubscribeToTestEvent*
+  name: SubscribeToTestEvent
+  href: api/CueX.Test.Grains.ITestSpatialGrain.html#CueX_Test_Grains_ITestSpatialGrain_SubscribeToTestEvent_
+  commentId: Overload:CueX.Test.Grains.ITestSpatialGrain.SubscribeToTestEvent
+  isSpec: "True"
+  fullName: CueX.Test.Grains.ITestSpatialGrain.SubscribeToTestEvent
+  nameWithType: ITestSpatialGrain.SubscribeToTestEvent
+- uid: CueX.Test.Grains.TestSpatialGrain
+  name: TestSpatialGrain
+  href: api/CueX.Test.Grains.TestSpatialGrain.html
+  commentId: T:CueX.Test.Grains.TestSpatialGrain
+  fullName: CueX.Test.Grains.TestSpatialGrain
+  nameWithType: TestSpatialGrain
+- uid: CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback
+  name: ForcefullyRecompileCallback()
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_ForcefullyRecompileCallback
+  commentId: M:CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback
+  fullName: CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback()
+  nameWithType: TestSpatialGrain.ForcefullyRecompileCallback()
+- uid: CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback*
+  name: ForcefullyRecompileCallback
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_ForcefullyRecompileCallback_
+  commentId: Overload:CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback
+  isSpec: "True"
+  fullName: CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback
+  nameWithType: TestSpatialGrain.ForcefullyRecompileCallback
+- uid: CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue
+  name: GetLastTestEventValue()
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_GetLastTestEventValue
+  commentId: M:CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue
+  fullName: CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue()
+  nameWithType: TestSpatialGrain.GetLastTestEventValue()
+- uid: CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue*
+  name: GetLastTestEventValue
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_GetLastTestEventValue_
+  commentId: Overload:CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue
+  isSpec: "True"
+  fullName: CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue
+  nameWithType: TestSpatialGrain.GetLastTestEventValue
+- uid: CueX.Test.Grains.TestSpatialGrain.HasParent
+  name: HasParent()
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_HasParent
+  commentId: M:CueX.Test.Grains.TestSpatialGrain.HasParent
+  fullName: CueX.Test.Grains.TestSpatialGrain.HasParent()
+  nameWithType: TestSpatialGrain.HasParent()
+- uid: CueX.Test.Grains.TestSpatialGrain.HasParent*
+  name: HasParent
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_HasParent_
+  commentId: Overload:CueX.Test.Grains.TestSpatialGrain.HasParent
+  isSpec: "True"
+  fullName: CueX.Test.Grains.TestSpatialGrain.HasParent
+  nameWithType: TestSpatialGrain.HasParent
+- uid: CueX.Test.Grains.TestSpatialGrain.OnTestEvent(CueX.Test.Events.TestEvent)
+  name: OnTestEvent(TestEvent)
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_OnTestEvent_CueX_Test_Events_TestEvent_
+  commentId: M:CueX.Test.Grains.TestSpatialGrain.OnTestEvent(CueX.Test.Events.TestEvent)
+  fullName: CueX.Test.Grains.TestSpatialGrain.OnTestEvent(CueX.Test.Events.TestEvent)
+  nameWithType: TestSpatialGrain.OnTestEvent(TestEvent)
+- uid: CueX.Test.Grains.TestSpatialGrain.OnTestEvent*
+  name: OnTestEvent
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_OnTestEvent_
+  commentId: Overload:CueX.Test.Grains.TestSpatialGrain.OnTestEvent
+  isSpec: "True"
+  fullName: CueX.Test.Grains.TestSpatialGrain.OnTestEvent
+  nameWithType: TestSpatialGrain.OnTestEvent
+- uid: CueX.Test.Grains.TestSpatialGrain.SubscribeToTestEvent
+  name: SubscribeToTestEvent()
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_SubscribeToTestEvent
+  commentId: M:CueX.Test.Grains.TestSpatialGrain.SubscribeToTestEvent
+  fullName: CueX.Test.Grains.TestSpatialGrain.SubscribeToTestEvent()
+  nameWithType: TestSpatialGrain.SubscribeToTestEvent()
+- uid: CueX.Test.Grains.TestSpatialGrain.SubscribeToTestEvent*
+  name: SubscribeToTestEvent
+  href: api/CueX.Test.Grains.TestSpatialGrain.html#CueX_Test_Grains_TestSpatialGrain_SubscribeToTestEvent_
+  commentId: Overload:CueX.Test.Grains.TestSpatialGrain.SubscribeToTestEvent
+  isSpec: "True"
+  fullName: CueX.Test.Grains.TestSpatialGrain.SubscribeToTestEvent
+  nameWithType: TestSpatialGrain.SubscribeToTestEvent
+- uid: CueX.Test.Grains.TestSpatialGrainState
+  name: TestSpatialGrainState
+  href: api/CueX.Test.Grains.TestSpatialGrainState.html
+  commentId: T:CueX.Test.Grains.TestSpatialGrainState
+  fullName: CueX.Test.Grains.TestSpatialGrainState
+  nameWithType: TestSpatialGrainState
+- uid: CueX.Test.Grains.TestSpatialGrainState.LastTestEventValue
+  name: LastTestEventValue
+  href: api/CueX.Test.Grains.TestSpatialGrainState.html#CueX_Test_Grains_TestSpatialGrainState_LastTestEventValue
+  commentId: F:CueX.Test.Grains.TestSpatialGrainState.LastTestEventValue
+  fullName: CueX.Test.Grains.TestSpatialGrainState.LastTestEventValue
+  nameWithType: TestSpatialGrainState.LastTestEventValue
 - uid: CueX.Test.GridSPSTest
   name: GridSPSTest
   href: api/CueX.Test.GridSPSTest.html
@@ -1185,6 +1434,19 @@ references:
   isSpec: "True"
   fullName: CueX.Test.GridSPSTest.TestGridRemove
   nameWithType: GridSPSTest.TestGridRemove
+- uid: CueX.Test.GridSPSTest.TestGridSubscription
+  name: TestGridSubscription()
+  href: api/CueX.Test.GridSPSTest.html#CueX_Test_GridSPSTest_TestGridSubscription
+  commentId: M:CueX.Test.GridSPSTest.TestGridSubscription
+  fullName: CueX.Test.GridSPSTest.TestGridSubscription()
+  nameWithType: GridSPSTest.TestGridSubscription()
+- uid: CueX.Test.GridSPSTest.TestGridSubscription*
+  name: TestGridSubscription
+  href: api/CueX.Test.GridSPSTest.html#CueX_Test_GridSPSTest_TestGridSubscription_
+  commentId: Overload:CueX.Test.GridSPSTest.TestGridSubscription
+  isSpec: "True"
+  fullName: CueX.Test.GridSPSTest.TestGridSubscription
+  nameWithType: GridSPSTest.TestGridSubscription
 - uid: CueX.Test.Helper
   name: CueX.Test.Helper
   href: api/CueX.Test.Helper.html
@@ -1355,6 +1617,31 @@ references:
   commentId: T:SimpleExample.Grains.ISimpleGrain
   fullName: SimpleExample.Grains.ISimpleGrain
   nameWithType: ISimpleGrain
+- uid: SimpleExample.Grains.ISimpleGrain.SubscribeToSimpleEvent
+  name: SubscribeToSimpleEvent()
+  href: api/SimpleExample.Grains.ISimpleGrain.html#SimpleExample_Grains_ISimpleGrain_SubscribeToSimpleEvent
+  commentId: M:SimpleExample.Grains.ISimpleGrain.SubscribeToSimpleEvent
+  fullName: SimpleExample.Grains.ISimpleGrain.SubscribeToSimpleEvent()
+  nameWithType: ISimpleGrain.SubscribeToSimpleEvent()
+- uid: SimpleExample.Grains.ISimpleGrain.SubscribeToSimpleEvent*
+  name: SubscribeToSimpleEvent
+  href: api/SimpleExample.Grains.ISimpleGrain.html#SimpleExample_Grains_ISimpleGrain_SubscribeToSimpleEvent_
+  commentId: Overload:SimpleExample.Grains.ISimpleGrain.SubscribeToSimpleEvent
+  isSpec: "True"
+  fullName: SimpleExample.Grains.ISimpleGrain.SubscribeToSimpleEvent
+  nameWithType: ISimpleGrain.SubscribeToSimpleEvent
+- uid: SimpleExample.Grains.SimpleEvent
+  name: SimpleEvent
+  href: api/SimpleExample.Grains.SimpleEvent.html
+  commentId: T:SimpleExample.Grains.SimpleEvent
+  fullName: SimpleExample.Grains.SimpleEvent
+  nameWithType: SimpleEvent
+- uid: SimpleExample.Grains.SimpleEvent.Value
+  name: Value
+  href: api/SimpleExample.Grains.SimpleEvent.html#SimpleExample_Grains_SimpleEvent_Value
+  commentId: F:SimpleExample.Grains.SimpleEvent.Value
+  fullName: SimpleExample.Grains.SimpleEvent.Value
+  nameWithType: SimpleEvent.Value
 - uid: SimpleExample.Grains.SimpleGrain
   name: SimpleGrain
   href: api/SimpleExample.Grains.SimpleGrain.html
@@ -1377,6 +1664,32 @@ references:
   isSpec: "True"
   fullName: SimpleExample.Grains.SimpleGrain.SimpleGrain
   nameWithType: SimpleGrain.SimpleGrain
+- uid: SimpleExample.Grains.SimpleGrain.OnSimpleEvent(SimpleExample.Grains.SimpleEvent)
+  name: OnSimpleEvent(SimpleEvent)
+  href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain_OnSimpleEvent_SimpleExample_Grains_SimpleEvent_
+  commentId: M:SimpleExample.Grains.SimpleGrain.OnSimpleEvent(SimpleExample.Grains.SimpleEvent)
+  fullName: SimpleExample.Grains.SimpleGrain.OnSimpleEvent(SimpleExample.Grains.SimpleEvent)
+  nameWithType: SimpleGrain.OnSimpleEvent(SimpleEvent)
+- uid: SimpleExample.Grains.SimpleGrain.OnSimpleEvent*
+  name: OnSimpleEvent
+  href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain_OnSimpleEvent_
+  commentId: Overload:SimpleExample.Grains.SimpleGrain.OnSimpleEvent
+  isSpec: "True"
+  fullName: SimpleExample.Grains.SimpleGrain.OnSimpleEvent
+  nameWithType: SimpleGrain.OnSimpleEvent
+- uid: SimpleExample.Grains.SimpleGrain.SubscribeToSimpleEvent
+  name: SubscribeToSimpleEvent()
+  href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain_SubscribeToSimpleEvent
+  commentId: M:SimpleExample.Grains.SimpleGrain.SubscribeToSimpleEvent
+  fullName: SimpleExample.Grains.SimpleGrain.SubscribeToSimpleEvent()
+  nameWithType: SimpleGrain.SubscribeToSimpleEvent()
+- uid: SimpleExample.Grains.SimpleGrain.SubscribeToSimpleEvent*
+  name: SubscribeToSimpleEvent
+  href: api/SimpleExample.Grains.SimpleGrain.html#SimpleExample_Grains_SimpleGrain_SubscribeToSimpleEvent_
+  commentId: Overload:SimpleExample.Grains.SimpleGrain.SubscribeToSimpleEvent
+  isSpec: "True"
+  fullName: SimpleExample.Grains.SimpleGrain.SubscribeToSimpleEvent
+  nameWithType: SimpleGrain.SubscribeToSimpleEvent
 - uid: SimpleExample.Grains.SimpleGrainState
   name: SimpleGrainState
   href: api/SimpleExample.Grains.SimpleGrainState.html

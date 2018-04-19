@@ -89,7 +89,31 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Configuration.html",
-          "hash": "ygEj5/byLuqIo0z/d4mDag=="
+          "hash": "z2DlK43is8jfTemfkxD3aQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Exception.AlreadySubscribedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Exception.AlreadySubscribedException.html",
+          "hash": "XgzpQ+8j0t0QfqASeqGang=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Exception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Exception.html",
+          "hash": "wzLDzDdH7gyQXCX2PqrkRQ=="
         }
       },
       "is_incremental": false,
@@ -101,7 +125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.IPartitionGrain.html",
-          "hash": "cpHw4ymkBQLWDtCzeqU1gQ=="
+          "hash": "/yxT0fUm0fjK13eCmpdG8Q=="
         }
       },
       "is_incremental": false,
@@ -113,7 +137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.ISpatialGrain.html",
-          "hash": "yAVSnbAncJN0E4ey8BtH7A=="
+          "hash": "cV5XmKAbYNbOlvOGjSjl0w=="
         }
       },
       "is_incremental": false,
@@ -137,7 +161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.PartitionGrain-2.html",
-          "hash": "fIQUfa6iTksV2bN7Ya8o/g=="
+          "hash": "hgeauctfCkNKgFGxy7jkKQ=="
         }
       },
       "is_incremental": false,
@@ -149,7 +173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.PartitionGrainState.html",
-          "hash": "0wxTZnL/5p+Q2jmPZbDRiQ=="
+          "hash": "L++BL7qMqFCuHWC1TZ/WGw=="
         }
       },
       "is_incremental": false,
@@ -161,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrain-2.html",
-          "hash": "hTbY/ML32MBZrgSNapgIVg=="
+          "hash": "iIXJWnyVrBy1K7Vn1+6ckQ=="
         }
       },
       "is_incremental": false,
@@ -173,7 +197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrainState.html",
-          "hash": "OJ8vyV/yajbgyBpfUPA0ww=="
+          "hash": "X0HusrSYL4QWgyt4+mT9AQ=="
         }
       },
       "is_incremental": false,
@@ -185,7 +209,19 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialPubSubBuilder.html",
-          "hash": "iu88EiihQlOvPAVlwpMQiQ=="
+          "hash": "xZSQJso2XYLQ2VyJxEPKeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.EventHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.EventHelper.html",
+          "hash": "dTpHYLME+Jj+C25d+tZ4NQ=="
         }
       },
       "is_incremental": false,
@@ -197,7 +233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.IArea.html",
-          "hash": "oTlxwUB3l7fJSOnyCwnWMw=="
+          "hash": "4SEiRdL8MwrL1VscbWRxAg=="
         }
       },
       "is_incremental": false,
@@ -209,31 +245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.IEvent.html",
-          "hash": "wIUbiEu5vEIAuduWYE35wA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Core.Subscription.ISubscriptionBuilder-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Core.Subscription.ISubscriptionBuilder-1.html",
-          "hash": "9xYMDVYSg4HlyFyB1lTqxg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Core.Subscription.ITypeFilter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Core.Subscription.ITypeFilter.html",
-          "hash": "/H8ODXpft6QIhlsrn3z2kw=="
+          "hash": "ssGow4Em71ndMkCqGDaz9Q=="
         }
       },
       "is_incremental": false,
@@ -245,7 +257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.SubscriptionDetails.html",
-          "hash": "yWSQEZ5ys1gXiQOhUko+cw=="
+          "hash": "K4wHj2WDTw5X4L2+Ft5shg=="
         }
       },
       "is_incremental": false,
@@ -253,11 +265,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Core.Subscription.TypeFilter-1.yml",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.SubscriptionFilter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CueX.Core.Subscription.TypeFilter-1.html",
-          "hash": "FdVbS9ycwZ1Q4cKyFJOXfQ=="
+          "relative_path": "api/CueX.Core.Subscription.SubscriptionFilter.html",
+          "hash": "dgMJCX8hmwVBa92lqYJT8Q=="
         }
       },
       "is_incremental": false,
@@ -269,7 +281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.html",
-          "hash": "Sh32c7MrFaoyWzc88terhw=="
+          "hash": "mX/KeEKx2cmxrnDqOiei0A=="
         }
       },
       "is_incremental": false,
@@ -293,7 +305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.GridConfiguration.html",
-          "hash": "N3+lGd8rpwiKpmxr0jUQtw=="
+          "hash": "V1nUd0rggDL8zPtSelwEYg=="
         }
       },
       "is_incremental": false,
@@ -305,7 +317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.GridConfigurationGrain.html",
-          "hash": "uIzNWO2Io8QseZN3Fj9vkw=="
+          "hash": "43TLjKShikEkIQZg68eySQ=="
         }
       },
       "is_incremental": false,
@@ -329,7 +341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.GridConfigurationService.html",
-          "hash": "e7LDhsl6ERKV/ZnAVR3mQg=="
+          "hash": "rQ8klQaA78oM4PUo7KYNvA=="
         }
       },
       "is_incremental": false,
@@ -341,7 +353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.IGridConfigurationGrain.html",
-          "hash": "6rbFUxLLNRVLFRaHQRvsPQ=="
+          "hash": "HbdBcUY5BNC7gBMrYQrqlA=="
         }
       },
       "is_incremental": false,
@@ -353,7 +365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.IGridConfigurationService.html",
-          "hash": "aULZmaSGsRbbZTGO0TGy9A=="
+          "hash": "D9Xx2/H1DB2Fx98H7HPd0A=="
         }
       },
       "is_incremental": false,
@@ -377,7 +389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.GridPartitionGrain.html",
-          "hash": "AZgJoYJxopESSCMdSD7Wbg=="
+          "hash": "hkH53rhjYUnBS4MmUDV6uw=="
         }
       },
       "is_incremental": false,
@@ -389,7 +401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.GridPartitionGrainState.html",
-          "hash": "YFXvzo73z3LdOshLcww5xg=="
+          "hash": "mmVlzOmv3ZYtjkv7/hLaoA=="
         }
       },
       "is_incremental": false,
@@ -401,7 +413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.GridSpatialPubSubBuilder.html",
-          "hash": "EL8e6M5SftpNI0xNwww10A=="
+          "hash": "5d+Rsfzpcfna3nx/opgdpw=="
         }
       },
       "is_incremental": false,
@@ -413,7 +425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.IGridPartitionGrain.html",
-          "hash": "eqyNklN3QmV2KnB2za14pg=="
+          "hash": "yDsZegxAYx6CvtdocVEiNQ=="
         }
       },
       "is_incremental": false,
@@ -485,7 +497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Events.TestEvent.html",
-          "hash": "270swq9q081L0Cw//bTr5w=="
+          "hash": "zTMNi1Jogdj4rYQtq5vZiQ=="
         }
       },
       "is_incremental": false,
@@ -505,11 +517,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Test.Grains.BasicSpatialGrain.yml",
+      "source_relative_path": "obj/api/CueX.Test.Grains.ITestSpatialGrain.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CueX.Test.Grains.BasicSpatialGrain.html",
-          "hash": "By0WeauANTmM61TTnj/SMw=="
+          "relative_path": "api/CueX.Test.Grains.ITestSpatialGrain.html",
+          "hash": "Ws/8UEF0hsMbz4jN3P3Xvg=="
         }
       },
       "is_incremental": false,
@@ -517,11 +529,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Test.Grains.BasicSpatialGrainState.yml",
+      "source_relative_path": "obj/api/CueX.Test.Grains.TestSpatialGrain.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CueX.Test.Grains.BasicSpatialGrainState.html",
-          "hash": "+YgFPZI9pG8ALQCXD0PPNQ=="
+          "relative_path": "api/CueX.Test.Grains.TestSpatialGrain.html",
+          "hash": "TIItCnrR9yrSTGaVZLEwhg=="
         }
       },
       "is_incremental": false,
@@ -529,11 +541,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Test.Grains.IBasicSpatialGrain.yml",
+      "source_relative_path": "obj/api/CueX.Test.Grains.TestSpatialGrainState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CueX.Test.Grains.IBasicSpatialGrain.html",
-          "hash": "osQ0A5sD4HVcspLpk4O1/A=="
+          "relative_path": "api/CueX.Test.Grains.TestSpatialGrainState.html",
+          "hash": "360IoTdApaC7QQtEsYFyuw=="
         }
       },
       "is_incremental": false,
@@ -545,7 +557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.html",
-          "hash": "m1Qr4KbBnuGK6ZxWHpVDHA=="
+          "hash": "0g+4wJ/e8wCMufdpbPQxlw=="
         }
       },
       "is_incremental": false,
@@ -557,7 +569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.GridSPSTest.html",
-          "hash": "n6akuOwEu0qv0JyqDbBzOQ=="
+          "hash": "tWCpjXDpRCw3e4tPEq5SBQ=="
         }
       },
       "is_incremental": false,
@@ -569,7 +581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Helper.ClusterCollection.html",
-          "hash": "sIqdf0Gyv0idBF5gZQpovA=="
+          "hash": "WOOy9mCVy3qABgv0H+bHGg=="
         }
       },
       "is_incremental": false,
@@ -581,7 +593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Helper.ClusterFixture.html",
-          "hash": "Nk7Oe0SAHIxkNXa62kRjdQ=="
+          "hash": "KV+eMTP2HYZ8/YK+ojH0Ug=="
         }
       },
       "is_incremental": false,
@@ -665,7 +677,19 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.ISimpleGrain.html",
-          "hash": "3Ef36wXbK0sKeSFaHe/64A=="
+          "hash": "l6wgyCFetoijvHqauizYDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/SimpleExample.Grains.SimpleEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SimpleExample.Grains.SimpleEvent.html",
+          "hash": "wFQga3oqtMFE0QvQuT6F4A=="
         }
       },
       "is_incremental": false,
@@ -677,7 +701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrain.html",
-          "hash": "ohgXbKxSMBLGetg+3MYHyA=="
+          "hash": "F2FY/AjYwKV6GzaoS7EpDQ=="
         }
       },
       "is_incremental": false,
@@ -689,7 +713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrainState.html",
-          "hash": "W2R9tl3r6HfG2tphZy/Clg=="
+          "hash": "tL0ODBoIWDBoGv2REjqr/g=="
         }
       },
       "is_incremental": false,
@@ -701,7 +725,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.html",
-          "hash": "I8k2bYJpgdN0jQfAtV5Wtw=="
+          "hash": "TsTD41jMLyLlEteIL5eDjg=="
         }
       },
       "is_incremental": false,
@@ -713,7 +737,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wMpnj72/DPhr3Lt8xdNmBA=="
+          "hash": "rXiY86cUwPsnQ8H43JB4oQ=="
         }
       },
       "is_incremental": false,
@@ -745,17 +769,17 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
