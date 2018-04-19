@@ -70,19 +70,20 @@ namespace CueX.Test
         [Fact]
         public async void TestGridSubscription()
         { 
-            // Insert a spatial grain
             var spatialGrain = _client.GetGrain<ITestSpatialGrain>(3);
             await spatialGrain.SetPosition(new Vector3d(3d, 3d, 0d));
             await _pubSub.Insert(spatialGrain);
-            Assert.Equal(true, await spatialGrain.HasParent());
             var partitionGrain = _client.GetGrain<IGridPartitionGrain>("15,15");
-            var children = await partitionGrain.GetChildren();
-            Assert.Equal(1, children.Count());
             await spatialGrain.SubscribeToTestEvent();
             Assert.Equal(1, await partitionGrain.GetInterestCount());
-//            await spatialGrain.ReceiveEvent(new TypeFilter<TestEvent>().GetTypeString(),
-//                new TestEvent {Value = "HELLO"});
-//            Assert.Equal("HELLO", await spatialGrain.GetLastTestEventValue());
+            // Publish event to grain
+            await spatialGrain.ReceiveEvent(EventHelper.GetEventName<TestEvent>(), new TestEvent {Value = "HELLO"});
+            Assert.Equal("HELLO", await spatialGrain.GetLastTestEventValue());
+            // Recompile callbacks
+            await spatialGrain.ForcefullyRecompileCallback();
+            // Try again
+            await spatialGrain.ReceiveEvent(EventHelper.GetEventName<TestEvent>(), new TestEvent {Value = "WORLD"});
+            Assert.Equal("WORLD", await spatialGrain.GetLastTestEventValue());
         }
     }
 }

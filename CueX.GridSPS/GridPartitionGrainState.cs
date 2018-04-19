@@ -13,8 +13,8 @@ namespace CueX.GridSPS
         public bool IsInitialized = false;
         public GridConfiguration Config = null;
 
-        public Dictionary<string /* EventType */, Dictionary<ISpatialGrain, SubscriptionFilter>> InterestFilterMap = null;
-        public Dictionary<ISpatialGrain, List<string/* EventType */>> GrainInterestMap = null;
-        public Dictionary<string/* EventType */, List<IGridPartitionGrain>> ForwardMap = null;
+        public readonly Dictionary<string /* EventType */, Dictionary<ISpatialGrain, SubscriptionFilter>> InterestFilterMap = new Dictionary<string, Dictionary<ISpatialGrain, SubscriptionFilter>>();
+        public readonly Dictionary<ISpatialGrain, List<string/* EventType */>> GrainInterestMap = new Dictionary<ISpatialGrain, List<string>>();
+        public readonly Dictionary<string/* EventType */, List<IGridPartitionGrain>> ForwardMap = new Dictionary<string, List<IGridPartitionGrain>>();
     }
 }

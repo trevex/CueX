@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using CueX.Core;
+using CueX.Core.Subscription;
 using Microsoft.Extensions.Logging;
 
 namespace SimpleExample.Grains
@@ -18,11 +19,19 @@ namespace SimpleExample.Grains
             _logger = logger;
         }
 
-        public Task SubscribeToSimpleEvent()
+        public async Task SubscribeToSimpleEvent()
         {
-            SubscribeTo<SimpleEvent>().ForEach(e => Console.WriteLine(e.Value));
-            return Task.CompletedTask;
+            await Subscribe<SimpleEvent>(new SubscriptionDetails
+            {
+                EventTypeName = EventHelper.GetEventName<SimpleEvent>()
+            }, OnSimpleEvent);
         }
+
+        public async Task OnSimpleEvent(SimpleEvent e)
+        {
+            Console.WriteLine(e.Value);
+        }
+        
 
     }
 }

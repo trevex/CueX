@@ -3,7 +3,7 @@
 
 using System;
 using System.Collections.Generic;
-using CueX.Core.Subscription;
+using System.Reflection;
 using CueX.Numerics;
 
 namespace CueX.Core
@@ -12,6 +12,6 @@ namespace CueX.Core
     {
         public Vector3d Position;
         public IPartitionGrain Parent;
-        public Dictionary<string /* EventType */, Action<IEvent>> Callbacks = new Dictionary<string, Action<IEvent>>();
+        public Dictionary<Type /* EventType */, MethodInfo> CallbackMethodInfos = new Dictionary<Type, MethodInfo>();
     }
 }
