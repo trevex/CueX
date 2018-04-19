@@ -3,6 +3,7 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CueX.Core.Subscription;
 using Orleans;
 
 namespace CueX.Core
@@ -12,5 +13,6 @@ namespace CueX.Core
         Task Add<T>(T spatialGrain) where T : ISpatialGrain;
         Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain;
         Task<IEnumerable<ISpatialGrain>> GetChildren();
+        Task<bool> HandleSubscription<T>(T subscribingGrain, SubscriptionDetails details) where T : ISpatialGrain;
     }
 }

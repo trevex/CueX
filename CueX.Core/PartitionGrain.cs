@@ -4,6 +4,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CueX.Core.Subscription;
 using Orleans;
 
 namespace CueX.Core
@@ -36,5 +37,7 @@ namespace CueX.Core
         {
             return Task.FromResult(State.Children.AsEnumerable());
         }
+
+        public abstract Task<bool> HandleSubscription<T>(T subscribingGrain, SubscriptionDetails details) where T : ISpatialGrain;
     }
 }

@@ -40,7 +40,7 @@ namespace CueX.Test.Helper
                 clientBuilder.ConfigureApplicationParts(parts =>
                 {
                     GridConfigurationHelper.AddClientApplicationParts(parts);
-                    parts.AddApplicationPart(typeof(IBasicSpatialGrain).Assembly);
+                    parts.AddApplicationPart(typeof(ITestSpatialGrain).Assembly);
                 });
             }
 
@@ -49,7 +49,7 @@ namespace CueX.Test.Helper
                 hostBuilder.ConfigureApplicationParts(parts =>
                 {
                     GridConfigurationHelper.AddSiloApplicationParts(parts);
-                    parts.AddApplicationPart(typeof(BasicSpatialGrain).Assembly).WithReferences();
+                    parts.AddApplicationPart(typeof(TestSpatialGrain).Assembly).WithReferences();
                 });
                 hostBuilder.AddMemoryGrainStorageAsDefault();
                 hostBuilder.ConfigureServices(GridConfigurationHelper.AddServices);

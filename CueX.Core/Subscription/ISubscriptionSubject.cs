@@ -1,13 +1,12 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
+using System;
 using System.Threading.Tasks;
-using CueX.Core;
-using Orleans;
 
-namespace CueX.Test.Grains
+namespace CueX.Core.Subscription
 {
-    public interface IBasicSpatialGrain : ISpatialGrain, IGrainWithIntegerKey
+    public interface ISubscriptionSubject
     {
-        Task<bool> HasParent();
+        Task<bool> Subscribe<T>(SubscriptionDetails subscription, Action<T> callback) where T : IEvent;
     }
 }

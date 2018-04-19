@@ -18,7 +18,7 @@ namespace CueX.Core
     /// </summary>
     /// <typeparam name="TState">Application-specific state data type, that also holds <see cref="SpatialGrainState"/>.</typeparam>
     /// <typeparam name="TGrainInterface"></typeparam>
-    public abstract class SpatialGrain<TGrainInterface, TState> : Grain<TState>, ISpatialGrain
+    public abstract class SpatialGrain<TGrainInterface, TState> : Grain<TState>, ISpatialGrain, ISubscriptionSubject
         where TState : SpatialGrainState, new() where TGrainInterface : ISpatialGrain
     {
         public async Task SetPosition(Vector3d newPosition)
@@ -43,15 +43,28 @@ namespace CueX.Core
             return State.Parent.Remove(this.AsReference<TGrainInterface>());
         }
 
-        public bool Subscribe(SubscriptionDetails subscription, Action<IEvent> callback)
+        public async Task<bool> Subscribe<T>(SubscriptionDetails details, Action<T> callback) where T : IEvent
         {
-            // TODO: implement
+            Console.WriteLine("A"); // TODO: remove
+            var result = await State.Parent.HandleSubscription(this.AsReference<TGrainInterface>(), details);
+            Console.WriteLine("B"); // TODO: remove
+            if (!result) return false;
+            Console.WriteLine("C"); // TODO: remove
+            State.Callbacks[details.EventFilter.ToString()] = e => { callback((T) e); }; // TODO: improve this hack, once basic SPS is working
+            await WriteStateAsync();
+            Console.WriteLine("D"); // TODO: remove
             return true;
-        } 
-        
-        public ISubscriptionBuilder<T> SubscribeTo<T>() where T : IEvent
+        }
+
+        protected ISubscriptionBuilder<T> SubscribeTo<T>() where T : IEvent
         {
-            return new SubscriptionBuilder<T>(this.AsReference<TGrainInterface>(), new TypeFilter<T>());
+            return new SubscriptionBuilder<T>(this, new TypeFilter<T>());
+        }
+
+        public Task ReceiveEvent(string eventType, IEvent eventValue)
+        {
+            State.Callbacks[eventType](eventValue);
+            return Task.CompletedTask;
         }
     }
 }

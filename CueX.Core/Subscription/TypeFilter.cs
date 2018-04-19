@@ -4,6 +4,11 @@ namespace CueX.Core.Subscription
 {
     public class TypeFilter<TSelf> : ITypeFilter
     {
+        public string GetTypeString()
+        {
+            return typeof(TSelf).ToString();
+        }
+
         public bool IsType<TOther>()
         {
             return typeof(TSelf) == typeof(TOther);

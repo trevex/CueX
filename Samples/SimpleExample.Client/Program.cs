@@ -17,12 +17,14 @@ namespace SimpleExample.Client
         public static async Task Main(string[] args)
         {
             var client = await StartClientWithRetries();
-            var simpleGrain = client.GetGrain<ISimpleGrain>(0);
-            await simpleGrain.SetPosition(Vector3d.One());
-            Console.WriteLine(await simpleGrain.GetPosition());
-            var gridPartitionGrain = client.GetGrain<IGridPartitionGrain>("1");
-            await gridPartitionGrain.Add(simpleGrain);
-            Console.WriteLine(await gridPartitionGrain.Remove(simpleGrain));
+            var builder = new GridSpatialPubSubBuilder();
+            builder.Configure(config => { config.PartitionSize = 0.2d; });
+            var pubSub = builder.Build(client).GetAwaiter().GetResult();
+            var spatialGrain = client.GetGrain<ISimpleGrain>(0);
+            await spatialGrain.SetPosition(new Vector3d(1d, 1d, 0d));
+            await pubSub.Insert(spatialGrain);
+            await spatialGrain.SubscribeToSimpleEvent();
+            Console.WriteLine("All done!");
         }
 
         private static async Task<IClusterClient> StartClientWithRetries(int initializeAttemptsBeforeFailing = 5)
@@ -33,8 +35,6 @@ namespace SimpleExample.Client
             {
                 try
                 {
-                    var siloAddress = IPAddress.Loopback;
-                    var gatewayPort = 30000;
                     client = new ClientBuilder()
                         .UseLocalhostClustering()
                         .ConfigureApplicationParts(AddClientApplicationParts)

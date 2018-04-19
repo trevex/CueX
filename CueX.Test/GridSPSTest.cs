@@ -3,9 +3,11 @@
 
 using System.Linq;
 using CueX.Core;
+using CueX.Core.Subscription;
 using CueX.GridSPS;
 using CueX.GridSPS.Config;
 using CueX.Numerics;
+using CueX.Test.Events;
 using CueX.Test.Grains;
 using CueX.Test.Helper;
 using Orleans;
@@ -42,7 +44,7 @@ namespace CueX.Test
         [Fact]
         public async void TestGridInsert()
         {
-            var spatialGrain = _client.GetGrain<IBasicSpatialGrain>(1);
+            var spatialGrain = _client.GetGrain<ITestSpatialGrain>(1);
             await spatialGrain.SetPosition(new Vector3d(1d, 1d, 0d));
             await _pubSub.Insert(spatialGrain);
             var partitionGrain = _client.GetGrain<IGridPartitionGrain>("5,5");
@@ -54,7 +56,7 @@ namespace CueX.Test
         public async void TestGridRemove()
         { 
             // Insert a spatial grain
-            var spatialGrain = _client.GetGrain<IBasicSpatialGrain>(2);
+            var spatialGrain = _client.GetGrain<ITestSpatialGrain>(2);
             await spatialGrain.SetPosition(new Vector3d(2d, 2d, 0d));
             await _pubSub.Insert(spatialGrain);
             Assert.Equal(true, await spatialGrain.HasParent());
@@ -63,6 +65,24 @@ namespace CueX.Test
             var partitionGrain = _client.GetGrain<IGridPartitionGrain>("10,10");
             var children = await partitionGrain.GetChildren();
             Assert.Equal(0, children.Count());
+        }
+        
+        [Fact]
+        public async void TestGridSubscription()
+        { 
+            // Insert a spatial grain
+            var spatialGrain = _client.GetGrain<ITestSpatialGrain>(3);
+            await spatialGrain.SetPosition(new Vector3d(3d, 3d, 0d));
+            await _pubSub.Insert(spatialGrain);
+            Assert.Equal(true, await spatialGrain.HasParent());
+            var partitionGrain = _client.GetGrain<IGridPartitionGrain>("15,15");
+            var children = await partitionGrain.GetChildren();
+            Assert.Equal(1, children.Count());
+            await spatialGrain.SubscribeToTestEvent();
+            Assert.Equal(1, await partitionGrain.GetInterestCount());
+//            await spatialGrain.ReceiveEvent(new TypeFilter<TestEvent>().GetTypeString(),
+//                new TestEvent {Value = "HELLO"});
+//            Assert.Equal("HELLO", await spatialGrain.GetLastTestEventValue());
         }
     }
 }

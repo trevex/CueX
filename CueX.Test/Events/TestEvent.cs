@@ -6,6 +6,6 @@ namespace CueX.Test.Events
 {
     public class TestEvent : IEvent
     {
-        
+        public string Value;
     }
 }

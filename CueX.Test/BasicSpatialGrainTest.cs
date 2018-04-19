@@ -21,7 +21,7 @@ namespace CueX.Test
         [Fact]
         public async void TestPositionAssignment()
         {
-            var spatialGrain = _client.GetGrain<IBasicSpatialGrain>(0);
+            var spatialGrain = _client.GetGrain<ITestSpatialGrain>(0);
             var pos = new Vector3d(1.0, 2.0, 3.0);
             await spatialGrain.SetPosition(pos);
             var assignedPos = await spatialGrain.GetPosition();

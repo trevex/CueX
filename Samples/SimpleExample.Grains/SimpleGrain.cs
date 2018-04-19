@@ -1,5 +1,5 @@
-﻿// Copyright (c) Niklas Voss. All rights reserved.
-// Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
+﻿using System;
+using System.Threading.Tasks;
 using CueX.Core;
 using Microsoft.Extensions.Logging;
 
@@ -16,6 +16,12 @@ namespace SimpleExample.Grains
         public SimpleGrain(ILogger<SimpleGrain> logger)
         {
             _logger = logger;
+        }
+
+        public Task SubscribeToSimpleEvent()
+        {
+            SubscribeTo<SimpleEvent>().ForEach(e => Console.WriteLine(e.Value));
+            return Task.CompletedTask;
         }
 
     }

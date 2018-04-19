@@ -2,6 +2,7 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System.Threading.Tasks;
+using CueX.Core.Subscription;
 using CueX.Numerics;
 using Orleans;
 
@@ -16,6 +17,7 @@ namespace CueX.Core
         Task<Vector3d> GetPosition();
         Task SetParent<T>(T parent) where T : Core.IPartitionGrain;
         Task<bool> RemoveSelfFromParent();
+        Task ReceiveEvent(string eventType, IEvent eventValue);
     }
 
 }
