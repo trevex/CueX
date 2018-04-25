@@ -2,6 +2,7 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System.Linq;
+using System.Threading;
 using CueX.Core;
 using CueX.Core.Subscription;
 using CueX.GridSPS;
@@ -84,6 +85,9 @@ namespace CueX.Test
             // Try again
             await spatialGrain.ReceiveEvent(EventHelper.GetEventName<TestEvent>(), new TestEvent {Value = "WORLD"});
             Assert.Equal("WORLD", await spatialGrain.GetLastTestEventValue());
+            await _pubSub.Dispatch(new TestEvent {Position = new Vector3d(3d, 3d, 0d), Value = "DISPATCHED"});
+            Thread.Sleep(2000); // NOTE: internal event dispatch is async
+            Assert.Equal("DISPATCHED", await spatialGrain.GetLastTestEventValue());
         }
     }
 }

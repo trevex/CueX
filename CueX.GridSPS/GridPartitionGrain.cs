@@ -76,7 +76,9 @@ namespace CueX.GridSPS
                     
                     if (keyValuePair.Value.IsApplicable(eventValue))
                     {
-                        keyValuePair.Key.ReceiveEvent(eventName, eventValue);
+                        var task = keyValuePair.Key.ReceiveEvent(eventName, eventValue);
+                        // Do NOT wait, but rather attach an error handling continuation
+                        task.ContinueWith(t => _logger.LogError(t.Exception.ToString()), TaskContinuationOptions.OnlyOnFaulted);
                     }
                 }
             }
