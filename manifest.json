@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/csharp_coding_standards.html",
-          "hash": "O8oVcUeuNbdYK5EHEAbLIg=="
+          "hash": "jKO50RKtnQu9Cd2ePRvH6A=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/docfx_getting_started.html",
-          "hash": "qTCRWtSNhk7xWMtEMH5jKQ=="
+          "hash": "7rp/ZAYKY6FcVzdefzNH+Q=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/engineering_guidelines.html",
-          "hash": "Bbz3YztH1UTyFIc3JtmNcw=="
+          "hash": "mnZq5avuyx45Do7EuytyhA=="
         }
       },
       "is_incremental": false,
@@ -77,7 +77,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "P8QifkTclue+91kBwO48KQ=="
+          "hash": "bWuZ7B5N8/EXnkjiVK8RkA=="
         }
       },
       "is_incremental": false,
@@ -89,7 +89,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Configuration.html",
-          "hash": "z2DlK43is8jfTemfkxD3aQ=="
+          "hash": "QBGEhf3vTdxnmCa29ioF1w=="
         }
       },
       "is_incremental": false,
@@ -101,7 +101,31 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Exception.AlreadySubscribedException.html",
-          "hash": "XgzpQ+8j0t0QfqASeqGang=="
+          "hash": "bEm6IGtYxs/CO3f9+OIdGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Exception.SubscriptionCallbackNotMemberException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Exception.SubscriptionCallbackNotMemberException.html",
+          "hash": "ii5yzeJ6YdxYtZYSQxmyWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Exception.SubscriptionCallbackNotMethodException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Exception.SubscriptionCallbackNotMethodException.html",
+          "hash": "lveMv4NkZhG0AOUlBgLBXQ=="
         }
       },
       "is_incremental": false,
@@ -113,7 +137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Exception.html",
-          "hash": "wzLDzDdH7gyQXCX2PqrkRQ=="
+          "hash": "WTjr89bz2jSF5t6kQUTGhA=="
         }
       },
       "is_incremental": false,
@@ -125,7 +149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.IPartitionGrain.html",
-          "hash": "/yxT0fUm0fjK13eCmpdG8Q=="
+          "hash": "KIclvttBLSMRu99yafNQiw=="
         }
       },
       "is_incremental": false,
@@ -137,7 +161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.ISpatialGrain.html",
-          "hash": "cV5XmKAbYNbOlvOGjSjl0w=="
+          "hash": "epE4XAffqj6+PYBbXj+pww=="
         }
       },
       "is_incremental": false,
@@ -149,7 +173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.ISpatialPubSub.html",
-          "hash": "sjUScdR7BWXWc/m7wr3rFQ=="
+          "hash": "m8TuJ6mxZAsfk9KIGFO/HA=="
         }
       },
       "is_incremental": false,
@@ -161,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.PartitionGrain-2.html",
-          "hash": "hgeauctfCkNKgFGxy7jkKQ=="
+          "hash": "0t1daCh+IcfQswbthQmDYg=="
         }
       },
       "is_incremental": false,
@@ -173,7 +197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.PartitionGrainState.html",
-          "hash": "L++BL7qMqFCuHWC1TZ/WGw=="
+          "hash": "3A5imNjImKfU87r8aTkR2Q=="
         }
       },
       "is_incremental": false,
@@ -185,7 +209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrain-2.html",
-          "hash": "iIXJWnyVrBy1K7Vn1+6ckQ=="
+          "hash": "An3Jze8JoaG9EDITh7biDw=="
         }
       },
       "is_incremental": false,
@@ -197,7 +221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrainState.html",
-          "hash": "X0HusrSYL4QWgyt4+mT9AQ=="
+          "hash": "Wn0oImXQg8xr/POSbIcWxw=="
         }
       },
       "is_incremental": false,
@@ -209,7 +233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialPubSubBuilder.html",
-          "hash": "xZSQJso2XYLQ2VyJxEPKeQ=="
+          "hash": "38ljyy6HbiqZVeN+rRvgJg=="
         }
       },
       "is_incremental": false,
@@ -221,7 +245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.EventHelper.html",
-          "hash": "dTpHYLME+Jj+C25d+tZ4NQ=="
+          "hash": "j+QvLNlECnyK1L0GMyJwtA=="
         }
       },
       "is_incremental": false,
@@ -233,7 +257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.IArea.html",
-          "hash": "4SEiRdL8MwrL1VscbWRxAg=="
+          "hash": "2sUHql36SBORDT8AZ/ubkg=="
         }
       },
       "is_incremental": false,
@@ -241,11 +265,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Core.Subscription.IEvent.yml",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.SpatialEvent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CueX.Core.Subscription.IEvent.html",
-          "hash": "ssGow4Em71ndMkCqGDaz9Q=="
+          "relative_path": "api/CueX.Core.Subscription.SpatialEvent.html",
+          "hash": "gEzRSavlZPl+QjEDxdHoEw=="
         }
       },
       "is_incremental": false,
@@ -257,7 +281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.SubscriptionDetails.html",
-          "hash": "K4wHj2WDTw5X4L2+Ft5shg=="
+          "hash": "H6u8/zuqOA2TbKd/+lu9kg=="
         }
       },
       "is_incremental": false,
@@ -269,7 +293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.SubscriptionFilter.html",
-          "hash": "dgMJCX8hmwVBa92lqYJT8Q=="
+          "hash": "0284fWtXkUxJCkX/O2DmRg=="
         }
       },
       "is_incremental": false,
@@ -281,7 +305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.html",
-          "hash": "mX/KeEKx2cmxrnDqOiei0A=="
+          "hash": "zXfG1sgX+zdKJRFa6L1N8w=="
         }
       },
       "is_incremental": false,
@@ -293,7 +317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.html",
-          "hash": "f1FoUpB3YACC0r2UJSwz7g=="
+          "hash": "e9Nfxe2maUSzo8xn4ppRCg=="
         }
       },
       "is_incremental": false,
@@ -305,7 +329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.GridConfiguration.html",
-          "hash": "V1nUd0rggDL8zPtSelwEYg=="
+          "hash": "aNjHVPC/P1sAjoadtvAZug=="
         }
       },
       "is_incremental": false,
@@ -317,7 +341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.GridConfigurationGrain.html",
-          "hash": "43TLjKShikEkIQZg68eySQ=="
+          "hash": "xrxrib1ilh+yg2uvVnhiQQ=="
         }
       },
       "is_incremental": false,
@@ -329,7 +353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.GridConfigurationHelper.html",
-          "hash": "uCAaMAIlcyxbEXsMxqtCHg=="
+          "hash": "v9DasB6zEdoRUb3M5Oz9gA=="
         }
       },
       "is_incremental": false,
@@ -341,7 +365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.GridConfigurationService.html",
-          "hash": "rQ8klQaA78oM4PUo7KYNvA=="
+          "hash": "iTz9xf7yV3nBANpeuNT9xg=="
         }
       },
       "is_incremental": false,
@@ -353,7 +377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.IGridConfigurationGrain.html",
-          "hash": "HbdBcUY5BNC7gBMrYQrqlA=="
+          "hash": "II0FJLlIicSrcOEfaP1Rrw=="
         }
       },
       "is_incremental": false,
@@ -365,7 +389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.IGridConfigurationService.html",
-          "hash": "D9Xx2/H1DB2Fx98H7HPd0A=="
+          "hash": "FmO4dEt88GJ2bcgs4cQzcw=="
         }
       },
       "is_incremental": false,
@@ -377,7 +401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.Config.html",
-          "hash": "eNZQczq19GECcmmwOr12JA=="
+          "hash": "u6C3zux+cVA6rSLuKylYqA=="
         }
       },
       "is_incremental": false,
@@ -389,7 +413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.GridPartitionGrain.html",
-          "hash": "hkH53rhjYUnBS4MmUDV6uw=="
+          "hash": "DfgO96ZSfH8MrWRajEKafg=="
         }
       },
       "is_incremental": false,
@@ -401,7 +425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.GridPartitionGrainState.html",
-          "hash": "mmVlzOmv3ZYtjkv7/hLaoA=="
+          "hash": "TWQCznttzqOGb+voC0N8Uw=="
         }
       },
       "is_incremental": false,
@@ -413,7 +437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.GridSpatialPubSubBuilder.html",
-          "hash": "5d+Rsfzpcfna3nx/opgdpw=="
+          "hash": "RmLTCSCb1RzQmUMoDFe6Jg=="
         }
       },
       "is_incremental": false,
@@ -425,7 +449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.IGridPartitionGrain.html",
-          "hash": "yDsZegxAYx6CvtdocVEiNQ=="
+          "hash": "SCGg3fAQIcvCxQ9QCWNBtg=="
         }
       },
       "is_incremental": false,
@@ -437,7 +461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.html",
-          "hash": "1noELrXUzEVYARCx+tE7rQ=="
+          "hash": "sqr7hO9IOPP+joMCeUQyzQ=="
         }
       },
       "is_incremental": false,
@@ -449,7 +473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Numerics.Helper.html",
-          "hash": "qwoV8vzACcfo4KXPKzaUVQ=="
+          "hash": "8nxPhYh1OBM7LfqA9nj1Sg=="
         }
       },
       "is_incremental": false,
@@ -461,7 +485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Numerics.Vector3d.html",
-          "hash": "znpohIURgDhhdgrzPCkuNw=="
+          "hash": "SU7j2g2JRxWUdV3DPYAygA=="
         }
       },
       "is_incremental": false,
@@ -473,7 +497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Numerics.html",
-          "hash": "EDszHER3ln+cHgctqVnWlA=="
+          "hash": "TloBs2l15QbuxAlcy+Dv1w=="
         }
       },
       "is_incremental": false,
@@ -485,7 +509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.BasicSpatialGrainTest.html",
-          "hash": "1SsYacD8VoHTBHGf5hTrww=="
+          "hash": "qpzpaFJYU/Yu4dRYQ4R1mg=="
         }
       },
       "is_incremental": false,
@@ -497,7 +521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Events.TestEvent.html",
-          "hash": "zTMNi1Jogdj4rYQtq5vZiQ=="
+          "hash": "mpzDjVsTuf2K8WQuVPZ09w=="
         }
       },
       "is_incremental": false,
@@ -509,7 +533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Events.html",
-          "hash": "0pp5IMofTSkVVj93hDXSUQ=="
+          "hash": "8kWcx0cBWgb43fq+kH7aWA=="
         }
       },
       "is_incremental": false,
@@ -521,7 +545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.ITestSpatialGrain.html",
-          "hash": "Ws/8UEF0hsMbz4jN3P3Xvg=="
+          "hash": "GyoldVwTFi7hrUnQSmhpzw=="
         }
       },
       "is_incremental": false,
@@ -533,7 +557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.TestSpatialGrain.html",
-          "hash": "TIItCnrR9yrSTGaVZLEwhg=="
+          "hash": "aZ/6H1D7bLnU980aadVraA=="
         }
       },
       "is_incremental": false,
@@ -545,7 +569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.TestSpatialGrainState.html",
-          "hash": "360IoTdApaC7QQtEsYFyuw=="
+          "hash": "iJ4WAHLpwaaLuKjaneolDQ=="
         }
       },
       "is_incremental": false,
@@ -557,7 +581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.html",
-          "hash": "0g+4wJ/e8wCMufdpbPQxlw=="
+          "hash": "XeXQV16uvDMxSqzHdPHB1w=="
         }
       },
       "is_incremental": false,
@@ -569,7 +593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.GridSPSTest.html",
-          "hash": "tWCpjXDpRCw3e4tPEq5SBQ=="
+          "hash": "TbXUH+kd3jT+OSn+1OZyIw=="
         }
       },
       "is_incremental": false,
@@ -581,7 +605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Helper.ClusterCollection.html",
-          "hash": "WOOy9mCVy3qABgv0H+bHGg=="
+          "hash": "/9CoYiINBAA22omr48cvbQ=="
         }
       },
       "is_incremental": false,
@@ -593,7 +617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Helper.ClusterFixture.html",
-          "hash": "KV+eMTP2HYZ8/YK+ojH0Ug=="
+          "hash": "ypWwA7BEaWd/JQ2Eka0Q2A=="
         }
       },
       "is_incremental": false,
@@ -605,7 +629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Helper.PriorityOrderer.html",
-          "hash": "47jn/4MEsCTBh8R9NVNLGw=="
+          "hash": "IL81zMnZekxlMIaLqpqUtA=="
         }
       },
       "is_incremental": false,
@@ -617,7 +641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Helper.TestPriorityAttribute.html",
-          "hash": "jErWXTVbUehh2pmrqmNHoA=="
+          "hash": "/xaPeg/DNZxSmKauE3MGVQ=="
         }
       },
       "is_incremental": false,
@@ -629,7 +653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Helper.html",
-          "hash": "FzDRKXAMS2ndfkPVkmcHtw=="
+          "hash": "eT0QfDKAiGshkRwfusit4g=="
         }
       },
       "is_incremental": false,
@@ -641,7 +665,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.html",
-          "hash": "FritbZfFve8xzTKWaq/6cw=="
+          "hash": "FyC2OIadZ7lsK7Z+wfL7jg=="
         }
       },
       "is_incremental": false,
@@ -653,7 +677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/LocalhostSilo.Program.html",
-          "hash": "htNfwqNtR927fgS1B8+eBA=="
+          "hash": "iybpTth/JcECHXb9NZKOoA=="
         }
       },
       "is_incremental": false,
@@ -665,7 +689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/LocalhostSilo.html",
-          "hash": "0+XhlXUxZsFGrNYEmr/UNA=="
+          "hash": "x/ZiL3Scgj03R8TCuAJYsQ=="
         }
       },
       "is_incremental": false,
@@ -677,7 +701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.ISimpleGrain.html",
-          "hash": "l6wgyCFetoijvHqauizYDg=="
+          "hash": "fw56+P0GgKtuqcktmxSYEA=="
         }
       },
       "is_incremental": false,
@@ -689,7 +713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleEvent.html",
-          "hash": "wFQga3oqtMFE0QvQuT6F4A=="
+          "hash": "/NPseJ+OSvfQgT22tVuZCQ=="
         }
       },
       "is_incremental": false,
@@ -701,7 +725,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrain.html",
-          "hash": "F2FY/AjYwKV6GzaoS7EpDQ=="
+          "hash": "OrLETmQ7tQrJzKGCqK8dZw=="
         }
       },
       "is_incremental": false,
@@ -713,7 +737,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrainState.html",
-          "hash": "tL0ODBoIWDBoGv2REjqr/g=="
+          "hash": "7dysHFijQERf1sk1Vh5ZLQ=="
         }
       },
       "is_incremental": false,
@@ -725,7 +749,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.html",
-          "hash": "TsTD41jMLyLlEteIL5eDjg=="
+          "hash": "YqZObHDGaoZEqH9fywcHqQ=="
         }
       },
       "is_incremental": false,
@@ -737,7 +761,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "rXiY86cUwPsnQ8H43JB4oQ=="
+          "hash": "EVtEVkchqkFAp/qIFIJw7Q=="
         }
       },
       "is_incremental": false,
@@ -764,9 +788,12 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ResourceDocumentProcessor": {
@@ -774,12 +801,9 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

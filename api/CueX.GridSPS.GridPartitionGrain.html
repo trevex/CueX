@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GridPartitionGrain
    | CueX Documentation ">
-    <meta name="generator" content="docfx 2.34.0.0">
+    <meta name="generator" content="docfx 2.35.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -22,7 +22,7 @@
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -62,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -113,6 +115,9 @@
     </div>
     <div>
       <a class="xref" href="CueX.Core.PartitionGrain-2.html#CueX_Core_PartitionGrain_2_HandleSubscription__1___0_CueX_Core_Subscription_SubscriptionDetails_">PartitionGrain&lt;IGridPartitionGrain, GridPartitionGrainState&gt;.HandleSubscription&lt;T&gt;(T, SubscriptionDetails)</a>
+    </div>
+    <div>
+      <a class="xref" href="CueX.Core.PartitionGrain-2.html#CueX_Core_PartitionGrain_2_HandleEvent_System_String_CueX_Core_Subscription_SpatialEvent_">PartitionGrain&lt;IGridPartitionGrain, GridPartitionGrainState&gt;.HandleEvent(String, SpatialEvent)</a>
     </div>
     <div>
       <span class="xref">Orleans.Grain&lt;CueX.GridSPS.GridPartitionGrainState&gt;.ClearStateAsync()</span>
@@ -245,7 +250,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain_GetInterestCount.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain.GetInterestCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L70">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L87">View Source</a>
   </span>
   <a id="CueX_GridSPS_GridPartitionGrain_GetInterestCount_" data-uid="CueX.GridSPS.GridPartitionGrain.GetInterestCount*"></a>
   <h4 id="CueX_GridSPS_GridPartitionGrain_GetInterestCount" data-uid="CueX.GridSPS.GridPartitionGrain.GetInterestCount">GetInterestCount()</h4>
@@ -270,6 +275,60 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain_HandleEvent_System_String_CueX_Core_Subscription_SpatialEvent_.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain.HandleEvent(System.String%2CCueX.Core.Subscription.SpatialEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.GridSPS/GridPartitionGrain.cs/#L70">View Source</a>
+  </span>
+  <a id="CueX_GridSPS_GridPartitionGrain_HandleEvent_" data-uid="CueX.GridSPS.GridPartitionGrain.HandleEvent*"></a>
+  <h4 id="CueX_GridSPS_GridPartitionGrain_HandleEvent_System_String_CueX_Core_Subscription_SpatialEvent_" data-uid="CueX.GridSPS.GridPartitionGrain.HandleEvent(System.String,CueX.Core.Subscription.SpatialEvent)">HandleEvent(String, SpatialEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task HandleEvent(string eventName, SpatialEvent eventValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CueX.Core.Subscription.SpatialEvent.html">SpatialEvent</a></td>
+        <td><span class="parametername">eventValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">CueX.Core.PartitionGrain&lt;CueX.GridSPS.IGridPartitionGrain, CueX.GridSPS.GridPartitionGrainState&gt;.HandleEvent(System.String, CueX.Core.Subscription.SpatialEvent)</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_GridSPS_GridPartitionGrain_HandleSubscription__1___0_CueX_Core_Subscription_SubscriptionDetails_.md&amp;value=---%0Auid%3A%20CueX.GridSPS.GridPartitionGrain.HandleSubscription%60%601(%60%600%2CCueX.Core.Subscription.SubscriptionDetails)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
