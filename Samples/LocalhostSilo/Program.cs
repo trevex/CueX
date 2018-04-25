@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using CueX.Core;
 using CueX.GridSPS.Config;
 using Microsoft.Extensions.Logging;
 using Orleans;
@@ -44,6 +45,7 @@ namespace LocalhostSilo
                     logging.AddConsole();
                     // logging.SetMinimumLevel(LogLevel.Debug);
                 })
+                .AddSimpleMessageStreamProvider(Constants.StreamProviderName)
                 .ConfigureServices(GridConfigurationHelper.AddServices)
                 .AddMemoryGrainStorageAsDefault();
             var host = builder.Build();

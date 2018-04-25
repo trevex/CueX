@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Net;
 using System.Threading.Tasks;
+using CueX.Core;
 using CueX.GridSPS;
 using CueX.GridSPS.Config;
 using CueX.Numerics;
 using Microsoft.Extensions.Logging;
 using Orleans;
 using Orleans.ApplicationParts;
+using Orleans.Hosting;
 using Orleans.Runtime;
 using SimpleExample.Grains;
 
@@ -40,6 +41,7 @@ namespace SimpleExample.Client
                         .ConfigureApplicationParts(AddClientApplicationParts)
                         .ConfigureLogging(logging => logging.AddConsole())
                         .ConfigureServices(GridConfigurationHelper.AddServices)
+                        .AddSimpleMessageStreamProvider(Constants.StreamProviderName)
                         .Build();
 
                     await client.Connect();

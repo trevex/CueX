@@ -2,10 +2,10 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System;
+using CueX.Core;
 using CueX.GridSPS.Config;
 using CueX.Test.Grains;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Orleans;
 using Orleans.TestingHost;
 using Orleans.Hosting;
@@ -43,6 +43,7 @@ namespace CueX.Test.Helper
                     GridConfigurationHelper.AddClientApplicationParts(parts);
                     parts.AddApplicationPart(typeof(ITestSpatialGrain).Assembly);
                 });
+                clientBuilder.AddSimpleMessageStreamProvider(Constants.StreamProviderName);
             }
 
             public void Configure(ISiloHostBuilder hostBuilder)
@@ -54,6 +55,7 @@ namespace CueX.Test.Helper
                 });
                 hostBuilder.AddMemoryGrainStorageAsDefault();
                 hostBuilder.ConfigureServices(GridConfigurationHelper.AddServices);
+                hostBuilder.AddSimpleMessageStreamProvider(Constants.StreamProviderName);
             }
         }
     }
