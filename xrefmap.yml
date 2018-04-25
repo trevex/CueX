@@ -13,6 +13,18 @@ references:
   commentId: T:CueX.Core.Configuration
   fullName: CueX.Core.Configuration
   nameWithType: Configuration
+- uid: CueX.Core.Constants
+  name: Constants
+  href: api/CueX.Core.Constants.html
+  commentId: T:CueX.Core.Constants
+  fullName: CueX.Core.Constants
+  nameWithType: Constants
+- uid: CueX.Core.Constants.StreamProviderName
+  name: StreamProviderName
+  href: api/CueX.Core.Constants.html#CueX_Core_Constants_StreamProviderName
+  commentId: F:CueX.Core.Constants.StreamProviderName
+  fullName: CueX.Core.Constants.StreamProviderName
+  nameWithType: Constants.StreamProviderName
 - uid: CueX.Core.Exception
   name: CueX.Core.Exception
   href: api/CueX.Core.Exception.html

@@ -97,6 +97,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Constants.html",
+          "hash": "Wg5tBBFYoKqlymheaTj4aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/CueX.Core.Exception.AlreadySubscribedException.yml",
       "output": {
         ".html": {
@@ -317,7 +329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.html",
-          "hash": "e9Nfxe2maUSzo8xn4ppRCg=="
+          "hash": "k81t2B/XRQVbTAUEQxcJVA=="
         }
       },
       "is_incremental": false,
@@ -413,7 +425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.GridPartitionGrain.html",
-          "hash": "DfgO96ZSfH8MrWRajEKafg=="
+          "hash": "xYRoOovCxePmtr5f4miaWg=="
         }
       },
       "is_incremental": false,
@@ -593,7 +605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.GridSPSTest.html",
-          "hash": "TbXUH+kd3jT+OSn+1OZyIw=="
+          "hash": "Ckd8FeVAdJ/l6zFUQYuCJA=="
         }
       },
       "is_incremental": false,
@@ -677,7 +689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/LocalhostSilo.Program.html",
-          "hash": "iybpTth/JcECHXb9NZKOoA=="
+          "hash": "qVPHvyKtAG24SEiAuvmjJw=="
         }
       },
       "is_incremental": false,
@@ -761,7 +773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "EVtEVkchqkFAp/qIFIJw7Q=="
+          "hash": "Ti6N0uvU2zsejfyLvCQ2VA=="
         }
       },
       "is_incremental": false,
@@ -788,11 +800,12 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
@@ -801,9 +814,8 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
