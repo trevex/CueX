@@ -5,7 +5,7 @@ namespace CueX.Core.Subscription
 {
     public static class EventHelper
     {
-        public static string GetEventName<T>() where T : IEvent
+        public static string GetEventName<T>() where T : SpatialEvent
         {
             return typeof(T).ToString();
         }

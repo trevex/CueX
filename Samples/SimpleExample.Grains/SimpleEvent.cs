@@ -2,7 +2,7 @@
 
 namespace SimpleExample.Grains
 {
-    public class SimpleEvent : IEvent
+    public class SimpleEvent : SpatialEvent
     {
         public string Value;
     }

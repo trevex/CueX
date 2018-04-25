@@ -67,6 +67,23 @@ namespace CueX.GridSPS
             return true;
         }
 
+        public override Task HandleEvent(string eventName, SpatialEvent eventValue)
+        {
+            var result = State.InterestFilterMap.TryGetValue(eventName, out var eventInterestFilters);
+            if (result) {
+                foreach (var keyValuePair in eventInterestFilters)
+                {
+                    
+                    if (keyValuePair.Value.IsApplicable(eventValue))
+                    {
+                        keyValuePair.Key.ReceiveEvent(eventName, eventValue);
+                    }
+                }
+            }
+            // TODO: forward
+            return Task.CompletedTask;
+        }
+
         public Task<int> GetInterestCount()
         {
             var count = 0;

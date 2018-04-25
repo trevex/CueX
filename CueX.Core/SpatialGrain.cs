@@ -6,6 +6,7 @@ using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using CueX.Core.Exception;
 using CueX.Core.Subscription;
 using CueX.Numerics;
 using Orleans;
@@ -21,7 +22,7 @@ namespace CueX.Core
     public abstract class SpatialGrain<TGrainInterface, TState> : Grain<TState>, ISpatialGrain
         where TState : SpatialGrainState, new() where TGrainInterface : ISpatialGrain
     {
-        private readonly Dictionary<string, Func<IEvent, Task>> _callbacks = new Dictionary<string, Func<IEvent, Task>>();
+        private readonly Dictionary<string, Func<SpatialEvent, Task>> _callbacks = new Dictionary<string, Func<SpatialEvent, Task>>();
 
         public override Task OnActivateAsync()
         {
@@ -40,9 +41,9 @@ namespace CueX.Core
                 { 
                     var methodInfo = pair.Value;
                     var targetType = pair.Key;
-                    var interfaceParam = Expression.Parameter(typeof(IEvent));
+                    var interfaceParam = Expression.Parameter(typeof(SpatialEvent));
                     var eventParam = Expression.Convert(interfaceParam, targetType);
-                    var lambdaExpression = Expression.Lambda<Func<IEvent, Task>>(
+                    var lambdaExpression = Expression.Lambda<Func<SpatialEvent, Task>>(
                         Expression.Call(Expression.Constant(this), methodInfo, eventParam), interfaceParam);
                     _callbacks[targetType.ToString()] = lambdaExpression.Compile(); // TODO: pair.Key.ToString() is redundant, either clean up EventHelper or this bit
                 }
@@ -71,22 +72,27 @@ namespace CueX.Core
             return State.Parent.Remove(this.AsReference<TGrainInterface>());
         }
 
-        public async Task<bool> Subscribe<T>(SubscriptionDetails details, Func<T, Task> callback) where T : IEvent
+        public async Task<bool> Subscribe<T>(SubscriptionDetails details, Func<T, Task> callback) where T : SpatialEvent
         {
             var result = await State.Parent.HandleSubscription(this.AsReference<TGrainInterface>(), details);
             if (!result) return false;
             var method = callback.Method;
             if (method.DeclaringType == null || !CodeGenerator.IsValidLanguageIndependentIdentifier(method.Name))
-            {   // TODO: throw custom exception!
-                throw new System.Exception("Needs to be method!");
+            {   
+                throw new SubscriptionCallbackNotMethodException();
             }
-            _callbacks[EventHelper.GetEventName<T>()] = e => callback((T) e); // TODO: improve this hack, once basic SPS is working
+            var self = GetType();
+            if (self.GetMethod(method.Name) == null)
+            {
+                throw new SubscriptionCallbackNotMemberException();
+            }
+            _callbacks[EventHelper.GetEventName<T>()] = e => callback((T) e); // TODO: since event name and event type is a strict relation, see if all checks are disabled
             State.CallbackMethodInfos[typeof(T)] = callback.Method; // save reflection info to reconstruct callbacks during activation
             await WriteStateAsync();
             return true;
         }
 
-        public Task ReceiveEvent(string eventTypeName, IEvent eventValue)
+        public Task ReceiveEvent(string eventTypeName, SpatialEvent eventValue)
         {
             _callbacks[eventTypeName](eventValue);
             return Task.CompletedTask;

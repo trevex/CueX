@@ -14,5 +14,6 @@ namespace CueX.Core
         Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain;
         Task<IEnumerable<ISpatialGrain>> GetChildren();
         Task<bool> HandleSubscription<T>(T subscribingGrain, SubscriptionDetails details) where T : ISpatialGrain;
+        Task HandleEvent(string eventName, SpatialEvent eventValue);
     }
 }
