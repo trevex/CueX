@@ -7,6 +7,11 @@ namespace CueX.Core.Subscription
     {
         public static string GetEventName<T>() where T : SpatialEvent
         {
+            return GetTypeName<T>();
+        }
+
+        public static string GetTypeName<T>()
+        {
             return typeof(T).ToString();
         }
     }

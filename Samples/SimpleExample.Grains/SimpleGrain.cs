@@ -23,7 +23,7 @@ namespace SimpleExample.Grains
         {
             await Subscribe<SimpleEvent>(new SubscriptionDetails
             {
-                EventTypeName = EventHelper.GetEventName<SimpleEvent>()
+                EventTypeFilter = EventFilter.ForType<SimpleEvent>()
             }, OnSimpleEvent);
         }
 

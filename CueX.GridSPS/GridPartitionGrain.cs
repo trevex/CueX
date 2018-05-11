@@ -37,11 +37,12 @@ namespace CueX.GridSPS
         
         public override async Task<bool> HandleSubscription<T>(T subscribingGrain, SubscriptionDetails details)
         {
-            var result = State.InterestFilterMap.TryGetValue(details.EventTypeName, out var eventInterestFilters);
+            var eventName = details.EventTypeFilter.GetTypename();
+            var result = State.InterestFilterMap.TryGetValue(eventName, out var eventInterestFilters);
             if (!result)
             {
                 eventInterestFilters = new Dictionary<ISpatialGrain, SubscriptionFilter>();
-                State.InterestFilterMap[details.EventTypeName] = eventInterestFilters;
+                State.InterestFilterMap[eventName] = eventInterestFilters;
             }
             else if (eventInterestFilters.ContainsKey(subscribingGrain))
             {
@@ -58,7 +59,7 @@ namespace CueX.GridSPS
                 grainInterests = new List<string>();
                 State.GrainInterestMap[subscribingGrain] = grainInterests;
             } 
-            grainInterests.Add(details.EventTypeName);
+            grainInterests.Add(eventName);
             
             await WriteStateAsync();
             

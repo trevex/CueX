@@ -20,7 +20,7 @@ namespace CueX.Test.Grains
         {
             await Subscribe<TestEvent>(new SubscriptionDetails
             {
-                EventTypeName = EventHelper.GetEventName<TestEvent>()
+                EventTypeFilter = EventFilter.ForType<TestEvent>()
             }, OnTestEvent);
         }
 
