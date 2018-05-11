@@ -798,6 +798,12 @@ references:
   commentId: F:CueX.Core.Subscription.SubscriptionDetails.EventTypeFilter
   fullName: CueX.Core.Subscription.SubscriptionDetails.EventTypeFilter
   nameWithType: SubscriptionDetails.EventTypeFilter
+- uid: CueX.Core.Subscription.SubscriptionDetails.OriginTypeFilter
+  name: OriginTypeFilter
+  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_OriginTypeFilter
+  commentId: F:CueX.Core.Subscription.SubscriptionDetails.OriginTypeFilter
+  fullName: CueX.Core.Subscription.SubscriptionDetails.OriginTypeFilter
+  nameWithType: SubscriptionDetails.OriginTypeFilter
 - uid: CueX.Core.Subscription.SubscriptionFilter
   name: SubscriptionFilter
   href: api/CueX.Core.Subscription.SubscriptionFilter.html
@@ -823,6 +829,12 @@ references:
   isSpec: "True"
   fullName: CueX.Core.Subscription.SubscriptionFilter.IsApplicable
   nameWithType: SubscriptionFilter.IsApplicable
+- uid: CueX.Core.Subscription.SubscriptionFilter.OriginTypeFilter
+  name: OriginTypeFilter
+  href: api/CueX.Core.Subscription.SubscriptionFilter.html#CueX_Core_Subscription_SubscriptionFilter_OriginTypeFilter
+  commentId: F:CueX.Core.Subscription.SubscriptionFilter.OriginTypeFilter
+  fullName: CueX.Core.Subscription.SubscriptionFilter.OriginTypeFilter
+  nameWithType: SubscriptionFilter.OriginTypeFilter
 - uid: CueX.GridSPS
   name: CueX.GridSPS
   href: api/CueX.GridSPS.html
