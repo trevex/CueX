@@ -6,6 +6,7 @@ namespace CueX.Core.Subscription
     public class SubscriptionDetails
     {
         public EventFilter EventTypeFilter;
+        public EventFilter OriginTypeFilter;
         public IArea Area;
     }
 }

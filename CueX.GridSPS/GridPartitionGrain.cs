@@ -51,7 +51,8 @@ namespace CueX.GridSPS
             
             eventInterestFilters[subscribingGrain] = new SubscriptionFilter
             {
-                Area = details.Area
+                Area = details.Area,
+                OriginTypeFilter = details.OriginTypeFilter
             };
             result = State.GrainInterestMap.TryGetValue(subscribingGrain, out var grainInterests);
             if (!result)

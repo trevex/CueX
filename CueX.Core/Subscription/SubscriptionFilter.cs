@@ -6,7 +6,7 @@ namespace CueX.Core.Subscription
     public class SubscriptionFilter
     {
         public IArea Area;
-        // TODO: add origin type
+        public EventFilter OriginTypeFilter;
         
         public bool IsApplicable(SpatialEvent e)
         {

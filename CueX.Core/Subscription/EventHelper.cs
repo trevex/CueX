@@ -5,6 +5,7 @@ namespace CueX.Core.Subscription
 {
     public static class EventHelper
     {
+        // TODO: in the long run it would probably be nice to use type UUIDs instead (requires research whether safe)
         public static string GetEventName<T>() where T : SpatialEvent
         {
             return GetTypeName<T>();
