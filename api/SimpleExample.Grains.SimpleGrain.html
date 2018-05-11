@@ -96,6 +96,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><span class="xref">Orleans.ILifecycleParticipant</span>&lt;<span class="xref">Orleans.Runtime.IGrainLifecycle</span>&gt;</div>
+    <div><a class="xref" href="CueX.Core.Subscription.ISubscriptionSubject.html">ISubscriptionSubject</a></div>
     <div><a class="xref" href="SimpleExample.Grains.ISimpleGrain.html">ISimpleGrain</a></div>
     <div><a class="xref" href="CueX.Core.ISpatialGrain.html">ISpatialGrain</a></div>
     <div><span class="xref">Orleans.IGrainWithIntegerKey</span></div>
@@ -123,7 +124,10 @@
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RemoveSelfFromParent">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.RemoveSelfFromParent()</a>
     </div>
     <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Subscribe__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.Subscribe&lt;T&gt;(SubscriptionDetails, Func&lt;T, Task&gt;)</a>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeWithDetails__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.SubscribeWithDetails&lt;T&gt;(SubscriptionDetails, Func&lt;T, Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo__1">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.SubscribeTo&lt;T&gt;()</a>
     </div>
     <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveEvent_System_String_CueX_Core_Subscription_SpatialEvent_">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.ReceiveEvent(String, SpatialEvent)</a>
@@ -217,7 +221,7 @@
   <h6><strong>Assembly</strong>: SimpleExample.Grains.dll</h6>
   <h5 id="SimpleExample_Grains_SimpleGrain_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SimpleGrain : SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;, ILifecycleParticipant&lt;IGrainLifecycle&gt;, ISimpleGrain, ISpatialGrain, IGrainWithIntegerKey, IGrain, IAddressable</code></pre>
+    <pre><code class="lang-csharp hljs">public class SimpleGrain : SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;, ILifecycleParticipant&lt;IGrainLifecycle&gt;, ISubscriptionSubject, ISimpleGrain, ISpatialGrain, IGrainWithIntegerKey, IGrain, IAddressable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -260,7 +264,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=SimpleExample_Grains_SimpleGrain_OnSimpleEvent_SimpleExample_Grains_SimpleEvent_.md&amp;value=---%0Auid%3A%20SimpleExample.Grains.SimpleGrain.OnSimpleEvent(SimpleExample.Grains.SimpleEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/Samples/SimpleExample.Grains/SimpleGrain.cs/#L30">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/Samples/SimpleExample.Grains/SimpleGrain.cs/#L28">View Source</a>
   </span>
   <a id="SimpleExample_Grains_SimpleGrain_OnSimpleEvent_" data-uid="SimpleExample.Grains.SimpleGrain.OnSimpleEvent*"></a>
   <h4 id="SimpleExample_Grains_SimpleGrain_OnSimpleEvent_SimpleExample_Grains_SimpleEvent_" data-uid="SimpleExample.Grains.SimpleGrain.OnSimpleEvent(SimpleExample.Grains.SimpleEvent)">OnSimpleEvent(SimpleEvent)</h4>
@@ -335,6 +339,9 @@
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">Orleans.ILifecycleParticipant&lt;TLifecycleObservable&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="CueX.Core.Subscription.ISubscriptionSubject.html">ISubscriptionSubject</a>
   </div>
   <div>
       <a class="xref" href="SimpleExample.Grains.ISimpleGrain.html">ISimpleGrain</a>

@@ -96,6 +96,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><span class="xref">Orleans.ILifecycleParticipant</span>&lt;<span class="xref">Orleans.Runtime.IGrainLifecycle</span>&gt;</div>
+    <div><a class="xref" href="CueX.Core.Subscription.ISubscriptionSubject.html">ISubscriptionSubject</a></div>
     <div><a class="xref" href="CueX.Test.Grains.ITestSpatialGrain.html">ITestSpatialGrain</a></div>
     <div><a class="xref" href="CueX.Core.ISpatialGrain.html">ISpatialGrain</a></div>
     <div><span class="xref">Orleans.IGrainWithIntegerKey</span></div>
@@ -123,7 +124,10 @@
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RemoveSelfFromParent">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.RemoveSelfFromParent()</a>
     </div>
     <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Subscribe__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.Subscribe&lt;T&gt;(SubscriptionDetails, Func&lt;T, Task&gt;)</a>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeWithDetails__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.SubscribeWithDetails&lt;T&gt;(SubscriptionDetails, Func&lt;T, Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo__1">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.SubscribeTo&lt;T&gt;()</a>
     </div>
     <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveEvent_System_String_CueX_Core_Subscription_SpatialEvent_">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.ReceiveEvent(String, SpatialEvent)</a>
@@ -217,7 +221,7 @@
   <h6><strong>Assembly</strong>: CueX.Test.dll</h6>
   <h5 id="CueX_Test_Grains_TestSpatialGrain_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TestSpatialGrain : SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;, ILifecycleParticipant&lt;IGrainLifecycle&gt;, ITestSpatialGrain, ISpatialGrain, IGrainWithIntegerKey, IGrain, IAddressable</code></pre>
+    <pre><code class="lang-csharp hljs">public class TestSpatialGrain : SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;, ILifecycleParticipant&lt;IGrainLifecycle&gt;, ISubscriptionSubject, ITestSpatialGrain, ISpatialGrain, IGrainWithIntegerKey, IGrain, IAddressable</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -226,7 +230,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain_ForcefullyRecompileCallback.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L38">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L36">View Source</a>
   </span>
   <a id="CueX_Test_Grains_TestSpatialGrain_ForcefullyRecompileCallback_" data-uid="CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback*"></a>
   <h4 id="CueX_Test_Grains_TestSpatialGrain_ForcefullyRecompileCallback" data-uid="CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback">ForcefullyRecompileCallback()</h4>
@@ -256,7 +260,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain_GetLastTestEventValue.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L33">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L31">View Source</a>
   </span>
   <a id="CueX_Test_Grains_TestSpatialGrain_GetLastTestEventValue_" data-uid="CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue*"></a>
   <h4 id="CueX_Test_Grains_TestSpatialGrain_GetLastTestEventValue" data-uid="CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue">GetLastTestEventValue()</h4>
@@ -316,7 +320,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain_OnTestEvent_CueX_Test_Events_TestEvent_.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain.OnTestEvent(CueX.Test.Events.TestEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L27">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L25">View Source</a>
   </span>
   <a id="CueX_Test_Grains_TestSpatialGrain_OnTestEvent_" data-uid="CueX.Test.Grains.TestSpatialGrain.OnTestEvent*"></a>
   <h4 id="CueX_Test_Grains_TestSpatialGrain_OnTestEvent_CueX_Test_Events_TestEvent_" data-uid="CueX.Test.Grains.TestSpatialGrain.OnTestEvent(CueX.Test.Events.TestEvent)">OnTestEvent(TestEvent)</h4>
@@ -391,6 +395,9 @@
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">Orleans.ILifecycleParticipant&lt;TLifecycleObservable&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="CueX.Core.Subscription.ISubscriptionSubject.html">ISubscriptionSubject</a>
   </div>
   <div>
       <a class="xref" href="CueX.Test.Grains.ITestSpatialGrain.html">ITestSpatialGrain</a>

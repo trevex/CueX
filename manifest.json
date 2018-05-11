@@ -221,7 +221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrain-2.html",
-          "hash": "bpOB4nfhElZqCSH8tRRQzw=="
+          "hash": "DSjQGRIkM3Jql+/EJWpzFQ=="
         }
       },
       "is_incremental": false,
@@ -289,11 +289,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.ISubscriptionSubject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.ISubscriptionSubject.html",
+          "hash": "cl4ze/ibiTqsxNRPVDLr/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/CueX.Core.Subscription.SpatialEvent.yml",
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.SpatialEvent.html",
           "hash": "0nz+GCQfzlQDvsjU3JofTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Core.Subscription.SubscriptionBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Core.Subscription.SubscriptionBuilder-1.html",
+          "hash": "0nyMc9E542q9ca+XDvdkJg=="
         }
       },
       "is_incremental": false,
@@ -329,7 +353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.html",
-          "hash": "Yflq0Z8CwjKKv+B2sCtIJw=="
+          "hash": "KYBWHfmAzvnIaRQIcN/mgg=="
         }
       },
       "is_incremental": false,
@@ -581,7 +605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.TestSpatialGrain.html",
-          "hash": "DTQ/AKEQT2Ry2VJOd/nnlg=="
+          "hash": "E8duE+5F+RgiGTTNVL3fGA=="
         }
       },
       "is_incremental": false,
@@ -749,7 +773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrain.html",
-          "hash": "Ctk8OI+mZRIyu/yc/xz+NQ=="
+          "hash": "ZFiNRtdjvtsTkySDnYzBlg=="
         }
       },
       "is_incremental": false,
@@ -785,7 +809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "BXlUpJ6Ogj8CqnUTyN4kng=="
+          "hash": "gHEq6It/VsW5O2ihdKzxwQ=="
         }
       },
       "is_incremental": false,

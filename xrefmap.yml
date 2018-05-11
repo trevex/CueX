@@ -587,24 +587,42 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SetPosition
   nameWithType: SpatialGrain<TGrainInterface, TState>.SetPosition
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SetPosition
-- uid: CueX.Core.SpatialGrain`2.Subscribe*
-  name: Subscribe
-  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Subscribe_
-  commentId: Overload:CueX.Core.SpatialGrain`2.Subscribe
+- uid: CueX.Core.SpatialGrain`2.SubscribeTo*
+  name: SubscribeTo
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo_
+  commentId: Overload:CueX.Core.SpatialGrain`2.SubscribeTo
   isSpec: "True"
-  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.Subscribe
-  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).Subscribe
-  nameWithType: SpatialGrain<TGrainInterface, TState>.Subscribe
-  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).Subscribe
-- uid: CueX.Core.SpatialGrain`2.Subscribe``1(CueX.Core.Subscription.SubscriptionDetails,System.Func{``0,System.Threading.Tasks.Task})
-  name: Subscribe<T>(SubscriptionDetails, Func<T, Task>)
-  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Subscribe__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__
-  commentId: M:CueX.Core.SpatialGrain`2.Subscribe``1(CueX.Core.Subscription.SubscriptionDetails,System.Func{``0,System.Threading.Tasks.Task})
-  name.vb: Subscribe(Of T)(SubscriptionDetails, Func(Of T, Task))
-  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.Subscribe<T>(CueX.Core.Subscription.SubscriptionDetails, System.Func<T, System.Threading.Tasks.Task>)
-  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).Subscribe(Of T)(CueX.Core.Subscription.SubscriptionDetails, System.Func(Of T, System.Threading.Tasks.Task))
-  nameWithType: SpatialGrain<TGrainInterface, TState>.Subscribe<T>(SubscriptionDetails, Func<T, Task>)
-  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).Subscribe(Of T)(SubscriptionDetails, Func(Of T, Task))
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SubscribeTo
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SubscribeTo
+  nameWithType: SpatialGrain<TGrainInterface, TState>.SubscribeTo
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SubscribeTo
+- uid: CueX.Core.SpatialGrain`2.SubscribeTo``1
+  name: SubscribeTo<T>()
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo__1
+  commentId: M:CueX.Core.SpatialGrain`2.SubscribeTo``1
+  name.vb: SubscribeTo(Of T)()
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SubscribeTo<T>()
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SubscribeTo(Of T)()
+  nameWithType: SpatialGrain<TGrainInterface, TState>.SubscribeTo<T>()
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SubscribeTo(Of T)()
+- uid: CueX.Core.SpatialGrain`2.SubscribeWithDetails*
+  name: SubscribeWithDetails
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeWithDetails_
+  commentId: Overload:CueX.Core.SpatialGrain`2.SubscribeWithDetails
+  isSpec: "True"
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SubscribeWithDetails
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SubscribeWithDetails
+  nameWithType: SpatialGrain<TGrainInterface, TState>.SubscribeWithDetails
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SubscribeWithDetails
+- uid: CueX.Core.SpatialGrain`2.SubscribeWithDetails``1(CueX.Core.Subscription.SubscriptionDetails,System.Func{``0,System.Threading.Tasks.Task})
+  name: SubscribeWithDetails<T>(SubscriptionDetails, Func<T, Task>)
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeWithDetails__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__
+  commentId: M:CueX.Core.SpatialGrain`2.SubscribeWithDetails``1(CueX.Core.Subscription.SubscriptionDetails,System.Func{``0,System.Threading.Tasks.Task})
+  name.vb: SubscribeWithDetails(Of T)(SubscriptionDetails, Func(Of T, Task))
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SubscribeWithDetails<T>(CueX.Core.Subscription.SubscriptionDetails, System.Func<T, System.Threading.Tasks.Task>)
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SubscribeWithDetails(Of T)(CueX.Core.Subscription.SubscriptionDetails, System.Func(Of T, System.Threading.Tasks.Task))
+  nameWithType: SpatialGrain<TGrainInterface, TState>.SubscribeWithDetails<T>(SubscriptionDetails, Func<T, Task>)
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SubscribeWithDetails(Of T)(SubscriptionDetails, Func(Of T, Task))
 - uid: CueX.Core.SpatialGrainState
   name: SpatialGrainState
   href: api/CueX.Core.SpatialGrainState.html
@@ -768,6 +786,28 @@ references:
   commentId: T:CueX.Core.Subscription.IArea
   fullName: CueX.Core.Subscription.IArea
   nameWithType: IArea
+- uid: CueX.Core.Subscription.ISubscriptionSubject
+  name: ISubscriptionSubject
+  href: api/CueX.Core.Subscription.ISubscriptionSubject.html
+  commentId: T:CueX.Core.Subscription.ISubscriptionSubject
+  fullName: CueX.Core.Subscription.ISubscriptionSubject
+  nameWithType: ISubscriptionSubject
+- uid: CueX.Core.Subscription.ISubscriptionSubject.SubscribeWithDetails*
+  name: SubscribeWithDetails
+  href: api/CueX.Core.Subscription.ISubscriptionSubject.html#CueX_Core_Subscription_ISubscriptionSubject_SubscribeWithDetails_
+  commentId: Overload:CueX.Core.Subscription.ISubscriptionSubject.SubscribeWithDetails
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.ISubscriptionSubject.SubscribeWithDetails
+  nameWithType: ISubscriptionSubject.SubscribeWithDetails
+- uid: CueX.Core.Subscription.ISubscriptionSubject.SubscribeWithDetails``1(CueX.Core.Subscription.SubscriptionDetails,System.Func{``0,System.Threading.Tasks.Task})
+  name: SubscribeWithDetails<T>(SubscriptionDetails, Func<T, Task>)
+  href: api/CueX.Core.Subscription.ISubscriptionSubject.html#CueX_Core_Subscription_ISubscriptionSubject_SubscribeWithDetails__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__
+  commentId: M:CueX.Core.Subscription.ISubscriptionSubject.SubscribeWithDetails``1(CueX.Core.Subscription.SubscriptionDetails,System.Func{``0,System.Threading.Tasks.Task})
+  name.vb: SubscribeWithDetails(Of T)(SubscriptionDetails, Func(Of T, Task))
+  fullName: CueX.Core.Subscription.ISubscriptionSubject.SubscribeWithDetails<T>(CueX.Core.Subscription.SubscriptionDetails, System.Func<T, System.Threading.Tasks.Task>)
+  fullName.vb: CueX.Core.Subscription.ISubscriptionSubject.SubscribeWithDetails(Of T)(CueX.Core.Subscription.SubscriptionDetails, System.Func(Of T, System.Threading.Tasks.Task))
+  nameWithType: ISubscriptionSubject.SubscribeWithDetails<T>(SubscriptionDetails, Func<T, Task>)
+  nameWithType.vb: ISubscriptionSubject.SubscribeWithDetails(Of T)(SubscriptionDetails, Func(Of T, Task))
 - uid: CueX.Core.Subscription.SpatialEvent
   name: SpatialEvent
   href: api/CueX.Core.Subscription.SpatialEvent.html
@@ -780,6 +820,50 @@ references:
   commentId: F:CueX.Core.Subscription.SpatialEvent.Position
   fullName: CueX.Core.Subscription.SpatialEvent.Position
   nameWithType: SpatialEvent.Position
+- uid: CueX.Core.Subscription.SubscriptionBuilder`1
+  name: SubscriptionBuilder<T>
+  href: api/CueX.Core.Subscription.SubscriptionBuilder-1.html
+  commentId: T:CueX.Core.Subscription.SubscriptionBuilder`1
+  name.vb: SubscriptionBuilder(Of T)
+  fullName: CueX.Core.Subscription.SubscriptionBuilder<T>
+  fullName.vb: CueX.Core.Subscription.SubscriptionBuilder(Of T)
+  nameWithType: SubscriptionBuilder<T>
+  nameWithType.vb: SubscriptionBuilder(Of T)
+- uid: CueX.Core.Subscription.SubscriptionBuilder`1.#ctor(CueX.Core.Subscription.ISubscriptionSubject)
+  name: SubscriptionBuilder(ISubscriptionSubject)
+  href: api/CueX.Core.Subscription.SubscriptionBuilder-1.html#CueX_Core_Subscription_SubscriptionBuilder_1__ctor_CueX_Core_Subscription_ISubscriptionSubject_
+  commentId: M:CueX.Core.Subscription.SubscriptionBuilder`1.#ctor(CueX.Core.Subscription.ISubscriptionSubject)
+  fullName: CueX.Core.Subscription.SubscriptionBuilder<T>.SubscriptionBuilder(CueX.Core.Subscription.ISubscriptionSubject)
+  fullName.vb: CueX.Core.Subscription.SubscriptionBuilder(Of T).SubscriptionBuilder(CueX.Core.Subscription.ISubscriptionSubject)
+  nameWithType: SubscriptionBuilder<T>.SubscriptionBuilder(ISubscriptionSubject)
+  nameWithType.vb: SubscriptionBuilder(Of T).SubscriptionBuilder(ISubscriptionSubject)
+- uid: CueX.Core.Subscription.SubscriptionBuilder`1.#ctor*
+  name: SubscriptionBuilder
+  href: api/CueX.Core.Subscription.SubscriptionBuilder-1.html#CueX_Core_Subscription_SubscriptionBuilder_1__ctor_
+  commentId: Overload:CueX.Core.Subscription.SubscriptionBuilder`1.#ctor
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.SubscriptionBuilder<T>.SubscriptionBuilder
+  fullName.vb: CueX.Core.Subscription.SubscriptionBuilder(Of T).SubscriptionBuilder
+  nameWithType: SubscriptionBuilder<T>.SubscriptionBuilder
+  nameWithType.vb: SubscriptionBuilder(Of T).SubscriptionBuilder
+- uid: CueX.Core.Subscription.SubscriptionBuilder`1.ForEach(System.Func{`0,System.Threading.Tasks.Task})
+  name: ForEach(Func<T, Task>)
+  href: api/CueX.Core.Subscription.SubscriptionBuilder-1.html#CueX_Core_Subscription_SubscriptionBuilder_1_ForEach_System_Func__0_System_Threading_Tasks_Task__
+  commentId: M:CueX.Core.Subscription.SubscriptionBuilder`1.ForEach(System.Func{`0,System.Threading.Tasks.Task})
+  name.vb: ForEach(Func(Of T, Task))
+  fullName: CueX.Core.Subscription.SubscriptionBuilder<T>.ForEach(System.Func<T, System.Threading.Tasks.Task>)
+  fullName.vb: CueX.Core.Subscription.SubscriptionBuilder(Of T).ForEach(System.Func(Of T, System.Threading.Tasks.Task))
+  nameWithType: SubscriptionBuilder<T>.ForEach(Func<T, Task>)
+  nameWithType.vb: SubscriptionBuilder(Of T).ForEach(Func(Of T, Task))
+- uid: CueX.Core.Subscription.SubscriptionBuilder`1.ForEach*
+  name: ForEach
+  href: api/CueX.Core.Subscription.SubscriptionBuilder-1.html#CueX_Core_Subscription_SubscriptionBuilder_1_ForEach_
+  commentId: Overload:CueX.Core.Subscription.SubscriptionBuilder`1.ForEach
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.SubscriptionBuilder<T>.ForEach
+  fullName.vb: CueX.Core.Subscription.SubscriptionBuilder(Of T).ForEach
+  nameWithType: SubscriptionBuilder<T>.ForEach
+  nameWithType.vb: SubscriptionBuilder(Of T).ForEach
 - uid: CueX.Core.Subscription.SubscriptionDetails
   name: SubscriptionDetails
   href: api/CueX.Core.Subscription.SubscriptionDetails.html
