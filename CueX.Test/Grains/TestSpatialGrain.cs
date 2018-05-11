@@ -18,10 +18,8 @@ namespace CueX.Test.Grains
 
         public async Task SubscribeToTestEvent()
         {
-            await Subscribe<TestEvent>(new SubscriptionDetails
-            {
-                EventTypeFilter = EventFilter.ForType<TestEvent>()
-            }, OnTestEvent);
+            await SubscribeTo<TestEvent>()
+                .ForEach(OnTestEvent);
         }
 
         public async Task OnTestEvent(TestEvent e)

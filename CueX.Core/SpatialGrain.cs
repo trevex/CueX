@@ -19,7 +19,7 @@ namespace CueX.Core
     /// </summary>
     /// <typeparam name="TState">Application-specific state data type, that also holds <see cref="SpatialGrainState"/>.</typeparam>
     /// <typeparam name="TGrainInterface"></typeparam>
-    public abstract class SpatialGrain<TGrainInterface, TState> : Grain<TState>, ISpatialGrain
+    public abstract class SpatialGrain<TGrainInterface, TState> : Grain<TState>, ISpatialGrain, ISubscriptionSubject
         where TState : SpatialGrainState, new() where TGrainInterface : ISpatialGrain
     {
         private readonly Dictionary<string, Func<SpatialEvent, Task>> _callbacks = new Dictionary<string, Func<SpatialEvent, Task>>();
@@ -72,7 +72,7 @@ namespace CueX.Core
             return State.Parent.Remove(this.AsReference<TGrainInterface>());
         }
 
-        public async Task<bool> Subscribe<T>(SubscriptionDetails details, Func<T, Task> callback) where T : SpatialEvent
+        public async Task<bool> SubscribeWithDetails<T>(SubscriptionDetails details, Func<T, Task> callback) where T : SpatialEvent
         {
             var result = await State.Parent.HandleSubscription(this.AsReference<TGrainInterface>(), details);
             if (!result) return false;
@@ -90,6 +90,11 @@ namespace CueX.Core
             State.CallbackMethodInfos[typeof(T)] = callback.Method; // save reflection info to reconstruct callbacks during activation
             await WriteStateAsync();
             return true;
+        }
+
+        public SubscriptionBuilder<T> SubscribeTo<T>() where T : SpatialEvent
+        {
+            return new SubscriptionBuilder<T>(this);
         }
 
         public Task ReceiveEvent(string eventTypeName, SpatialEvent eventValue)

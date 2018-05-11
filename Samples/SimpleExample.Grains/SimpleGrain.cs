@@ -21,10 +21,8 @@ namespace SimpleExample.Grains
 
         public async Task SubscribeToSimpleEvent()
         {
-            await Subscribe<SimpleEvent>(new SubscriptionDetails
-            {
-                EventTypeFilter = EventFilter.ForType<SimpleEvent>()
-            }, OnSimpleEvent);
+            await SubscribeTo<SimpleEvent>()
+                .ForEach(OnSimpleEvent);
         }
 
         public async Task OnSimpleEvent(SimpleEvent e)
