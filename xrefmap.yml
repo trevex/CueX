@@ -265,11 +265,11 @@ references:
   fullName.vb: CueX.Core.ISpatialGrain.SetParent(Of T)(T)
   nameWithType: ISpatialGrain.SetParent<T>(T)
   nameWithType.vb: ISpatialGrain.SetParent(Of T)(T)
-- uid: CueX.Core.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)
+- uid: CueX.Core.ISpatialGrain.SetPosition(CueX.Geometry.Vector3d)
   name: SetPosition(Vector3d)
-  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_SetPosition_CueX_Numerics_Vector3d_
-  commentId: M:CueX.Core.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)
-  fullName: CueX.Core.ISpatialGrain.SetPosition(CueX.Numerics.Vector3d)
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_SetPosition_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Core.ISpatialGrain.SetPosition(CueX.Geometry.Vector3d)
+  fullName: CueX.Core.ISpatialGrain.SetPosition(CueX.Geometry.Vector3d)
   nameWithType: ISpatialGrain.SetPosition(Vector3d)
 - uid: CueX.Core.ISpatialGrain.SetPosition*
   name: SetPosition
@@ -570,12 +570,12 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SetParent(Of T)(T)
   nameWithType: SpatialGrain<TGrainInterface, TState>.SetParent<T>(T)
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SetParent(Of T)(T)
-- uid: CueX.Core.SpatialGrain`2.SetPosition(CueX.Numerics.Vector3d)
+- uid: CueX.Core.SpatialGrain`2.SetPosition(CueX.Geometry.Vector3d)
   name: SetPosition(Vector3d)
-  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SetPosition_CueX_Numerics_Vector3d_
-  commentId: M:CueX.Core.SpatialGrain`2.SetPosition(CueX.Numerics.Vector3d)
-  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SetPosition(CueX.Numerics.Vector3d)
-  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SetPosition(CueX.Numerics.Vector3d)
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SetPosition_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Core.SpatialGrain`2.SetPosition(CueX.Geometry.Vector3d)
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.SetPosition(CueX.Geometry.Vector3d)
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).SetPosition(CueX.Geometry.Vector3d)
   nameWithType: SpatialGrain<TGrainInterface, TState>.SetPosition(Vector3d)
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).SetPosition(Vector3d)
 - uid: CueX.Core.SpatialGrain`2.SetPosition*
@@ -919,6 +919,172 @@ references:
   commentId: F:CueX.Core.Subscription.SubscriptionFilter.OriginTypeFilter
   fullName: CueX.Core.Subscription.SubscriptionFilter.OriginTypeFilter
   nameWithType: SubscriptionFilter.OriginTypeFilter
+- uid: CueX.Geometry
+  name: CueX.Geometry
+  href: api/CueX.Geometry.html
+  commentId: N:CueX.Geometry
+  fullName: CueX.Geometry
+  nameWithType: CueX.Geometry
+- uid: CueX.Geometry.Helper
+  name: Helper
+  href: api/CueX.Geometry.Helper.html
+  commentId: T:CueX.Geometry.Helper
+  fullName: CueX.Geometry.Helper
+  nameWithType: Helper
+- uid: CueX.Geometry.Helper.NearlyEqual(System.Double,System.Double,System.Double)
+  name: NearlyEqual(Double, Double, Double)
+  href: api/CueX.Geometry.Helper.html#CueX_Geometry_Helper_NearlyEqual_System_Double_System_Double_System_Double_
+  commentId: M:CueX.Geometry.Helper.NearlyEqual(System.Double,System.Double,System.Double)
+  fullName: CueX.Geometry.Helper.NearlyEqual(System.Double, System.Double, System.Double)
+  nameWithType: Helper.NearlyEqual(Double, Double, Double)
+- uid: CueX.Geometry.Helper.NearlyEqual*
+  name: NearlyEqual
+  href: api/CueX.Geometry.Helper.html#CueX_Geometry_Helper_NearlyEqual_
+  commentId: Overload:CueX.Geometry.Helper.NearlyEqual
+  isSpec: "True"
+  fullName: CueX.Geometry.Helper.NearlyEqual
+  nameWithType: Helper.NearlyEqual
+- uid: CueX.Geometry.Vector3d
+  name: Vector3d
+  href: api/CueX.Geometry.Vector3d.html
+  commentId: T:CueX.Geometry.Vector3d
+  fullName: CueX.Geometry.Vector3d
+  nameWithType: Vector3d
+- uid: CueX.Geometry.Vector3d.#ctor
+  name: Vector3d()
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d__ctor
+  commentId: M:CueX.Geometry.Vector3d.#ctor
+  fullName: CueX.Geometry.Vector3d.Vector3d()
+  nameWithType: Vector3d.Vector3d()
+- uid: CueX.Geometry.Vector3d.#ctor(System.Double,System.Double,System.Double)
+  name: Vector3d(Double, Double, Double)
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d__ctor_System_Double_System_Double_System_Double_
+  commentId: M:CueX.Geometry.Vector3d.#ctor(System.Double,System.Double,System.Double)
+  fullName: CueX.Geometry.Vector3d.Vector3d(System.Double, System.Double, System.Double)
+  nameWithType: Vector3d.Vector3d(Double, Double, Double)
+- uid: CueX.Geometry.Vector3d.#ctor*
+  name: Vector3d
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d__ctor_
+  commentId: Overload:CueX.Geometry.Vector3d.#ctor
+  isSpec: "True"
+  fullName: CueX.Geometry.Vector3d.Vector3d
+  nameWithType: Vector3d.Vector3d
+- uid: CueX.Geometry.Vector3d.Data
+  name: Data
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Data
+  commentId: F:CueX.Geometry.Vector3d.Data
+  fullName: CueX.Geometry.Vector3d.Data
+  nameWithType: Vector3d.Data
+- uid: CueX.Geometry.Vector3d.Equals(CueX.Geometry.Vector3d)
+  name: Equals(Vector3d)
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Equals_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Geometry.Vector3d.Equals(CueX.Geometry.Vector3d)
+  fullName: CueX.Geometry.Vector3d.Equals(CueX.Geometry.Vector3d)
+  nameWithType: Vector3d.Equals(Vector3d)
+- uid: CueX.Geometry.Vector3d.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Equals_System_Object_
+  commentId: M:CueX.Geometry.Vector3d.Equals(System.Object)
+  fullName: CueX.Geometry.Vector3d.Equals(System.Object)
+  nameWithType: Vector3d.Equals(Object)
+- uid: CueX.Geometry.Vector3d.Equals*
+  name: Equals
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Equals_
+  commentId: Overload:CueX.Geometry.Vector3d.Equals
+  isSpec: "True"
+  fullName: CueX.Geometry.Vector3d.Equals
+  nameWithType: Vector3d.Equals
+- uid: CueX.Geometry.Vector3d.GetHashCode
+  name: GetHashCode()
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_GetHashCode
+  commentId: M:CueX.Geometry.Vector3d.GetHashCode
+  fullName: CueX.Geometry.Vector3d.GetHashCode()
+  nameWithType: Vector3d.GetHashCode()
+- uid: CueX.Geometry.Vector3d.GetHashCode*
+  name: GetHashCode
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_GetHashCode_
+  commentId: Overload:CueX.Geometry.Vector3d.GetHashCode
+  isSpec: "True"
+  fullName: CueX.Geometry.Vector3d.GetHashCode
+  nameWithType: Vector3d.GetHashCode
+- uid: CueX.Geometry.Vector3d.One
+  name: One()
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_One
+  commentId: M:CueX.Geometry.Vector3d.One
+  fullName: CueX.Geometry.Vector3d.One()
+  nameWithType: Vector3d.One()
+- uid: CueX.Geometry.Vector3d.One*
+  name: One
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_One_
+  commentId: Overload:CueX.Geometry.Vector3d.One
+  isSpec: "True"
+  fullName: CueX.Geometry.Vector3d.One
+  nameWithType: Vector3d.One
+- uid: CueX.Geometry.Vector3d.ToString
+  name: ToString()
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_ToString
+  commentId: M:CueX.Geometry.Vector3d.ToString
+  fullName: CueX.Geometry.Vector3d.ToString()
+  nameWithType: Vector3d.ToString()
+- uid: CueX.Geometry.Vector3d.ToString*
+  name: ToString
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_ToString_
+  commentId: Overload:CueX.Geometry.Vector3d.ToString
+  isSpec: "True"
+  fullName: CueX.Geometry.Vector3d.ToString
+  nameWithType: Vector3d.ToString
+- uid: CueX.Geometry.Vector3d.X
+  name: X
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_X
+  commentId: P:CueX.Geometry.Vector3d.X
+  fullName: CueX.Geometry.Vector3d.X
+  nameWithType: Vector3d.X
+- uid: CueX.Geometry.Vector3d.X*
+  name: X
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_X_
+  commentId: Overload:CueX.Geometry.Vector3d.X
+  isSpec: "True"
+  fullName: CueX.Geometry.Vector3d.X
+  nameWithType: Vector3d.X
+- uid: CueX.Geometry.Vector3d.Y
+  name: Y
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Y
+  commentId: P:CueX.Geometry.Vector3d.Y
+  fullName: CueX.Geometry.Vector3d.Y
+  nameWithType: Vector3d.Y
+- uid: CueX.Geometry.Vector3d.Y*
+  name: Y
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Y_
+  commentId: Overload:CueX.Geometry.Vector3d.Y
+  isSpec: "True"
+  fullName: CueX.Geometry.Vector3d.Y
+  nameWithType: Vector3d.Y
+- uid: CueX.Geometry.Vector3d.Z
+  name: Z
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Z
+  commentId: P:CueX.Geometry.Vector3d.Z
+  fullName: CueX.Geometry.Vector3d.Z
+  nameWithType: Vector3d.Z
+- uid: CueX.Geometry.Vector3d.Z*
+  name: Z
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Z_
+  commentId: Overload:CueX.Geometry.Vector3d.Z
+  isSpec: "True"
+  fullName: CueX.Geometry.Vector3d.Z
+  nameWithType: Vector3d.Z
+- uid: CueX.Geometry.Vector3d.Zero
+  name: Zero()
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Zero
+  commentId: M:CueX.Geometry.Vector3d.Zero
+  fullName: CueX.Geometry.Vector3d.Zero()
+  nameWithType: Vector3d.Zero()
+- uid: CueX.Geometry.Vector3d.Zero*
+  name: Zero
+  href: api/CueX.Geometry.Vector3d.html#CueX_Geometry_Vector3d_Zero_
+  commentId: Overload:CueX.Geometry.Vector3d.Zero
+  isSpec: "True"
+  fullName: CueX.Geometry.Vector3d.Zero
+  nameWithType: Vector3d.Zero
 - uid: CueX.GridSPS
   name: CueX.GridSPS
   href: api/CueX.GridSPS.html
@@ -1328,172 +1494,6 @@ references:
   isSpec: "True"
   fullName: CueX.GridSPS.IGridPartitionGrain.GetInterestCount
   nameWithType: IGridPartitionGrain.GetInterestCount
-- uid: CueX.Numerics
-  name: CueX.Numerics
-  href: api/CueX.Numerics.html
-  commentId: N:CueX.Numerics
-  fullName: CueX.Numerics
-  nameWithType: CueX.Numerics
-- uid: CueX.Numerics.Helper
-  name: Helper
-  href: api/CueX.Numerics.Helper.html
-  commentId: T:CueX.Numerics.Helper
-  fullName: CueX.Numerics.Helper
-  nameWithType: Helper
-- uid: CueX.Numerics.Helper.NearlyEqual(System.Double,System.Double,System.Double)
-  name: NearlyEqual(Double, Double, Double)
-  href: api/CueX.Numerics.Helper.html#CueX_Numerics_Helper_NearlyEqual_System_Double_System_Double_System_Double_
-  commentId: M:CueX.Numerics.Helper.NearlyEqual(System.Double,System.Double,System.Double)
-  fullName: CueX.Numerics.Helper.NearlyEqual(System.Double, System.Double, System.Double)
-  nameWithType: Helper.NearlyEqual(Double, Double, Double)
-- uid: CueX.Numerics.Helper.NearlyEqual*
-  name: NearlyEqual
-  href: api/CueX.Numerics.Helper.html#CueX_Numerics_Helper_NearlyEqual_
-  commentId: Overload:CueX.Numerics.Helper.NearlyEqual
-  isSpec: "True"
-  fullName: CueX.Numerics.Helper.NearlyEqual
-  nameWithType: Helper.NearlyEqual
-- uid: CueX.Numerics.Vector3d
-  name: Vector3d
-  href: api/CueX.Numerics.Vector3d.html
-  commentId: T:CueX.Numerics.Vector3d
-  fullName: CueX.Numerics.Vector3d
-  nameWithType: Vector3d
-- uid: CueX.Numerics.Vector3d.#ctor
-  name: Vector3d()
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d__ctor
-  commentId: M:CueX.Numerics.Vector3d.#ctor
-  fullName: CueX.Numerics.Vector3d.Vector3d()
-  nameWithType: Vector3d.Vector3d()
-- uid: CueX.Numerics.Vector3d.#ctor(System.Double,System.Double,System.Double)
-  name: Vector3d(Double, Double, Double)
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d__ctor_System_Double_System_Double_System_Double_
-  commentId: M:CueX.Numerics.Vector3d.#ctor(System.Double,System.Double,System.Double)
-  fullName: CueX.Numerics.Vector3d.Vector3d(System.Double, System.Double, System.Double)
-  nameWithType: Vector3d.Vector3d(Double, Double, Double)
-- uid: CueX.Numerics.Vector3d.#ctor*
-  name: Vector3d
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d__ctor_
-  commentId: Overload:CueX.Numerics.Vector3d.#ctor
-  isSpec: "True"
-  fullName: CueX.Numerics.Vector3d.Vector3d
-  nameWithType: Vector3d.Vector3d
-- uid: CueX.Numerics.Vector3d.Data
-  name: Data
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Data
-  commentId: F:CueX.Numerics.Vector3d.Data
-  fullName: CueX.Numerics.Vector3d.Data
-  nameWithType: Vector3d.Data
-- uid: CueX.Numerics.Vector3d.Equals(CueX.Numerics.Vector3d)
-  name: Equals(Vector3d)
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Equals_CueX_Numerics_Vector3d_
-  commentId: M:CueX.Numerics.Vector3d.Equals(CueX.Numerics.Vector3d)
-  fullName: CueX.Numerics.Vector3d.Equals(CueX.Numerics.Vector3d)
-  nameWithType: Vector3d.Equals(Vector3d)
-- uid: CueX.Numerics.Vector3d.Equals(System.Object)
-  name: Equals(Object)
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Equals_System_Object_
-  commentId: M:CueX.Numerics.Vector3d.Equals(System.Object)
-  fullName: CueX.Numerics.Vector3d.Equals(System.Object)
-  nameWithType: Vector3d.Equals(Object)
-- uid: CueX.Numerics.Vector3d.Equals*
-  name: Equals
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Equals_
-  commentId: Overload:CueX.Numerics.Vector3d.Equals
-  isSpec: "True"
-  fullName: CueX.Numerics.Vector3d.Equals
-  nameWithType: Vector3d.Equals
-- uid: CueX.Numerics.Vector3d.GetHashCode
-  name: GetHashCode()
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_GetHashCode
-  commentId: M:CueX.Numerics.Vector3d.GetHashCode
-  fullName: CueX.Numerics.Vector3d.GetHashCode()
-  nameWithType: Vector3d.GetHashCode()
-- uid: CueX.Numerics.Vector3d.GetHashCode*
-  name: GetHashCode
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_GetHashCode_
-  commentId: Overload:CueX.Numerics.Vector3d.GetHashCode
-  isSpec: "True"
-  fullName: CueX.Numerics.Vector3d.GetHashCode
-  nameWithType: Vector3d.GetHashCode
-- uid: CueX.Numerics.Vector3d.One
-  name: One()
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_One
-  commentId: M:CueX.Numerics.Vector3d.One
-  fullName: CueX.Numerics.Vector3d.One()
-  nameWithType: Vector3d.One()
-- uid: CueX.Numerics.Vector3d.One*
-  name: One
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_One_
-  commentId: Overload:CueX.Numerics.Vector3d.One
-  isSpec: "True"
-  fullName: CueX.Numerics.Vector3d.One
-  nameWithType: Vector3d.One
-- uid: CueX.Numerics.Vector3d.ToString
-  name: ToString()
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_ToString
-  commentId: M:CueX.Numerics.Vector3d.ToString
-  fullName: CueX.Numerics.Vector3d.ToString()
-  nameWithType: Vector3d.ToString()
-- uid: CueX.Numerics.Vector3d.ToString*
-  name: ToString
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_ToString_
-  commentId: Overload:CueX.Numerics.Vector3d.ToString
-  isSpec: "True"
-  fullName: CueX.Numerics.Vector3d.ToString
-  nameWithType: Vector3d.ToString
-- uid: CueX.Numerics.Vector3d.X
-  name: X
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_X
-  commentId: P:CueX.Numerics.Vector3d.X
-  fullName: CueX.Numerics.Vector3d.X
-  nameWithType: Vector3d.X
-- uid: CueX.Numerics.Vector3d.X*
-  name: X
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_X_
-  commentId: Overload:CueX.Numerics.Vector3d.X
-  isSpec: "True"
-  fullName: CueX.Numerics.Vector3d.X
-  nameWithType: Vector3d.X
-- uid: CueX.Numerics.Vector3d.Y
-  name: Y
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Y
-  commentId: P:CueX.Numerics.Vector3d.Y
-  fullName: CueX.Numerics.Vector3d.Y
-  nameWithType: Vector3d.Y
-- uid: CueX.Numerics.Vector3d.Y*
-  name: Y
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Y_
-  commentId: Overload:CueX.Numerics.Vector3d.Y
-  isSpec: "True"
-  fullName: CueX.Numerics.Vector3d.Y
-  nameWithType: Vector3d.Y
-- uid: CueX.Numerics.Vector3d.Z
-  name: Z
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Z
-  commentId: P:CueX.Numerics.Vector3d.Z
-  fullName: CueX.Numerics.Vector3d.Z
-  nameWithType: Vector3d.Z
-- uid: CueX.Numerics.Vector3d.Z*
-  name: Z
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Z_
-  commentId: Overload:CueX.Numerics.Vector3d.Z
-  isSpec: "True"
-  fullName: CueX.Numerics.Vector3d.Z
-  nameWithType: Vector3d.Z
-- uid: CueX.Numerics.Vector3d.Zero
-  name: Zero()
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Zero
-  commentId: M:CueX.Numerics.Vector3d.Zero
-  fullName: CueX.Numerics.Vector3d.Zero()
-  nameWithType: Vector3d.Zero()
-- uid: CueX.Numerics.Vector3d.Zero*
-  name: Zero
-  href: api/CueX.Numerics.Vector3d.html#CueX_Numerics_Vector3d_Zero_
-  commentId: Overload:CueX.Numerics.Vector3d.Zero
-  isSpec: "True"
-  fullName: CueX.Numerics.Vector3d.Zero
-  nameWithType: Vector3d.Zero
 - uid: CueX.Test
   name: CueX.Test
   href: api/CueX.Test.html

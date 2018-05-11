@@ -173,7 +173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.ISpatialGrain.html",
-          "hash": "tFOw1GWYrum3tlHS9OlQ3w=="
+          "hash": "zBwnrEt43a/54SY6ZZw/4w=="
         }
       },
       "is_incremental": false,
@@ -221,7 +221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrain-2.html",
-          "hash": "DSjQGRIkM3Jql+/EJWpzFQ=="
+          "hash": "Jxt14iybrmbphFuEFudwQw=="
         }
       },
       "is_incremental": false,
@@ -233,7 +233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.SpatialGrainState.html",
-          "hash": "xi9IoFNzvMdUypojXGr4Sw=="
+          "hash": "+5MAUyw6key18jfj/89Niw=="
         }
       },
       "is_incremental": false,
@@ -305,7 +305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Core.Subscription.SpatialEvent.html",
-          "hash": "0nz+GCQfzlQDvsjU3JofTA=="
+          "hash": "PNxx98lJ3c+SbF0dvx490g=="
         }
       },
       "is_incremental": false,
@@ -366,6 +366,42 @@
         ".html": {
           "relative_path": "api/CueX.Core.html",
           "hash": "pbfSiLpTuoVzUOYOTdW8rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Geometry.Helper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Geometry.Helper.html",
+          "hash": "MpyO8iEvoGubNaJ4DVqrMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Geometry.Vector3d.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Geometry.Vector3d.html",
+          "hash": "Sy1Uq1WGEcsFBTQvku6U/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.Geometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.Geometry.html",
+          "hash": "q1MHX3tsJ/ULOUb/4MRRAA=="
         }
       },
       "is_incremental": false,
@@ -517,47 +553,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.Helper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Numerics.Helper.html",
-          "hash": "6nYpB/gL22Ynul+Q/1GRFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.Vector3d.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Numerics.Vector3d.html",
-          "hash": "CGwPR/1Mcmaz8V2n/FkPGg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/CueX.Numerics.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CueX.Numerics.html",
-          "hash": "GmIDcpxGxnTkLikjWVE4uA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/CueX.Test.BasicSpatialGrainTest.yml",
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.BasicSpatialGrainTest.html",
-          "hash": "QvzTuaxk4HlvuPoZRm0Q9Q=="
+          "hash": "yiKFzY9K+5aRliO7f2dkzA=="
         }
       },
       "is_incremental": false,
@@ -593,7 +593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.ITestSpatialGrain.html",
-          "hash": "qqpdhMKMIioltel1DCx3mQ=="
+          "hash": "7LTJTf08q/IWTnC5SsZx5g=="
         }
       },
       "is_incremental": false,
@@ -605,7 +605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.Test.Grains.TestSpatialGrain.html",
-          "hash": "E8duE+5F+RgiGTTNVL3fGA=="
+          "hash": "ZRDdmEXCVzLSEZRX5Q3fcg=="
         }
       },
       "is_incremental": false,
@@ -749,7 +749,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.ISimpleGrain.html",
-          "hash": "JhTPGhtczgqzTWWlkceNSg=="
+          "hash": "eoSc2bgwpmcQDVnDwx+dtg=="
         }
       },
       "is_incremental": false,
@@ -773,7 +773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleExample.Grains.SimpleGrain.html",
-          "hash": "ZFiNRtdjvtsTkySDnYzBlg=="
+          "hash": "iVKY4tD8SxcDLECHBdPsDg=="
         }
       },
       "is_incremental": false,
@@ -809,7 +809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gHEq6It/VsW5O2ihdKzxwQ=="
+          "hash": "ihioGLvypczc+SruJeO2bw=="
         }
       },
       "is_incremental": false,
