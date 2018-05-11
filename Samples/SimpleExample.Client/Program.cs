@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using CueX.Core;
 using CueX.GridSPS;
 using CueX.GridSPS.Config;
-using CueX.Numerics;
+using CueX.Geometry;
 using Microsoft.Extensions.Logging;
 using Orleans;
 using Orleans.ApplicationParts;

@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using CueX.Numerics;
+using CueX.Geometry;
 
 namespace CueX.Core
 {

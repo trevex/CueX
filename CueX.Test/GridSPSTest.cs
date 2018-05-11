@@ -7,7 +7,7 @@ using CueX.Core;
 using CueX.Core.Subscription;
 using CueX.GridSPS;
 using CueX.GridSPS.Config;
-using CueX.Numerics;
+using CueX.Geometry;
 using CueX.Test.Events;
 using CueX.Test.Grains;
 using CueX.Test.Helper;

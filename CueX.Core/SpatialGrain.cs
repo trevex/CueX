@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using CueX.Core.Exception;
 using CueX.Core.Subscription;
-using CueX.Numerics;
+using CueX.Geometry;
 using Orleans;
 
 namespace CueX.Core

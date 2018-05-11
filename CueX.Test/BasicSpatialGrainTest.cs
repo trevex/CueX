@@ -1,6 +1,7 @@
 // Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
-using CueX.Numerics;
+
+using CueX.Geometry;
 using CueX.Test.Grains;
 using CueX.Test.Helper;
 using Orleans;

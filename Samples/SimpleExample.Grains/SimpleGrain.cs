@@ -30,6 +30,5 @@ namespace SimpleExample.Grains
             Console.WriteLine(e.Value);
         }
         
-
     }
 }

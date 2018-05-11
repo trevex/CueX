@@ -11,6 +11,6 @@
     <PackageReference Include="System.CodeDom" Version="4.4.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CueX.Numerics\CueX.Numerics.csproj" />
+    <ProjectReference Include="..\CueX.Geometry\CueX.Geometry.csproj" />
   </ItemGroup>
 </Project>

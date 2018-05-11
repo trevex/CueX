@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using CueX.Core;
 using CueX.Core.Subscription;
 using CueX.GridSPS.Config;
-using CueX.Numerics;
+using CueX.Geometry;
 using Orleans;
 
 namespace CueX.GridSPS.Internal

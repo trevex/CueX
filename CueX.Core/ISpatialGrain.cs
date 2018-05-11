@@ -3,7 +3,7 @@
 
 using System.Threading.Tasks;
 using CueX.Core.Subscription;
-using CueX.Numerics;
+using CueX.Geometry;
 using Orleans;
 
 namespace CueX.Core
