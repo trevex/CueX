@@ -667,6 +667,63 @@ references:
   commentId: N:CueX.Core.Subscription
   fullName: CueX.Core.Subscription
   nameWithType: CueX.Core.Subscription
+- uid: CueX.Core.Subscription.EventFilter
+  name: EventFilter
+  href: api/CueX.Core.Subscription.EventFilter.html
+  commentId: T:CueX.Core.Subscription.EventFilter
+  fullName: CueX.Core.Subscription.EventFilter
+  nameWithType: EventFilter
+- uid: CueX.Core.Subscription.EventFilter.ForType*
+  name: ForType
+  href: api/CueX.Core.Subscription.EventFilter.html#CueX_Core_Subscription_EventFilter_ForType_
+  commentId: Overload:CueX.Core.Subscription.EventFilter.ForType
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.EventFilter.ForType
+  nameWithType: EventFilter.ForType
+- uid: CueX.Core.Subscription.EventFilter.ForType``1
+  name: ForType<T>()
+  href: api/CueX.Core.Subscription.EventFilter.html#CueX_Core_Subscription_EventFilter_ForType__1
+  commentId: M:CueX.Core.Subscription.EventFilter.ForType``1
+  name.vb: ForType(Of T)()
+  fullName: CueX.Core.Subscription.EventFilter.ForType<T>()
+  fullName.vb: CueX.Core.Subscription.EventFilter.ForType(Of T)()
+  nameWithType: EventFilter.ForType<T>()
+  nameWithType.vb: EventFilter.ForType(Of T)()
+- uid: CueX.Core.Subscription.EventFilter.GetTypename
+  name: GetTypename()
+  href: api/CueX.Core.Subscription.EventFilter.html#CueX_Core_Subscription_EventFilter_GetTypename
+  commentId: M:CueX.Core.Subscription.EventFilter.GetTypename
+  fullName: CueX.Core.Subscription.EventFilter.GetTypename()
+  nameWithType: EventFilter.GetTypename()
+- uid: CueX.Core.Subscription.EventFilter.GetTypename*
+  name: GetTypename
+  href: api/CueX.Core.Subscription.EventFilter.html#CueX_Core_Subscription_EventFilter_GetTypename_
+  commentId: Overload:CueX.Core.Subscription.EventFilter.GetTypename
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.EventFilter.GetTypename
+  nameWithType: EventFilter.GetTypename
+- uid: CueX.Core.Subscription.EventFilter.SameAs(System.String)
+  name: SameAs(String)
+  href: api/CueX.Core.Subscription.EventFilter.html#CueX_Core_Subscription_EventFilter_SameAs_System_String_
+  commentId: M:CueX.Core.Subscription.EventFilter.SameAs(System.String)
+  fullName: CueX.Core.Subscription.EventFilter.SameAs(System.String)
+  nameWithType: EventFilter.SameAs(String)
+- uid: CueX.Core.Subscription.EventFilter.SameAs*
+  name: SameAs
+  href: api/CueX.Core.Subscription.EventFilter.html#CueX_Core_Subscription_EventFilter_SameAs_
+  commentId: Overload:CueX.Core.Subscription.EventFilter.SameAs
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.EventFilter.SameAs
+  nameWithType: EventFilter.SameAs
+- uid: CueX.Core.Subscription.EventFilter.SameAs``1
+  name: SameAs<T>()
+  href: api/CueX.Core.Subscription.EventFilter.html#CueX_Core_Subscription_EventFilter_SameAs__1
+  commentId: M:CueX.Core.Subscription.EventFilter.SameAs``1
+  name.vb: SameAs(Of T)()
+  fullName: CueX.Core.Subscription.EventFilter.SameAs<T>()
+  fullName.vb: CueX.Core.Subscription.EventFilter.SameAs(Of T)()
+  nameWithType: EventFilter.SameAs<T>()
+  nameWithType.vb: EventFilter.SameAs(Of T)()
 - uid: CueX.Core.Subscription.EventHelper
   name: EventHelper
   href: api/CueX.Core.Subscription.EventHelper.html
@@ -689,6 +746,22 @@ references:
   fullName.vb: CueX.Core.Subscription.EventHelper.GetEventName(Of T)()
   nameWithType: EventHelper.GetEventName<T>()
   nameWithType.vb: EventHelper.GetEventName(Of T)()
+- uid: CueX.Core.Subscription.EventHelper.GetTypeName*
+  name: GetTypeName
+  href: api/CueX.Core.Subscription.EventHelper.html#CueX_Core_Subscription_EventHelper_GetTypeName_
+  commentId: Overload:CueX.Core.Subscription.EventHelper.GetTypeName
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.EventHelper.GetTypeName
+  nameWithType: EventHelper.GetTypeName
+- uid: CueX.Core.Subscription.EventHelper.GetTypeName``1
+  name: GetTypeName<T>()
+  href: api/CueX.Core.Subscription.EventHelper.html#CueX_Core_Subscription_EventHelper_GetTypeName__1
+  commentId: M:CueX.Core.Subscription.EventHelper.GetTypeName``1
+  name.vb: GetTypeName(Of T)()
+  fullName: CueX.Core.Subscription.EventHelper.GetTypeName<T>()
+  fullName.vb: CueX.Core.Subscription.EventHelper.GetTypeName(Of T)()
+  nameWithType: EventHelper.GetTypeName<T>()
+  nameWithType.vb: EventHelper.GetTypeName(Of T)()
 - uid: CueX.Core.Subscription.IArea
   name: IArea
   href: api/CueX.Core.Subscription.IArea.html
@@ -719,12 +792,12 @@ references:
   commentId: F:CueX.Core.Subscription.SubscriptionDetails.Area
   fullName: CueX.Core.Subscription.SubscriptionDetails.Area
   nameWithType: SubscriptionDetails.Area
-- uid: CueX.Core.Subscription.SubscriptionDetails.EventTypeName
-  name: EventTypeName
-  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_EventTypeName
-  commentId: F:CueX.Core.Subscription.SubscriptionDetails.EventTypeName
-  fullName: CueX.Core.Subscription.SubscriptionDetails.EventTypeName
-  nameWithType: SubscriptionDetails.EventTypeName
+- uid: CueX.Core.Subscription.SubscriptionDetails.EventTypeFilter
+  name: EventTypeFilter
+  href: api/CueX.Core.Subscription.SubscriptionDetails.html#CueX_Core_Subscription_SubscriptionDetails_EventTypeFilter
+  commentId: F:CueX.Core.Subscription.SubscriptionDetails.EventTypeFilter
+  fullName: CueX.Core.Subscription.SubscriptionDetails.EventTypeFilter
+  nameWithType: SubscriptionDetails.EventTypeFilter
 - uid: CueX.Core.Subscription.SubscriptionFilter
   name: SubscriptionFilter
   href: api/CueX.Core.Subscription.SubscriptionFilter.html
