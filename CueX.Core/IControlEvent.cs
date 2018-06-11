@@ -3,9 +3,8 @@
 
 namespace CueX.Core
 {
-    public static class Constants
+    public interface IControlEvent
     {
-        public const string StreamProviderName = "SPSStreamProvider";
-        public const string StreamNamespace = "SPSStreamNamespace";
+        
     }
 }

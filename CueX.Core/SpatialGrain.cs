@@ -7,9 +7,12 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using CueX.Core.Exception;
+using CueX.Core.Stream;
 using CueX.Core.Subscription;
 using CueX.Geometry;
+using Microsoft.Extensions.Logging;
 using Orleans;
+using Orleans.Streams;
 
 namespace CueX.Core
 {
@@ -23,31 +26,27 @@ namespace CueX.Core
         where TState : SpatialGrainState, new() where TGrainInterface : ISpatialGrain
     {
         private readonly Dictionary<string, Func<SpatialEvent, Task>> _callbacks = new Dictionary<string, Func<SpatialEvent, Task>>();
+        private readonly Dictionary<Type /* EventType */, List<IAnyHandle>> _subscriptionHandles = new Dictionary<Type, List<IAnyHandle>>();
+        private readonly IControlService _controlService;
+        private readonly ILogger _logger;
 
-        public override Task OnActivateAsync()
+        public SpatialGrain(ILogger<SpatialGrain<TGrainInterface, TState>> logger, IControlService controlService)
         {
-            RecompileCallbacksIfNecessary();
-            return base.OnActivateAsync();
+            _logger = logger;
+            _controlService = controlService;
         }
-
-        /// <summary>
-        /// This method recompiles callbacks if they are not in sync with the grain state (potentially dangerous!)
-        /// </summary>
-        protected void RecompileCallbacksIfNecessary()
+        
+        public override async Task OnActivateAsync()
         {
-            if (_callbacks.Count != State.CallbackMethodInfos.Count)
+            if (!State.IsInitialized)
             {
-                foreach (var pair in State.CallbackMethodInfos)
-                { 
-                    var methodInfo = pair.Value;
-                    var targetType = pair.Key;
-                    var interfaceParam = Expression.Parameter(typeof(SpatialEvent));
-                    var eventParam = Expression.Convert(interfaceParam, targetType);
-                    var lambdaExpression = Expression.Lambda<Func<SpatialEvent, Task>>(
-                        Expression.Call(Expression.Constant(this), methodInfo, eventParam), interfaceParam);
-                    _callbacks[targetType.ToString()] = lambdaExpression.Compile(); // TODO: pair.Key.ToString() is redundant, either clean up EventHelper or this bit
-                }
+                State.Controller = await _controlService.GetSpatialGrainController();
+                State.IsInitialized = true;
+                await WriteStateAsync();
             }
+            RecompileCallbacks();
+            ResumeSubscriptions();
+            await base.OnActivateAsync();
         }
 
         public async Task SetPosition(Vector3d newPosition)
@@ -61,21 +60,19 @@ namespace CueX.Core
             return Task.FromResult(State.Position);
         }
 
-        public async Task SetParent<T>(T parent) where T : IPartitionGrain
+        public Task ReceiveSpatialEvent<T>(T spatialEvent) where T : SpatialEvent
         {
-            State.Parent = parent;
-            await WriteStateAsync();
+            _callbacks[EventHelper.GetEventName<T>()](spatialEvent);
+            return Task.CompletedTask;
         }
 
-        public Task<bool> RemoveSelfFromParent()
+        public Task ReceiveControlEvent<T>(T logicEvent) where T : IControlEvent
         {
-            return State.Parent.Remove(this.AsReference<TGrainInterface>());
+            return State.Controller.ReceiveControlEvent(logicEvent);
         }
 
         public async Task<bool> SubscribeWithDetails<T>(SubscriptionDetails details, Func<T, Task> callback) where T : SpatialEvent
         {
-            var result = await State.Parent.HandleSubscription(this.AsReference<TGrainInterface>(), details);
-            if (!result) return false;
             var method = callback.Method;
             if (method.DeclaringType == null || !CodeGenerator.IsValidLanguageIndependentIdentifier(method.Name))
             {   
@@ -86,29 +83,78 @@ namespace CueX.Core
             {
                 throw new SubscriptionCallbackNotMemberException();
             }
-            _callbacks[EventHelper.GetEventName<T>()] = e => callback((T) e); // TODO: since event name and event type is a strict relation, see if all checks are disabled
-            State.CallbackMethodInfos[typeof(T)] = callback.Method; // save reflection info to reconstruct callbacks during activation
+            // save callback for direct invocation via `ReceiveSpatialEvent`
+            var eventName = EventHelper.GetEventName<T>();
+            _callbacks[eventName] = e => callback((T) e); 
+            // save reflection info to reconstruct callbacks during activation
+            var eventType = typeof(T);
+            State.CallbackMethodInfos[eventType] = callback.Method;
+            // subscribe to the event
+            var streamProvider = GetStreamProvider(Constants.StreamProviderName);
+            var ids = await State.Controller.GetStreamIdsForNewSubscription(details);
+            // if there is no list already create one
+            if (!_subscriptionHandles.ContainsKey(eventType)) _subscriptionHandles[eventType] = new List<IAnyHandle>();
+            // subscribe to all streams
+            foreach (var id in ids)
+            {
+                var stream = streamProvider.GetStream<T>(id, Constants.StreamNamespace);
+                var handle = await stream.SubscribeAsync(new StreamObserver<T>(_logger, callback));
+                // add handle to be able to unsubscribe
+                _subscriptionHandles[eventType].Add(new AnyHandle<T>(handle));
+                // remember which stream guid belongs to what type of event
+                State.StreamAssociation[eventName] = id;
+            }
             await WriteStateAsync();
             return true;
         }
 
-        public SubscriptionBuilder<T> SubscribeTo<T>() where T : SpatialEvent
+        protected SubscriptionBuilder<T> SubscribeTo<T>() where T : SpatialEvent
         {
             return new SubscriptionBuilder<T>(this);
         }
 
-        public Task ReceiveEvent(string eventTypeName, SpatialEvent eventValue)
+        private void RecompileCallbacks()
         {
-            _callbacks[eventTypeName](eventValue);
-            return Task.CompletedTask;
+            foreach (var pair in State.CallbackMethodInfos)
+            { 
+                var methodInfo = pair.Value;
+                var targetType = pair.Key;
+                var interfaceParam = Expression.Parameter(typeof(SpatialEvent));
+                var eventParam = Expression.Convert(interfaceParam, targetType);
+                var lambdaExpression = Expression.Lambda<Func<SpatialEvent, Task>>(
+                    Expression.Call(Expression.Constant(this), methodInfo, eventParam), interfaceParam);
+                _callbacks[targetType.ToString()] = lambdaExpression.Compile();
+            }
         }
 
-        /// <summary>
-        /// This method forcefully removes the callbacks. Only used for testing internal recompilation of callbacks (potentially dangerous!)
-        /// </summary>
-        protected void ForceDiscardCallbacks()
+        private async void ResumeSubscriptions()
         {
-            _callbacks.Clear();
+            var streamProvider = GetStreamProvider(Constants.StreamProviderName);
+            var methodInfo = GetType().GetMethod("ResumeSubscriptionFor");
+            foreach (var pair in State.CallbackMethodInfos)
+            {
+                var targetType = pair.Key;
+                var resumeRef = methodInfo.MakeGenericMethod(targetType);
+                await (Task)resumeRef.Invoke(this, new object[] { streamProvider });
+            }  
         }
+
+        private async Task ResumeSubscriptionFor<T>(IStreamProvider streamProvider) where T : SpatialEvent
+        {
+            var eventName = EventHelper.GetEventName<T>();
+            var eventType = typeof(T);
+            var stream = streamProvider.GetStream<T>(State.StreamAssociation[eventName], Constants.StreamNamespace);
+            var subscriptionHandles = await stream.GetAllSubscriptionHandles();
+            if (subscriptionHandles == null || subscriptionHandles.Count == 0) return;
+            // if there is no list already create one
+            if (!_subscriptionHandles.ContainsKey(eventType)) _subscriptionHandles[eventType] = new List<IAnyHandle>();
+            foreach (var handle in subscriptionHandles)
+            {
+                await handle.ResumeAsync(new StreamObserver<T>(_logger, _callbacks[eventName]));
+                _subscriptionHandles[eventType].Add(new AnyHandle<T>(handle));
+            } 
+        }
+        
+
     }
 }

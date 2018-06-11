@@ -15,9 +15,8 @@ namespace CueX.Core
     {
         Task SetPosition(Vector3d newPosition);
         Task<Vector3d> GetPosition();
-        Task SetParent<T>(T parent) where T : Core.IPartitionGrain;
-        Task<bool> RemoveSelfFromParent();
-        Task ReceiveEvent(string eventType, SpatialEvent eventValue);
+        Task ReceiveSpatialEvent<T>(T spatialEvent) where T : SpatialEvent;
+        Task ReceiveControlEvent<T>(T logicEvent) where T : IControlEvent;
     }
 
 }

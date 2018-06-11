@@ -12,11 +12,8 @@ namespace SimpleExample.Grains
 
     public class SimpleGrain : SpatialGrain<ISimpleGrain, SimpleGrainState>, ISimpleGrain
     {
-        private readonly ILogger _logger;
-        
-        public SimpleGrain(ILogger<SimpleGrain> logger)
+        public SimpleGrain(ILogger<SpatialGrain<ISimpleGrain, SimpleGrainState>> logger, IControlService controlService) : base(logger, controlService)
         {
-            _logger = logger;
         }
 
         public async Task SubscribeToSimpleEvent()
@@ -29,6 +26,5 @@ namespace SimpleExample.Grains
         {
             Console.WriteLine(e.Value);
         }
-        
     }
 }

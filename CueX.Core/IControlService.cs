@@ -2,13 +2,12 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System.Threading.Tasks;
-using CueX.Core;
-using Orleans;
 
-namespace CueX.GridSPS
+namespace CueX.Core
 {
-    public interface IGridPartitionGrain : IPartitionGrain, IGrainWithStringKey
+    public interface IControlService
     {
-        Task<int> GetInterestCount();
+        Task<ISpatialGrainController> GetSpatialGrainController();
+        Task SetSpatialGrainController(ISpatialGrainController config);
     }
 }

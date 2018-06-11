@@ -9,7 +9,6 @@ namespace CueX.Test.Grains
 {
     public interface ITestSpatialGrain : ISpatialGrain, IGrainWithIntegerKey
     {
-        Task<bool> HasParent();
         Task SubscribeToTestEvent();
         Task<string> GetLastTestEventValue();
         Task ForcefullyRecompileCallback();

@@ -1,11 +1,11 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.Threading.Tasks;
 using CueX.Core;
 using CueX.Core.Subscription;
 using CueX.GridSPS.Config;
-using CueX.Geometry;
 using Orleans;
 
 namespace CueX.GridSPS.Internal
@@ -27,28 +27,21 @@ namespace CueX.GridSPS.Internal
             return configGrain.SetConfiguration(_config);
         }
 
-        public async Task Insert<T>(T spatialGrain) where T : ISpatialGrain
+        public Task Insert<T>(T spatialGrain) where T : ISpatialGrain
         {
-            await InsertAt(spatialGrain, await spatialGrain.GetPosition());
+            throw new NotImplementedException();
         }
 
-        private async Task InsertAt<T>(T spatialGrain, Vector3d position) where T : ISpatialGrain
-        {
-            var partitionKey = IndexHelper.GetPartitionKeyForPosition(position, _config.PartitionSize);
-            var partition = _client.GetGrain<IGridPartitionGrain>(partitionKey);
-            await partition.Add(spatialGrain);
-        }
+        
 
-        public async Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain
+        public Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain
         {
-            return await spatialGrain.RemoveSelfFromParent();
+            throw new NotImplementedException();
         }
 
         public async Task Dispatch<T>(T spatialEvent) where T : SpatialEvent
         {
-            var partitionKey = IndexHelper.GetPartitionKeyForPosition(spatialEvent.Position, _config.PartitionSize);
-            var partition = _client.GetGrain<IGridPartitionGrain>(partitionKey);
-            await partition.HandleEvent(EventHelper.GetEventName<T>(), spatialEvent);
+            // TODO:
         }
     }
 }

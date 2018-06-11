@@ -4,14 +4,17 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using CueX.Core.Stream;
 using CueX.Geometry;
 
 namespace CueX.Core
 {
     public abstract class SpatialGrainState
     {
+        public bool IsInitialized = false;
         public Vector3d Position;
-        public IPartitionGrain Parent;
         public Dictionary<Type /* EventType */, MethodInfo> CallbackMethodInfos = new Dictionary<Type, MethodInfo>();
+        public Dictionary<string, Guid> StreamAssociation = new Dictionary<string, Guid>();
+        public ISpatialGrainController Controller = null;
     }
 }

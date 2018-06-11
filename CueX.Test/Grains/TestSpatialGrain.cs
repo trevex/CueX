@@ -3,17 +3,16 @@
 
 using System.Threading.Tasks;
 using CueX.Core;
-using CueX.Core.Subscription;
 using CueX.Test.Events;
+using Microsoft.Extensions.Logging;
 
 namespace CueX.Test.Grains
 {
  
     public class TestSpatialGrain : SpatialGrain<ITestSpatialGrain, TestSpatialGrainState>, ITestSpatialGrain
     {
-        public Task<bool> HasParent()
+        public TestSpatialGrain(ILogger<SpatialGrain<ITestSpatialGrain, TestSpatialGrainState>> logger, IControlService controlService) : base(logger, controlService)
         {
-            return Task.FromResult(State.Parent != null);
         }
 
         public async Task SubscribeToTestEvent()
@@ -35,9 +34,10 @@ namespace CueX.Test.Grains
 
         public Task ForcefullyRecompileCallback()
         {
-            ForceDiscardCallbacks();
-            RecompileCallbacksIfNecessary();
+//            ForceDiscardCallbacks();
+//            RecompileCallbacksIfNecessary();
             return Task.CompletedTask;
         }
+
     }
 }

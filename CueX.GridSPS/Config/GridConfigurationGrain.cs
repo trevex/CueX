@@ -2,29 +2,30 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System.Threading.Tasks;
+using CueX.Core;
 using Orleans;
 
 namespace CueX.GridSPS.Config
 {
     public class GridConfigurationGrain : Grain, IGridConfigurationGrain
     {
-        private readonly IGridConfigurationService _configService;
-
         public static readonly string  DefaultKey = "default";
         
-        public GridConfigurationGrain(IGridConfigurationService configService)
+        private readonly IControlService _controlService;
+        
+        public GridConfigurationGrain(IControlService controlService)
         {
-            this._configService = configService;
+            _controlService = controlService;
         }
         
-        public Task<GridConfiguration> GetConfiguration()
+        public async Task<GridConfiguration> GetConfiguration()
         {
-            return _configService.GetConfiguration();
+            return ((GridSpatialGrainController)await _controlService.GetSpatialGrainController()).GetConfig();
         }
 
         public Task SetConfiguration(GridConfiguration config)
         {
-            return _configService.SetConfiguration(config);
+            return _controlService.SetSpatialGrainController(new GridSpatialGrainController(config));
         }
     }
 }
