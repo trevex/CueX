@@ -48,7 +48,7 @@ namespace CueX.GridSPS.Internal
         {
             var partitionKey = IndexHelper.GetPartitionKeyForPosition(spatialEvent.Position, _config.PartitionSize);
             var partition = _client.GetGrain<IGridPartitionGrain>(partitionKey);
-            await partition.HandleEvent(EventHelper.GetEventName<T>(), spatialEvent);
+            await partition.HandleEvent(spatialEvent);
         }
     }
 }

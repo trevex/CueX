@@ -38,28 +38,33 @@ namespace CueX.GridSPS
         public override async Task<bool> HandleSubscription<T>(T subscribingGrain, SubscriptionDetails details)
         {
             var eventName = details.EventTypeFilter.GetTypename();
+            // Check if a filter map exists for this event
             var result = State.InterestFilterMap.TryGetValue(eventName, out var eventInterestFilters);
-            if (!result)
-            {
+            if (!result) // If not, create the dictionary
+            { 
                 eventInterestFilters = new Dictionary<ISpatialGrain, SubscriptionFilter>();
                 State.InterestFilterMap[eventName] = eventInterestFilters;
             }
+            // If the filter map exists, check if the grain already has a subscription
             else if (eventInterestFilters.ContainsKey(subscribingGrain))
             {
                 return false;
             }
-            
+            // Create the subscription filter for this grain
             eventInterestFilters[subscribingGrain] = new SubscriptionFilter
             {
                 Area = details.Area,
                 OriginTypeFilter = details.OriginTypeFilter
             };
+            
+            // Check if the interest map exists for this grain
             result = State.GrainInterestMap.TryGetValue(subscribingGrain, out var grainInterests);
-            if (!result)
+            if (!result) // If not, create it
             {
                 grainInterests = new List<string>();
                 State.GrainInterestMap[subscribingGrain] = grainInterests;
             } 
+            // Add the event to the grain
             grainInterests.Add(eventName);
             
             await WriteStateAsync();
@@ -69,8 +74,9 @@ namespace CueX.GridSPS
             return true;
         }
 
-        public override Task HandleEvent(string eventName, SpatialEvent eventValue)
+        public override Task HandleEvent<T>(T eventValue)
         {
+            var eventName = EventHelper.GetEventName<T>();
             var result = State.InterestFilterMap.TryGetValue(eventName, out var eventInterestFilters);
             if (result) {
                 foreach (var keyValuePair in eventInterestFilters)
@@ -78,7 +84,7 @@ namespace CueX.GridSPS
                     
                     if (keyValuePair.Value.IsApplicable(eventValue))
                     {
-                        var task = keyValuePair.Key.ReceiveEvent(eventName, eventValue);
+                        var task = keyValuePair.Key.ReceiveEvent(eventValue);
                         // Do NOT wait, but rather attach an error handling continuation
                         task.ContinueWith(t => _logger.LogError(t.Exception.ToString()), TaskContinuationOptions.OnlyOnFaulted);
                     }

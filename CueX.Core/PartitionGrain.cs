@@ -39,6 +39,6 @@ namespace CueX.Core
         }
 
         public abstract Task<bool> HandleSubscription<T>(T subscribingGrain, SubscriptionDetails details) where T : ISpatialGrain;
-        public abstract Task HandleEvent(string eventName, SpatialEvent eventValue);
+        public abstract Task HandleEvent<T>(T spatialEvent) where T : SpatialEvent;
     }
 }

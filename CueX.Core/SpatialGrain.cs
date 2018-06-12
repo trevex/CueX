@@ -97,9 +97,9 @@ namespace CueX.Core
             return new SubscriptionBuilder<T>(this);
         }
 
-        public Task ReceiveEvent(string eventTypeName, SpatialEvent eventValue)
+        public Task ReceiveEvent<T>(T eventValue) where T : SpatialEvent
         {
-            _callbacks[eventTypeName](eventValue);
+            _callbacks[EventHelper.GetEventName<T>()](eventValue);
             return Task.CompletedTask;
         }
 
