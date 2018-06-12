@@ -788,12 +788,6 @@ references:
   fullName.vb: CueX.Core.Subscription.EventHelper.GetTypeName(Of T)()
   nameWithType: EventHelper.GetTypeName<T>()
   nameWithType.vb: EventHelper.GetTypeName(Of T)()
-- uid: CueX.Core.Subscription.IArea
-  name: IArea
-  href: api/CueX.Core.Subscription.IArea.html
-  commentId: T:CueX.Core.Subscription.IArea
-  fullName: CueX.Core.Subscription.IArea
-  nameWithType: IArea
 - uid: CueX.Core.Subscription.ISubscriptionSubject
   name: ISubscriptionSubject
   href: api/CueX.Core.Subscription.ISubscriptionSubject.html
@@ -872,6 +866,23 @@ references:
   fullName.vb: CueX.Core.Subscription.SubscriptionBuilder(Of T).ForEach
   nameWithType: SubscriptionBuilder<T>.ForEach
   nameWithType.vb: SubscriptionBuilder(Of T).ForEach
+- uid: CueX.Core.Subscription.SubscriptionBuilder`1.InRadius(System.Double)
+  name: InRadius(Double)
+  href: api/CueX.Core.Subscription.SubscriptionBuilder-1.html#CueX_Core_Subscription_SubscriptionBuilder_1_InRadius_System_Double_
+  commentId: M:CueX.Core.Subscription.SubscriptionBuilder`1.InRadius(System.Double)
+  fullName: CueX.Core.Subscription.SubscriptionBuilder<T>.InRadius(System.Double)
+  fullName.vb: CueX.Core.Subscription.SubscriptionBuilder(Of T).InRadius(System.Double)
+  nameWithType: SubscriptionBuilder<T>.InRadius(Double)
+  nameWithType.vb: SubscriptionBuilder(Of T).InRadius(Double)
+- uid: CueX.Core.Subscription.SubscriptionBuilder`1.InRadius*
+  name: InRadius
+  href: api/CueX.Core.Subscription.SubscriptionBuilder-1.html#CueX_Core_Subscription_SubscriptionBuilder_1_InRadius_
+  commentId: Overload:CueX.Core.Subscription.SubscriptionBuilder`1.InRadius
+  isSpec: "True"
+  fullName: CueX.Core.Subscription.SubscriptionBuilder<T>.InRadius
+  fullName.vb: CueX.Core.Subscription.SubscriptionBuilder(Of T).InRadius
+  nameWithType: SubscriptionBuilder<T>.InRadius
+  nameWithType.vb: SubscriptionBuilder(Of T).InRadius
 - uid: CueX.Core.Subscription.SubscriptionDetails
   name: SubscriptionDetails
   href: api/CueX.Core.Subscription.SubscriptionDetails.html
@@ -933,6 +944,83 @@ references:
   commentId: N:CueX.Geometry
   fullName: CueX.Geometry
   nameWithType: CueX.Geometry
+- uid: CueX.Geometry.Box
+  name: Box
+  href: api/CueX.Geometry.Box.html
+  commentId: T:CueX.Geometry.Box
+  fullName: CueX.Geometry.Box
+  nameWithType: Box
+- uid: CueX.Geometry.Box.GetHalfBoundingBoxWidth
+  name: GetHalfBoundingBoxWidth()
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetHalfBoundingBoxWidth
+  commentId: M:CueX.Geometry.Box.GetHalfBoundingBoxWidth
+  fullName: CueX.Geometry.Box.GetHalfBoundingBoxWidth()
+  nameWithType: Box.GetHalfBoundingBoxWidth()
+- uid: CueX.Geometry.Box.GetHalfBoundingBoxWidth*
+  name: GetHalfBoundingBoxWidth
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetHalfBoundingBoxWidth_
+  commentId: Overload:CueX.Geometry.Box.GetHalfBoundingBoxWidth
+  isSpec: "True"
+  fullName: CueX.Geometry.Box.GetHalfBoundingBoxWidth
+  nameWithType: Box.GetHalfBoundingBoxWidth
+- uid: CueX.Geometry.Box.WithDimensions(System.Double,System.Double)
+  name: WithDimensions(Double, Double)
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_WithDimensions_System_Double_System_Double_
+  commentId: M:CueX.Geometry.Box.WithDimensions(System.Double,System.Double)
+  fullName: CueX.Geometry.Box.WithDimensions(System.Double, System.Double)
+  nameWithType: Box.WithDimensions(Double, Double)
+- uid: CueX.Geometry.Box.WithDimensions*
+  name: WithDimensions
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_WithDimensions_
+  commentId: Overload:CueX.Geometry.Box.WithDimensions
+  isSpec: "True"
+  fullName: CueX.Geometry.Box.WithDimensions
+  nameWithType: Box.WithDimensions
+- uid: CueX.Geometry.Box.WithSize(System.Double)
+  name: WithSize(Double)
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_WithSize_System_Double_
+  commentId: M:CueX.Geometry.Box.WithSize(System.Double)
+  fullName: CueX.Geometry.Box.WithSize(System.Double)
+  nameWithType: Box.WithSize(Double)
+- uid: CueX.Geometry.Box.WithSize*
+  name: WithSize
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_WithSize_
+  commentId: Overload:CueX.Geometry.Box.WithSize
+  isSpec: "True"
+  fullName: CueX.Geometry.Box.WithSize
+  nameWithType: Box.WithSize
+- uid: CueX.Geometry.Circle
+  name: Circle
+  href: api/CueX.Geometry.Circle.html
+  commentId: T:CueX.Geometry.Circle
+  fullName: CueX.Geometry.Circle
+  nameWithType: Circle
+- uid: CueX.Geometry.Circle.GetHalfBoundingBoxWidth
+  name: GetHalfBoundingBoxWidth()
+  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetHalfBoundingBoxWidth
+  commentId: M:CueX.Geometry.Circle.GetHalfBoundingBoxWidth
+  fullName: CueX.Geometry.Circle.GetHalfBoundingBoxWidth()
+  nameWithType: Circle.GetHalfBoundingBoxWidth()
+- uid: CueX.Geometry.Circle.GetHalfBoundingBoxWidth*
+  name: GetHalfBoundingBoxWidth
+  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetHalfBoundingBoxWidth_
+  commentId: Overload:CueX.Geometry.Circle.GetHalfBoundingBoxWidth
+  isSpec: "True"
+  fullName: CueX.Geometry.Circle.GetHalfBoundingBoxWidth
+  nameWithType: Circle.GetHalfBoundingBoxWidth
+- uid: CueX.Geometry.Circle.WithRadius(System.Double)
+  name: WithRadius(Double)
+  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_WithRadius_System_Double_
+  commentId: M:CueX.Geometry.Circle.WithRadius(System.Double)
+  fullName: CueX.Geometry.Circle.WithRadius(System.Double)
+  nameWithType: Circle.WithRadius(Double)
+- uid: CueX.Geometry.Circle.WithRadius*
+  name: WithRadius
+  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_WithRadius_
+  commentId: Overload:CueX.Geometry.Circle.WithRadius
+  isSpec: "True"
+  fullName: CueX.Geometry.Circle.WithRadius
+  nameWithType: Circle.WithRadius
 - uid: CueX.Geometry.Helper
   name: Helper
   href: api/CueX.Geometry.Helper.html
@@ -952,6 +1040,25 @@ references:
   isSpec: "True"
   fullName: CueX.Geometry.Helper.NearlyEqual
   nameWithType: Helper.NearlyEqual
+- uid: CueX.Geometry.IArea
+  name: IArea
+  href: api/CueX.Geometry.IArea.html
+  commentId: T:CueX.Geometry.IArea
+  fullName: CueX.Geometry.IArea
+  nameWithType: IArea
+- uid: CueX.Geometry.IArea.GetHalfBoundingBoxWidth
+  name: GetHalfBoundingBoxWidth()
+  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetHalfBoundingBoxWidth
+  commentId: M:CueX.Geometry.IArea.GetHalfBoundingBoxWidth
+  fullName: CueX.Geometry.IArea.GetHalfBoundingBoxWidth()
+  nameWithType: IArea.GetHalfBoundingBoxWidth()
+- uid: CueX.Geometry.IArea.GetHalfBoundingBoxWidth*
+  name: GetHalfBoundingBoxWidth
+  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetHalfBoundingBoxWidth_
+  commentId: Overload:CueX.Geometry.IArea.GetHalfBoundingBoxWidth
+  isSpec: "True"
+  fullName: CueX.Geometry.IArea.GetHalfBoundingBoxWidth
+  nameWithType: IArea.GetHalfBoundingBoxWidth
 - uid: CueX.Geometry.Vector3d
   name: Vector3d
   href: api/CueX.Geometry.Vector3d.html
@@ -1124,10 +1231,30 @@ references:
   isSpec: "True"
   fullName: CueX.GridSPS.Config.GridConfiguration.Default
   nameWithType: GridConfiguration.Default
+- uid: CueX.GridSPS.Config.GridConfiguration.PartitionHalfDiagonal
+  name: PartitionHalfDiagonal
+  href: api/CueX.GridSPS.Config.GridConfiguration.html#CueX_GridSPS_Config_GridConfiguration_PartitionHalfDiagonal
+  commentId: P:CueX.GridSPS.Config.GridConfiguration.PartitionHalfDiagonal
+  fullName: CueX.GridSPS.Config.GridConfiguration.PartitionHalfDiagonal
+  nameWithType: GridConfiguration.PartitionHalfDiagonal
+- uid: CueX.GridSPS.Config.GridConfiguration.PartitionHalfDiagonal*
+  name: PartitionHalfDiagonal
+  href: api/CueX.GridSPS.Config.GridConfiguration.html#CueX_GridSPS_Config_GridConfiguration_PartitionHalfDiagonal_
+  commentId: Overload:CueX.GridSPS.Config.GridConfiguration.PartitionHalfDiagonal
+  isSpec: "True"
+  fullName: CueX.GridSPS.Config.GridConfiguration.PartitionHalfDiagonal
+  nameWithType: GridConfiguration.PartitionHalfDiagonal
 - uid: CueX.GridSPS.Config.GridConfiguration.PartitionSize
   name: PartitionSize
   href: api/CueX.GridSPS.Config.GridConfiguration.html#CueX_GridSPS_Config_GridConfiguration_PartitionSize
-  commentId: F:CueX.GridSPS.Config.GridConfiguration.PartitionSize
+  commentId: P:CueX.GridSPS.Config.GridConfiguration.PartitionSize
+  fullName: CueX.GridSPS.Config.GridConfiguration.PartitionSize
+  nameWithType: GridConfiguration.PartitionSize
+- uid: CueX.GridSPS.Config.GridConfiguration.PartitionSize*
+  name: PartitionSize
+  href: api/CueX.GridSPS.Config.GridConfiguration.html#CueX_GridSPS_Config_GridConfiguration_PartitionSize_
+  commentId: Overload:CueX.GridSPS.Config.GridConfiguration.PartitionSize
+  isSpec: "True"
   fullName: CueX.GridSPS.Config.GridConfiguration.PartitionSize
   nameWithType: GridConfiguration.PartitionSize
 - uid: CueX.GridSPS.Config.GridConfigurationGrain
