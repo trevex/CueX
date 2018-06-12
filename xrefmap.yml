@@ -159,12 +159,6 @@ references:
   isSpec: "True"
   fullName: CueX.Core.IPartitionGrain.GetChildren
   nameWithType: IPartitionGrain.GetChildren
-- uid: CueX.Core.IPartitionGrain.HandleEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  name: HandleEvent(String, SpatialEvent)
-  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_HandleEvent_System_String_CueX_Core_Subscription_SpatialEvent_
-  commentId: M:CueX.Core.IPartitionGrain.HandleEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  fullName: CueX.Core.IPartitionGrain.HandleEvent(System.String, CueX.Core.Subscription.SpatialEvent)
-  nameWithType: IPartitionGrain.HandleEvent(String, SpatialEvent)
 - uid: CueX.Core.IPartitionGrain.HandleEvent*
   name: HandleEvent
   href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_HandleEvent_
@@ -172,6 +166,15 @@ references:
   isSpec: "True"
   fullName: CueX.Core.IPartitionGrain.HandleEvent
   nameWithType: IPartitionGrain.HandleEvent
+- uid: CueX.Core.IPartitionGrain.HandleEvent``1(``0)
+  name: HandleEvent<T>(T)
+  href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_HandleEvent__1___0_
+  commentId: M:CueX.Core.IPartitionGrain.HandleEvent``1(``0)
+  name.vb: HandleEvent(Of T)(T)
+  fullName: CueX.Core.IPartitionGrain.HandleEvent<T>(T)
+  fullName.vb: CueX.Core.IPartitionGrain.HandleEvent(Of T)(T)
+  nameWithType: IPartitionGrain.HandleEvent<T>(T)
+  nameWithType.vb: IPartitionGrain.HandleEvent(Of T)(T)
 - uid: CueX.Core.IPartitionGrain.HandleSubscription*
   name: HandleSubscription
   href: api/CueX.Core.IPartitionGrain.html#CueX_Core_IPartitionGrain_HandleSubscription_
@@ -223,12 +226,6 @@ references:
   isSpec: "True"
   fullName: CueX.Core.ISpatialGrain.GetPosition
   nameWithType: ISpatialGrain.GetPosition
-- uid: CueX.Core.ISpatialGrain.ReceiveEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  name: ReceiveEvent(String, SpatialEvent)
-  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_ReceiveEvent_System_String_CueX_Core_Subscription_SpatialEvent_
-  commentId: M:CueX.Core.ISpatialGrain.ReceiveEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  fullName: CueX.Core.ISpatialGrain.ReceiveEvent(System.String, CueX.Core.Subscription.SpatialEvent)
-  nameWithType: ISpatialGrain.ReceiveEvent(String, SpatialEvent)
 - uid: CueX.Core.ISpatialGrain.ReceiveEvent*
   name: ReceiveEvent
   href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_ReceiveEvent_
@@ -236,6 +233,15 @@ references:
   isSpec: "True"
   fullName: CueX.Core.ISpatialGrain.ReceiveEvent
   nameWithType: ISpatialGrain.ReceiveEvent
+- uid: CueX.Core.ISpatialGrain.ReceiveEvent``1(``0)
+  name: ReceiveEvent<T>(T)
+  href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_ReceiveEvent__1___0_
+  commentId: M:CueX.Core.ISpatialGrain.ReceiveEvent``1(``0)
+  name.vb: ReceiveEvent(Of T)(T)
+  fullName: CueX.Core.ISpatialGrain.ReceiveEvent<T>(T)
+  fullName.vb: CueX.Core.ISpatialGrain.ReceiveEvent(Of T)(T)
+  nameWithType: ISpatialGrain.ReceiveEvent<T>(T)
+  nameWithType.vb: ISpatialGrain.ReceiveEvent(Of T)(T)
 - uid: CueX.Core.ISpatialGrain.RemoveSelfFromParent
   name: RemoveSelfFromParent()
   href: api/CueX.Core.ISpatialGrain.html#CueX_Core_ISpatialGrain_RemoveSelfFromParent
@@ -376,14 +382,6 @@ references:
   fullName.vb: CueX.Core.PartitionGrain(Of TGrainInterface, TState).GetChildren
   nameWithType: PartitionGrain<TGrainInterface, TState>.GetChildren
   nameWithType.vb: PartitionGrain(Of TGrainInterface, TState).GetChildren
-- uid: CueX.Core.PartitionGrain`2.HandleEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  name: HandleEvent(String, SpatialEvent)
-  href: api/CueX.Core.PartitionGrain-2.html#CueX_Core_PartitionGrain_2_HandleEvent_System_String_CueX_Core_Subscription_SpatialEvent_
-  commentId: M:CueX.Core.PartitionGrain`2.HandleEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  fullName: CueX.Core.PartitionGrain<TGrainInterface, TState>.HandleEvent(System.String, CueX.Core.Subscription.SpatialEvent)
-  fullName.vb: CueX.Core.PartitionGrain(Of TGrainInterface, TState).HandleEvent(System.String, CueX.Core.Subscription.SpatialEvent)
-  nameWithType: PartitionGrain<TGrainInterface, TState>.HandleEvent(String, SpatialEvent)
-  nameWithType.vb: PartitionGrain(Of TGrainInterface, TState).HandleEvent(String, SpatialEvent)
 - uid: CueX.Core.PartitionGrain`2.HandleEvent*
   name: HandleEvent
   href: api/CueX.Core.PartitionGrain-2.html#CueX_Core_PartitionGrain_2_HandleEvent_
@@ -393,6 +391,15 @@ references:
   fullName.vb: CueX.Core.PartitionGrain(Of TGrainInterface, TState).HandleEvent
   nameWithType: PartitionGrain<TGrainInterface, TState>.HandleEvent
   nameWithType.vb: PartitionGrain(Of TGrainInterface, TState).HandleEvent
+- uid: CueX.Core.PartitionGrain`2.HandleEvent``1(``0)
+  name: HandleEvent<T>(T)
+  href: api/CueX.Core.PartitionGrain-2.html#CueX_Core_PartitionGrain_2_HandleEvent__1___0_
+  commentId: M:CueX.Core.PartitionGrain`2.HandleEvent``1(``0)
+  name.vb: HandleEvent(Of T)(T)
+  fullName: CueX.Core.PartitionGrain<TGrainInterface, TState>.HandleEvent<T>(T)
+  fullName.vb: CueX.Core.PartitionGrain(Of TGrainInterface, TState).HandleEvent(Of T)(T)
+  nameWithType: PartitionGrain<TGrainInterface, TState>.HandleEvent<T>(T)
+  nameWithType.vb: PartitionGrain(Of TGrainInterface, TState).HandleEvent(Of T)(T)
 - uid: CueX.Core.PartitionGrain`2.HandleSubscription*
   name: HandleSubscription
   href: api/CueX.Core.PartitionGrain-2.html#CueX_Core_PartitionGrain_2_HandleSubscription_
@@ -501,14 +508,6 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).OnActivateAsync
   nameWithType: SpatialGrain<TGrainInterface, TState>.OnActivateAsync
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).OnActivateAsync
-- uid: CueX.Core.SpatialGrain`2.ReceiveEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  name: ReceiveEvent(String, SpatialEvent)
-  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveEvent_System_String_CueX_Core_Subscription_SpatialEvent_
-  commentId: M:CueX.Core.SpatialGrain`2.ReceiveEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.ReceiveEvent(System.String, CueX.Core.Subscription.SpatialEvent)
-  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).ReceiveEvent(System.String, CueX.Core.Subscription.SpatialEvent)
-  nameWithType: SpatialGrain<TGrainInterface, TState>.ReceiveEvent(String, SpatialEvent)
-  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).ReceiveEvent(String, SpatialEvent)
 - uid: CueX.Core.SpatialGrain`2.ReceiveEvent*
   name: ReceiveEvent
   href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveEvent_
@@ -518,6 +517,15 @@ references:
   fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).ReceiveEvent
   nameWithType: SpatialGrain<TGrainInterface, TState>.ReceiveEvent
   nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).ReceiveEvent
+- uid: CueX.Core.SpatialGrain`2.ReceiveEvent``1(``0)
+  name: ReceiveEvent<T>(T)
+  href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveEvent__1___0_
+  commentId: M:CueX.Core.SpatialGrain`2.ReceiveEvent``1(``0)
+  name.vb: ReceiveEvent(Of T)(T)
+  fullName: CueX.Core.SpatialGrain<TGrainInterface, TState>.ReceiveEvent<T>(T)
+  fullName.vb: CueX.Core.SpatialGrain(Of TGrainInterface, TState).ReceiveEvent(Of T)(T)
+  nameWithType: SpatialGrain<TGrainInterface, TState>.ReceiveEvent<T>(T)
+  nameWithType.vb: SpatialGrain(Of TGrainInterface, TState).ReceiveEvent(Of T)(T)
 - uid: CueX.Core.SpatialGrain`2.RecompileCallbacksIfNecessary
   name: RecompileCallbacksIfNecessary()
   href: api/CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RecompileCallbacksIfNecessary
@@ -1349,12 +1357,6 @@ references:
   isSpec: "True"
   fullName: CueX.GridSPS.GridPartitionGrain.GetInterestCount
   nameWithType: GridPartitionGrain.GetInterestCount
-- uid: CueX.GridSPS.GridPartitionGrain.HandleEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  name: HandleEvent(String, SpatialEvent)
-  href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_HandleEvent_System_String_CueX_Core_Subscription_SpatialEvent_
-  commentId: M:CueX.GridSPS.GridPartitionGrain.HandleEvent(System.String,CueX.Core.Subscription.SpatialEvent)
-  fullName: CueX.GridSPS.GridPartitionGrain.HandleEvent(System.String, CueX.Core.Subscription.SpatialEvent)
-  nameWithType: GridPartitionGrain.HandleEvent(String, SpatialEvent)
 - uid: CueX.GridSPS.GridPartitionGrain.HandleEvent*
   name: HandleEvent
   href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_HandleEvent_
@@ -1362,6 +1364,15 @@ references:
   isSpec: "True"
   fullName: CueX.GridSPS.GridPartitionGrain.HandleEvent
   nameWithType: GridPartitionGrain.HandleEvent
+- uid: CueX.GridSPS.GridPartitionGrain.HandleEvent``1(``0)
+  name: HandleEvent<T>(T)
+  href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_HandleEvent__1___0_
+  commentId: M:CueX.GridSPS.GridPartitionGrain.HandleEvent``1(``0)
+  name.vb: HandleEvent(Of T)(T)
+  fullName: CueX.GridSPS.GridPartitionGrain.HandleEvent<T>(T)
+  fullName.vb: CueX.GridSPS.GridPartitionGrain.HandleEvent(Of T)(T)
+  nameWithType: GridPartitionGrain.HandleEvent<T>(T)
+  nameWithType.vb: GridPartitionGrain.HandleEvent(Of T)(T)
 - uid: CueX.GridSPS.GridPartitionGrain.HandleSubscription*
   name: HandleSubscription
   href: api/CueX.GridSPS.GridPartitionGrain.html#CueX_GridSPS_GridPartitionGrain_HandleSubscription_

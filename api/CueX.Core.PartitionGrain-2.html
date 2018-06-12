@@ -309,18 +309,19 @@ to manage a partition of the SPS area.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_PartitionGrain_2_HandleEvent_System_String_CueX_Core_Subscription_SpatialEvent_.md&amp;value=---%0Auid%3A%20CueX.Core.PartitionGrain%602.HandleEvent(System.String%2CCueX.Core.Subscription.SpatialEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_PartitionGrain_2_HandleEvent__1___0_.md&amp;value=---%0Auid%3A%20CueX.Core.PartitionGrain%602.HandleEvent%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/PartitionGrain.cs/#L42">View Source</a>
   </span>
   <a id="CueX_Core_PartitionGrain_2_HandleEvent_" data-uid="CueX.Core.PartitionGrain`2.HandleEvent*"></a>
-  <h4 id="CueX_Core_PartitionGrain_2_HandleEvent_System_String_CueX_Core_Subscription_SpatialEvent_" data-uid="CueX.Core.PartitionGrain`2.HandleEvent(System.String,CueX.Core.Subscription.SpatialEvent)">HandleEvent(String, SpatialEvent)</h4>
+  <h4 id="CueX_Core_PartitionGrain_2_HandleEvent__1___0_" data-uid="CueX.Core.PartitionGrain`2.HandleEvent``1(``0)">HandleEvent&lt;T&gt;(T)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract Task HandleEvent(string eventName, SpatialEvent eventValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract Task HandleEvent&lt;T&gt;(T spatialEvent)
+    where T : SpatialEvent</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -333,13 +334,8 @@ to manage a partition of the SPS area.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">eventName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="CueX.Core.Subscription.SpatialEvent.html">SpatialEvent</a></td>
-        <td><span class="parametername">eventValue</span></td>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">spatialEvent</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -355,6 +351,21 @@ to manage a partition of the SPS area.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
