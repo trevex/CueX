@@ -70,6 +70,9 @@ namespace CueX.GridSPS
             await WriteStateAsync();
             
             // TODO: setup forward tables of neighbours depending on details.Area
+            var maxDistance = GetMaxDistance(details);
+            // Use direct forwarding table, do not flood, just tell all other partition what you need
+            // MaxDistance VS. AdaptIfNecessaryOnMove?
             
             return true;
         }
@@ -78,17 +81,15 @@ namespace CueX.GridSPS
         {
             var eventName = EventHelper.GetEventName<T>();
             var result = State.InterestFilterMap.TryGetValue(eventName, out var eventInterestFilters);
-            if (result) {
-                foreach (var keyValuePair in eventInterestFilters)
-                {
-                    
-                    if (keyValuePair.Value.IsApplicable(eventValue))
-                    {
-                        var task = keyValuePair.Key.ReceiveEvent(eventValue);
-                        // Do NOT wait, but rather attach an error handling continuation
-                        task.ContinueWith(t => _logger.LogError(t.Exception.ToString()), TaskContinuationOptions.OnlyOnFaulted);
-                    }
-                }
+            // If no filter map exists, no further action is necessary
+            if (!result) return Task.CompletedTask;
+            foreach (var keyValuePair in eventInterestFilters)
+            {
+                if (!keyValuePair.Value.IsApplicable(eventValue)) continue;
+                // If event is applicable, send it to the grain
+                var task = keyValuePair.Key.ReceiveEvent(eventValue);
+                // Do NOT wait, but rather attach an error handling continuation
+                task.ContinueWith(t => _logger.LogError(t.Exception.ToString()), TaskContinuationOptions.OnlyOnFaulted);
             }
             // TODO: forward
             return Task.CompletedTask;
@@ -102,6 +103,11 @@ namespace CueX.GridSPS
                 count += grainInterestsPair.Value.Count;
             }
             return Task.FromResult(count);
+        }
+
+        private double GetMaxDistance(SubscriptionDetails details)
+        {
+            return State.Config.PartitionHalfDiagonal + details.Area.GetHalfBoundingBoxWidth();
         }
     }
 }

@@ -3,6 +3,7 @@
 
 using System;
 using System.Threading.Tasks;
+using CueX.Geometry;
 
 namespace CueX.Core.Subscription
 {
@@ -16,8 +17,15 @@ namespace CueX.Core.Subscription
             _subject = subject;
             _details = new SubscriptionDetails
             {
-                EventTypeFilter = EventFilter.ForType<T>()
+                EventTypeFilter = EventFilter.ForType<T>(),
+                Area = Circle.WithRadius(1d) // Default, if user does not specify area
             };
+        }
+
+        public SubscriptionBuilder<T> InRadius(double radius)
+        {
+            _details.Area = Circle.WithRadius(radius);
+            return this;
         }
 
         public Task<bool> ForEach(Func<T, Task> callback)
