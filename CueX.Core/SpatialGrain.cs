@@ -6,6 +6,7 @@ using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using CueX.Core.Controller;
 using CueX.Core.Exception;
 using CueX.Core.Subscription;
 using CueX.Geometry;
@@ -97,9 +98,15 @@ namespace CueX.Core
             return new SubscriptionBuilder<T>(this);
         }
 
-        public Task ReceiveEvent<T>(T eventValue) where T : SpatialEvent
+        public Task ReceiveSpatialEvent<T>(T spatialEvent) where T : SpatialEvent
         {
-            _callbacks[EventHelper.GetEventName<T>()](eventValue);
+            _callbacks[EventHelper.GetEventName<T>()](spatialEvent);
+            return Task.CompletedTask;
+        }
+
+
+        public Task ReceiveControlEvent<T>(T controlEvent) where T : ControlEvent
+        {
             return Task.CompletedTask;
         }
 

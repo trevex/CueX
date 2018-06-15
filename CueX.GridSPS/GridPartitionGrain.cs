@@ -87,7 +87,7 @@ namespace CueX.GridSPS
             {
                 if (!keyValuePair.Value.IsApplicable(eventValue)) continue;
                 // If event is applicable, send it to the grain
-                var task = keyValuePair.Key.ReceiveEvent(eventValue);
+                var task = keyValuePair.Key.ReceiveSpatialEvent(eventValue);
                 // Do NOT wait, but rather attach an error handling continuation
                 task.ContinueWith(t => _logger.LogError(t.Exception.ToString()), TaskContinuationOptions.OnlyOnFaulted);
             }

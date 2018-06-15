@@ -2,6 +2,7 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System.Threading.Tasks;
+using CueX.Core.Controller;
 using CueX.Core.Subscription;
 using CueX.Geometry;
 using Orleans;
@@ -17,7 +18,8 @@ namespace CueX.Core
         Task<Vector3d> GetPosition();
         Task SetParent<T>(T parent) where T : Core.IPartitionGrain;
         Task<bool> RemoveSelfFromParent();
-        Task ReceiveEvent<T>(T eventValue) where T : SpatialEvent;
+        Task ReceiveSpatialEvent<T>(T spatialEvent) where T : SpatialEvent;
+        Task ReceiveControlEvent<T>(T controlEvent) where T : ControlEvent;
     }
 
 }

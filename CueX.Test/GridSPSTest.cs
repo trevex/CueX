@@ -78,12 +78,12 @@ namespace CueX.Test
             await spatialGrain.SubscribeToTestEvent();
             Assert.Equal(1, await partitionGrain.GetInterestCount());
             // Publish event to grain
-            await spatialGrain.ReceiveEvent(new TestEvent {Value = "HELLO"});
+            await spatialGrain.ReceiveSpatialEvent(new TestEvent {Value = "HELLO"});
             Assert.Equal("HELLO", await spatialGrain.GetLastTestEventValue());
             // Recompile callbacks
             await spatialGrain.ForcefullyRecompileCallback();
             // Try again
-            await spatialGrain.ReceiveEvent(new TestEvent {Value = "WORLD"});
+            await spatialGrain.ReceiveSpatialEvent(new TestEvent {Value = "WORLD"});
             Assert.Equal("WORLD", await spatialGrain.GetLastTestEventValue());
             await _pubSub.Dispatch(new TestEvent {Position = new Vector3d(3d, 3d, 0d), Value = "DISPATCHED"});
             Thread.Sleep(2000); // NOTE: internal event dispatch is async
