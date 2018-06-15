@@ -39,38 +39,16 @@ namespace CueX.GridSPS
             await base.OnActivateAsync();
         }
         
-        public async Task<bool> HandleSubscription<T>(T subscribingGrain, SubscriptionDetails details) where T : ISpatialGrain
+        public async Task<bool> HandleSubscription<T>(T subscriber, SubscriptionDetails details) where T : ISpatialGrain
         {
             var eventName = details.EventTypeFilter.GetTypename();
-            // Check if a filter map exists for this event
-            var result = State.InterestFilterMap.TryGetValue(eventName, out var eventInterestFilters);
-            if (!result) // If not, create the dictionary
-            { 
-                eventInterestFilters = new Dictionary<ISpatialGrain, SubscriptionFilter>();
-                State.InterestFilterMap[eventName] = eventInterestFilters;
-            }
-            // If the filter map exists, check if the grain already has a subscription
-            else if (eventInterestFilters.ContainsKey(subscribingGrain))
-            {
-                return false;
-            }
-            // Create the subscription filter for this grain
-            eventInterestFilters[subscribingGrain] = new SubscriptionFilter
+            var result = State.InterestManager.Add(subscriber, eventName, new SubscriptionFilter
             {
                 Area = details.Area,
                 OriginTypeFilter = details.OriginTypeFilter
-            };
-            
-            // Check if the interest map exists for this grain
-            result = State.GrainInterestMap.TryGetValue(subscribingGrain, out var grainInterests);
-            if (!result) // If not, create it
-            {
-                grainInterests = new List<string>();
-                State.GrainInterestMap[subscribingGrain] = grainInterests;
-            } 
-            // Add the event to the grain
-            grainInterests.Add(eventName);
-            
+            });
+            // If the subscription could not be added, return false
+            if (!result) return false;
             await WriteStateAsync();
             
             // TODO: setup forward tables of neighbours depending on details.Area
@@ -84,9 +62,10 @@ namespace CueX.GridSPS
         public Task HandleSpatialEvent<T>(T eventValue) where T : SpatialEvent
         {
             var eventName = EventHelper.GetEventName<T>();
-            var result = State.InterestFilterMap.TryGetValue(eventName, out var eventInterestFilters);
-            // If no filter map exists, no further action is necessary
+            var result = State.InterestManager.TryGetEventFilters(eventName, out var eventInterestFilters);
+            // If no filters exist, no one subscribed the event
             if (!result) return Task.CompletedTask;
+            // Otherwise for each pair<ISpatialGrain, Filter> do:
             foreach (var keyValuePair in eventInterestFilters)
             {
                 if (!keyValuePair.Value.IsApplicable(eventValue)) continue;
@@ -101,12 +80,7 @@ namespace CueX.GridSPS
 
         public Task<int> GetInterestCount()
         {
-            var count = 0;
-            foreach (var grainInterestsPair in State.GrainInterestMap)
-            {
-                count += grainInterestsPair.Value.Count;
-            }
-            return Task.FromResult(count);
+            return Task.FromResult(State.InterestManager.GetInterestCount());
         }
 
         private double GetMaxDistance(SubscriptionDetails details)
@@ -124,6 +98,7 @@ namespace CueX.GridSPS
         
         public async Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain
         {
+            // TODO: remove subscriptions!
             var found = State.Children.Remove(spatialGrain);
             if (found) await WriteStateAsync();
             return found;

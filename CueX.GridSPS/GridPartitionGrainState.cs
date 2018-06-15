@@ -15,8 +15,7 @@ namespace CueX.GridSPS
 
         public List<ISpatialGrain> Children = new List<ISpatialGrain>();
         
-        public readonly Dictionary<string /* EventType */, Dictionary<ISpatialGrain, SubscriptionFilter>> InterestFilterMap = new Dictionary<string, Dictionary<ISpatialGrain, SubscriptionFilter>>();
-        public readonly Dictionary<ISpatialGrain, List<string/* EventType */>> GrainInterestMap = new Dictionary<ISpatialGrain, List<string>>();
+        public readonly InterestManager InterestManager = new InterestManager();
         public readonly Dictionary<string /* EventType */, List<KeyValuePair<IGridPartitionGrain, double /* MaxDistance */>>> ForwardMap = new Dictionary<string, List<KeyValuePair<IGridPartitionGrain, double>>>();
     }
 }
