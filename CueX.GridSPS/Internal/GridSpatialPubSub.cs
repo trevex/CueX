@@ -21,10 +21,11 @@ namespace CueX.GridSPS.Internal
             _config = config;
         }
 
-        public Task Initialize()
+        public async Task Initialize()
         {
             var configGrain = _client.GetGrain<IGridConfigurationGrain>(GridConfigurationGrain.DefaultKey);
-            return configGrain.SetConfiguration(_config);
+            await configGrain.SetConfiguration(_config);
+            await configGrain.SetController();
         }
 
         public async Task Insert<T>(T spatialGrain) where T : ISpatialGrain
@@ -41,14 +42,14 @@ namespace CueX.GridSPS.Internal
 
         public async Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain
         {
-            return await spatialGrain.RemoveSelfFromParent();
+            return await spatialGrain.Destroy();
         }
 
         public async Task Dispatch<T>(T spatialEvent) where T : SpatialEvent
         {
             var partitionKey = IndexHelper.GetPartitionKeyForPosition(spatialEvent.Position, _config.PartitionSize);
             var partition = _client.GetGrain<IGridPartitionGrain>(partitionKey);
-            await partition.HandleEvent(spatialEvent);
+            await partition.HandleSpatialEvent(spatialEvent);
         }
     }
 }

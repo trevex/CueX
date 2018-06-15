@@ -3,17 +3,20 @@
 
 using System.Threading.Tasks;
 using CueX.Core;
-using CueX.Core.Subscription;
+using CueX.Core.Controller;
+using CueX.GridSPS.Controller;
 using CueX.Test.Events;
+using Microsoft.Extensions.Logging;
 
 namespace CueX.Test.Grains
 {
  
     public class TestSpatialGrain : SpatialGrain<ITestSpatialGrain, TestSpatialGrainState>, ITestSpatialGrain
     {
-        public Task<bool> HasParent()
+        
+        public Task<bool> HasGridPartition()
         {
-            return Task.FromResult(State.Parent != null);
+            return (State.Controller as GridController).HasPartition();
         }
 
         public async Task SubscribeToTestEvent()
@@ -39,5 +42,6 @@ namespace CueX.Test.Grains
             RecompileCallbacksIfNecessary();
             return Task.CompletedTask;
         }
+
     }
 }

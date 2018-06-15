@@ -1,12 +1,12 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
-using System.Collections.Generic;
+using CueX.Core.Controller;
 
-namespace CueX.Core
+namespace CueX.GridSPS.Controller
 {
-    public abstract class PartitionGrainState
+    public class SetParentEvent : ControlEvent
     {
-        public List<ISpatialGrain> Children = new List<ISpatialGrain>();
+        public IGridPartitionGrain Partition;
     }
 }

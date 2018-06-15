@@ -38,8 +38,11 @@ namespace CueX.Test
             config.PartitionSize = 3.0d;
             var configGrain = _client.GetGrain<IGridConfigurationGrain>(GridConfigurationGrain.DefaultKey);
             await configGrain.SetConfiguration(config);
+            await configGrain.SetController();
             var savedConfig = await configGrain.GetConfiguration();
+            var savedController = await configGrain.GetController();
             Assert.Equal(savedConfig.PartitionSize, config.PartitionSize);
+            Assert.NotNull(savedController);
         }
 
         [Fact]
@@ -60,7 +63,7 @@ namespace CueX.Test
             var spatialGrain = _client.GetGrain<ITestSpatialGrain>(2);
             await spatialGrain.SetPosition(new Vector3d(2d, 2d, 0d));
             await _pubSub.Insert(spatialGrain);
-            Assert.Equal(true, await spatialGrain.HasParent());
+            Assert.Equal(true, await spatialGrain.HasGridPartition());
             // Remove it again
             await _pubSub.Remove(spatialGrain);
             var partitionGrain = _client.GetGrain<IGridPartitionGrain>("10,10");

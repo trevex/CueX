@@ -10,6 +10,7 @@ using CueX.Core.Controller;
 using CueX.Core.Exception;
 using CueX.Core.Subscription;
 using CueX.Geometry;
+using Microsoft.Extensions.Logging;
 using Orleans;
 
 namespace CueX.Core
@@ -23,12 +24,13 @@ namespace CueX.Core
     public abstract class SpatialGrain<TGrainInterface, TState> : Grain<TState>, ISpatialGrain, ISubscriptionSubject
         where TState : SpatialGrainState, new() where TGrainInterface : ISpatialGrain
     {
+        
         private readonly Dictionary<string, Func<SpatialEvent, Task>> _callbacks = new Dictionary<string, Func<SpatialEvent, Task>>();
-
-        public override Task OnActivateAsync()
+        
+        public override async Task OnActivateAsync()
         {
             RecompileCallbacksIfNecessary();
-            return base.OnActivateAsync();
+            await base.OnActivateAsync();
         }
 
         /// <summary>
@@ -36,19 +38,24 @@ namespace CueX.Core
         /// </summary>
         protected void RecompileCallbacksIfNecessary()
         {
-            if (_callbacks.Count != State.CallbackMethodInfos.Count)
-            {
-                foreach (var pair in State.CallbackMethodInfos)
-                { 
-                    var methodInfo = pair.Value;
-                    var targetType = pair.Key;
-                    var interfaceParam = Expression.Parameter(typeof(SpatialEvent));
-                    var eventParam = Expression.Convert(interfaceParam, targetType);
-                    var lambdaExpression = Expression.Lambda<Func<SpatialEvent, Task>>(
-                        Expression.Call(Expression.Constant(this), methodInfo, eventParam), interfaceParam);
-                    _callbacks[targetType.ToString()] = lambdaExpression.Compile(); // TODO: pair.Key.ToString() is redundant, either clean up EventHelper or this bit
-                }
+            if (_callbacks.Count == State.CallbackMethodInfos.Count) return;
+            foreach (var pair in State.CallbackMethodInfos)
+            { 
+                var methodInfo = pair.Value;
+                var targetType = pair.Key;
+                var interfaceParam = Expression.Parameter(typeof(SpatialEvent));
+                var eventParam = Expression.Convert(interfaceParam, targetType);
+                var lambdaExpression = Expression.Lambda<Func<SpatialEvent, Task>>(
+                    Expression.Call(Expression.Constant(this), methodInfo, eventParam), interfaceParam);
+                _callbacks[targetType.ToString()] = lambdaExpression.Compile(); // TODO: pair.Key.ToString() is redundant, either clean up EventHelper or this bit
             }
+        }
+        
+        public Task SetController(IController controller)
+        {
+            State.Controller = controller;
+            State.Controller.Initialize(this);
+            return WriteStateAsync();
         }
 
         public async Task SetPosition(Vector3d newPosition)
@@ -62,20 +69,14 @@ namespace CueX.Core
             return Task.FromResult(State.Position);
         }
 
-        public async Task SetParent<T>(T parent) where T : IPartitionGrain
+        public Task<bool> Destroy()
         {
-            State.Parent = parent;
-            await WriteStateAsync();
-        }
-
-        public Task<bool> RemoveSelfFromParent()
-        {
-            return State.Parent.Remove(this.AsReference<TGrainInterface>());
+            return State.Controller.Destroy(this); // TODO: Controller api could be cleaner and use A<B,C> and extract the type to avoid the transformation here
         }
 
         public async Task<bool> SubscribeWithDetails<T>(SubscriptionDetails details, Func<T, Task> callback) where T : SpatialEvent
         {
-            var result = await State.Parent.HandleSubscription(this.AsReference<TGrainInterface>(), details);
+            var result = await State.Controller.HandleSubscription(this, details);
             if (!result) return false;
             var method = callback.Method;
             if (method.DeclaringType == null || !CodeGenerator.IsValidLanguageIndependentIdentifier(method.Name))
@@ -105,9 +106,10 @@ namespace CueX.Core
         }
 
 
-        public Task ReceiveControlEvent<T>(T controlEvent) where T : ControlEvent
+        public async Task ReceiveControlEvent<T>(T controlEvent) where T : ControlEvent
         {
-            return Task.CompletedTask;
+            await State.Controller.ReceiveControlEvent(this, controlEvent);
+            await WriteStateAsync();
         }
 
         /// <summary>

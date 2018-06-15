@@ -14,10 +14,10 @@ namespace CueX.Core
     /// </summary>
     public interface ISpatialGrain : IGrain
     {
+        Task SetController(IController controller);
         Task SetPosition(Vector3d newPosition);
         Task<Vector3d> GetPosition();
-        Task SetParent<T>(T parent) where T : Core.IPartitionGrain;
-        Task<bool> RemoveSelfFromParent();
+        Task<bool> Destroy();
         Task ReceiveSpatialEvent<T>(T spatialEvent) where T : SpatialEvent;
         Task ReceiveControlEvent<T>(T controlEvent) where T : ControlEvent;
     }

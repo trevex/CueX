@@ -2,6 +2,7 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System.Threading.Tasks;
+using CueX.Core.Controller;
 using Orleans;
 
 namespace CueX.GridSPS.Config
@@ -13,5 +14,7 @@ namespace CueX.GridSPS.Config
     {
         Task<GridConfiguration> GetConfiguration();
         Task SetConfiguration(GridConfiguration config);
+        Task SetController();
+        Task<IController> GetController();
     }
 }

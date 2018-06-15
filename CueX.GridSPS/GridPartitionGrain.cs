@@ -2,16 +2,20 @@
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using CueX.Core;
+using CueX.Core.Controller;
 using CueX.Core.Subscription;
 using CueX.GridSPS.Config;
+using CueX.GridSPS.Controller;
+using Orleans;
 
 
 namespace CueX.GridSPS
 {
-    public class GridPartitionGrain : PartitionGrain<IGridPartitionGrain, GridPartitionGrainState>, IGridPartitionGrain
+    public class GridPartitionGrain : Grain<GridPartitionGrainState>, IGridPartitionGrain
     {
         private readonly ILogger _logger;
         private readonly IGridConfigurationService _configService;
@@ -35,7 +39,7 @@ namespace CueX.GridSPS
             await base.OnActivateAsync();
         }
         
-        public override async Task<bool> HandleSubscription<T>(T subscribingGrain, SubscriptionDetails details)
+        public async Task<bool> HandleSubscription<T>(T subscribingGrain, SubscriptionDetails details) where T : ISpatialGrain
         {
             var eventName = details.EventTypeFilter.GetTypename();
             // Check if a filter map exists for this event
@@ -77,7 +81,7 @@ namespace CueX.GridSPS
             return true;
         }
 
-        public override Task HandleEvent<T>(T eventValue)
+        public Task HandleSpatialEvent<T>(T eventValue) where T : SpatialEvent
         {
             var eventName = EventHelper.GetEventName<T>();
             var result = State.InterestFilterMap.TryGetValue(eventName, out var eventInterestFilters);
@@ -109,5 +113,26 @@ namespace CueX.GridSPS
         {
             return State.Config.PartitionHalfDiagonal + details.Area.GetHalfBoundingBoxWidth();
         }
+        
+        public async Task Add<T>(T spatialGrain) where T : ISpatialGrain
+        {
+            State.Children.Add(spatialGrain);
+            await spatialGrain.SetController(new GridController());
+            await spatialGrain.ReceiveControlEvent(new SetParentEvent{ Partition =  this.AsReference<IGridPartitionGrain>() });
+            await WriteStateAsync();
+        } 
+        
+        public async Task<bool> Remove<T>(T spatialGrain) where T : ISpatialGrain
+        {
+            var found = State.Children.Remove(spatialGrain);
+            if (found) await WriteStateAsync();
+            return found;
+        }
+
+        public Task<IEnumerable<ISpatialGrain>> GetChildren()
+        {
+            return Task.FromResult(State.Children.AsEnumerable());
+        }
+
     }
 }

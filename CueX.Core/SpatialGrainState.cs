@@ -4,6 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using CueX.Core.Controller;
 using CueX.Geometry;
 
 namespace CueX.Core
@@ -11,7 +12,8 @@ namespace CueX.Core
     public abstract class SpatialGrainState
     {
         public Vector3d Position;
-        public IPartitionGrain Parent;
+        public IController Controller;
+        
         public Dictionary<Type /* EventType */, MethodInfo> CallbackMethodInfos = new Dictionary<Type, MethodInfo>();
     }
 }

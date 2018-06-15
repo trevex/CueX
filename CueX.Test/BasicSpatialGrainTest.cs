@@ -24,6 +24,7 @@ namespace CueX.Test
         {
             var spatialGrain = _client.GetGrain<ITestSpatialGrain>(0);
             var pos = new Vector3d(1.0, 2.0, 3.0);
+            Assert.NotNull(spatialGrain);
             await spatialGrain.SetPosition(pos);
             var assignedPos = await spatialGrain.GetPosition();
             Assert.Equal(true, pos.Equals(assignedPos));
