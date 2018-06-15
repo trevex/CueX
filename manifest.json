@@ -581,7 +581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.GridPartitionGrain.html",
-          "hash": "7nNivxUKKuKeQKL4SZKTyA=="
+          "hash": "NJNrRmH4SI5lZ5zl7iJEmQ=="
         }
       },
       "is_incremental": false,
@@ -593,7 +593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.GridPartitionGrainState.html",
-          "hash": "bOhSeyYpaMocCx9kRjaG0A=="
+          "hash": "GUPjZ0ban4iPYYNHSB3xlA=="
         }
       },
       "is_incremental": false,
@@ -625,11 +625,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/CueX.GridSPS.InterestManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CueX.GridSPS.InterestManager.html",
+          "hash": "wtm7dbG43S3fOBfEB9bYOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/CueX.GridSPS.yml",
       "output": {
         ".html": {
           "relative_path": "api/CueX.GridSPS.html",
-          "hash": "kKbSj2qvlu+mKocC5IFCVQ=="
+          "hash": "8hBHJ1hmdkUKjaEmBEtCMw=="
         }
       },
       "is_incremental": false,
@@ -893,7 +905,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wQFgxeysNKk36xP3izpFWw=="
+          "hash": "n4Ij+5WDwoR23CkaidAECg=="
         }
       },
       "is_incremental": false,
@@ -925,11 +937,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },

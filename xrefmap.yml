@@ -1734,18 +1734,12 @@ references:
   commentId: F:CueX.GridSPS.GridPartitionGrainState.ForwardMap
   fullName: CueX.GridSPS.GridPartitionGrainState.ForwardMap
   nameWithType: GridPartitionGrainState.ForwardMap
-- uid: CueX.GridSPS.GridPartitionGrainState.GrainInterestMap
-  name: GrainInterestMap
-  href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_GrainInterestMap
-  commentId: F:CueX.GridSPS.GridPartitionGrainState.GrainInterestMap
-  fullName: CueX.GridSPS.GridPartitionGrainState.GrainInterestMap
-  nameWithType: GridPartitionGrainState.GrainInterestMap
-- uid: CueX.GridSPS.GridPartitionGrainState.InterestFilterMap
-  name: InterestFilterMap
-  href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_InterestFilterMap
-  commentId: F:CueX.GridSPS.GridPartitionGrainState.InterestFilterMap
-  fullName: CueX.GridSPS.GridPartitionGrainState.InterestFilterMap
-  nameWithType: GridPartitionGrainState.InterestFilterMap
+- uid: CueX.GridSPS.GridPartitionGrainState.InterestManager
+  name: InterestManager
+  href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_InterestManager
+  commentId: F:CueX.GridSPS.GridPartitionGrainState.InterestManager
+  fullName: CueX.GridSPS.GridPartitionGrainState.InterestManager
+  nameWithType: GridPartitionGrainState.InterestManager
 - uid: CueX.GridSPS.GridPartitionGrainState.IsInitialized
   name: IsInitialized
   href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_IsInitialized
@@ -1896,6 +1890,57 @@ references:
   fullName.vb: CueX.GridSPS.IGridPartitionGrain.Remove(Of T)(T)
   nameWithType: IGridPartitionGrain.Remove<T>(T)
   nameWithType.vb: IGridPartitionGrain.Remove(Of T)(T)
+- uid: CueX.GridSPS.InterestManager
+  name: InterestManager
+  href: api/CueX.GridSPS.InterestManager.html
+  commentId: T:CueX.GridSPS.InterestManager
+  fullName: CueX.GridSPS.InterestManager
+  nameWithType: InterestManager
+- uid: CueX.GridSPS.InterestManager.Add*
+  name: Add
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_Add_
+  commentId: Overload:CueX.GridSPS.InterestManager.Add
+  isSpec: "True"
+  fullName: CueX.GridSPS.InterestManager.Add
+  nameWithType: InterestManager.Add
+- uid: CueX.GridSPS.InterestManager.Add``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name: Add<T>(T, String, SubscriptionFilter)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_Add__1___0_System_String_CueX_Core_Subscription_SubscriptionFilter_
+  commentId: M:CueX.GridSPS.InterestManager.Add``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name.vb: Add(Of T)(T, String, SubscriptionFilter)
+  fullName: CueX.GridSPS.InterestManager.Add<T>(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  fullName.vb: CueX.GridSPS.InterestManager.Add(Of T)(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  nameWithType: InterestManager.Add<T>(T, String, SubscriptionFilter)
+  nameWithType.vb: InterestManager.Add(Of T)(T, String, SubscriptionFilter)
+- uid: CueX.GridSPS.InterestManager.GetInterestCount
+  name: GetInterestCount()
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetInterestCount
+  commentId: M:CueX.GridSPS.InterestManager.GetInterestCount
+  fullName: CueX.GridSPS.InterestManager.GetInterestCount()
+  nameWithType: InterestManager.GetInterestCount()
+- uid: CueX.GridSPS.InterestManager.GetInterestCount*
+  name: GetInterestCount
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetInterestCount_
+  commentId: Overload:CueX.GridSPS.InterestManager.GetInterestCount
+  isSpec: "True"
+  fullName: CueX.GridSPS.InterestManager.GetInterestCount
+  nameWithType: InterestManager.GetInterestCount
+- uid: CueX.GridSPS.InterestManager.TryGetEventFilters(System.String,System.Collections.Generic.Dictionary{CueX.Core.ISpatialGrain,CueX.Core.Subscription.SubscriptionFilter}@)
+  name: TryGetEventFilters(String, out Dictionary<ISpatialGrain, SubscriptionFilter>)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_TryGetEventFilters_System_String_System_Collections_Generic_Dictionary_CueX_Core_ISpatialGrain_CueX_Core_Subscription_SubscriptionFilter___
+  commentId: M:CueX.GridSPS.InterestManager.TryGetEventFilters(System.String,System.Collections.Generic.Dictionary{CueX.Core.ISpatialGrain,CueX.Core.Subscription.SubscriptionFilter}@)
+  name.vb: TryGetEventFilters(String, ByRef Dictionary(Of ISpatialGrain, SubscriptionFilter))
+  fullName: CueX.GridSPS.InterestManager.TryGetEventFilters(System.String, out System.Collections.Generic.Dictionary<CueX.Core.ISpatialGrain, CueX.Core.Subscription.SubscriptionFilter>)
+  fullName.vb: CueX.GridSPS.InterestManager.TryGetEventFilters(System.String, ByRef System.Collections.Generic.Dictionary(Of CueX.Core.ISpatialGrain, CueX.Core.Subscription.SubscriptionFilter))
+  nameWithType: InterestManager.TryGetEventFilters(String, out Dictionary<ISpatialGrain, SubscriptionFilter>)
+  nameWithType.vb: InterestManager.TryGetEventFilters(String, ByRef Dictionary(Of ISpatialGrain, SubscriptionFilter))
+- uid: CueX.GridSPS.InterestManager.TryGetEventFilters*
+  name: TryGetEventFilters
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_TryGetEventFilters_
+  commentId: Overload:CueX.GridSPS.InterestManager.TryGetEventFilters
+  isSpec: "True"
+  fullName: CueX.GridSPS.InterestManager.TryGetEventFilters
+  nameWithType: InterestManager.TryGetEventFilters
 - uid: CueX.Test
   name: CueX.Test
   href: api/CueX.Test.html
