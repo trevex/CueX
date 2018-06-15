@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SimpleGrain
    | CueX Documentation ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.36.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -112,16 +112,16 @@
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RecompileCallbacksIfNecessary">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.RecompileCallbacksIfNecessary()</a>
     </div>
     <div>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SetController_CueX_Core_Controller_IController_">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.SetController(IController)</a>
+    </div>
+    <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SetPosition_CueX_Geometry_Vector3d_">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.SetPosition(Vector3d)</a>
     </div>
     <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_GetPosition">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.GetPosition()</a>
     </div>
     <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SetParent__1___0_">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.SetParent&lt;T&gt;(T)</a>
-    </div>
-    <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RemoveSelfFromParent">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.RemoveSelfFromParent()</a>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Destroy">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.Destroy()</a>
     </div>
     <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeWithDetails__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.SubscribeWithDetails&lt;T&gt;(SubscriptionDetails, Func&lt;T, Task&gt;)</a>
@@ -130,7 +130,10 @@
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo__1">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.SubscribeTo&lt;T&gt;()</a>
     </div>
     <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveEvent__1___0_">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.ReceiveEvent&lt;T&gt;(T)</a>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveSpatialEvent__1___0_">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.ReceiveSpatialEvent&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveControlEvent__1___0_">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.ReceiveControlEvent&lt;T&gt;(T)</a>
     </div>
     <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ForceDiscardCallbacks">SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;.ForceDiscardCallbacks()</a>
@@ -223,40 +226,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SimpleGrain : SpatialGrain&lt;ISimpleGrain, SimpleGrainState&gt;, ILifecycleParticipant&lt;IGrainLifecycle&gt;, ISubscriptionSubject, ISimpleGrain, ISpatialGrain, IGrainWithIntegerKey, IGrain, IAddressable</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=SimpleExample_Grains_SimpleGrain__ctor_Microsoft_Extensions_Logging_ILogger_SimpleExample_Grains_SimpleGrain__.md&amp;value=---%0Auid%3A%20SimpleExample.Grains.SimpleGrain.%23ctor(Microsoft.Extensions.Logging.ILogger%7BSimpleExample.Grains.SimpleGrain%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/Samples/SimpleExample.Grains/SimpleGrain.cs/#L17">View Source</a>
-  </span>
-  <a id="SimpleExample_Grains_SimpleGrain__ctor_" data-uid="SimpleExample.Grains.SimpleGrain.#ctor*"></a>
-  <h4 id="SimpleExample_Grains_SimpleGrain__ctor_Microsoft_Extensions_Logging_ILogger_SimpleExample_Grains_SimpleGrain__" data-uid="SimpleExample.Grains.SimpleGrain.#ctor(Microsoft.Extensions.Logging.ILogger{SimpleExample.Grains.SimpleGrain})">SimpleGrain(ILogger&lt;SimpleGrain&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SimpleGrain(ILogger&lt;SimpleGrain&gt; logger)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<a class="xref" href="SimpleExample.Grains.SimpleGrain.html">SimpleGrain</a>&gt;</td>
-        <td><span class="parametername">logger</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -264,7 +233,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=SimpleExample_Grains_SimpleGrain_OnSimpleEvent_SimpleExample_Grains_SimpleEvent_.md&amp;value=---%0Auid%3A%20SimpleExample.Grains.SimpleGrain.OnSimpleEvent(SimpleExample.Grains.SimpleEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/Samples/SimpleExample.Grains/SimpleGrain.cs/#L28">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/Samples/SimpleExample.Grains/SimpleGrain.cs/#L23">View Source</a>
   </span>
   <a id="SimpleExample_Grains_SimpleGrain_OnSimpleEvent_" data-uid="SimpleExample.Grains.SimpleGrain.OnSimpleEvent*"></a>
   <h4 id="SimpleExample_Grains_SimpleGrain_OnSimpleEvent_SimpleExample_Grains_SimpleEvent_" data-uid="SimpleExample.Grains.SimpleGrain.OnSimpleEvent(SimpleExample.Grains.SimpleEvent)">OnSimpleEvent(SimpleEvent)</h4>
@@ -311,7 +280,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=SimpleExample_Grains_SimpleGrain_SubscribeToSimpleEvent.md&amp;value=---%0Auid%3A%20SimpleExample.Grains.SimpleGrain.SubscribeToSimpleEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/Samples/SimpleExample.Grains/SimpleGrain.cs/#L22">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/Samples/SimpleExample.Grains/SimpleGrain.cs/#L17">View Source</a>
   </span>
   <a id="SimpleExample_Grains_SimpleGrain_SubscribeToSimpleEvent_" data-uid="SimpleExample.Grains.SimpleGrain.SubscribeToSimpleEvent*"></a>
   <h4 id="SimpleExample_Grains_SimpleGrain_SubscribeToSimpleEvent" data-uid="SimpleExample.Grains.SimpleGrain.SubscribeToSimpleEvent">SubscribeToSimpleEvent()</h4>
@@ -369,7 +338,7 @@
                     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=SimpleExample_Grains_SimpleGrain.md&amp;value=---%0Auid%3A%20SimpleExample.Grains.SimpleGrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/Samples/SimpleExample.Grains/SimpleGrain.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/Samples/SimpleExample.Grains/SimpleGrain.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

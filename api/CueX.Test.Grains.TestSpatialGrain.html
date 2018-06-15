@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TestSpatialGrain
    | CueX Documentation ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.36.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -112,16 +112,16 @@
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RecompileCallbacksIfNecessary">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.RecompileCallbacksIfNecessary()</a>
     </div>
     <div>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SetController_CueX_Core_Controller_IController_">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.SetController(IController)</a>
+    </div>
+    <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SetPosition_CueX_Geometry_Vector3d_">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.SetPosition(Vector3d)</a>
     </div>
     <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_GetPosition">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.GetPosition()</a>
     </div>
     <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SetParent__1___0_">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.SetParent&lt;T&gt;(T)</a>
-    </div>
-    <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_RemoveSelfFromParent">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.RemoveSelfFromParent()</a>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_Destroy">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.Destroy()</a>
     </div>
     <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeWithDetails__1_CueX_Core_Subscription_SubscriptionDetails_System_Func___0_System_Threading_Tasks_Task__">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.SubscribeWithDetails&lt;T&gt;(SubscriptionDetails, Func&lt;T, Task&gt;)</a>
@@ -130,7 +130,10 @@
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_SubscribeTo__1">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.SubscribeTo&lt;T&gt;()</a>
     </div>
     <div>
-      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveEvent__1___0_">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.ReceiveEvent&lt;T&gt;(T)</a>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveSpatialEvent__1___0_">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.ReceiveSpatialEvent&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ReceiveControlEvent__1___0_">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.ReceiveControlEvent&lt;T&gt;(T)</a>
     </div>
     <div>
       <a class="xref" href="CueX.Core.SpatialGrain-2.html#CueX_Core_SpatialGrain_2_ForceDiscardCallbacks">SpatialGrain&lt;ITestSpatialGrain, TestSpatialGrainState&gt;.ForceDiscardCallbacks()</a>
@@ -230,7 +233,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain_ForcefullyRecompileCallback.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L36">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L39">View Source</a>
   </span>
   <a id="CueX_Test_Grains_TestSpatialGrain_ForcefullyRecompileCallback_" data-uid="CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback*"></a>
   <h4 id="CueX_Test_Grains_TestSpatialGrain_ForcefullyRecompileCallback" data-uid="CueX.Test.Grains.TestSpatialGrain.ForcefullyRecompileCallback">ForcefullyRecompileCallback()</h4>
@@ -260,7 +263,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain_GetLastTestEventValue.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L31">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L34">View Source</a>
   </span>
   <a id="CueX_Test_Grains_TestSpatialGrain_GetLastTestEventValue_" data-uid="CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue*"></a>
   <h4 id="CueX_Test_Grains_TestSpatialGrain_GetLastTestEventValue" data-uid="CueX.Test.Grains.TestSpatialGrain.GetLastTestEventValue">GetLastTestEventValue()</h4>
@@ -287,18 +290,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain_HasParent.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain.HasParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain_HasGridPartition.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain.HasGridPartition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L14">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L17">View Source</a>
   </span>
-  <a id="CueX_Test_Grains_TestSpatialGrain_HasParent_" data-uid="CueX.Test.Grains.TestSpatialGrain.HasParent*"></a>
-  <h4 id="CueX_Test_Grains_TestSpatialGrain_HasParent" data-uid="CueX.Test.Grains.TestSpatialGrain.HasParent">HasParent()</h4>
+  <a id="CueX_Test_Grains_TestSpatialGrain_HasGridPartition_" data-uid="CueX.Test.Grains.TestSpatialGrain.HasGridPartition*"></a>
+  <h4 id="CueX_Test_Grains_TestSpatialGrain_HasGridPartition" data-uid="CueX.Test.Grains.TestSpatialGrain.HasGridPartition">HasGridPartition()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; HasParent()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; HasGridPartition()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -320,7 +323,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain_OnTestEvent_CueX_Test_Events_TestEvent_.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain.OnTestEvent(CueX.Test.Events.TestEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L25">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L28">View Source</a>
   </span>
   <a id="CueX_Test_Grains_TestSpatialGrain_OnTestEvent_" data-uid="CueX.Test.Grains.TestSpatialGrain.OnTestEvent*"></a>
   <h4 id="CueX_Test_Grains_TestSpatialGrain_OnTestEvent_CueX_Test_Events_TestEvent_" data-uid="CueX.Test.Grains.TestSpatialGrain.OnTestEvent(CueX.Test.Events.TestEvent)">OnTestEvent(TestEvent)</h4>
@@ -367,7 +370,7 @@
     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain_SubscribeToTestEvent.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain.SubscribeToTestEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L19">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L22">View Source</a>
   </span>
   <a id="CueX_Test_Grains_TestSpatialGrain_SubscribeToTestEvent_" data-uid="CueX.Test.Grains.TestSpatialGrain.SubscribeToTestEvent*"></a>
   <h4 id="CueX_Test_Grains_TestSpatialGrain_SubscribeToTestEvent" data-uid="CueX.Test.Grains.TestSpatialGrain.SubscribeToTestEvent">SubscribeToTestEvent()</h4>
@@ -425,7 +428,7 @@
                     <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_TestSpatialGrain.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.TestSpatialGrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/TestSpatialGrain.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

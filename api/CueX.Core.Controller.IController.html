@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IPartitionGrain
+    <title>Interface IController
    | CueX Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IPartitionGrain
+    <meta name="title" content="Interface IController
    | CueX Documentation ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.36.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -78,36 +78,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CueX.Core.IPartitionGrain">
+            <article class="content wrap" id="_content" data-uid="CueX.Core.Controller.IController">
   
   
-  <h1 id="CueX_Core_IPartitionGrain" data-uid="CueX.Core.IPartitionGrain" class="text-break">Interface IPartitionGrain
+  <h1 id="CueX_Core_Controller_IController" data-uid="CueX.Core.Controller.IController" class="text-break">Interface IController
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.Core.html">CueX.Core</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.Core.Controller.html">CueX.Core.Controller</a></h6>
   <h6><strong>Assembly</strong>: CueX.Core.dll</h6>
-  <h5 id="CueX_Core_IPartitionGrain_syntax">Syntax</h5>
+  <h5 id="CueX_Core_Controller_IController_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IPartitionGrain : IGrain, IAddressable</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IController</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_IPartitionGrain_Add__1___0_.md&amp;value=---%0Auid%3A%20CueX.Core.IPartitionGrain.Add%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_Controller_IController_Destroy__2_CueX_Core_SpatialGrain___0___1__.md&amp;value=---%0Auid%3A%20CueX.Core.Controller.IController.Destroy%60%602(CueX.Core.SpatialGrain%7B%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/IPartitionGrain.cs/#L13">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/Controller/IController.cs/#L17">View Source</a>
   </span>
-  <a id="CueX_Core_IPartitionGrain_Add_" data-uid="CueX.Core.IPartitionGrain.Add*"></a>
-  <h4 id="CueX_Core_IPartitionGrain_Add__1___0_" data-uid="CueX.Core.IPartitionGrain.Add``1(``0)">Add&lt;T&gt;(T)</h4>
+  <a id="CueX_Core_Controller_IController_Destroy_" data-uid="CueX.Core.Controller.IController.Destroy*"></a>
+  <h4 id="CueX_Core_Controller_IController_Destroy__2_CueX_Core_SpatialGrain___0___1__" data-uid="CueX.Core.Controller.IController.Destroy``2(CueX.Core.SpatialGrain{``0,``1})">Destroy&lt;TGrainInterface, TState&gt;(SpatialGrain&lt;TGrainInterface, TState&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task Add&lt;T&gt;(T spatialGrain)
-    where T : ISpatialGrain</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; Destroy&lt;TGrainInterface, TState&gt;(SpatialGrain&lt;TGrainInterface, TState&gt; spatialGrain)
+    where TGrainInterface : ISpatialGrain where TState : SpatialGrainState, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -120,7 +120,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="CueX.Core.SpatialGrain-2.html">SpatialGrain</a>&lt;TGrainInterface, TState&gt;</td>
         <td><span class="parametername">spatialGrain</span></td>
         <td></td>
       </tr>
@@ -136,7 +136,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -151,56 +151,30 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="parametername">TGrainInterface</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_IPartitionGrain_GetChildren.md&amp;value=---%0Auid%3A%20CueX.Core.IPartitionGrain.GetChildren%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_Controller_IController_HandleSubscription__2_CueX_Core_SpatialGrain___0___1__CueX_Core_Subscription_SubscriptionDetails_.md&amp;value=---%0Auid%3A%20CueX.Core.Controller.IController.HandleSubscription%60%602(CueX.Core.SpatialGrain%7B%60%600%2C%60%601%7D%2CCueX.Core.Subscription.SubscriptionDetails)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/IPartitionGrain.cs/#L15">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/Controller/IController.cs/#L13">View Source</a>
   </span>
-  <a id="CueX_Core_IPartitionGrain_GetChildren_" data-uid="CueX.Core.IPartitionGrain.GetChildren*"></a>
-  <h4 id="CueX_Core_IPartitionGrain_GetChildren" data-uid="CueX.Core.IPartitionGrain.GetChildren">GetChildren()</h4>
+  <a id="CueX_Core_Controller_IController_HandleSubscription_" data-uid="CueX.Core.Controller.IController.HandleSubscription*"></a>
+  <h4 id="CueX_Core_Controller_IController_HandleSubscription__2_CueX_Core_SpatialGrain___0___1__CueX_Core_Subscription_SubscriptionDetails_" data-uid="CueX.Core.Controller.IController.HandleSubscription``2(CueX.Core.SpatialGrain{``0,``1},CueX.Core.Subscription.SubscriptionDetails)">HandleSubscription&lt;TGrainInterface, TState&gt;(SpatialGrain&lt;TGrainInterface, TState&gt;, SubscriptionDetails)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;ISpatialGrain&gt;&gt; GetChildren()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="CueX.Core.ISpatialGrain.html">ISpatialGrain</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_IPartitionGrain_HandleEvent__1___0_.md&amp;value=---%0Auid%3A%20CueX.Core.IPartitionGrain.HandleEvent%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/IPartitionGrain.cs/#L17">View Source</a>
-  </span>
-  <a id="CueX_Core_IPartitionGrain_HandleEvent_" data-uid="CueX.Core.IPartitionGrain.HandleEvent*"></a>
-  <h4 id="CueX_Core_IPartitionGrain_HandleEvent__1___0_" data-uid="CueX.Core.IPartitionGrain.HandleEvent``1(``0)">HandleEvent&lt;T&gt;(T)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task HandleEvent&lt;T&gt;(T spatialEvent)
-    where T : SpatialEvent</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; HandleSubscription&lt;TGrainInterface, TState&gt;(SpatialGrain&lt;TGrainInterface, TState&gt; spatialGrain, SubscriptionDetails details)
+    where TGrainInterface : ISpatialGrain where TState : SpatialGrainState, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -213,71 +187,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">spatialEvent</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_IPartitionGrain_HandleSubscription__1___0_CueX_Core_Subscription_SubscriptionDetails_.md&amp;value=---%0Auid%3A%20CueX.Core.IPartitionGrain.HandleSubscription%60%601(%60%600%2CCueX.Core.Subscription.SubscriptionDetails)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/IPartitionGrain.cs/#L16">View Source</a>
-  </span>
-  <a id="CueX_Core_IPartitionGrain_HandleSubscription_" data-uid="CueX.Core.IPartitionGrain.HandleSubscription*"></a>
-  <h4 id="CueX_Core_IPartitionGrain_HandleSubscription__1___0_CueX_Core_Subscription_SubscriptionDetails_" data-uid="CueX.Core.IPartitionGrain.HandleSubscription``1(``0,CueX.Core.Subscription.SubscriptionDetails)">HandleSubscription&lt;T&gt;(T, SubscriptionDetails)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; HandleSubscription&lt;T&gt;(T subscribingGrain, SubscriptionDetails details)
-    where T : ISpatialGrain</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">subscribingGrain</span></td>
+        <td><a class="xref" href="CueX.Core.SpatialGrain-2.html">SpatialGrain</a>&lt;TGrainInterface, TState&gt;</td>
+        <td><span class="parametername">spatialGrain</span></td>
         <td></td>
       </tr>
       <tr>
@@ -312,26 +223,30 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="parametername">TGrainInterface</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_IPartitionGrain_Remove__1___0_.md&amp;value=---%0Auid%3A%20CueX.Core.IPartitionGrain.Remove%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_Controller_IController_Initialize__2_CueX_Core_SpatialGrain___0___1__.md&amp;value=---%0Auid%3A%20CueX.Core.Controller.IController.Initialize%60%602(CueX.Core.SpatialGrain%7B%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/IPartitionGrain.cs/#L14">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/Controller/IController.cs/#L15">View Source</a>
   </span>
-  <a id="CueX_Core_IPartitionGrain_Remove_" data-uid="CueX.Core.IPartitionGrain.Remove*"></a>
-  <h4 id="CueX_Core_IPartitionGrain_Remove__1___0_" data-uid="CueX.Core.IPartitionGrain.Remove``1(``0)">Remove&lt;T&gt;(T)</h4>
+  <a id="CueX_Core_Controller_IController_Initialize_" data-uid="CueX.Core.Controller.IController.Initialize*"></a>
+  <h4 id="CueX_Core_Controller_IController_Initialize__2_CueX_Core_SpatialGrain___0___1__" data-uid="CueX.Core.Controller.IController.Initialize``2(CueX.Core.SpatialGrain{``0,``1})">Initialize&lt;TGrainInterface, TState&gt;(SpatialGrain&lt;TGrainInterface, TState&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; Remove&lt;T&gt;(T spatialGrain)
-    where T : ISpatialGrain</code></pre>
+    <pre><code class="lang-csharp hljs">Task Initialize&lt;TGrainInterface, TState&gt;(SpatialGrain&lt;TGrainInterface, TState&gt; spatialGrain)
+    where TGrainInterface : ISpatialGrain where TState : SpatialGrainState, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -344,7 +259,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="CueX.Core.SpatialGrain-2.html">SpatialGrain</a>&lt;TGrainInterface, TState&gt;</td>
         <td><span class="parametername">spatialGrain</span></td>
         <td></td>
       </tr>
@@ -360,7 +275,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -375,7 +290,88 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="parametername">TGrainInterface</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_Controller_IController_ReceiveControlEvent__3_CueX_Core_SpatialGrain___0___1____2_.md&amp;value=---%0Auid%3A%20CueX.Core.Controller.IController.ReceiveControlEvent%60%603(CueX.Core.SpatialGrain%7B%60%600%2C%60%601%7D%2C%60%602)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/Controller/IController.cs/#L11">View Source</a>
+  </span>
+  <a id="CueX_Core_Controller_IController_ReceiveControlEvent_" data-uid="CueX.Core.Controller.IController.ReceiveControlEvent*"></a>
+  <h4 id="CueX_Core_Controller_IController_ReceiveControlEvent__3_CueX_Core_SpatialGrain___0___1____2_" data-uid="CueX.Core.Controller.IController.ReceiveControlEvent``3(CueX.Core.SpatialGrain{``0,``1},``2)">ReceiveControlEvent&lt;TGrainInterface, TState, TEvent&gt;(SpatialGrain&lt;TGrainInterface, TState&gt;, TEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ReceiveControlEvent&lt;TGrainInterface, TState, TEvent&gt;(SpatialGrain&lt;TGrainInterface, TState&gt; spatialGrain, TEvent controlEvent)
+    where TGrainInterface : ISpatialGrain where TState : SpatialGrainState, new()
+    where TEvent : ControlEvent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CueX.Core.SpatialGrain-2.html">SpatialGrain</a>&lt;TGrainInterface, TState&gt;</td>
+        <td><span class="parametername">spatialGrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEvent</span></td>
+        <td><span class="parametername">controlEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TGrainInterface</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEvent</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -388,10 +384,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_IPartitionGrain.md&amp;value=---%0Auid%3A%20CueX.Core.IPartitionGrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Core_Controller_IController.md&amp;value=---%0Auid%3A%20CueX.Core.Controller.IController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/IPartitionGrain.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Core/Controller/IController.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
