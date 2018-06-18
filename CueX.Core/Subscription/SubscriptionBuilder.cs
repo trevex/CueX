@@ -28,9 +28,11 @@ namespace CueX.Core.Subscription
             return this;
         }
 
-        public Task<bool> ForEach(Func<T, Task> callback)
+        public async Task<bool> ForEach(Func<T, Task> callback)
         {
-            return _subject.SubscribeWithDetails(_details, callback);
+            // Before subscribing, set the origin to the current position of the spatialgrain
+            _details.Area.SetOrigin(await _subject.GetPosition());
+            return await _subject.SubscribeWithDetails(_details, callback);
         }
     }
 }

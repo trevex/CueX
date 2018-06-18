@@ -3,11 +3,13 @@
 
 using System;
 using System.Threading.Tasks;
+using CueX.Geometry;
 
 namespace CueX.Core.Subscription
 {
     public interface ISubscriptionSubject
     {
         Task<bool> SubscribeWithDetails<T>(SubscriptionDetails details, Func<T, Task> callback) where T : SpatialEvent;
+        Task<Vector3d> GetPosition();
     }
 }

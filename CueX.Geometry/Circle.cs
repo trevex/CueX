@@ -5,7 +5,10 @@ namespace CueX.Geometry
 {
     public class Circle : IArea
     {
+        
+        private Vector3d _origin;
         private readonly double _radius;
+        
 
         private Circle(double radius)
         {
@@ -16,10 +19,25 @@ namespace CueX.Geometry
         {
             return new Circle(radius);
         }
-        
+
+        public void SetOrigin(Vector3d origin)
+        {
+            _origin = origin;
+        }
+
+        public Vector3d GetOrigin()
+        {
+            return _origin;
+        }
+
         public double GetHalfBoundingBoxWidth()
         {
             return _radius;
+        }
+
+        public bool IsPointInside(Vector3d point)
+        {
+            return (point - _origin).LengthSq() < (_radius * _radius);
         }
     }
 }

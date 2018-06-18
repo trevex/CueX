@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
+using System.Numerics;
+
 namespace CueX.Geometry
 {
     public class Vector3d
@@ -68,6 +70,21 @@ namespace CueX.Geometry
         public override string ToString()
         {
             return "Vector3d { "+Data[0]+", "+Data[1]+", "+Data[2]+" }";
+        }
+
+        public double LengthSq()
+        {
+            return X * X + Y * Y + Z * Z;
+        }
+        
+        public static Vector3d operator +(Vector3d a, Vector3d b)
+        {
+            return new Vector3d(a.X + b.X, a.Y + b.Y, a.Z + b.Z);
+        }
+     
+        public static Vector3d operator -(Vector3d a, Vector3d b)
+        {
+            return new Vector3d(a.X - b.X, a.Y - b.Y, a.Z - b.Z);
         }
     }
 }
