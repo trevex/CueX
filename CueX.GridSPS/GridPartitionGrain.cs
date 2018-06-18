@@ -47,20 +47,20 @@ namespace CueX.GridSPS
         public async Task<bool> HandleSubscription<T>(T subscriber, SubscriptionDetails details) where T : ISpatialGrain
         {
             var eventName = details.EventTypeFilter.GetTypename();
-            var result = State.InterestManager.Add(subscriber, eventName, new SubscriptionFilter
+            var filter = new SubscriptionFilter
             {
                 Area = details.Area,
                 OriginTypeFilter = details.OriginTypeFilter
-            });
+            };
+            // Setup interest management
+            var result = State.InterestManager.Add(subscriber, eventName, filter);
             // If the subscription could not be added, return false
             if (!result) return false;
+            // Make sure events are forwarded
+            var queue = State.ForwardManager.GetForwardDelta(subscriber, eventName, filter);
+            if (queue.Count > 0) await ProcessForwardCommandQueue(queue);
             await WriteStateAsync();
-            
-            // TODO: setup forward tables of neighbours depending on details.Area
-            var maxDistance = GetMaxDistance(details);
-            // Use direct forwarding table, do not flood, just tell all other partition what you need
-            // MaxDistance VS. AdaptIfNecessaryOnMove?
-            
+
             return true;
         }
 
@@ -92,11 +92,6 @@ namespace CueX.GridSPS
         {
             return Task.FromResult(State.ForwardManager.PartitionIndices);
         }
-
-        private double GetMaxDistance(SubscriptionDetails details)
-        {
-            return State.Config.PartitionHalfDiagonal + details.Area.GetHalfBoundingBoxWidth();
-        }
         
         public async Task Add<T>(T spatialGrain) where T : ISpatialGrain
         {
@@ -119,5 +114,21 @@ namespace CueX.GridSPS
             return Task.FromResult(State.Children.AsEnumerable());
         }
 
+        private Task ProcessForwardCommandQueue(Queue<ForwardCommand> queue)
+        {
+            var currentPartitionId = "";
+            IGridPartitionGrain currentPartitionGrain = null;
+            foreach (var cmd in queue)
+            {
+                // ForwardCommands for the same partition are in order, therefore cache the current partition
+                if (cmd.PartitionId != currentPartitionId || currentPartitionGrain == null)
+                {
+                    currentPartitionGrain = GrainFactory.GetGrain<IGridPartitionGrain>(cmd.PartitionId);
+                    currentPartitionId = cmd.PartitionId;
+                }
+                // TODO: currentPartitionGrain...
+            }
+            return Task.CompletedTask;
+        }
     }
 }

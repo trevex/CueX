@@ -20,5 +20,10 @@ namespace CueX.GridSPS.Internal
             var parts = key.Split(",");
             return new Tuple<int, int>(Convert.ToInt32(parts[0]), Convert.ToInt32(parts[1]));
         }
+
+        internal static string GetPartitionKeyForIndices(int x, int y)
+        {
+            return x + "," + y;
+        }
     }
 }
