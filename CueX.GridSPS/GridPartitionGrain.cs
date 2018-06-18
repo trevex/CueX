@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,8 +9,10 @@ using Microsoft.Extensions.Logging;
 using CueX.Core;
 using CueX.Core.Controller;
 using CueX.Core.Subscription;
+using CueX.Geometry;
 using CueX.GridSPS.Config;
 using CueX.GridSPS.Controller;
+using CueX.GridSPS.Internal;
 using Orleans;
 
 
@@ -33,6 +36,8 @@ namespace CueX.GridSPS
             {
                 // Acquire configuration from config service
                 State.Config = await _configService.GetConfiguration();
+                State.ForwardManager.PartitionIndices =
+                    IndexHelper.GetPartitionIndices(this.GetPrimaryKeyString(), State.Config.PartitionSize);
                 State.IsInitialized = true;
                 await WriteStateAsync();
             }
@@ -81,6 +86,11 @@ namespace CueX.GridSPS
         public Task<int> GetInterestCount()
         {
             return Task.FromResult(State.InterestManager.GetInterestCount());
+        }
+
+        public Task<Tuple<int, int>> GetPartitionIndices()
+        {
+            return Task.FromResult(State.ForwardManager.PartitionIndices);
         }
 
         private double GetMaxDistance(SubscriptionDetails details)

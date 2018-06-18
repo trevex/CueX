@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Niklas Voss. All rights reserved.
 // Licensed under the Apache2 license. See LICENSE file in the project root for full license information.
 
+using System;
 using System.Linq;
 using System.Threading;
 using CueX.Core;
@@ -91,6 +92,14 @@ namespace CueX.Test
             await _pubSub.Dispatch(new TestEvent {Position = new Vector3d(3d, 3d, 0d), Value = "DISPATCHED"});
             Thread.Sleep(2000); // NOTE: internal event dispatch is async
             Assert.Equal("DISPATCHED", await spatialGrain.GetLastTestEventValue());
+        }
+        
+        [Fact]
+        public async void TestPartitionIndices()
+        { 
+            var partitionGrain = _client.GetGrain<IGridPartitionGrain>("10,10");
+            var partitionIndices = await partitionGrain.GetPartitionIndices();
+            Assert.Equal(new Tuple<int, int>(10, 10), partitionIndices);
         }
     }
 }

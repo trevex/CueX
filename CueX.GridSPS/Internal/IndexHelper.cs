@@ -13,6 +13,12 @@ namespace CueX.GridSPS.Internal
             var x = position.X / partitionSize;
             var y = position.Y / partitionSize;
             return Math.Floor(x) + "," + Math.Floor(y);
-        }        
+        }
+
+        internal static Tuple<int, int> GetPartitionIndices(string key, double partitionSize)
+        {
+            var parts = key.Split(",");
+            return new Tuple<int, int>(Convert.ToInt32(parts[0]), Convert.ToInt32(parts[1]));
+        }
     }
 }

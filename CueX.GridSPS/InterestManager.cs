@@ -26,7 +26,7 @@ namespace CueX.GridSPS
             {
                 return false;
             }
-            // Create the subscription filter for this grain
+            // Create the subscription filter for this grain 
             eventInterestFilters[subscriber] = filter;
             
             // Check if the interest map exists for this grain
@@ -54,6 +54,19 @@ namespace CueX.GridSPS
                 count += interestPair.Value.Count;
             }
             return count;
+        }
+
+        public Dictionary<string, SubscriptionFilter> GetSubscriptions<T>(T subscriber) where T : ISpatialGrain
+        {
+            if (!_interests.TryGetValue(subscriber, out var grainInterests))
+                return null;
+            // If exis, collect all subscription filters
+            var subs = new Dictionary<string, SubscriptionFilter>();
+            foreach (var eventName in grainInterests)
+            {
+                subs[eventName] = _filters[eventName][subscriber];
+            }
+            return subs;
         }
     }
 }
