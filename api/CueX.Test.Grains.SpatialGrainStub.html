@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Box
+    <title>Class SpatialGrainStub
    | CueX Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Box
+    <meta name="title" content="Class SpatialGrainStub
    | CueX Documentation ">
     <meta name="generator" content="docfx 2.36.2.0">
     
@@ -78,21 +78,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CueX.Geometry.Box">
+            <article class="content wrap" id="_content" data-uid="CueX.Test.Grains.SpatialGrainStub">
   
   
-  <h1 id="CueX_Geometry_Box" data-uid="CueX.Geometry.Box" class="text-break">Class Box
+  <h1 id="CueX_Test_Grains_SpatialGrainStub" data-uid="CueX.Test.Grains.SpatialGrainStub" class="text-break">Class SpatialGrainStub
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Box</span></div>
+    <div class="level1"><span class="xref">SpatialGrainStub</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="CueX.Geometry.IArea.html">IArea</a></div>
+    <div><a class="xref" href="CueX.Core.ISpatialGrain.html">ISpatialGrain</a></div>
+    <div><span class="xref">Orleans.IGrain</span></div>
+    <div><span class="xref">Orleans.Runtime.IAddressable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -118,28 +120,28 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.Geometry.html">CueX.Geometry</a></h6>
-  <h6><strong>Assembly</strong>: CueX.Geometry.dll</h6>
-  <h5 id="CueX_Geometry_Box_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CueX.Test.Grains.html">CueX.Test.Grains</a></h6>
+  <h6><strong>Assembly</strong>: CueX.Test.dll</h6>
+  <h5 id="CueX_Test_Grains_SpatialGrainStub_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Box : IArea</code></pre>
+    <pre><code class="lang-csharp hljs">public class SpatialGrainStub : ISpatialGrain, IGrain, IAddressable</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Geometry_Box_GetBoundingBox.md&amp;value=---%0Auid%3A%20CueX.Geometry.Box.GetBoundingBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_SpatialGrainStub_Destroy.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.SpatialGrainStub.Destroy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Geometry/Box.cs/#L40">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/SpatialGrainStub.cs/#L31">View Source</a>
   </span>
-  <a id="CueX_Geometry_Box_GetBoundingBox_" data-uid="CueX.Geometry.Box.GetBoundingBox*"></a>
-  <h4 id="CueX_Geometry_Box_GetBoundingBox" data-uid="CueX.Geometry.Box.GetBoundingBox">GetBoundingBox()</h4>
+  <a id="CueX_Test_Grains_SpatialGrainStub_Destroy_" data-uid="CueX.Test.Grains.SpatialGrainStub.Destroy*"></a>
+  <h4 id="CueX_Test_Grains_SpatialGrainStub_Destroy" data-uid="CueX.Test.Grains.SpatialGrainStub.Destroy">Destroy()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AABB GetBoundingBox()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; Destroy()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,25 +153,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CueX.Geometry.AABB.html">AABB</a></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Geometry_Box_GetOrigin.md&amp;value=---%0Auid%3A%20CueX.Geometry.Box.GetOrigin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_SpatialGrainStub_GetPosition.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.SpatialGrainStub.GetPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Geometry/Box.cs/#L35">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/SpatialGrainStub.cs/#L26">View Source</a>
   </span>
-  <a id="CueX_Geometry_Box_GetOrigin_" data-uid="CueX.Geometry.Box.GetOrigin*"></a>
-  <h4 id="CueX_Geometry_Box_GetOrigin" data-uid="CueX.Geometry.Box.GetOrigin">GetOrigin()</h4>
+  <a id="CueX_Test_Grains_SpatialGrainStub_GetPosition_" data-uid="CueX.Test.Grains.SpatialGrainStub.GetPosition*"></a>
+  <h4 id="CueX_Test_Grains_SpatialGrainStub_GetPosition" data-uid="CueX.Test.Grains.SpatialGrainStub.GetPosition">GetPosition()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3d GetOrigin()</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Vector3d&gt; GetPosition()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,25 +183,198 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CueX.Geometry.Vector3d.html">Vector3d</a></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="CueX.Geometry.Vector3d.html">Vector3d</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Geometry_Box_IsPointInside_CueX_Geometry_Vector3d_.md&amp;value=---%0Auid%3A%20CueX.Geometry.Box.IsPointInside(CueX.Geometry.Vector3d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_SpatialGrainStub_ReceiveControlEvent__1___0_.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Geometry/Box.cs/#L51">View Source</a>
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/SpatialGrainStub.cs/#L41">View Source</a>
   </span>
-  <a id="CueX_Geometry_Box_IsPointInside_" data-uid="CueX.Geometry.Box.IsPointInside*"></a>
-  <h4 id="CueX_Geometry_Box_IsPointInside_CueX_Geometry_Vector3d_" data-uid="CueX.Geometry.Box.IsPointInside(CueX.Geometry.Vector3d)">IsPointInside(Vector3d)</h4>
+  <a id="CueX_Test_Grains_SpatialGrainStub_ReceiveControlEvent_" data-uid="CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent*"></a>
+  <h4 id="CueX_Test_Grains_SpatialGrainStub_ReceiveControlEvent__1___0_" data-uid="CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent``1(``0)">ReceiveControlEvent&lt;T&gt;(T)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsPointInside(Vector3d point)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task ReceiveControlEvent&lt;T&gt;(T controlEvent)
+    where T : ControlEvent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">controlEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_SpatialGrainStub_ReceiveSpatialEvent__1___0_.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/SpatialGrainStub.cs/#L36">View Source</a>
+  </span>
+  <a id="CueX_Test_Grains_SpatialGrainStub_ReceiveSpatialEvent_" data-uid="CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent*"></a>
+  <h4 id="CueX_Test_Grains_SpatialGrainStub_ReceiveSpatialEvent__1___0_" data-uid="CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent``1(``0)">ReceiveSpatialEvent&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ReceiveSpatialEvent&lt;T&gt;(T spatialEvent)
+    where T : SpatialEvent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">spatialEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_SpatialGrainStub_SetController_CueX_Core_Controller_IController_.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.SpatialGrainStub.SetController(CueX.Core.Controller.IController)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/SpatialGrainStub.cs/#L14">View Source</a>
+  </span>
+  <a id="CueX_Test_Grains_SpatialGrainStub_SetController_" data-uid="CueX.Test.Grains.SpatialGrainStub.SetController*"></a>
+  <h4 id="CueX_Test_Grains_SpatialGrainStub_SetController_CueX_Core_Controller_IController_" data-uid="CueX.Test.Grains.SpatialGrainStub.SetController(CueX.Core.Controller.IController)">SetController(IController)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetController(IController controller)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CueX.Core.Controller.IController.html">IController</a></td>
+        <td><span class="parametername">controller</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_SpatialGrainStub_SetPosition_CueX_Geometry_Vector3d_.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.SpatialGrainStub.SetPosition(CueX.Geometry.Vector3d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/SpatialGrainStub.cs/#L20">View Source</a>
+  </span>
+  <a id="CueX_Test_Grains_SpatialGrainStub_SetPosition_" data-uid="CueX.Test.Grains.SpatialGrainStub.SetPosition*"></a>
+  <h4 id="CueX_Test_Grains_SpatialGrainStub_SetPosition_CueX_Geometry_Vector3d_" data-uid="CueX.Test.Grains.SpatialGrainStub.SetPosition(CueX.Geometry.Vector3d)">SetPosition(Vector3d)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetPosition(Vector3d newPosition)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -213,7 +388,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CueX.Geometry.Vector3d.html">Vector3d</a></td>
-        <td><span class="parametername">point</span></td>
+        <td><span class="parametername">newPosition</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -228,145 +403,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Geometry_Box_SetOrigin_CueX_Geometry_Vector3d_.md&amp;value=---%0Auid%3A%20CueX.Geometry.Box.SetOrigin(CueX.Geometry.Vector3d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Geometry/Box.cs/#L30">View Source</a>
-  </span>
-  <a id="CueX_Geometry_Box_SetOrigin_" data-uid="CueX.Geometry.Box.SetOrigin*"></a>
-  <h4 id="CueX_Geometry_Box_SetOrigin_CueX_Geometry_Vector3d_" data-uid="CueX.Geometry.Box.SetOrigin(CueX.Geometry.Vector3d)">SetOrigin(Vector3d)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetOrigin(Vector3d origin)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CueX.Geometry.Vector3d.html">Vector3d</a></td>
-        <td><span class="parametername">origin</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Geometry_Box_WithDimensions_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20CueX.Geometry.Box.WithDimensions(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Geometry/Box.cs/#L25">View Source</a>
-  </span>
-  <a id="CueX_Geometry_Box_WithDimensions_" data-uid="CueX.Geometry.Box.WithDimensions*"></a>
-  <h4 id="CueX_Geometry_Box_WithDimensions_System_Double_System_Double_" data-uid="CueX.Geometry.Box.WithDimensions(System.Double,System.Double)">WithDimensions(Double, Double)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box WithDimensions(double width, double height)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">width</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">height</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CueX.Geometry.Box.html">Box</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Geometry_Box_WithSize_System_Double_.md&amp;value=---%0Auid%3A%20CueX.Geometry.Box.WithSize(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/trevex/CueX/blob/master/CueX.Geometry/Box.cs/#L20">View Source</a>
-  </span>
-  <a id="CueX_Geometry_Box_WithSize_" data-uid="CueX.Geometry.Box.WithSize*"></a>
-  <h4 id="CueX_Geometry_Box_WithSize_System_Double_" data-uid="CueX.Geometry.Box.WithSize(System.Double)">WithSize(Double)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box WithSize(double size)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">size</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="CueX.Geometry.Box.html">Box</a></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="CueX.Geometry.IArea.html">IArea</a>
+      <a class="xref" href="CueX.Core.ISpatialGrain.html">ISpatialGrain</a>
+  </div>
+  <div>
+      <span class="xref">Orleans.IGrain</span>
+  </div>
+  <div>
+      <span class="xref">Orleans.Runtime.IAddressable</span>
   </div>
 </article>
           </div>
@@ -376,10 +426,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Geometry_Box.md&amp;value=---%0Auid%3A%20CueX.Geometry.Box%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/trevex/CueX/new/master/apiSpec/new?filename=CueX_Test_Grains_SpatialGrainStub.md&amp;value=---%0Auid%3A%20CueX.Test.Grains.SpatialGrainStub%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Geometry/Box.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/trevex/CueX/blob/master/CueX.Test/Grains/SpatialGrainStub.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

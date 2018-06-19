@@ -940,25 +940,43 @@ references:
   commentId: N:CueX.Geometry
   fullName: CueX.Geometry
   nameWithType: CueX.Geometry
+- uid: CueX.Geometry.AABB
+  name: AABB
+  href: api/CueX.Geometry.AABB.html
+  commentId: T:CueX.Geometry.AABB
+  fullName: CueX.Geometry.AABB
+  nameWithType: AABB
+- uid: CueX.Geometry.AABB.BottomLeft
+  name: BottomLeft
+  href: api/CueX.Geometry.AABB.html#CueX_Geometry_AABB_BottomLeft
+  commentId: F:CueX.Geometry.AABB.BottomLeft
+  fullName: CueX.Geometry.AABB.BottomLeft
+  nameWithType: AABB.BottomLeft
+- uid: CueX.Geometry.AABB.TopRight
+  name: TopRight
+  href: api/CueX.Geometry.AABB.html#CueX_Geometry_AABB_TopRight
+  commentId: F:CueX.Geometry.AABB.TopRight
+  fullName: CueX.Geometry.AABB.TopRight
+  nameWithType: AABB.TopRight
 - uid: CueX.Geometry.Box
   name: Box
   href: api/CueX.Geometry.Box.html
   commentId: T:CueX.Geometry.Box
   fullName: CueX.Geometry.Box
   nameWithType: Box
-- uid: CueX.Geometry.Box.GetHalfBoundingBoxWidth
-  name: GetHalfBoundingBoxWidth()
-  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetHalfBoundingBoxWidth
-  commentId: M:CueX.Geometry.Box.GetHalfBoundingBoxWidth
-  fullName: CueX.Geometry.Box.GetHalfBoundingBoxWidth()
-  nameWithType: Box.GetHalfBoundingBoxWidth()
-- uid: CueX.Geometry.Box.GetHalfBoundingBoxWidth*
-  name: GetHalfBoundingBoxWidth
-  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetHalfBoundingBoxWidth_
-  commentId: Overload:CueX.Geometry.Box.GetHalfBoundingBoxWidth
+- uid: CueX.Geometry.Box.GetBoundingBox
+  name: GetBoundingBox()
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetBoundingBox
+  commentId: M:CueX.Geometry.Box.GetBoundingBox
+  fullName: CueX.Geometry.Box.GetBoundingBox()
+  nameWithType: Box.GetBoundingBox()
+- uid: CueX.Geometry.Box.GetBoundingBox*
+  name: GetBoundingBox
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetBoundingBox_
+  commentId: Overload:CueX.Geometry.Box.GetBoundingBox
   isSpec: "True"
-  fullName: CueX.Geometry.Box.GetHalfBoundingBoxWidth
-  nameWithType: Box.GetHalfBoundingBoxWidth
+  fullName: CueX.Geometry.Box.GetBoundingBox
+  nameWithType: Box.GetBoundingBox
 - uid: CueX.Geometry.Box.GetOrigin
   name: GetOrigin()
   href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetOrigin
@@ -1030,19 +1048,19 @@ references:
   commentId: T:CueX.Geometry.Circle
   fullName: CueX.Geometry.Circle
   nameWithType: Circle
-- uid: CueX.Geometry.Circle.GetHalfBoundingBoxWidth
-  name: GetHalfBoundingBoxWidth()
-  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetHalfBoundingBoxWidth
-  commentId: M:CueX.Geometry.Circle.GetHalfBoundingBoxWidth
-  fullName: CueX.Geometry.Circle.GetHalfBoundingBoxWidth()
-  nameWithType: Circle.GetHalfBoundingBoxWidth()
-- uid: CueX.Geometry.Circle.GetHalfBoundingBoxWidth*
-  name: GetHalfBoundingBoxWidth
-  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetHalfBoundingBoxWidth_
-  commentId: Overload:CueX.Geometry.Circle.GetHalfBoundingBoxWidth
+- uid: CueX.Geometry.Circle.GetBoundingBox
+  name: GetBoundingBox()
+  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetBoundingBox
+  commentId: M:CueX.Geometry.Circle.GetBoundingBox
+  fullName: CueX.Geometry.Circle.GetBoundingBox()
+  nameWithType: Circle.GetBoundingBox()
+- uid: CueX.Geometry.Circle.GetBoundingBox*
+  name: GetBoundingBox
+  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetBoundingBox_
+  commentId: Overload:CueX.Geometry.Circle.GetBoundingBox
   isSpec: "True"
-  fullName: CueX.Geometry.Circle.GetHalfBoundingBoxWidth
-  nameWithType: Circle.GetHalfBoundingBoxWidth
+  fullName: CueX.Geometry.Circle.GetBoundingBox
+  nameWithType: Circle.GetBoundingBox
 - uid: CueX.Geometry.Circle.GetOrigin
   name: GetOrigin()
   href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetOrigin
@@ -1120,19 +1138,19 @@ references:
   commentId: T:CueX.Geometry.IArea
   fullName: CueX.Geometry.IArea
   nameWithType: IArea
-- uid: CueX.Geometry.IArea.GetHalfBoundingBoxWidth
-  name: GetHalfBoundingBoxWidth()
-  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetHalfBoundingBoxWidth
-  commentId: M:CueX.Geometry.IArea.GetHalfBoundingBoxWidth
-  fullName: CueX.Geometry.IArea.GetHalfBoundingBoxWidth()
-  nameWithType: IArea.GetHalfBoundingBoxWidth()
-- uid: CueX.Geometry.IArea.GetHalfBoundingBoxWidth*
-  name: GetHalfBoundingBoxWidth
-  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetHalfBoundingBoxWidth_
-  commentId: Overload:CueX.Geometry.IArea.GetHalfBoundingBoxWidth
+- uid: CueX.Geometry.IArea.GetBoundingBox
+  name: GetBoundingBox()
+  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetBoundingBox
+  commentId: M:CueX.Geometry.IArea.GetBoundingBox
+  fullName: CueX.Geometry.IArea.GetBoundingBox()
+  nameWithType: IArea.GetBoundingBox()
+- uid: CueX.Geometry.IArea.GetBoundingBox*
+  name: GetBoundingBox
+  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetBoundingBox_
+  commentId: Overload:CueX.Geometry.IArea.GetBoundingBox
   isSpec: "True"
-  fullName: CueX.Geometry.IArea.GetHalfBoundingBoxWidth
-  nameWithType: IArea.GetHalfBoundingBoxWidth
+  fullName: CueX.Geometry.IArea.GetBoundingBox
+  nameWithType: IArea.GetBoundingBox
 - uid: CueX.Geometry.IArea.GetOrigin
   name: GetOrigin()
   href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetOrigin
@@ -1754,18 +1772,82 @@ references:
   commentId: F:CueX.GridSPS.Controller.SetParentEvent.Partition
   fullName: CueX.GridSPS.Controller.SetParentEvent.Partition
   nameWithType: SetParentEvent.Partition
+- uid: CueX.GridSPS.ForwardCommand
+  name: ForwardCommand
+  href: api/CueX.GridSPS.ForwardCommand.html
+  commentId: T:CueX.GridSPS.ForwardCommand
+  fullName: CueX.GridSPS.ForwardCommand
+  nameWithType: ForwardCommand
+- uid: CueX.GridSPS.ForwardCommand.EventName
+  name: EventName
+  href: api/CueX.GridSPS.ForwardCommand.html#CueX_GridSPS_ForwardCommand_EventName
+  commentId: F:CueX.GridSPS.ForwardCommand.EventName
+  fullName: CueX.GridSPS.ForwardCommand.EventName
+  nameWithType: ForwardCommand.EventName
+- uid: CueX.GridSPS.ForwardCommand.ForwardState
+  name: ForwardState
+  href: api/CueX.GridSPS.ForwardCommand.html#CueX_GridSPS_ForwardCommand_ForwardState
+  commentId: F:CueX.GridSPS.ForwardCommand.ForwardState
+  fullName: CueX.GridSPS.ForwardCommand.ForwardState
+  nameWithType: ForwardCommand.ForwardState
+- uid: CueX.GridSPS.ForwardCommand.PartitionId
+  name: PartitionId
+  href: api/CueX.GridSPS.ForwardCommand.html#CueX_GridSPS_ForwardCommand_PartitionId
+  commentId: F:CueX.GridSPS.ForwardCommand.PartitionId
+  fullName: CueX.GridSPS.ForwardCommand.PartitionId
+  nameWithType: ForwardCommand.PartitionId
 - uid: CueX.GridSPS.ForwardManager
   name: ForwardManager
   href: api/CueX.GridSPS.ForwardManager.html
   commentId: T:CueX.GridSPS.ForwardManager
   fullName: CueX.GridSPS.ForwardManager
   nameWithType: ForwardManager
+- uid: CueX.GridSPS.ForwardManager.GetForwardDelta*
+  name: GetForwardDelta
+  href: api/CueX.GridSPS.ForwardManager.html#CueX_GridSPS_ForwardManager_GetForwardDelta_
+  commentId: Overload:CueX.GridSPS.ForwardManager.GetForwardDelta
+  isSpec: "True"
+  fullName: CueX.GridSPS.ForwardManager.GetForwardDelta
+  nameWithType: ForwardManager.GetForwardDelta
+- uid: CueX.GridSPS.ForwardManager.GetForwardDelta``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name: GetForwardDelta<T>(T, String, SubscriptionFilter)
+  href: api/CueX.GridSPS.ForwardManager.html#CueX_GridSPS_ForwardManager_GetForwardDelta__1___0_System_String_CueX_Core_Subscription_SubscriptionFilter_
+  commentId: M:CueX.GridSPS.ForwardManager.GetForwardDelta``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name.vb: GetForwardDelta(Of T)(T, String, SubscriptionFilter)
+  fullName: CueX.GridSPS.ForwardManager.GetForwardDelta<T>(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  fullName.vb: CueX.GridSPS.ForwardManager.GetForwardDelta(Of T)(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  nameWithType: ForwardManager.GetForwardDelta<T>(T, String, SubscriptionFilter)
+  nameWithType.vb: ForwardManager.GetForwardDelta(Of T)(T, String, SubscriptionFilter)
 - uid: CueX.GridSPS.ForwardManager.PartitionIndices
   name: PartitionIndices
   href: api/CueX.GridSPS.ForwardManager.html#CueX_GridSPS_ForwardManager_PartitionIndices
   commentId: F:CueX.GridSPS.ForwardManager.PartitionIndices
   fullName: CueX.GridSPS.ForwardManager.PartitionIndices
   nameWithType: ForwardManager.PartitionIndices
+- uid: CueX.GridSPS.ForwardManager.PartitionSize
+  name: PartitionSize
+  href: api/CueX.GridSPS.ForwardManager.html#CueX_GridSPS_ForwardManager_PartitionSize
+  commentId: F:CueX.GridSPS.ForwardManager.PartitionSize
+  fullName: CueX.GridSPS.ForwardManager.PartitionSize
+  nameWithType: ForwardManager.PartitionSize
+- uid: CueX.GridSPS.ForwardState
+  name: ForwardState
+  href: api/CueX.GridSPS.ForwardState.html
+  commentId: T:CueX.GridSPS.ForwardState
+  fullName: CueX.GridSPS.ForwardState
+  nameWithType: ForwardState
+- uid: CueX.GridSPS.ForwardState.StartForwarding
+  name: StartForwarding
+  href: api/CueX.GridSPS.ForwardState.html#CueX_GridSPS_ForwardState_StartForwarding
+  commentId: F:CueX.GridSPS.ForwardState.StartForwarding
+  fullName: CueX.GridSPS.ForwardState.StartForwarding
+  nameWithType: ForwardState.StartForwarding
+- uid: CueX.GridSPS.ForwardState.StopForwarding
+  name: StopForwarding
+  href: api/CueX.GridSPS.ForwardState.html#CueX_GridSPS_ForwardState_StopForwarding
+  commentId: F:CueX.GridSPS.ForwardState.StopForwarding
+  fullName: CueX.GridSPS.ForwardState.StopForwarding
+  nameWithType: ForwardState.StopForwarding
 - uid: CueX.GridSPS.ForwardTable
   name: ForwardTable
   href: api/CueX.GridSPS.ForwardTable.html
@@ -2296,6 +2378,96 @@ references:
   isSpec: "True"
   fullName: CueX.Test.Grains.ITestSpatialGrain.SubscribeToTestEvent
   nameWithType: ITestSpatialGrain.SubscribeToTestEvent
+- uid: CueX.Test.Grains.SpatialGrainStub
+  name: SpatialGrainStub
+  href: api/CueX.Test.Grains.SpatialGrainStub.html
+  commentId: T:CueX.Test.Grains.SpatialGrainStub
+  fullName: CueX.Test.Grains.SpatialGrainStub
+  nameWithType: SpatialGrainStub
+- uid: CueX.Test.Grains.SpatialGrainStub.Destroy
+  name: Destroy()
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_Destroy
+  commentId: M:CueX.Test.Grains.SpatialGrainStub.Destroy
+  fullName: CueX.Test.Grains.SpatialGrainStub.Destroy()
+  nameWithType: SpatialGrainStub.Destroy()
+- uid: CueX.Test.Grains.SpatialGrainStub.Destroy*
+  name: Destroy
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_Destroy_
+  commentId: Overload:CueX.Test.Grains.SpatialGrainStub.Destroy
+  isSpec: "True"
+  fullName: CueX.Test.Grains.SpatialGrainStub.Destroy
+  nameWithType: SpatialGrainStub.Destroy
+- uid: CueX.Test.Grains.SpatialGrainStub.GetPosition
+  name: GetPosition()
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_GetPosition
+  commentId: M:CueX.Test.Grains.SpatialGrainStub.GetPosition
+  fullName: CueX.Test.Grains.SpatialGrainStub.GetPosition()
+  nameWithType: SpatialGrainStub.GetPosition()
+- uid: CueX.Test.Grains.SpatialGrainStub.GetPosition*
+  name: GetPosition
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_GetPosition_
+  commentId: Overload:CueX.Test.Grains.SpatialGrainStub.GetPosition
+  isSpec: "True"
+  fullName: CueX.Test.Grains.SpatialGrainStub.GetPosition
+  nameWithType: SpatialGrainStub.GetPosition
+- uid: CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent*
+  name: ReceiveControlEvent
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_ReceiveControlEvent_
+  commentId: Overload:CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent
+  isSpec: "True"
+  fullName: CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent
+  nameWithType: SpatialGrainStub.ReceiveControlEvent
+- uid: CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent``1(``0)
+  name: ReceiveControlEvent<T>(T)
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_ReceiveControlEvent__1___0_
+  commentId: M:CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent``1(``0)
+  name.vb: ReceiveControlEvent(Of T)(T)
+  fullName: CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent<T>(T)
+  fullName.vb: CueX.Test.Grains.SpatialGrainStub.ReceiveControlEvent(Of T)(T)
+  nameWithType: SpatialGrainStub.ReceiveControlEvent<T>(T)
+  nameWithType.vb: SpatialGrainStub.ReceiveControlEvent(Of T)(T)
+- uid: CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent*
+  name: ReceiveSpatialEvent
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_ReceiveSpatialEvent_
+  commentId: Overload:CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent
+  isSpec: "True"
+  fullName: CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent
+  nameWithType: SpatialGrainStub.ReceiveSpatialEvent
+- uid: CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent``1(``0)
+  name: ReceiveSpatialEvent<T>(T)
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_ReceiveSpatialEvent__1___0_
+  commentId: M:CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent``1(``0)
+  name.vb: ReceiveSpatialEvent(Of T)(T)
+  fullName: CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent<T>(T)
+  fullName.vb: CueX.Test.Grains.SpatialGrainStub.ReceiveSpatialEvent(Of T)(T)
+  nameWithType: SpatialGrainStub.ReceiveSpatialEvent<T>(T)
+  nameWithType.vb: SpatialGrainStub.ReceiveSpatialEvent(Of T)(T)
+- uid: CueX.Test.Grains.SpatialGrainStub.SetController(CueX.Core.Controller.IController)
+  name: SetController(IController)
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_SetController_CueX_Core_Controller_IController_
+  commentId: M:CueX.Test.Grains.SpatialGrainStub.SetController(CueX.Core.Controller.IController)
+  fullName: CueX.Test.Grains.SpatialGrainStub.SetController(CueX.Core.Controller.IController)
+  nameWithType: SpatialGrainStub.SetController(IController)
+- uid: CueX.Test.Grains.SpatialGrainStub.SetController*
+  name: SetController
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_SetController_
+  commentId: Overload:CueX.Test.Grains.SpatialGrainStub.SetController
+  isSpec: "True"
+  fullName: CueX.Test.Grains.SpatialGrainStub.SetController
+  nameWithType: SpatialGrainStub.SetController
+- uid: CueX.Test.Grains.SpatialGrainStub.SetPosition(CueX.Geometry.Vector3d)
+  name: SetPosition(Vector3d)
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_SetPosition_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Test.Grains.SpatialGrainStub.SetPosition(CueX.Geometry.Vector3d)
+  fullName: CueX.Test.Grains.SpatialGrainStub.SetPosition(CueX.Geometry.Vector3d)
+  nameWithType: SpatialGrainStub.SetPosition(Vector3d)
+- uid: CueX.Test.Grains.SpatialGrainStub.SetPosition*
+  name: SetPosition
+  href: api/CueX.Test.Grains.SpatialGrainStub.html#CueX_Test_Grains_SpatialGrainStub_SetPosition_
+  commentId: Overload:CueX.Test.Grains.SpatialGrainStub.SetPosition
+  isSpec: "True"
+  fullName: CueX.Test.Grains.SpatialGrainStub.SetPosition
+  nameWithType: SpatialGrainStub.SetPosition
 - uid: CueX.Test.Grains.TestSpatialGrain
   name: TestSpatialGrain
   href: api/CueX.Test.Grains.TestSpatialGrain.html
@@ -2379,6 +2551,25 @@ references:
   commentId: F:CueX.Test.Grains.TestSpatialGrainState.LastTestEventValue
   fullName: CueX.Test.Grains.TestSpatialGrainState.LastTestEventValue
   nameWithType: TestSpatialGrainState.LastTestEventValue
+- uid: CueX.Test.GridForwardManagerTest
+  name: GridForwardManagerTest
+  href: api/CueX.Test.GridForwardManagerTest.html
+  commentId: T:CueX.Test.GridForwardManagerTest
+  fullName: CueX.Test.GridForwardManagerTest
+  nameWithType: GridForwardManagerTest
+- uid: CueX.Test.GridForwardManagerTest.TestForwardCommandQueueDelta
+  name: TestForwardCommandQueueDelta()
+  href: api/CueX.Test.GridForwardManagerTest.html#CueX_Test_GridForwardManagerTest_TestForwardCommandQueueDelta
+  commentId: M:CueX.Test.GridForwardManagerTest.TestForwardCommandQueueDelta
+  fullName: CueX.Test.GridForwardManagerTest.TestForwardCommandQueueDelta()
+  nameWithType: GridForwardManagerTest.TestForwardCommandQueueDelta()
+- uid: CueX.Test.GridForwardManagerTest.TestForwardCommandQueueDelta*
+  name: TestForwardCommandQueueDelta
+  href: api/CueX.Test.GridForwardManagerTest.html#CueX_Test_GridForwardManagerTest_TestForwardCommandQueueDelta_
+  commentId: Overload:CueX.Test.GridForwardManagerTest.TestForwardCommandQueueDelta
+  isSpec: "True"
+  fullName: CueX.Test.GridForwardManagerTest.TestForwardCommandQueueDelta
+  nameWithType: GridForwardManagerTest.TestForwardCommandQueueDelta
 - uid: CueX.Test.GridSPSTest
   name: GridSPSTest
   href: api/CueX.Test.GridSPSTest.html
