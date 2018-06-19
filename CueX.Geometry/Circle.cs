@@ -30,9 +30,13 @@ namespace CueX.Geometry
             return _origin;
         }
 
-        public double GetHalfBoundingBoxWidth()
+        public AABB GetBoundingBox()
         {
-            return _radius;
+            return new AABB
+            {
+                BottomLeft = new Vector3d(_origin.X - _radius, _origin.Y - _radius, 0d),
+                TopRight = new Vector3d(_origin.X + _radius, _origin.Y + _radius, 0d)
+            };
         }
 
         public bool IsPointInside(Vector3d point)

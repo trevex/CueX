@@ -7,7 +7,7 @@ namespace CueX.Geometry
     {
         void SetOrigin(Vector3d origin);
         Vector3d GetOrigin();
-        double GetHalfBoundingBoxWidth();
+        AABB GetBoundingBox();
         bool IsPointInside(Vector3d point);
     }
 }

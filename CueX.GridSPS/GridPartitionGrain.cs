@@ -38,6 +38,7 @@ namespace CueX.GridSPS
                 State.Config = await _configService.GetConfiguration();
                 State.ForwardManager.PartitionIndices =
                     IndexHelper.GetPartitionIndices(this.GetPrimaryKeyString(), State.Config.PartitionSize);
+                State.ForwardManager.PartitionSize = State.Config.PartitionSize;
                 State.IsInitialized = true;
                 await WriteStateAsync();
             }
