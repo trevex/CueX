@@ -1796,40 +1796,6 @@ references:
   commentId: F:CueX.GridSPS.ForwardCommand.PartitionId
   fullName: CueX.GridSPS.ForwardCommand.PartitionId
   nameWithType: ForwardCommand.PartitionId
-- uid: CueX.GridSPS.ForwardManager
-  name: ForwardManager
-  href: api/CueX.GridSPS.ForwardManager.html
-  commentId: T:CueX.GridSPS.ForwardManager
-  fullName: CueX.GridSPS.ForwardManager
-  nameWithType: ForwardManager
-- uid: CueX.GridSPS.ForwardManager.GetForwardDelta*
-  name: GetForwardDelta
-  href: api/CueX.GridSPS.ForwardManager.html#CueX_GridSPS_ForwardManager_GetForwardDelta_
-  commentId: Overload:CueX.GridSPS.ForwardManager.GetForwardDelta
-  isSpec: "True"
-  fullName: CueX.GridSPS.ForwardManager.GetForwardDelta
-  nameWithType: ForwardManager.GetForwardDelta
-- uid: CueX.GridSPS.ForwardManager.GetForwardDelta``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
-  name: GetForwardDelta<T>(T, String, SubscriptionFilter)
-  href: api/CueX.GridSPS.ForwardManager.html#CueX_GridSPS_ForwardManager_GetForwardDelta__1___0_System_String_CueX_Core_Subscription_SubscriptionFilter_
-  commentId: M:CueX.GridSPS.ForwardManager.GetForwardDelta``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
-  name.vb: GetForwardDelta(Of T)(T, String, SubscriptionFilter)
-  fullName: CueX.GridSPS.ForwardManager.GetForwardDelta<T>(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
-  fullName.vb: CueX.GridSPS.ForwardManager.GetForwardDelta(Of T)(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
-  nameWithType: ForwardManager.GetForwardDelta<T>(T, String, SubscriptionFilter)
-  nameWithType.vb: ForwardManager.GetForwardDelta(Of T)(T, String, SubscriptionFilter)
-- uid: CueX.GridSPS.ForwardManager.PartitionIndices
-  name: PartitionIndices
-  href: api/CueX.GridSPS.ForwardManager.html#CueX_GridSPS_ForwardManager_PartitionIndices
-  commentId: F:CueX.GridSPS.ForwardManager.PartitionIndices
-  fullName: CueX.GridSPS.ForwardManager.PartitionIndices
-  nameWithType: ForwardManager.PartitionIndices
-- uid: CueX.GridSPS.ForwardManager.PartitionSize
-  name: PartitionSize
-  href: api/CueX.GridSPS.ForwardManager.html#CueX_GridSPS_ForwardManager_PartitionSize
-  commentId: F:CueX.GridSPS.ForwardManager.PartitionSize
-  fullName: CueX.GridSPS.ForwardManager.PartitionSize
-  nameWithType: ForwardManager.PartitionSize
 - uid: CueX.GridSPS.ForwardState
   name: ForwardState
   href: api/CueX.GridSPS.ForwardState.html
@@ -2010,12 +1976,6 @@ references:
   commentId: F:CueX.GridSPS.GridPartitionGrainState.Config
   fullName: CueX.GridSPS.GridPartitionGrainState.Config
   nameWithType: GridPartitionGrainState.Config
-- uid: CueX.GridSPS.GridPartitionGrainState.ForwardManager
-  name: ForwardManager
-  href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_ForwardManager
-  commentId: F:CueX.GridSPS.GridPartitionGrainState.ForwardManager
-  fullName: CueX.GridSPS.GridPartitionGrainState.ForwardManager
-  nameWithType: GridPartitionGrainState.ForwardManager
 - uid: CueX.GridSPS.GridPartitionGrainState.ForwardTable
   name: ForwardTable
   href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_ForwardTable
@@ -2213,6 +2173,22 @@ references:
   fullName.vb: CueX.GridSPS.InterestManager.Add(Of T)(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
   nameWithType: InterestManager.Add<T>(T, String, SubscriptionFilter)
   nameWithType.vb: InterestManager.Add(Of T)(T, String, SubscriptionFilter)
+- uid: CueX.GridSPS.InterestManager.GetForwardDelta*
+  name: GetForwardDelta
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetForwardDelta_
+  commentId: Overload:CueX.GridSPS.InterestManager.GetForwardDelta
+  isSpec: "True"
+  fullName: CueX.GridSPS.InterestManager.GetForwardDelta
+  nameWithType: InterestManager.GetForwardDelta
+- uid: CueX.GridSPS.InterestManager.GetForwardDelta``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name: GetForwardDelta<T>(T, String, SubscriptionFilter)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetForwardDelta__1___0_System_String_CueX_Core_Subscription_SubscriptionFilter_
+  commentId: M:CueX.GridSPS.InterestManager.GetForwardDelta``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name.vb: GetForwardDelta(Of T)(T, String, SubscriptionFilter)
+  fullName: CueX.GridSPS.InterestManager.GetForwardDelta<T>(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  fullName.vb: CueX.GridSPS.InterestManager.GetForwardDelta(Of T)(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  nameWithType: InterestManager.GetForwardDelta<T>(T, String, SubscriptionFilter)
+  nameWithType.vb: InterestManager.GetForwardDelta(Of T)(T, String, SubscriptionFilter)
 - uid: CueX.GridSPS.InterestManager.GetInterestCount
   name: GetInterestCount()
   href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetInterestCount
@@ -2226,22 +2202,35 @@ references:
   isSpec: "True"
   fullName: CueX.GridSPS.InterestManager.GetInterestCount
   nameWithType: InterestManager.GetInterestCount
-- uid: CueX.GridSPS.InterestManager.GetSubscriptions*
-  name: GetSubscriptions
-  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetSubscriptions_
-  commentId: Overload:CueX.GridSPS.InterestManager.GetSubscriptions
+- uid: CueX.GridSPS.InterestManager.GetPartitionIndices
+  name: GetPartitionIndices()
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetPartitionIndices
+  commentId: M:CueX.GridSPS.InterestManager.GetPartitionIndices
+  fullName: CueX.GridSPS.InterestManager.GetPartitionIndices()
+  nameWithType: InterestManager.GetPartitionIndices()
+- uid: CueX.GridSPS.InterestManager.GetPartitionIndices*
+  name: GetPartitionIndices
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetPartitionIndices_
+  commentId: Overload:CueX.GridSPS.InterestManager.GetPartitionIndices
   isSpec: "True"
-  fullName: CueX.GridSPS.InterestManager.GetSubscriptions
-  nameWithType: InterestManager.GetSubscriptions
-- uid: CueX.GridSPS.InterestManager.GetSubscriptions``1(``0)
-  name: GetSubscriptions<T>(T)
-  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetSubscriptions__1___0_
-  commentId: M:CueX.GridSPS.InterestManager.GetSubscriptions``1(``0)
-  name.vb: GetSubscriptions(Of T)(T)
-  fullName: CueX.GridSPS.InterestManager.GetSubscriptions<T>(T)
-  fullName.vb: CueX.GridSPS.InterestManager.GetSubscriptions(Of T)(T)
-  nameWithType: InterestManager.GetSubscriptions<T>(T)
-  nameWithType.vb: InterestManager.GetSubscriptions(Of T)(T)
+  fullName: CueX.GridSPS.InterestManager.GetPartitionIndices
+  nameWithType: InterestManager.GetPartitionIndices
+- uid: CueX.GridSPS.InterestManager.Initialize(System.Double,System.Tuple{System.Int32,System.Int32})
+  name: Initialize(Double, Tuple<Int32, Int32>)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_Initialize_System_Double_System_Tuple_System_Int32_System_Int32__
+  commentId: M:CueX.GridSPS.InterestManager.Initialize(System.Double,System.Tuple{System.Int32,System.Int32})
+  name.vb: Initialize(Double, Tuple(Of Int32, Int32))
+  fullName: CueX.GridSPS.InterestManager.Initialize(System.Double, System.Tuple<System.Int32, System.Int32>)
+  fullName.vb: CueX.GridSPS.InterestManager.Initialize(System.Double, System.Tuple(Of System.Int32, System.Int32))
+  nameWithType: InterestManager.Initialize(Double, Tuple<Int32, Int32>)
+  nameWithType.vb: InterestManager.Initialize(Double, Tuple(Of Int32, Int32))
+- uid: CueX.GridSPS.InterestManager.Initialize*
+  name: Initialize
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_Initialize_
+  commentId: Overload:CueX.GridSPS.InterestManager.Initialize
+  isSpec: "True"
+  fullName: CueX.GridSPS.InterestManager.Initialize
+  nameWithType: InterestManager.Initialize
 - uid: CueX.GridSPS.InterestManager.TryGetEventFilters(System.String,System.Collections.Generic.Dictionary{CueX.Core.ISpatialGrain,CueX.Core.Subscription.SubscriptionFilter}@)
   name: TryGetEventFilters(String, out Dictionary<ISpatialGrain, SubscriptionFilter>)
   href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_TryGetEventFilters_System_String_System_Collections_Generic_Dictionary_CueX_Core_ISpatialGrain_CueX_Core_Subscription_SubscriptionFilter___
@@ -2258,6 +2247,22 @@ references:
   isSpec: "True"
   fullName: CueX.GridSPS.InterestManager.TryGetEventFilters
   nameWithType: InterestManager.TryGetEventFilters
+- uid: CueX.GridSPS.InterestManager.TryGetSubscriptions*
+  name: TryGetSubscriptions
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_TryGetSubscriptions_
+  commentId: Overload:CueX.GridSPS.InterestManager.TryGetSubscriptions
+  isSpec: "True"
+  fullName: CueX.GridSPS.InterestManager.TryGetSubscriptions
+  nameWithType: InterestManager.TryGetSubscriptions
+- uid: CueX.GridSPS.InterestManager.TryGetSubscriptions``1(``0,System.Collections.Generic.Dictionary{System.String,CueX.Core.Subscription.SubscriptionFilter}@)
+  name: TryGetSubscriptions<T>(T, out Dictionary<String, SubscriptionFilter>)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_TryGetSubscriptions__1___0_System_Collections_Generic_Dictionary_System_String_CueX_Core_Subscription_SubscriptionFilter___
+  commentId: M:CueX.GridSPS.InterestManager.TryGetSubscriptions``1(``0,System.Collections.Generic.Dictionary{System.String,CueX.Core.Subscription.SubscriptionFilter}@)
+  name.vb: TryGetSubscriptions(Of T)(T, ByRef Dictionary(Of String, SubscriptionFilter))
+  fullName: CueX.GridSPS.InterestManager.TryGetSubscriptions<T>(T, out System.Collections.Generic.Dictionary<System.String, CueX.Core.Subscription.SubscriptionFilter>)
+  fullName.vb: CueX.GridSPS.InterestManager.TryGetSubscriptions(Of T)(T, ByRef System.Collections.Generic.Dictionary(Of System.String, CueX.Core.Subscription.SubscriptionFilter))
+  nameWithType: InterestManager.TryGetSubscriptions<T>(T, out Dictionary<String, SubscriptionFilter>)
+  nameWithType.vb: InterestManager.TryGetSubscriptions(Of T)(T, ByRef Dictionary(Of String, SubscriptionFilter))
 - uid: CueX.Test
   name: CueX.Test
   href: api/CueX.Test.html
