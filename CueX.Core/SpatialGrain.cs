@@ -47,7 +47,7 @@ namespace CueX.Core
                 var eventParam = Expression.Convert(interfaceParam, targetType);
                 var lambdaExpression = Expression.Lambda<Func<SpatialEvent, Task>>(
                     Expression.Call(Expression.Constant(this), methodInfo, eventParam), interfaceParam);
-                _callbacks[targetType.ToString()] = lambdaExpression.Compile(); // TODO: pair.Key.ToString() is redundant, either clean up EventHelper or this bit
+                _callbacks[targetType.ToString()] = lambdaExpression.Compile();
             }
         }
         

@@ -16,7 +16,6 @@ namespace CueX.GridSPS
         public readonly List<ISpatialGrain> Children = new List<ISpatialGrain>();
         
         public readonly InterestManager InterestManager = new InterestManager();
-        public readonly ForwardManager ForwardManager = new ForwardManager();
         public readonly ForwardTable ForwardTable = new ForwardTable();
     }
 }

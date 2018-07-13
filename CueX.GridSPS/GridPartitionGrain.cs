@@ -36,9 +36,7 @@ namespace CueX.GridSPS
             {
                 // Acquire configuration from config service
                 State.Config = await _configService.GetConfiguration();
-                State.ForwardManager.PartitionIndices =
-                    IndexHelper.GetPartitionIndices(this.GetPrimaryKeyString(), State.Config.PartitionSize);
-                State.ForwardManager.PartitionSize = State.Config.PartitionSize;
+                State.InterestManager.Initialize(State.Config.PartitionSize, IndexHelper.GetPartitionIndices(this.GetPrimaryKeyString(), State.Config.PartitionSize));
                 State.IsInitialized = true;
                 await WriteStateAsync();
             }
@@ -58,7 +56,7 @@ namespace CueX.GridSPS
             // If the subscription could not be added, return false
             if (!result) return false;
             // Make sure events are forwarded
-            var queue = State.ForwardManager.GetForwardDelta(subscriber, eventName, filter);
+            var queue = State.InterestManager.GetForwardDelta(subscriber, eventName, filter);
             if (queue.Count > 0) await ProcessForwardCommandQueue(queue);
             await WriteStateAsync();
 
@@ -91,7 +89,7 @@ namespace CueX.GridSPS
 
         public Task<Tuple<int, int>> GetPartitionIndices()
         {
-            return Task.FromResult(State.ForwardManager.PartitionIndices);
+            return Task.FromResult(State.InterestManager.GetPartitionIndices());
         }
         
         public async Task Add<T>(T spatialGrain) where T : ISpatialGrain

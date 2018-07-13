@@ -25,10 +25,10 @@ namespace CueX.Test.Grains
                 .ForEach(OnTestEvent);
         }
 
-        public async Task OnTestEvent(TestEvent e)
+        public Task OnTestEvent(TestEvent e)
         {
             State.LastTestEventValue = e.Value;
-            await WriteStateAsync();
+            return WriteStateAsync();
         }
         
         public Task<string> GetLastTestEventValue()
