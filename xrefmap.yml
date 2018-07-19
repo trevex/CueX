@@ -964,12 +964,12 @@ references:
   commentId: T:CueX.Geometry.Box
   fullName: CueX.Geometry.Box
   nameWithType: Box
-- uid: CueX.Geometry.Box.GetBoundingBox
-  name: GetBoundingBox()
-  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetBoundingBox
-  commentId: M:CueX.Geometry.Box.GetBoundingBox
-  fullName: CueX.Geometry.Box.GetBoundingBox()
-  nameWithType: Box.GetBoundingBox()
+- uid: CueX.Geometry.Box.GetBoundingBox(CueX.Geometry.Vector3d)
+  name: GetBoundingBox(Vector3d)
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetBoundingBox_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Geometry.Box.GetBoundingBox(CueX.Geometry.Vector3d)
+  fullName: CueX.Geometry.Box.GetBoundingBox(CueX.Geometry.Vector3d)
+  nameWithType: Box.GetBoundingBox(Vector3d)
 - uid: CueX.Geometry.Box.GetBoundingBox*
   name: GetBoundingBox
   href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetBoundingBox_
@@ -977,25 +977,12 @@ references:
   isSpec: "True"
   fullName: CueX.Geometry.Box.GetBoundingBox
   nameWithType: Box.GetBoundingBox
-- uid: CueX.Geometry.Box.GetOrigin
-  name: GetOrigin()
-  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetOrigin
-  commentId: M:CueX.Geometry.Box.GetOrigin
-  fullName: CueX.Geometry.Box.GetOrigin()
-  nameWithType: Box.GetOrigin()
-- uid: CueX.Geometry.Box.GetOrigin*
-  name: GetOrigin
-  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_GetOrigin_
-  commentId: Overload:CueX.Geometry.Box.GetOrigin
-  isSpec: "True"
-  fullName: CueX.Geometry.Box.GetOrigin
-  nameWithType: Box.GetOrigin
-- uid: CueX.Geometry.Box.IsPointInside(CueX.Geometry.Vector3d)
-  name: IsPointInside(Vector3d)
-  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_IsPointInside_CueX_Geometry_Vector3d_
-  commentId: M:CueX.Geometry.Box.IsPointInside(CueX.Geometry.Vector3d)
-  fullName: CueX.Geometry.Box.IsPointInside(CueX.Geometry.Vector3d)
-  nameWithType: Box.IsPointInside(Vector3d)
+- uid: CueX.Geometry.Box.IsPointInside(CueX.Geometry.Vector3d,CueX.Geometry.Vector3d)
+  name: IsPointInside(Vector3d, Vector3d)
+  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_IsPointInside_CueX_Geometry_Vector3d_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Geometry.Box.IsPointInside(CueX.Geometry.Vector3d,CueX.Geometry.Vector3d)
+  fullName: CueX.Geometry.Box.IsPointInside(CueX.Geometry.Vector3d, CueX.Geometry.Vector3d)
+  nameWithType: Box.IsPointInside(Vector3d, Vector3d)
 - uid: CueX.Geometry.Box.IsPointInside*
   name: IsPointInside
   href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_IsPointInside_
@@ -1003,19 +990,6 @@ references:
   isSpec: "True"
   fullName: CueX.Geometry.Box.IsPointInside
   nameWithType: Box.IsPointInside
-- uid: CueX.Geometry.Box.SetOrigin(CueX.Geometry.Vector3d)
-  name: SetOrigin(Vector3d)
-  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_SetOrigin_CueX_Geometry_Vector3d_
-  commentId: M:CueX.Geometry.Box.SetOrigin(CueX.Geometry.Vector3d)
-  fullName: CueX.Geometry.Box.SetOrigin(CueX.Geometry.Vector3d)
-  nameWithType: Box.SetOrigin(Vector3d)
-- uid: CueX.Geometry.Box.SetOrigin*
-  name: SetOrigin
-  href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_SetOrigin_
-  commentId: Overload:CueX.Geometry.Box.SetOrigin
-  isSpec: "True"
-  fullName: CueX.Geometry.Box.SetOrigin
-  nameWithType: Box.SetOrigin
 - uid: CueX.Geometry.Box.WithDimensions(System.Double,System.Double)
   name: WithDimensions(Double, Double)
   href: api/CueX.Geometry.Box.html#CueX_Geometry_Box_WithDimensions_System_Double_System_Double_
@@ -1048,12 +1022,12 @@ references:
   commentId: T:CueX.Geometry.Circle
   fullName: CueX.Geometry.Circle
   nameWithType: Circle
-- uid: CueX.Geometry.Circle.GetBoundingBox
-  name: GetBoundingBox()
-  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetBoundingBox
-  commentId: M:CueX.Geometry.Circle.GetBoundingBox
-  fullName: CueX.Geometry.Circle.GetBoundingBox()
-  nameWithType: Circle.GetBoundingBox()
+- uid: CueX.Geometry.Circle.GetBoundingBox(CueX.Geometry.Vector3d)
+  name: GetBoundingBox(Vector3d)
+  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetBoundingBox_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Geometry.Circle.GetBoundingBox(CueX.Geometry.Vector3d)
+  fullName: CueX.Geometry.Circle.GetBoundingBox(CueX.Geometry.Vector3d)
+  nameWithType: Circle.GetBoundingBox(Vector3d)
 - uid: CueX.Geometry.Circle.GetBoundingBox*
   name: GetBoundingBox
   href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetBoundingBox_
@@ -1061,25 +1035,12 @@ references:
   isSpec: "True"
   fullName: CueX.Geometry.Circle.GetBoundingBox
   nameWithType: Circle.GetBoundingBox
-- uid: CueX.Geometry.Circle.GetOrigin
-  name: GetOrigin()
-  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetOrigin
-  commentId: M:CueX.Geometry.Circle.GetOrigin
-  fullName: CueX.Geometry.Circle.GetOrigin()
-  nameWithType: Circle.GetOrigin()
-- uid: CueX.Geometry.Circle.GetOrigin*
-  name: GetOrigin
-  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_GetOrigin_
-  commentId: Overload:CueX.Geometry.Circle.GetOrigin
-  isSpec: "True"
-  fullName: CueX.Geometry.Circle.GetOrigin
-  nameWithType: Circle.GetOrigin
-- uid: CueX.Geometry.Circle.IsPointInside(CueX.Geometry.Vector3d)
-  name: IsPointInside(Vector3d)
-  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_IsPointInside_CueX_Geometry_Vector3d_
-  commentId: M:CueX.Geometry.Circle.IsPointInside(CueX.Geometry.Vector3d)
-  fullName: CueX.Geometry.Circle.IsPointInside(CueX.Geometry.Vector3d)
-  nameWithType: Circle.IsPointInside(Vector3d)
+- uid: CueX.Geometry.Circle.IsPointInside(CueX.Geometry.Vector3d,CueX.Geometry.Vector3d)
+  name: IsPointInside(Vector3d, Vector3d)
+  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_IsPointInside_CueX_Geometry_Vector3d_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Geometry.Circle.IsPointInside(CueX.Geometry.Vector3d,CueX.Geometry.Vector3d)
+  fullName: CueX.Geometry.Circle.IsPointInside(CueX.Geometry.Vector3d, CueX.Geometry.Vector3d)
+  nameWithType: Circle.IsPointInside(Vector3d, Vector3d)
 - uid: CueX.Geometry.Circle.IsPointInside*
   name: IsPointInside
   href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_IsPointInside_
@@ -1087,19 +1048,6 @@ references:
   isSpec: "True"
   fullName: CueX.Geometry.Circle.IsPointInside
   nameWithType: Circle.IsPointInside
-- uid: CueX.Geometry.Circle.SetOrigin(CueX.Geometry.Vector3d)
-  name: SetOrigin(Vector3d)
-  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_SetOrigin_CueX_Geometry_Vector3d_
-  commentId: M:CueX.Geometry.Circle.SetOrigin(CueX.Geometry.Vector3d)
-  fullName: CueX.Geometry.Circle.SetOrigin(CueX.Geometry.Vector3d)
-  nameWithType: Circle.SetOrigin(Vector3d)
-- uid: CueX.Geometry.Circle.SetOrigin*
-  name: SetOrigin
-  href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_SetOrigin_
-  commentId: Overload:CueX.Geometry.Circle.SetOrigin
-  isSpec: "True"
-  fullName: CueX.Geometry.Circle.SetOrigin
-  nameWithType: Circle.SetOrigin
 - uid: CueX.Geometry.Circle.WithRadius(System.Double)
   name: WithRadius(Double)
   href: api/CueX.Geometry.Circle.html#CueX_Geometry_Circle_WithRadius_System_Double_
@@ -1138,12 +1086,12 @@ references:
   commentId: T:CueX.Geometry.IArea
   fullName: CueX.Geometry.IArea
   nameWithType: IArea
-- uid: CueX.Geometry.IArea.GetBoundingBox
-  name: GetBoundingBox()
-  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetBoundingBox
-  commentId: M:CueX.Geometry.IArea.GetBoundingBox
-  fullName: CueX.Geometry.IArea.GetBoundingBox()
-  nameWithType: IArea.GetBoundingBox()
+- uid: CueX.Geometry.IArea.GetBoundingBox(CueX.Geometry.Vector3d)
+  name: GetBoundingBox(Vector3d)
+  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetBoundingBox_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Geometry.IArea.GetBoundingBox(CueX.Geometry.Vector3d)
+  fullName: CueX.Geometry.IArea.GetBoundingBox(CueX.Geometry.Vector3d)
+  nameWithType: IArea.GetBoundingBox(Vector3d)
 - uid: CueX.Geometry.IArea.GetBoundingBox*
   name: GetBoundingBox
   href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetBoundingBox_
@@ -1151,25 +1099,12 @@ references:
   isSpec: "True"
   fullName: CueX.Geometry.IArea.GetBoundingBox
   nameWithType: IArea.GetBoundingBox
-- uid: CueX.Geometry.IArea.GetOrigin
-  name: GetOrigin()
-  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetOrigin
-  commentId: M:CueX.Geometry.IArea.GetOrigin
-  fullName: CueX.Geometry.IArea.GetOrigin()
-  nameWithType: IArea.GetOrigin()
-- uid: CueX.Geometry.IArea.GetOrigin*
-  name: GetOrigin
-  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_GetOrigin_
-  commentId: Overload:CueX.Geometry.IArea.GetOrigin
-  isSpec: "True"
-  fullName: CueX.Geometry.IArea.GetOrigin
-  nameWithType: IArea.GetOrigin
-- uid: CueX.Geometry.IArea.IsPointInside(CueX.Geometry.Vector3d)
-  name: IsPointInside(Vector3d)
-  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_IsPointInside_CueX_Geometry_Vector3d_
-  commentId: M:CueX.Geometry.IArea.IsPointInside(CueX.Geometry.Vector3d)
-  fullName: CueX.Geometry.IArea.IsPointInside(CueX.Geometry.Vector3d)
-  nameWithType: IArea.IsPointInside(Vector3d)
+- uid: CueX.Geometry.IArea.IsPointInside(CueX.Geometry.Vector3d,CueX.Geometry.Vector3d)
+  name: IsPointInside(Vector3d, Vector3d)
+  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_IsPointInside_CueX_Geometry_Vector3d_CueX_Geometry_Vector3d_
+  commentId: M:CueX.Geometry.IArea.IsPointInside(CueX.Geometry.Vector3d,CueX.Geometry.Vector3d)
+  fullName: CueX.Geometry.IArea.IsPointInside(CueX.Geometry.Vector3d, CueX.Geometry.Vector3d)
+  nameWithType: IArea.IsPointInside(Vector3d, Vector3d)
 - uid: CueX.Geometry.IArea.IsPointInside*
   name: IsPointInside
   href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_IsPointInside_
@@ -1177,19 +1112,6 @@ references:
   isSpec: "True"
   fullName: CueX.Geometry.IArea.IsPointInside
   nameWithType: IArea.IsPointInside
-- uid: CueX.Geometry.IArea.SetOrigin(CueX.Geometry.Vector3d)
-  name: SetOrigin(Vector3d)
-  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_SetOrigin_CueX_Geometry_Vector3d_
-  commentId: M:CueX.Geometry.IArea.SetOrigin(CueX.Geometry.Vector3d)
-  fullName: CueX.Geometry.IArea.SetOrigin(CueX.Geometry.Vector3d)
-  nameWithType: IArea.SetOrigin(Vector3d)
-- uid: CueX.Geometry.IArea.SetOrigin*
-  name: SetOrigin
-  href: api/CueX.Geometry.IArea.html#CueX_Geometry_IArea_SetOrigin_
-  commentId: Overload:CueX.Geometry.IArea.SetOrigin
-  isSpec: "True"
-  fullName: CueX.Geometry.IArea.SetOrigin
-  nameWithType: IArea.SetOrigin
 - uid: CueX.Geometry.Vector3d
   name: Vector3d
   href: api/CueX.Geometry.Vector3d.html
@@ -1814,12 +1736,6 @@ references:
   commentId: F:CueX.GridSPS.ForwardState.StopForwarding
   fullName: CueX.GridSPS.ForwardState.StopForwarding
   nameWithType: ForwardState.StopForwarding
-- uid: CueX.GridSPS.ForwardTable
-  name: ForwardTable
-  href: api/CueX.GridSPS.ForwardTable.html
-  commentId: T:CueX.GridSPS.ForwardTable
-  fullName: CueX.GridSPS.ForwardTable
-  nameWithType: ForwardTable
 - uid: CueX.GridSPS.GridPartitionGrain
   name: GridPartitionGrain
   href: api/CueX.GridSPS.GridPartitionGrain.html
@@ -1976,12 +1892,6 @@ references:
   commentId: F:CueX.GridSPS.GridPartitionGrainState.Config
   fullName: CueX.GridSPS.GridPartitionGrainState.Config
   nameWithType: GridPartitionGrainState.Config
-- uid: CueX.GridSPS.GridPartitionGrainState.ForwardTable
-  name: ForwardTable
-  href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_ForwardTable
-  commentId: F:CueX.GridSPS.GridPartitionGrainState.ForwardTable
-  fullName: CueX.GridSPS.GridPartitionGrainState.ForwardTable
-  nameWithType: GridPartitionGrainState.ForwardTable
 - uid: CueX.GridSPS.GridPartitionGrainState.InterestManager
   name: InterestManager
   href: api/CueX.GridSPS.GridPartitionGrainState.html#CueX_GridSPS_GridPartitionGrainState_InterestManager
@@ -2157,38 +2067,70 @@ references:
   commentId: T:CueX.GridSPS.InterestManager
   fullName: CueX.GridSPS.InterestManager
   nameWithType: InterestManager
-- uid: CueX.GridSPS.InterestManager.Add*
-  name: Add
-  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_Add_
-  commentId: Overload:CueX.GridSPS.InterestManager.Add
+- uid: CueX.GridSPS.InterestManager.AddInterest*
+  name: AddInterest
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_AddInterest_
+  commentId: Overload:CueX.GridSPS.InterestManager.AddInterest
   isSpec: "True"
-  fullName: CueX.GridSPS.InterestManager.Add
-  nameWithType: InterestManager.Add
-- uid: CueX.GridSPS.InterestManager.Add``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
-  name: Add<T>(T, String, SubscriptionFilter)
-  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_Add__1___0_System_String_CueX_Core_Subscription_SubscriptionFilter_
-  commentId: M:CueX.GridSPS.InterestManager.Add``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
-  name.vb: Add(Of T)(T, String, SubscriptionFilter)
-  fullName: CueX.GridSPS.InterestManager.Add<T>(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
-  fullName.vb: CueX.GridSPS.InterestManager.Add(Of T)(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
-  nameWithType: InterestManager.Add<T>(T, String, SubscriptionFilter)
-  nameWithType.vb: InterestManager.Add(Of T)(T, String, SubscriptionFilter)
-- uid: CueX.GridSPS.InterestManager.GetForwardDelta*
-  name: GetForwardDelta
-  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetForwardDelta_
-  commentId: Overload:CueX.GridSPS.InterestManager.GetForwardDelta
+  fullName: CueX.GridSPS.InterestManager.AddInterest
+  nameWithType: InterestManager.AddInterest
+- uid: CueX.GridSPS.InterestManager.AddInterest``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name: AddInterest<T>(T, String, SubscriptionFilter)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_AddInterest__1___0_System_String_CueX_Core_Subscription_SubscriptionFilter_
+  commentId: M:CueX.GridSPS.InterestManager.AddInterest``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name.vb: AddInterest(Of T)(T, String, SubscriptionFilter)
+  fullName: CueX.GridSPS.InterestManager.AddInterest<T>(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  fullName.vb: CueX.GridSPS.InterestManager.AddInterest(Of T)(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  nameWithType: InterestManager.AddInterest<T>(T, String, SubscriptionFilter)
+  nameWithType.vb: InterestManager.AddInterest(Of T)(T, String, SubscriptionFilter)
+- uid: CueX.GridSPS.InterestManager.AddPosition*
+  name: AddPosition
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_AddPosition_
+  commentId: Overload:CueX.GridSPS.InterestManager.AddPosition
   isSpec: "True"
-  fullName: CueX.GridSPS.InterestManager.GetForwardDelta
-  nameWithType: InterestManager.GetForwardDelta
-- uid: CueX.GridSPS.InterestManager.GetForwardDelta``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
-  name: GetForwardDelta<T>(T, String, SubscriptionFilter)
-  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetForwardDelta__1___0_System_String_CueX_Core_Subscription_SubscriptionFilter_
-  commentId: M:CueX.GridSPS.InterestManager.GetForwardDelta``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
-  name.vb: GetForwardDelta(Of T)(T, String, SubscriptionFilter)
-  fullName: CueX.GridSPS.InterestManager.GetForwardDelta<T>(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
-  fullName.vb: CueX.GridSPS.InterestManager.GetForwardDelta(Of T)(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
-  nameWithType: InterestManager.GetForwardDelta<T>(T, String, SubscriptionFilter)
-  nameWithType.vb: InterestManager.GetForwardDelta(Of T)(T, String, SubscriptionFilter)
+  fullName: CueX.GridSPS.InterestManager.AddPosition
+  nameWithType: InterestManager.AddPosition
+- uid: CueX.GridSPS.InterestManager.AddPosition``1(``0,CueX.Geometry.Vector3d)
+  name: AddPosition<T>(T, Vector3d)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_AddPosition__1___0_CueX_Geometry_Vector3d_
+  commentId: M:CueX.GridSPS.InterestManager.AddPosition``1(``0,CueX.Geometry.Vector3d)
+  name.vb: AddPosition(Of T)(T, Vector3d)
+  fullName: CueX.GridSPS.InterestManager.AddPosition<T>(T, CueX.Geometry.Vector3d)
+  fullName.vb: CueX.GridSPS.InterestManager.AddPosition(Of T)(T, CueX.Geometry.Vector3d)
+  nameWithType: InterestManager.AddPosition<T>(T, Vector3d)
+  nameWithType.vb: InterestManager.AddPosition(Of T)(T, Vector3d)
+- uid: CueX.GridSPS.InterestManager.GetForwardCommandsForMovement*
+  name: GetForwardCommandsForMovement
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetForwardCommandsForMovement_
+  commentId: Overload:CueX.GridSPS.InterestManager.GetForwardCommandsForMovement
+  isSpec: "True"
+  fullName: CueX.GridSPS.InterestManager.GetForwardCommandsForMovement
+  nameWithType: InterestManager.GetForwardCommandsForMovement
+- uid: CueX.GridSPS.InterestManager.GetForwardCommandsForMovement``1(``0,CueX.Geometry.Vector3d)
+  name: GetForwardCommandsForMovement<T>(T, Vector3d)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetForwardCommandsForMovement__1___0_CueX_Geometry_Vector3d_
+  commentId: M:CueX.GridSPS.InterestManager.GetForwardCommandsForMovement``1(``0,CueX.Geometry.Vector3d)
+  name.vb: GetForwardCommandsForMovement(Of T)(T, Vector3d)
+  fullName: CueX.GridSPS.InterestManager.GetForwardCommandsForMovement<T>(T, CueX.Geometry.Vector3d)
+  fullName.vb: CueX.GridSPS.InterestManager.GetForwardCommandsForMovement(Of T)(T, CueX.Geometry.Vector3d)
+  nameWithType: InterestManager.GetForwardCommandsForMovement<T>(T, Vector3d)
+  nameWithType.vb: InterestManager.GetForwardCommandsForMovement(Of T)(T, Vector3d)
+- uid: CueX.GridSPS.InterestManager.GetForwardCommandsForSubscription*
+  name: GetForwardCommandsForSubscription
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetForwardCommandsForSubscription_
+  commentId: Overload:CueX.GridSPS.InterestManager.GetForwardCommandsForSubscription
+  isSpec: "True"
+  fullName: CueX.GridSPS.InterestManager.GetForwardCommandsForSubscription
+  nameWithType: InterestManager.GetForwardCommandsForSubscription
+- uid: CueX.GridSPS.InterestManager.GetForwardCommandsForSubscription``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name: GetForwardCommandsForSubscription<T>(T, String, SubscriptionFilter)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetForwardCommandsForSubscription__1___0_System_String_CueX_Core_Subscription_SubscriptionFilter_
+  commentId: M:CueX.GridSPS.InterestManager.GetForwardCommandsForSubscription``1(``0,System.String,CueX.Core.Subscription.SubscriptionFilter)
+  name.vb: GetForwardCommandsForSubscription(Of T)(T, String, SubscriptionFilter)
+  fullName: CueX.GridSPS.InterestManager.GetForwardCommandsForSubscription<T>(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  fullName.vb: CueX.GridSPS.InterestManager.GetForwardCommandsForSubscription(Of T)(T, System.String, CueX.Core.Subscription.SubscriptionFilter)
+  nameWithType: InterestManager.GetForwardCommandsForSubscription<T>(T, String, SubscriptionFilter)
+  nameWithType.vb: InterestManager.GetForwardCommandsForSubscription(Of T)(T, String, SubscriptionFilter)
 - uid: CueX.GridSPS.InterestManager.GetInterestCount
   name: GetInterestCount()
   href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_GetInterestCount
@@ -2231,6 +2173,22 @@ references:
   isSpec: "True"
   fullName: CueX.GridSPS.InterestManager.Initialize
   nameWithType: InterestManager.Initialize
+- uid: CueX.GridSPS.InterestManager.RemovePosition*
+  name: RemovePosition
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_RemovePosition_
+  commentId: Overload:CueX.GridSPS.InterestManager.RemovePosition
+  isSpec: "True"
+  fullName: CueX.GridSPS.InterestManager.RemovePosition
+  nameWithType: InterestManager.RemovePosition
+- uid: CueX.GridSPS.InterestManager.RemovePosition``1(``0)
+  name: RemovePosition<T>(T)
+  href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_RemovePosition__1___0_
+  commentId: M:CueX.GridSPS.InterestManager.RemovePosition``1(``0)
+  name.vb: RemovePosition(Of T)(T)
+  fullName: CueX.GridSPS.InterestManager.RemovePosition<T>(T)
+  fullName.vb: CueX.GridSPS.InterestManager.RemovePosition(Of T)(T)
+  nameWithType: InterestManager.RemovePosition<T>(T)
+  nameWithType.vb: InterestManager.RemovePosition(Of T)(T)
 - uid: CueX.GridSPS.InterestManager.TryGetEventFilters(System.String,System.Collections.Generic.Dictionary{CueX.Core.ISpatialGrain,CueX.Core.Subscription.SubscriptionFilter}@)
   name: TryGetEventFilters(String, out Dictionary<ISpatialGrain, SubscriptionFilter>)
   href: api/CueX.GridSPS.InterestManager.html#CueX_GridSPS_InterestManager_TryGetEventFilters_System_String_System_Collections_Generic_Dictionary_CueX_Core_ISpatialGrain_CueX_Core_Subscription_SubscriptionFilter___
