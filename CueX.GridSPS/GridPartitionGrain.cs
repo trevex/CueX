@@ -52,11 +52,11 @@ namespace CueX.GridSPS
                 OriginTypeFilter = details.OriginTypeFilter
             };
             // Setup interest management
-            var result = State.InterestManager.Add(subscriber, eventName, filter);
+            var result = State.InterestManager.AddInterest(subscriber, eventName, filter);
             // If the subscription could not be added, return false
             if (!result) return false;
             // Make sure events are forwarded
-            var queue = State.InterestManager.GetForwardDelta(subscriber, eventName, filter);
+            var queue = State.InterestManager.GetForwardCommandsForSubscription(subscriber, eventName, filter);
             if (queue.Count > 0) await ProcessForwardCommandQueue(queue);
             await WriteStateAsync();
 
@@ -95,6 +95,7 @@ namespace CueX.GridSPS
         public async Task Add<T>(T spatialGrain) where T : ISpatialGrain
         {
             State.Children.Add(spatialGrain);
+            State.InterestManager.AddPosition(spatialGrain, await spatialGrain.GetPosition());
             await spatialGrain.SetController(new GridController());
             await spatialGrain.ReceiveControlEvent(new SetParentEvent{ Partition =  this.AsReference<IGridPartitionGrain>() });
             await WriteStateAsync();

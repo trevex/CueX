@@ -7,7 +7,6 @@ namespace CueX.Geometry
 {
     public class Box : IArea
     {
-        private Vector3d _origin;
         private readonly double _width;
         private readonly double _height;
 
@@ -27,30 +26,20 @@ namespace CueX.Geometry
             return new Box(width, height);
         }
 
-        public void SetOrigin(Vector3d origin)
-        {
-            _origin = origin;
-        }
-
-        public Vector3d GetOrigin()
-        {
-            return _origin;
-        }
-
-        public AABB GetBoundingBox()
+        public AABB GetBoundingBox(Vector3d origin)
         {
             var hw = _width * 0.5d;
             var hh = _height * 0.5d;
             return new AABB
             {
-                BottomLeft = new Vector3d(_origin.X - hw, _origin.Y - hh, 0d),
-                TopRight = new Vector3d(_origin.X + hw, _origin.Y + hh, 0d)
+                BottomLeft = new Vector3d(origin.X - hw, origin.Y - hh, 0d),
+                TopRight = new Vector3d(origin.X + hw, origin.Y + hh, 0d)
             };
         }
 
-        public bool IsPointInside(Vector3d point)
+        public bool IsPointInside(Vector3d origin, Vector3d point)
         {
-            var os = point - _origin;
+            var os = point - origin;
             var hw = _width * 0.5d;
             var hh = _height * 0.5d;
             return !(os.X > hw || os.X < -hw || os.Y > hh || os.Y < -hh);

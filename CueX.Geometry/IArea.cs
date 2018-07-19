@@ -5,9 +5,7 @@ namespace CueX.Geometry
 {
     public interface IArea
     {
-        void SetOrigin(Vector3d origin);
-        Vector3d GetOrigin();
-        AABB GetBoundingBox();
-        bool IsPointInside(Vector3d point);
+        AABB GetBoundingBox(Vector3d origin);
+        bool IsPointInside(Vector3d origin, Vector3d point);
     }
 }

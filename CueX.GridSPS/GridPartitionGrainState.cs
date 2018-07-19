@@ -12,10 +12,7 @@ namespace CueX.GridSPS
     {
         public bool IsInitialized = false;
         public GridConfiguration Config = null;
-
         public readonly List<ISpatialGrain> Children = new List<ISpatialGrain>();
-        
         public readonly InterestManager InterestManager = new InterestManager();
-        public readonly ForwardTable ForwardTable = new ForwardTable();
     }
 }

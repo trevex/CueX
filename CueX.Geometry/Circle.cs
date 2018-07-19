@@ -5,10 +5,7 @@ namespace CueX.Geometry
 {
     public class Circle : IArea
     {
-        
-        private Vector3d _origin;
         private readonly double _radius;
-        
 
         private Circle(double radius)
         {
@@ -20,28 +17,18 @@ namespace CueX.Geometry
             return new Circle(radius);
         }
 
-        public void SetOrigin(Vector3d origin)
-        {
-            _origin = origin;
-        }
-
-        public Vector3d GetOrigin()
-        {
-            return _origin;
-        }
-
-        public AABB GetBoundingBox()
+        public AABB GetBoundingBox(Vector3d origin)
         {
             return new AABB
             {
-                BottomLeft = new Vector3d(_origin.X - _radius, _origin.Y - _radius, 0d),
-                TopRight = new Vector3d(_origin.X + _radius, _origin.Y + _radius, 0d)
+                BottomLeft = new Vector3d(origin.X - _radius, origin.Y - _radius, 0d),
+                TopRight = new Vector3d(origin.X + _radius, origin.Y + _radius, 0d)
             };
         }
 
-        public bool IsPointInside(Vector3d point)
+        public bool IsPointInside(Vector3d origin, Vector3d point)
         {
-            return (point - _origin).LengthSq() < (_radius * _radius);
+            return (point - origin).LengthSq() < (_radius * _radius);
         }
     }
 }

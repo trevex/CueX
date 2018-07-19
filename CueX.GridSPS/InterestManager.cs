@@ -3,8 +3,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using CueX.Core;
 using CueX.Core.Subscription;
+using CueX.Geometry;
 using CueX.GridSPS.Config;
 using CueX.GridSPS.Internal;
 
@@ -20,13 +22,25 @@ namespace CueX.GridSPS
         
         private readonly Dictionary<string/* PartitionId */, Dictionary<string/* EventType */, Dictionary<ISpatialGrain, bool>>> _forwards = new Dictionary<string, Dictionary<string, Dictionary<ISpatialGrain, bool>>>();
 
+        private readonly Dictionary<ISpatialGrain, Vector3d> _positions = new Dictionary<ISpatialGrain, Vector3d>();
+
         public void Initialize(double partitionSize, Tuple<int, int> partitionIndices)
         {
             _partitionSize = partitionSize;
             _partitionIndices = partitionIndices;
         }
+
+        public void AddPosition<T>(T subscriber, Vector3d position) where T : ISpatialGrain
+        {
+            _positions[subscriber] = position;
+        }
         
-        public bool Add<T>(T subscriber, string eventName, SubscriptionFilter filter) where T : ISpatialGrain
+        public void RemovePosition<T>(T subscriber) where T : ISpatialGrain
+        {
+            _positions.Remove(subscriber);
+        }
+        
+        public bool AddInterest<T>(T subscriber, string eventName, SubscriptionFilter filter) where T : ISpatialGrain // NOTE: rename?
         {
             // Check if a filter map exists for this event
             var result = _filters.TryGetValue(eventName, out var eventInterestFilters);
@@ -75,10 +89,11 @@ namespace CueX.GridSPS
             return count;
         }
         
-        public Queue<ForwardCommand> GetForwardDelta<T>(T subscriber, string eventName, SubscriptionFilter filter) where T : ISpatialGrain
+        public Queue<ForwardCommand> GetForwardCommandsForSubscription<T>(T subscriber, string eventName, SubscriptionFilter filter) where T : ISpatialGrain
         {
             var queue = new Queue<ForwardCommand>();
-            var aabb = filter.Area.GetBoundingBox();
+            var origin = _positions[subscriber];
+            var aabb = filter.Area.GetBoundingBox(origin);
             var bottomLeft = IndexHelper.GetPartitionIndicesForPosition(aabb.BottomLeft, _partitionSize);
             var topRight = IndexHelper.GetPartitionIndicesForPosition(aabb.TopRight, _partitionSize);
 
@@ -98,6 +113,29 @@ namespace CueX.GridSPS
                         });
                     }
                 }
+            }
+            return queue;
+        }
+        
+        public Queue<ForwardCommand> GetForwardCommandsForMovement<T>(T subscriber, Vector3d newPosition) where T : ISpatialGrain
+        {
+            var queue = new Queue<ForwardCommand>();
+            var origin = _positions[subscriber];
+            var result = _interests.TryGetValue(subscriber, out var grainInterests);
+            if (!result)
+            {
+                return queue;
+            }
+            foreach (var interestPair in grainInterests)
+            {
+                // Old AABB
+                var aabb0 = interestPair.Value.Area.GetBoundingBox(origin);
+                var bottomLeft0 = IndexHelper.GetPartitionIndicesForPosition(aabb0.BottomLeft, _partitionSize);
+                var topRight0 = IndexHelper.GetPartitionIndicesForPosition(aabb0.TopRight, _partitionSize);
+                // New AABB
+                var aabb1 = interestPair.Value.Area.GetBoundingBox(newPosition);
+                var bottomLeft1 = IndexHelper.GetPartitionIndicesForPosition(aabb1.BottomLeft, _partitionSize);
+                var topRight1 = IndexHelper.GetPartitionIndicesForPosition(aabb1.TopRight, _partitionSize);
             }
             return queue;
         }
